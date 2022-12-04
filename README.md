@@ -1,4 +1,4 @@
-**Hintergrund**
+## Hintergrund
 Die HTW Dresden kooperiert weltweit mit Hochschulen im Rahmen von Hochschulvereinbarungen
 bzw. im Rahmen des EU-Programms Erasmus+. Diese vielfältigen Kontakte bilden die Grundlage
 sowohl für die wissenschaftliche Zusammenarbeit in Lehre und Forschung als auch für den Austausch von Studierenden und Hochschullehrern. Insgesamt besteht Kontakt zu rund 170 Hochschulen weltweit. Um diese zu verwalten, soll ein Verwaltungssystem für die Hochschulpartnerschaften
