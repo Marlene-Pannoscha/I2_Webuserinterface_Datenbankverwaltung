@@ -137,6 +137,7 @@ Hinweise:
 | Anforderung | Priorität | Geplantes Release
 | saubere und ausführliche Entwicklerdokumentation | xx | Sommersemester 2023
 | saubere und ausführliche Nutzerdokumentation für die Stabstelle | xx | Sommersemester 2023
+| Verbesserung des jetzigen Prototyps bzw. dessen Funktionen | xx | Sommersemester 2023
 | In jedem zeitgemäßem Browser nutzbar | xx | Sommersemester 2023
 | benutzerfreundliche Handhabung | xx | Sommersemester 2023
 | lediglch nutzbar im HTW-Netz durch IP-Sperre | xx | Sommersemester 2023
