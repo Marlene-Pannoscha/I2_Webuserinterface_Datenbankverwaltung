@@ -111,7 +111,14 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| xx | xx | xx | xx
+| Login System | xx | gewährt zulässigen Nutzern authorisierten Zugang zur Verwaltung | Sommersemester 2023
+| Partnerhochschulen anlegen | xx | Zum Einfügen neuer Partnerhochschulen und der Verträge im Verwaltungsfrontend | Sommersemester 2023
+| Partnerhochschulen bearbeiten | xx | Zum Verändern eines oder mehrerer bereits bestehenden Hochschulattribute im Verwaltungsfrontend |Sommersemester 2023
+| Partnerhochschulen löschen | xx | Zum Entfernen einer Partnerhochschule oder derer Datenattribute im Verwaltungsfrontend | xSommersemester 2023
+| Modifizieren von Bestandsdaten | xx | Zum Bearbeiten einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
+| Anzeige von Austauschstudenten | xx | zur Ausgabe von Informationen über Austauschstudenten | Sommersemester 2023
+| Bearbeiten von Austauschstudenten | xx | zur Pflege von Statistiken | Sommersemester 2023
+| Anzeige von Statistiken | xx | zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
 |===
 
 
@@ -128,5 +135,10 @@ Hinweise:
 [%header, cols="4,1,1"]
 |===
 | Anforderung | Priorität | Geplantes Release
-| xx | xx | xx
+| saubere und ausführliche Entwicklerdokumentation | xx | Sommersemester 2023
+| saubere und ausführliche Nutzerdokumentation für die Stabstelle | xx | Sommersemester 2023
+| In jedem zeitgemäßem Browser nutzbar | xx | Sommersemester 2023
+| benutzerfreundliche Handhabung | xx | Sommersemester 2023
+| lediglch nutzbar im HTW-Netz durch IP-Sperre | xx | Sommersemester 2023
+| Personenbezogene Daten dürfen das System nicht verlassen und werden periodisch gelöscht | xx | Sommersemester 2023
 |===
