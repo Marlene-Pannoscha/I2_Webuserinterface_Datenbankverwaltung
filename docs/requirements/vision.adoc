@@ -60,12 +60,12 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | [as Akademische Auslandsamt der HTW Dresden sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)]
-| die | [eine vereinfachte Handhabung des Datenbanksystems anstreben]
-| die Lösung ist ein | [Update des Web-User-Interfaces]
-| Das | [ Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann]
-| Im Gegensatz zum | [Interface-Prototypen] ist
-| unser Produkt | [intuitiv und einfach zu bedienen]
+| Für | das Akademische Auslandsamt der HTW Dresden sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)
+| die | eine vereinfachte Handhabung des Datenbanksystems anstreben
+| die Lösung ist ein | Update des Web-User-Interfaces
+| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann]
+| Im Gegensatz zum | Interface-Prototypen 
+| ist unser Produkt | intuitiv und einfach zu bedienen
 |===
 
 ////
