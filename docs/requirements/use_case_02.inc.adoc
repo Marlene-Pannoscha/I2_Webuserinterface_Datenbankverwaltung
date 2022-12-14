@@ -1,0 +1,42 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+== Use-Case: <LogOut>
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Der Mitarbeiter der SI möchte sich abmelden.
+
+=== Kurzbeschreibung der Akteure
+
+==== Mitarbeiter Stabsstelle
+Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaften mit anderen Hochschulen und Universitäten im Ausland. Sie stellen die Informationen bereit und wirken vermittelnd.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+<Nutzer ist angemeldet>
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der Mitarbeiter das Webuserinterface für Datenbankverwaltung verlassen möchte.
+. Per Klick auf den entsprechenden Button zum LogOut.
+. Das System überträgt die Daten an den Server, leitet den Nutzer auf die LogIn-Seite zurück und loggt den Nutzer aus.
+. Der Use Case ist abgeschlossen.
+
+
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== <Szenario 1>
+. Szenario 1.1: Der Nutzer befindet sich im HTW-Netz und ist derzeit eingeloggt.
+. Szenario 1.2: Der Nutzer betätigt den LogOut-Button.
+. Szenario 1.3: Das System überträgt die Daten an den Server, dieser vermerkt das LogOut.
+. Szenario 1.4: Weiterleiten des Nutzers auf die LogIn-Seite der Anwendung.
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+==== <Nachbedingung 1>
+Der Nutzer ist ausgeloggt, auf die LogIn-Seite der Anwendung weitergeleitet und hat keinen Zugriff auf das interne System. Erneuter Zugriff erfordert ein neues Einloggen unter Nutzung der Login-Daten.

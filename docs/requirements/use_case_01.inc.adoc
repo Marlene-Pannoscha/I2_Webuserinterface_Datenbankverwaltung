@@ -1,58 +1,49 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
-== Use-Case: <use-case name>
+== Use-Case: <Filterung nach Fakultät und Parnterschaft>
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
+Bei diesem Use-Case soll der Mitarbeiter die angezeigten Hochschulpartnerschaften nach Fakultät bzw. Art der Partnerschaft filtern können.
 
 === Kurzbeschreibung der Akteure
 
-==== <Akteur 1 Name>
+==== Mitarbeiter Stabsstelle
+Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaften mit anderen Hochschulen und Universitäten im Ausland. Sie stellen die Informationen bereit und wirken vermittelnd.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Vorbedingung 1>
+<Nutzer ist angemeldet>
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. …
-. <Standardablauf Schritt n>
+. Der Use Case beginnt, wenn der Mitarbeiter die angezeigten Hochschulpartnerschaften filtern möchte.
+. Per Klick auf das entsprechende Feld öffnet der Mitarbeiter das Drop-Down-Menü
+. Der Mitarbeiter wählt aus dem Dropdown-Menü die gewünschte Fakultät bzw. die gewünschte Partnerschaft aus
+. Die angezeigten Hochschulpartnerschaften werden angepasst, entsprechend der vorher getroffenen Auswahl.
 . Der Use Case ist abgeschlossen.
 
-=== Alternative Abläufe
-//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-
-==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
-
-=== Unterabläufe (subflows)
-//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
-
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. …
-. <Szenario 1, Schritt n>
+==== Abfrage auf ungefiltere Liste
+. Szenario 1.1: Der Mitarbeiter ist eingeloggt und es liegt die ungefilterte Liste an Hochschulpartnerschaften vor.
+. Szenario 1.2: Der Mitarbeiter wählt im entsprechenden Dropdown-Menü die gewünschte Einschränkung aus.
+. Szenario 1.3: Das Systemverarbeitet die Anfrage und liefert die angepasste Hochschulauswahl zurück. 
+
+==== Abfrage auf bereits gefilterte Liste
+. Szenario 2.1: Der Mitarbeiter ist eingeloggt und es liegt eine bereits gefilterte Liste vor.
+. Szenario 2.2: Der Mitarbeiter wählt im entsprechenden Dropdown-Menü eine neue Einschränkung aus.
+. Szenario 2.3: Das System prüft, ob die bestehende Auswahl der neuen widerspricht. Wenn ja, verwirft es die alte Auswahl (geht zurück zur ungefilterten Liste, danach Szenario 1.2). Wenn nein, erweitert es den bestehenden Filter um die neuen Einschränkungen.
+. Szenario 2.4: Das System gibt die Hochschulen gemäß der Filterung aus.
+
 
 === Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 
 ==== <Nachbedingung 1>
+Die Anzeige der Partnerhochschulen wurde angepasst und zeigt nur noch Hochschulen an, die den Filter erfüllen.
 
-=== Besondere Anforderungen
-//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-
-==== <Besondere Anforderung 1>
