@@ -26,16 +26,20 @@ Siehe <<#glossary, Glossar>>.
 
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
+Das Projekt wird von Teilnehmern des Moduls Software Engineering beziehungsweise Requirements Engineering (I150 / I925) als Teil der Studiengänge Wirtschaftsinformatik und Wirtschaftsingenieurwesen durchgeführt. 
+
+Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystems ist nicht mehr ausreichend. Durch eine Überführung von Microsoft Access in MySQL ist die Bedienbarkeit der Datenbank erschwert worden. Außerdem fehlt die Möglichkeit, Berichte und Statistiken zu erzeugen. Eine Umgestaltung des derzeitigen Interface-Prototypen soll die Zugänglichkeit der Datenbank für Mitarbeiter des Akademischen Auslandsamtes erhöhen und Fehler minimieren, des Weiteren sollen Funktionen, wie die Anzeige und das Bearbeiten von Austauschstudenten, ergänzt werden.
+
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
 
 [cols="1,3"]
 |===
-| Das Problem | [beschreiben Sie das Problem]
-| betrifft | [die Stakeholder, die vom Problem betroffen sind]
-| die Auswirkung davon ist | [welche Auswirkungen hat das Problem?]
-| eine erfolgreiche Lösung wäre | Führen Sie einige wesentliche Vorteile einer erfolgreichen Lösung auf]
+| Das Problem | [der nicht mehr zeitgemäßen und umständlichen Bedienbarkeit des Datenbanksystems]
+| betrifft | [die Mitarbeiter des Akademischen Auslandsamtes, Studierende und Mitglieder der HTW Dresden, sowie interessierte Externe]
+| die Auswirkung davon ist | [ein erhöhter Zeit- und Arbeitsaufwand für die Mitarbeiter des Akademischen Auslandsamtes]
+| eine erfolgreiche Lösung wäre [ie Aktualisierung des Bestehenden Web-User-Interfaces, sowie eine Ergänzung von intuitiven Funktionen]
 |===
 
 ////
@@ -56,12 +60,12 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | [Zielkunde / Nutzer]
-| der / die | [Angabe des Bedarfs oder Chance]
-| Das Produkt / die Lösung ist ein | [Produktkategorie]
-| Die / Das | [Aussage zum Hauptvorteil / Alleinstellungsmerkmal]
-| Im Gegensatz zu | [wesentliche Lösungsalternative]
-| Unser Produkt | [Aussage zum Hauptunterschied]
+| Für | das Akademische Auslandsamt der HTW Dresden sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)
+| die | eine vereinfachte Handhabung des Datenbanksystems anstreben
+| die Lösung ist ein | Update des Web-User-Interfaces
+| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann]
+| Im Gegensatz zum | Interface-Prototypen 
+| ist unser Produkt | intuitiv und einfach zu bedienen
 |===
 
 ////
@@ -85,6 +89,7 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
+<<<<<<< HEAD
 | Mitarbeiter der Stabstelle Internationales und Studentische Hilfskraft (SHK)
 | Mitarbeiter, die zuständig für die Verwaltung der Datenbank sind
 | Verwaltung des Webseiten-Frontends
@@ -97,7 +102,7 @@ Beispiel Produkt:
 |Austauschstudenten Outgoing
 |Studierende der HTW Dresden, die sich für einen Aufenthalt an einer Partnerhochschule interessieren
 |Informieren sich über Austauschprogramme an Partnerhochschulen über das Frontend
-
+=======
 |===
 === Benutzerumgebung
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
@@ -120,7 +125,20 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| xx | xx | xx | xx
+| Login System | - | gewährt zulässigen Nutzern authorisierten Zugang zur Verwaltung | implementiert
+| Logoff System | 5 | ordnungsgemäße abmelden vom System | Sommersemester 2023
+| Partnerhochschulen anlegen | 10 | Zum Einfügen neuer Partnerhochschulen und der Verträge im Verwaltungsfrontend | Sommersemester 2023
+| Partnerhochschulen bearbeiten | 10 | Zum Verändern eines oder mehrerer bereits bestehenden Hochschulattribute im Verwaltungsfrontend |Sommersemester 2023
+| Partnerhochschulen löschen | 9 | Zum Entfernen einer Partnerhochschule oder derer Datenattribute im Verwaltungsfrontend | Sommersemester 2023
+| Erweiterte Infos | 7 | Anzeige detailierter Infos einzelner Universitäten sowie deren Ansprechpartner/E-Mails | Sommersemester 2023
+| Modifizieren von Bestandsdaten | 10 | Zum Bearbeiten einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
+| Löschen von Bestandsdaten | 9 | Zum Entfernen einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
+| Anzeige von Austauschstudenten | 7 | zur Ausgabe von Informationen über Austauschstudenten | Sommersemester 2023
+| Bearbeiten von Austauschstudenten | 8 | zur Pflege von Statistiken | Sommersemester 2023
+| Anzeige von Statistiken | 9 | zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
+| Exportieren von Statistiken | 6 | zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
+| Filterfunktion | 8 | aussortieren nicht gesuchter Einträge | Sommersemester 2023
+| Manuelle Suchfunktion | 7 | Ermögtlicht die manuelle Suche per Texteingabe | Sommersemester 2023
 |===
 
 
@@ -137,5 +155,14 @@ Hinweise:
 [%header, cols="4,1,1"]
 |===
 | Anforderung | Priorität | Geplantes Release
-| xx | xx | xx
+| saubere und ausführliche Entwicklerdokumentation | 7 | Sommersemester 2023
+| saubere und ausführliche Nutzerdokumentation für die Stabstelle | 7 | Sommersemester 2023
+| Verbesserung des jetzigen Prototyps bzw. dessen Funktionen | 10 | Sommersemester 2023
+| komprimiert (nicht zu viel offene, unnötige Fenster) | 9 | Sommersemester 2023
+| übersichtlich | 9 | Sommersemester 2023
+| MS-Access ähnliches Schema | 7 | Sommersemester 2023
+| in jedem zeitgemäßem Browser nutzbar | 9 | Sommersemester 2023
+| benutzerfreundliche Handhabung | 8 | Sommersemester 2023
+| lediglich nutzbar im HTW-Netz durch IP-Sperre | 10 | Sommersemester 2023
+| personenbezogene Daten dürfen das System nicht verlassen und werden periodisch gelöscht | 10 | Sommersemester 2023
 |===
