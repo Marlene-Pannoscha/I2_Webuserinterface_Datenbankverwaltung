@@ -131,11 +131,13 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 | Partnerhochschulen anlegen | 10 | Zum Einfügen neuer Partnerhochschulen und der Verträge im Verwaltungsfrontend | Sommersemester 2023
 | Partnerhochschulen bearbeiten | 10 | Zum Verändern eines oder mehrerer bereits bestehenden Hochschulattribute im Verwaltungsfrontend |Sommersemester 2023
 | Partnerhochschulen löschen | 9 | Zum Entfernen einer Partnerhochschule oder derer Datenattribute im Verwaltungsfrontend | Sommersemester 2023
-| Erweiterte Infos | 7 | Anzeige detailierter Infos einzelner Universitäten | Sommersemester 2023
+| Erweiterte Infos | 7 | Anzeige detailierter Infos einzelner Universitäten sowie deren Ansprechpartner/E-Mails | Sommersemester 2023
 | Modifizieren von Bestandsdaten | 10 | Zum Bearbeiten einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
+| Löschen von Bestandsdaten | 9 | Zum Entfernen einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
 | Anzeige von Austauschstudenten | 7 | zur Ausgabe von Informationen über Austauschstudenten | Sommersemester 2023
 | Bearbeiten von Austauschstudenten | 8 | zur Pflege von Statistiken | Sommersemester 2023
 | Anzeige von Statistiken | 9 | zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
+| Exportieren von Statistiken | 6 | zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
 | Filterfunktion | 8 | aussortieren nicht gesuchter Einträge | Sommersemester 2023
 | Manuelle Suchfunktion | 7 | Ermögtlicht die manuelle Suche per Texteingabe | Sommersemester 2023
 |===
