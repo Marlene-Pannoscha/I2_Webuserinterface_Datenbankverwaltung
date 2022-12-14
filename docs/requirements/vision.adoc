@@ -85,11 +85,20 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| [Benennung des Stakeholder-Typs.]
-| [Kurze Beschreibung des Stakeholders.]
-| [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
-|===
+| Mitarbeiter der Stabstelle Internationales und Studentische Hilfskraft (SHK)
+| Mitarbeiter, die zuständig für die Verwaltung der Datenbank sind
+| Verwaltung des Webseiten-Frontends
+|Rechenzentrum der HTW
+|Mitarbeiter der HTW, die den Webserver bereitstellen und administrieren
+|Einbindung der Website in das System und Wartung bzw. Pflegung des Datenbanksystems
+|Austauschstudenten Incoming
+| Studierende einer Partnerhochschule, die sich für einen Aufenthalt an der HTW Dresden interessieren
+|Informieren sich über Austauschprogramme an der HTW über das Frontend
+|Austauschstudenten Outgoing
+|Studierende der HTW Dresden, die sich für einen Aufenthalt an einer Partnerhochschule interessieren
+|Informieren sich über Austauschprogramme an Partnerhochschulen über das Frontend
 
+|===
 === Benutzerumgebung
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
