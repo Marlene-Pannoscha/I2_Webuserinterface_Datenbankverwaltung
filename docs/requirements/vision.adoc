@@ -92,22 +92,21 @@ Beispiel Produkt:
 |===
 | Name | Beschreibung | Verantwortlichkeiten
 
-| [Benennung des Stakeholder-Typs.]
-| [Kurze Beschreibung des Stakeholders.]
-| [Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
-| Projektleitung - Management
-| 
-| - Koordinierung der Pläne, Erstellung von Zeitplänen,
- Ansprechpartner, für die Behebung von Problemen verantwortlich
-| Anwender 
-| Mitarbeiter der Stabstelle Internationales
-|
-| Eigentümer
-|
-|
-
+<<<<<<< HEAD
+| Mitarbeiter der Stabstelle Internationales und Studentische Hilfskraft (SHK)
+| Mitarbeiter, die zuständig für die Verwaltung der Datenbank sind
+| Verwaltung des Webseiten-Frontends
+|Rechenzentrum der HTW
+|Mitarbeiter der HTW, die den Webserver bereitstellen und administrieren
+|Einbindung der Website in das System und Wartung bzw. Pflegung des Datenbanksystems
+|Austauschstudenten Incoming
+| Studierende einer Partnerhochschule, die sich für einen Aufenthalt an der HTW Dresden interessieren
+|Informieren sich über Austauschprogramme an der HTW über das Frontend
+|Austauschstudenten Outgoing
+|Studierende der HTW Dresden, die sich für einen Aufenthalt an einer Partnerhochschule interessieren
+|Informieren sich über Austauschprogramme an Partnerhochschulen über das Frontend
+=======
 |===
-
 === Benutzerumgebung
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
@@ -134,11 +133,13 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 | Partnerhochschulen anlegen | 10 | Zum Einfügen neuer Partnerhochschulen und der Verträge im Verwaltungsfrontend | Sommersemester 2023
 | Partnerhochschulen bearbeiten | 10 | Zum Verändern eines oder mehrerer bereits bestehenden Hochschulattribute im Verwaltungsfrontend |Sommersemester 2023
 | Partnerhochschulen löschen | 9 | Zum Entfernen einer Partnerhochschule oder derer Datenattribute im Verwaltungsfrontend | Sommersemester 2023
-| Erweiterte Infos | 7 | Anzeige detailierter Infos einzelner Universitäten | Sommersemester 2023
+| Erweiterte Infos | 7 | Anzeige detailierter Infos einzelner Universitäten sowie deren Ansprechpartner/E-Mails | Sommersemester 2023
 | Modifizieren von Bestandsdaten | 10 | Zum Bearbeiten einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
+| Löschen von Bestandsdaten | 9 | Zum Entfernen einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
 | Anzeige von Austauschstudenten | 7 | zur Ausgabe von Informationen über Austauschstudenten | Sommersemester 2023
 | Bearbeiten von Austauschstudenten | 8 | zur Pflege von Statistiken | Sommersemester 2023
 | Anzeige von Statistiken | 9 | zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
+| Exportieren von Statistiken | 6 | zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
 | Filterfunktion | 8 | aussortieren nicht gesuchter Einträge | Sommersemester 2023
 | Manuelle Suchfunktion | 7 | Ermögtlicht die manuelle Suche per Texteingabe | Sommersemester 2023
 |===
