@@ -6,7 +6,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Das Projekt I2 Webuserinterface einer Datenbank einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen fesgehalten die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik sowie Produkt- und Lösungsansätze dargestellt unter dem Nutzen von Stakeholdern und essentiellen Anforderungen.
+Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen fesgehalten die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik sowie Produkt- und Lösungsansätze dargestellt unter dem Nutzen von Stakeholdern und essentiellen Anforderungen.
 Die Details, wie die Benutzeroberfläche diese Anforderungen erfüllt, werden in den Use-Cases und den systemweiten Anfoederungen geschildert.
 
 === Zweck
@@ -39,10 +39,10 @@ Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystem
 
 [cols="1,3"]
 |===
-| Das Problem | [der nicht mehr zeitgemäßen und umständlichen Bedienbarkeit des Datenbanksystems]
-| betrifft | [die Mitarbeiter des Akademischen Auslandsamtes, Studierende und Mitglieder der HTW Dresden, sowie interessierte Externe]
-| die Auswirkung davon ist | [ein erhöhter Zeit- und Arbeitsaufwand für die Mitarbeiter des Akademischen Auslandsamtes]
-| eine erfolgreiche Lösung wäre [ie Aktualisierung des Bestehenden Web-User-Interfaces, sowie eine Ergänzung von intuitiven Funktionen]
+| Das Problem | der nicht mehr zeitgemäßen und umständlichen Bedienbarkeit des Datenbanksystems
+| betrifft | die Mitarbeiter des Akademischen Auslandsamtes, Studierende und Mitglieder der HTW Dresden, sowie interessierte Externe
+| die Auswirkung davon ist | ein erhöhter Zeit- und Arbeitsaufwand für die Mitarbeiter des Akademischen Auslandsamtes
+| eine erfolgreiche Lösung wäre die Aktualisierung des Bestehenden Web-User-Interfaces, sowie eine Ergänzung von intuitiven Funktionen
 |===
 
 ////
