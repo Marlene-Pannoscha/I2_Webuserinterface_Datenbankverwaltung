@@ -17,14 +17,46 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 //Hinweise: Beschreiben Sie die Philosophie der Architektur, d.h. den zentralen Ansatz für ihre Architektur. Identifizieren Sie alle Aspekte, die die Philosophie beeinflussen, z.B. komplexe Auslieferung Aspekte, Anpassung von Altsystemen oder besondere Geschwindigkeitsanforderungen. Muss es besonders robust sein, um eine langfristige Wartung und Pflege zu ermöglichen?
 
 //Formulieren Sie eine Reihe von Zielen, die die Architektur in ihrer Struktur und ihrem Verhalten erfüllen muss. Identifizieren Sie kritische Fragen, die von der Architektur adressiert werden müssen, z.B. besondere Hardware-Abhängigkeiten, die vom Rest des Systems isoliert werden sollten oder Sicherstellung der Funktionsfähigkeit unter besonderen Bedingungen (z.B. Offline-Nutzung).
+Die Absicht der Systemarchitektur ist die Erweiterung der bisher bereitgestellten Webanwendung, welche die Organisation und Verwaltung der Hochschulpartnerschaften erleichtern soll. Den Nutzer/-innen soll (eine userfreundliche) Nutzung im Browser auf Rechnern (Laptop, Notebook, Desktop-Rechnern) gewährt werden, ausgeschlossen sind mobile Endgeräte.
+ 
+Die Erreichbarkeit des Systems beschränkt sich auf die Arbeitszeiten der Stabstelle Internationales, diese ((bezieht)) sich auf werktags 8h, 7-15 Uhr. Außerhalb der Zeit besteht keine Verpflichtung der Arbeitszeit.
+Die bisherige MariaDB und Access Datenbank werden als Datenbanken genutzt, diese werden vom Rechenzentrum bereitgestellt. Die bisherige Software setzt sinngemäß auf der MariaDB auf, jedoch bedarf es an Ergänzung bei der  Kommunikation zwischen den Inhalten und dem Frontend. Das Backend soll so erweitert werden, dass das Verwaltungsfrontend die Statistiken der Auslandsaktivitäten von Studierenden darstellt. 
 
 
 == Annahmen und Abhängigkeiten
 //[List the assumptions and dependencies that drive architectural decisions. This could include sensitive or critical areas, dependencies on legacy interfaces, the skill and experience of the team, the availability of important resources, and so forth]
 
+ 
+. Nutzer/-innen sind Mitarbeiter/-innen der Stabsstelle Internationales
+. Nutzer/-innen befinden sich, mit einer stabilen Internetverbindung mit genügend Bandbreite und einem modernen Browser, im Netz der HTW Dresden
+. Jede/r Nutzer/-innen benutzt einen HTML5-fähigen Browser und erlaubt JavaScript.
+. die eingesetzten Frameworks werden auch in Zukunft unterstützt
+. Wir gehen davon aus, dass die Server der Informatik Fakultät stabil laufen, um sicherzustellen, dass unser Online-Tool stets erreichbar ist.
+
+. Abhängigkeit vom Rechenzentrum der HTW
+.. Der von uns genutzte Server läuft über eine virtuelle Maschine, welche vom Rechenzentrum bereitgestellt wird, und muss in der Woche von 7-15 Uhr erreichbar sein
+.. Die Administration unserer Datenbank erfolgt über das Rechenzentrum, weswegen ein/e verantwortliche/r Mitarbeiter/-in die Verwaltung der Logins übernehmen muss 
+. Abhängigkeit von Vorkenntnissen der Teammitglieder
+.. Die Teammitglieder haben angeeignetes Wissen bezüglich der Webentwicklung mittels Python, Html sowie JavaScript (jQuery)
+. Abhängigkeit von Einsatzbereitschaft und Instandhaltung der genutzten Frameworks sowie externen Komponenten
+.. Die eingesetzten Frameworks (Flask, JQuery) müssen vom Hersteller, um deren Funktionen einwandfrei nutzen zu können, regelmäßig gewartet werden.
 
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
+
+*Funktional*
+ 
+* SWFA-1: Das System muss jegliche Daten bezüglich den Hochschulpartnerschaften speichern
+* SWFA-2: Zugriff auf das Verwaltungsfrontend dürfen lediglich autorisierte Mitarbeiter/-innen der Stabstelle Internationales haben. 
+
+*Zuverlässigkeit*
+
+* NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen. (Multi-User-System)
+ 
+* NFAR-1: Beim Abruf eines vorherigen Zustandes der Datenbank, muss das Verwaltungsfrontend weiterhin funktionieren.
+* NFAR-2: Es besteht die Möglichkeit, dass Verwaltungs- und Informationsfrontend gleichzeitig Daten abrufen können.
+//...
+
 
 
 == Entscheidungen, Nebenbedingungen und Begründungen
