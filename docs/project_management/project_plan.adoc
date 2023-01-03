@@ -1,5 +1,26 @@
 = Projektplan: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+
+Max Listner
+<email@domain.org>;
+
+Alessandra Ruff
+<alessandra.ruff@stud.htw-dresden.de>;
+
+Eichler Dilara
+<dilara.eichler@stud.htw-dresden.de>;
+
+Kevin Freund
+<kevin.freund@stud.htw-dresden.de>;
+
+Robert Alexander Pfund
+<robertalexander.pfund@stud.htw-dresden.de>;
+
+Karl Gustav Langer
+<karlgustav.langer@stud.htw-dresden.de>;
+
+Marlene Pannoscha
+<marlene.pannoscha@stud.htw-dresden.de>;
+
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -8,9 +29,84 @@ include::../_includes/default-attributes.inc.adoc[]
 == Einführung
 //Briefly describe the content of the project plan.
 
+Der Projektplan stellt die Grundlage für das Projekt dar. Das Team ist in der Lage sich die einzelnen Punkten als Orientierung zu nutzen und somit eine strukturierte Arbeitsweise aufzubauen.
+
+//auftreten Unklahrheiten bietet der Projektplan ein Hilfestellung um diese zu lösen
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
+Das Team SE-Projekt-I2 besteht aus insgesamt sieben Studierenden aus den Studiengängen Wirtschaftsinformatik und Wirtschaftswissenschaften.
+
+Die Rollen wurden von den Studierenden wie folgt eingenommen:
+
+[.landscape]
+
+<<<
+
+[%header, cols="2,1,3,2"]
+|===
+| Rolle
+| Team-Mitglied
+| Beschreibung der Aufgabe
+| Artefakte
+
+| Teamleitung
+a|
+* Max Listner
+* Marlene Pannoscha
+a|
+* Leitung des Projektes
+* Kommunikation/Schnittstelle mit Auftraggeber, Coach, Stakeholder und Gruppe
+* Planung der Iterationsschritte
+* Kontrolle des Projektvortschrittes
+a|
+* Proketplan
+* Iterationplan
+* Vision
+//ergänzen
+
+|Analyse
+a|
+* Max Listner
+* Kevin Freund
+* Marlene Pannoscha
+a|
+* Erfassen und genaue Beschreibung von Kundenwüschen- und Anforderungen
+* Probleme identifizieren
+* Prioritäten festlegen
+a|
+* Glossary
+* System-Wide Requirements
+* Use Case Model
+* Domänenmodel
+
+
+|Entwurf
+a|
+* Rober Alexander Pfund
+* Karl Gustav Langer
+* Dilara Eichler
+|
+|
+|Implementierung
+a|
+* Karl Gustav Langer
+* Alessandra Ruff
+* Kevin Freund
+* Dilara Eichler
+|
+a|
+* Architektur Notebook
+
+|Testen
+a|
+* Karl Gustav Langer
+* Alessandra Ruff
+|
+a|
+* Test Cases
+|===
+
 
 
 == Praktiken und Bewertung
