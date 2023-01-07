@@ -13,11 +13,12 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |===
 | Begriff | Definition und Erläuterung | Synonyme
 
-| Stabstelle Internationales  | Teil der Organisation der HTW Dresden | -
+| Stabstelle Internationales  | Organisationsteam der HTW Dresden, dass sich der Internationalisierungsaufgabe stellt und internationale Beziehungen pflegt | -
 | Fakultät | eine Gruppe zusammengehörender Wissenschaften oder Wissenschaftsgebiete umfassende Abteilung als Lehr- und Verwaltungseinheit einer Universität oder Hochschule | -
 | Mitarbeiter-/in | Person, die für die Stabsstelle Internationales arbeitet | -
 | Partnerschaft | ein Vertrag zwischen der HTW Dresden und einer ausländischen Hochschule | Partnerschaftsvertrag, Hochschulparnerschaft
-| Kontaktperson | Ansprechpartner der entsprechenden Partnerhochschule | xx
+| Kontaktperson | Ansprechpartner der entsprechenden Partnerhochschule | Ansprechpartner/-in
+| Graphical User Interface | ein Computerprogramm, mit dem eine Person mithilfe von Symbolen, visuellen Metaphern und Zeigegeräten mit einem Computer kommunizieren kann | User-Interface
 |===
 
 
@@ -27,10 +28,10 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Abkürzung | Bedeutung | Erläuterung
 
 | HTW | Hochschule | Hochschule für Technik und Wirtschaft Dresden
-| SI | Stabsstelle Internationales | Organisationsteam, dass sich der Internationalisierungsaufgabe stellt und internationale Beziehungen pflegt
+| SI | Stabsstelle Internationales | -
 | HTW | Hochschule | Hochschule für Technik und Wirtschaft Dresden
 | DB | Datenbank | System zur Beschreibung, Speicherung und zum Abrufen von großen Datenmengen
-| GUI | Graphical User Interface | ein Computerprogramm, mit dem eine Person mithilfe von Symbolen, visuellen Metaphern und Zeigegeräten mit einem Computer kommunizieren kann
+| GUI | Graphical User Interface | -
 | VM | virtuelle Maschine | virtuelle Computer, die dieselben Funktionen wie physische Rechner bieten
 | UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
 |===
