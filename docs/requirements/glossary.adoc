@@ -29,7 +29,6 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 
 | HTW | Hochschule | Hochschule für Technik und Wirtschaft Dresden
 | SI | Stabsstelle Internationales | -
-| HTW | Hochschule | Hochschule für Technik und Wirtschaft Dresden
 | DB | Datenbank | System zur Beschreibung, Speicherung und zum Abrufen von großen Datenmengen
 | GUI | Graphical User Interface | -
 | VM | virtuelle Maschine | virtuelle Computer, die dieselben Funktionen wie physische Rechner bieten
