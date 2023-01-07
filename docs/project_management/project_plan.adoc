@@ -35,7 +35,7 @@ Der Projektplan stellt die Grundlage für das Projekt dar. Das Team ist in der L
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
-Das Team SE-Projekt-I2 besteht aus insgesamt sieben Studierenden aus den Studiengängen Wirtschaftsinformatik und Wirtschaftswissenschaften.
+Das Team SE-Projekt-I2 besteht aus insgesamt sieben Studierenden aus den Studiengängen Wirtschaftsinformatik und Wirtschaftsingenieurswesen.
 
 Die Rollen wurden von den Studierenden wie folgt eingenommen:
 
@@ -111,7 +111,11 @@ a|
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+Zur Dokumentation dieses Projektes nutzen wir ein GitHub-Repository. Die entsprechenden Dokumente werden mit Visual Studio Code erstellt, bearbeitet und dann ins Repository gepusht bzw. von dort aus gepullt.
 
+Um unser Projekt erfolgreich durchzuführen, nutzen wir den Open Unified Process (OpenUP). Aufgaben werden hierbei in Iterationen bearbeitet, welche jeweils 2 bis 3 Wochen andauern. Die zu erldeigenden Aufgaben werden als Issues festgehalten und dem jeweiligen Gruppenmitglied zugewiesen.
+
+Zur Kommunikation wurde größenteils Discord, sowie WhatsApp und Mail benutzt. Dokumente wurden entweder über Discord, oder über GitHub geteilt. Wir haben versucht, unsere Meetings immer in präsenz durchzuführen, was uns mit der Stabsstelle Internationales auch gelungen ist.
 
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
@@ -125,24 +129,40 @@ a|
 | Target velocity
 
 | I1
-|
-* Mitigate Risk1
-* Develop Use Case 3, Scenario 2
-| Date from/Date to
-| 15
+| Analyse des bestehenden Systems
+* mit bestehendem System vertraut machen
+* Beginnen mit Vision
+* Beginnen mit Glossar und Risikoliste
+| 27.11.2022 - 11.12.2022
+| 5
 
 | I2
-|
-* Mitigate Risk 2
-* Develop Use Case 1, Scenario 2
-| Date from/Date to
-| 16
+| Funktions- und Anforderungsanalyse
+* festhalten der Hauptanforderungen an das GUI
+* erstellen der wichtigsten UseCases
+* erstellen von Wireframes und UML-Diagrammen
+* ergänzen von Vision, Glossar und Risiokoliste 
+| 11.12.2022-25.12.2022
+| 6
+
+| I3
+|Implementierung
+* erstellen eines Systementwurfes
+* die wichtigsten Funktionen werden implementiert
+| 1.01.2023 - 15.01.2023
+| 7
 |===
 
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
+Das System wird auf einer vom Rechenzentrum zur Verfügung gestellten virtuellen Maschine betrieben.
 
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+Wir haben während des Semesters gelernt, dass eine offene, schnelle, sowie ehrliche Kommunikation, sowohl mit dem Kunden als auch im Team, der Schlüssel für ein erfolgreiches Projekt sind. Fehler bzw. Probleme sollten so schnell wie möglich kommuniziert werden, um eine gleichmäßig schnelle Lösung zu finden. Durch Kommunikation wird ein besseres Verständniss des Aufgabenbereiches, sowie eine klare Abfolge von Aufgaben / Aktionen erreicht.
+
+Ein weiterer Punkt ist Zeitmanagement. Durch das Vorrausplanen von Meetings und bevorstehenden Aufgaben, lassen sich diese viel einfacher und effizienter bearbeiten, ohne dabei in Zeitdruck zu geraten oder vor einem Abschnitt zu stehen, in dem nicht klar ist, was getan werden muss.
+
+Auch die Arbeit mit dem OpenUP haben, welche Anfangs als umständlich angesehen wurde, wurde während des Projektes verstanden. Dieser hilft nicht nur, Aufgaben zu organisieren und Dokumente anzulegen, sondern auch bei der Organisation des Projektes im Allgemeinen. Durch die Dokumentation nach dem OpenUP wird sichergegangen, dass keine Informationen verloren gehen, sowie dass man den Überblick über zu erledigende Aufgaben behält.
