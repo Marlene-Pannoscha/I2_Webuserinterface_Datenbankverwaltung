@@ -1,7 +1,7 @@
 // --- 1. Projektthema -------------------------
-= SE I - Belegabgabe: {project-name}
+= SE I - Belegabgabe: {I2_Webuserinterface_für_Datenbankverwaltung}
 // --- 2. Teammitglieder -----------------------
-Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>
+Max Listner <max.listner@htw-dresden.de>;Marlene Pannoscha <marlene.pannoscha@htw-dresden.de>; Alessandra Ruff <alessandra.ruff@htw-dresden.de>; Dilara Eichler   <dilara.eichler@htw-dresden.de>; Kevin Freund kevin.freund@htw-dresden.de>; Robert Alexander Pfund <robertalexander.pfund@htw-dresden.de>; Karl Gustav Langer <karlgustav.langer@htw-dresden.de>
 // --- 3. Abgabedatum --------------------------
 01. Januar 2020
 // ---------------------------------------------

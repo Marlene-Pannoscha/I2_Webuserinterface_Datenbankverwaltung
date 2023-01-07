@@ -1,12 +1,12 @@
 = Projektplan: {project-name}
 
 Max Listner
-<email@domain.org>;
+<max.listner@htw-dresden.de>;
 
 Alessandra Ruff
 <alessandra.ruff@stud.htw-dresden.de>;
 
-Eichler Dilara
+Dilara Eichler
 <dilara.eichler@stud.htw-dresden.de>;
 
 Kevin Freund
@@ -21,9 +21,6 @@ Karl Gustav Langer
 Marlene Pannoscha
 <marlene.pannoscha@stud.htw-dresden.de>;
 
-{localdatetime}
-include::../_includes/default-attributes.inc.adoc[]
-// Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
