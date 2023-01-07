@@ -12,8 +12,12 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 | Begriff | Definition und Erläuterung | Synonyme
-//| Kommissionierung | Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags | (keine)
-| xx | xx | xx
+
+| Stabstelle Internationales  | Teil der Organisation der HTW Dresden | -
+| Fakultät | eine Gruppe zusammengehörender Wissenschaften oder Wissenschaftsgebiete umfassende Abteilung als Lehr- und Verwaltungseinheit einer Universität oder Hochschule | -
+| Mitarbeiter-/in | Person, die für die Stabsstelle Internationales arbeitet | -
+| Partnerschaft | ein Vertrag zwischen der HTW Dresden und einer ausländischen Hochschule | Partnerschaftsvertrag, Hochschulparnerschaft
+| Kontaktperson | Ansprechpartner der entsprechenden Partnerhochschule | xx
 |===
 
 
@@ -21,8 +25,14 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 | Abkürzung | Bedeutung | Erläuterung
-//| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
-| xx | xx | xx
+
+| HTW | Hochschule | Hochschule für Technik und Wirtschaft Dresden
+| SI | Stabsstelle Internationales | Organisationsteam, dass sich der Internationalisierungsaufgabe stellt und internationale Beziehungen pflegt
+| HTW | Hochschule | Hochschule für Technik und Wirtschaft Dresden
+| DB | Datenbank | System zur Beschreibung, Speicherung und zum Abrufen von großen Datenmengen
+| GUI | Graphical User Interface | ein Computerprogramm, mit dem eine Person mithilfe von Symbolen, visuellen Metaphern und Zeigegeräten mit einem Computer kommunizieren kann
+| VM | virtuelle Maschine | virtuelle Computer, die dieselben Funktionen wie physische Rechner bieten
+| UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
 |===
 
 == Verzeichnis der Datenstrukturen
