@@ -11,21 +11,20 @@ include::../_includes/default-attributes.inc.adoc[]
 [%header, cols="3,1"]
 |===
 | Meilenstein | Datum
-
-| Beginn der Iteration | -
-| ... | -
-| Ende der Iteration | -
+awf
+| Beginn der Iteration | 27.11.2022
+| Erstes Meeting mit dem Kunden | 01.12.2022
+| Ende der Iteration | 11.12.2022
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-Beispiele:
-
-* Beheben der Usability-Probleme, die von Abteilung X berichtet wurden
-* Ausliefern der Hauptszenarios, die die Integration mit System Y zeigen
-* Present a technical demonstration (demo).
+* festlegen der Rollenverteilung im Team
+* erstes Zusammenkommen mit dem Kunden
+* verstehen des bestehenden Systems
+* Beginn mit Arbeit an Vision, Glossar und Risklist
 
 
 == Aufgabenzuordnung
@@ -38,7 +37,15 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| x | x | x | x | x | x | x | x | x
+| Meeting mit SI organisieren | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,25 | /
+| Beantragen einer virtuellen Maschine | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,25 | /
+| Identifizierung wichtiger UseCases | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 1 | /
+| Identifizierung wichtiger Stakeholder | hoch | 6 | abgeschlossen | / | 1 | Allesandra Ruff | 1 | /
+| erste Bearbeitung des Projektplans | mittel | 6 | abgeschlossen | Projektplan | 1 | Marlene Pannoscha | 1 | /
+| erste Bearbeitung des Glossars | mittel | 4 | abgeschlossen | Glossar | 1 | Max Listner | 0,5 | /
+| erste Bearbeitung der Risklsit | mittel | 4 | abgeschlossen | Risklist | 1 | Karl Gustav Langer | 0,5 | /
+
+
 |===
 
 
@@ -49,18 +56,17 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-| x | x | x
+| Problem bei der Terminabsprache mit der SI | gelöst | Die SI hat auf die erste Mail des Teamleiters nicht reagiert, weswegen das projekt erst verzögert starten konnte, Nach erneuter Anfrage konnte das Problem gelöst werden.
+| Fehlende Kenntnisse zu Web-Programming | gelöst | In unserem Team hatte kein Mitglied siginifikante Web-Programmning-Kenntnisse. Diese wurden und werden durch Tutorials aufgebaut.
 |===
 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-Beispiele:
-
-* 97% der Testfälle auf Systemebene sind erfolgreich.
-* Gemeinsame Inspektion des Iterations-Ergebnisses (Inkrement) mit den Abteilungen X und Y ergibt positive Rückmeldung.
-* Technische Präsentation / Demo erhält positive Rückmeldungen.
+* ersichtbarer Fortschritt in der Dokumentation
+* Termineinhaltung
+* Rückmeldung bei Unklarheiten (im Team)
 
 
 == Assessment
@@ -68,22 +74,28 @@ Beispiele:
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+| Assessment Ziel | Projektfortschritt
 
-| Assessment Datum | ...
-| Teilnehmer | ...
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Assessment Datum | 11.12.2022
+| Teilnehmer | Team I2
+| Projektstatus	| Ziele wurden eingehalten, die weiterführende Dokumentation erfolgt in der nächsten Iteration
 |===
 
 * Beurteilung im Vergleich zu den Zielen
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+** Vision, Projekltplan, Glossar und Risklist müssen weiter ergänzt werden
+** die wichtigsten Anforderungen an das System müssen genauer abgesprochen werden
 
 * Geplante vs. erledigte Aufgaben
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+** Aufgaben wurden bearbeitet, es kann mit der nächsten Iteration fortgefahren werden
+
 
 * Beurteilung im Vergleich zu den Bewertungskriterien
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+** Termine wurden eingehalten, Unklarheiten wurden geklärt
+** ein deutlicher Dokumentationsfortschritt lässt sich erkennen
 
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
