@@ -26,7 +26,6 @@ awf
 * Erstellen von Wireframes
 * Erstellen von UML-Diagrammen
 * Ergänzen der Vision, Risklist und des Glossars
-* genaue Abprache der Anforderungen mit der SI
 * Analyse des Datenbanksystems
 
 
