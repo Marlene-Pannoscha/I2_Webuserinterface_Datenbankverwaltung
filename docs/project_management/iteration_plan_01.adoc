@@ -21,10 +21,10 @@ awf
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* festlegen der Rollenverteilung im Team
-* erstes Zusammenkommen mit dem Kunden
-* verstehen des bestehenden Systems
-* Beginn mit Arbeit an Vision, Glossar und Risklist
+* Festlegen der Rollenverteilung im Team
+* erstes Meeting mit dem Kunden
+* Verstehen des bestehenden Systems
+* Beginn mit Arbeit an Vision, Projektplan, Glossar und Risklist
 
 
 == Aufgabenzuordnung
@@ -56,7 +56,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-| Problem bei der Terminabsprache mit der SI | gelöst | Die SI hat auf die erste Mail des Teamleiters nicht reagiert, weswegen das projekt erst verzögert starten konnte, Nach erneuter Anfrage konnte das Problem gelöst werden.
+| Problem bei der Terminabsprache mit der SI | gelöst | Die SI hat auf die erste Mail des Teamleiters nicht reagiert, weswegen das Projekt erst verzögert starten konnte. Nach erneuter Anfrage konnte das Problem gelöst werden.
 | Fehlende Kenntnisse zu Web-Programming | gelöst | In unserem Team hatte kein Mitglied siginifikante Web-Programmning-Kenntnisse. Diese wurden und werden durch Tutorials aufgebaut.
 |===
 
@@ -99,3 +99,4 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+** keine
