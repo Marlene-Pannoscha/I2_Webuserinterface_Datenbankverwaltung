@@ -1,3 +1,7 @@
+:imagesdir: images
+:diagramsdir: diagrams
+:plantumlsdir: plantuml
+
 = Use-Case Model: {project-name}
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
@@ -11,12 +15,27 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: ...
-* *UC02*: ...
+* <<_uc1_filtern_nach_fakultät_und_partnerschaft>>
+* <<_uc2_logout>>
+* <<_uc3_suchleiste>>
+
+=== *UC01*: Filtern nach Fakultät und Partnerschaft
+include::use_case_01.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+image::use_case_filtern.png[]
+
+=== *UC02*: LogOut
+include::use_case_02.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+image::use_case_logot.png[]
+
+
+=== *UC03*: Suchleiste
+include::use_case_03.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+image::use_case_suchleiste[]
 
 
 == Use Case Diagramm
-// ...
+image::use_case_modell.png[]
+
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.
@@ -29,6 +48,7 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 
 <<<
 include::use_case_01.inc.adoc[]
+
 
 <<<
 include::use_case_01.inc.adoc[]
