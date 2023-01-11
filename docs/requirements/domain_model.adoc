@@ -10,4 +10,4 @@ Platzhalter für weitere Dokumenten-Attribute
 
 
 == Domänenmodel
-image::domain_model.jpg[]
+image::domain_model.png[]
