@@ -25,7 +25,7 @@ image::use_case_filtern.png[]
 
 === *UC02*: LogOut
 include::use_case_02.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
-image::use_case_logot.png[]
+image::use_case_logout.png[]
 
 
 === *UC03*: Suchleiste
