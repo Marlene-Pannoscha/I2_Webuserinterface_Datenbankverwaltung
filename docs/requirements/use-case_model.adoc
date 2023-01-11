@@ -21,15 +21,18 @@ include::../_includes/default-attributes.inc.adoc[]
 
 === *UC01*: Filtern nach Fakultät und Partnerschaft
 include::use_case_01.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+
 image::use_case_filtern.png[]
 
 === *UC02*: LogOut
 include::use_case_02.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+
 image::use_case_logout.png[]
 
 
 === *UC03*: Suchleiste
 include::use_case_03.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+
 image::use_case_suchleiste.png[]
 
 
