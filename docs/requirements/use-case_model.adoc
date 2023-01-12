@@ -24,6 +24,10 @@ include::use_case_01.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 image::use_case_filtern.png[]
 
+image::wf_Mainpage_v1.png[]
+image::wf_mainpage_v2_inst.png[]
+image::wf_mainpage_v2_vertrag.png[]
+
 === *UC02*: LogOut
 include::use_case_02.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
 
