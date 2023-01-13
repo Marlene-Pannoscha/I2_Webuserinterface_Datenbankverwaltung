@@ -1,5 +1,5 @@
 = System-Wide Requirements: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Max Listner <max.listner@htw-dresden.de>;Marlene Pannoscha <marlene.pannoscha@htw-dresden.de>; Alessandra Ruff <alessandra.ruff@htw-dresden.de>; Dilara Eichler   <dilara.eichler@htw-dresden.de>; Kevin Freund <kevin.freund@htw-dresden.de>; Robert Alexander Pfund <robertalexander.pfund@htw-dresden.de>; Karl Gustav Langer <karlgustav.langer@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute

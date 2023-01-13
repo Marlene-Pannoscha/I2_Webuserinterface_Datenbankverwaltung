@@ -51,10 +51,10 @@ Die bisherige MariaDB und Access Datenbank werden als Datenbanken genutzt, diese
 
 *Zuverlässigkeit*
 
-* NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen. (Multi-User-System)
- 
 * NFAR-1: Beim Abruf eines vorherigen Zustandes der Datenbank, muss das Verwaltungsfrontend weiterhin funktionieren.
 * NFAR-2: Es besteht die Möglichkeit, dass Verwaltungs- und Informationsfrontend gleichzeitig Daten abrufen können.
+* NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen. (Multi-User-System)
+ 
 //...
 
 
@@ -67,7 +67,7 @@ Die bisherige MariaDB und Access Datenbank werden als Datenbanken genutzt, diese
 
 
 == Architekturmechanismen
-https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html[Doku "Concept: Architectural Mechanism"]
+//https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html[Doku "Concept: Architectural Mechanism"]
 //[List the architectural mechanisms and describe the current state of each one. Initially, each mechanism may be only name and a brief description. They will evolve until the mechanism is a collaboration or pattern that can be directly applied to some aspect of the design.]
 
 //Beispiele: relationales DBMS, Messaging-Dienste, Transaktionsserver, Webserver, Publish-Subscribe Mechanismus
@@ -87,6 +87,7 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 
 
 == Architektursichten (Views)
+//C4 Modell
 //[Describe the architectural views that you will use to describe the software architecture. This illustrates the different perspectives that you will make available to review and to document architectural decisions.]
 
 Folgende Sichten werden empfohlen:
