@@ -5,7 +5,6 @@ from flask import Flask, make_response, render_template, request, session, url_f
     flash  # Flask: https://flask.palletsprojects.com/en/2.0.x/quickstart/
 from flask_wtf import CSRFProtect
 from werkzeug.utils import redirect
-from selenium import webdriver
 import json
 import os # OS module in Python: https://www.geeksforgeeks.org/os-module-python-examples/
 import Login, Querries, helper
