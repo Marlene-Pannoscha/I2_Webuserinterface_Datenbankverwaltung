@@ -17,6 +17,10 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+* SWFA-1: Das System muss jegliche Daten bezüglich den Hochschulpartnerschaften speichern
+** Zur Überprüfung wird die Seite nach dem Speichern neu geladen.
+* SWFA-2: Zugriff auf das Verwaltungsfrontend dürfen lediglich autorisierte Mitarbeiter/-innen der Stabstelle Internationales haben. 
+** Zur Überprüfung wird versucht das Verwaltungsfrontend außer des HTW-Netzes zu öffnen sowie sich anzumelden mit falschen Login-Daten.
 
 
 == Qualitätsanforderungen für das Gesamtsystem
@@ -24,12 +28,27 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+* NFAU-1: Das System sollte benutzerfreundlich formatiert und bedienbar sein, für kleine als auch größere PC-Monitore.
+** Zur Überprüfung werden PC-Monitore verschiedenster Größen bedient.
+* NFAU-2: Das Verwaltungsfrontend sollte auf verschiedenen Betriebssystemen mit unterschiedlichen Browsern laufen.
+** Zur Überprüfung wird das Verwaltungsfrontend auf Rechner mit den gängigen Betriebssystemen und deren Browsern aufgerufen.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+* NFAR-1: Beim Abruf eines vorherigen Zustandes der Datenbank, muss das Verwaltungsfrontend weiterhin funktionieren.
+** Zur Überprüfung werden Backups der Datenbank hochgeladen.
+* NFAR-2: Es besteht die Möglichkeit, dass Verwaltungs- und Informationsfrontend gleichzeitig Daten abrufen können.
+** Zur Überprüfung wird an einem Rechner, im Verwaltungsfrontend, ein bestehender Datensatz modifiziert, während parallel an einem anderem Rechner, im Informationsfrontend, dieser angesehen.
+* NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen. (Multi-User-System)
+** Zur Überprüfung werden jewerils zwei verschiedene Login-sessions laufen, um einerseits einen Datensatz zu lesen und andererseits parallel dazu einen Datensatz zu schreiben.
+
 
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+* NFAP-1: Das Wechseln von Seiten innerhalb des Verwaltungsforntends sollte innerhalb von maximal 3 Sekunden stattfinden.
+** Zur Überprüfung werden Seitenaufrufe per Skript simuliert und dabei auf deren Antwortzeit gemessen.
+* NFAP-2: Datenbankrelevante Funktionen sollten möglichst schnell, maximal 2 Sekunden, ausführbar sein.
+** Zur Überprüfung werden Funktionen per SQL-Befehle ausgeführt und dabei auf deren Ausführungszeit gemessen.
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
