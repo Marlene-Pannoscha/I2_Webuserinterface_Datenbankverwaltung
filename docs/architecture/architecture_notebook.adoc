@@ -55,7 +55,16 @@ Die bisherige MariaDB und Access Datenbank werden als Datenbanken genutzt, diese
 * NFAR-2: Es besteht die Möglichkeit, dass Verwaltungs- und Informationsfrontend gleichzeitig Daten abrufen können.
 * NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen. (Multi-User-System)
  
-//...
+*Effizienz (Performance)*
+
+* NFAP-1: Das Wechseln von Seiten innerhalb des Verwaltungsforntends sollte innerhalb von maximal 3 Sekunden stattfinden.
+* NFAP-2: Datenbankrelevante Funktionen sollten möglichst schnell, maximal 2 Sekunden, ausführbar sein.
+* Erweiterbarkeit der Systemfunktionalität
+
+*Benutzbarkeit*
+
+* NFAU-1: Das System sollte benutzerfreundlich formatiert und bedienbar sein, für kleine als auch größere PC-Bildschirme.
+* NFAU-2: Das Verwaltungsfrontend sollte auf verschiedenen Betriebssystemen mit unterschiedlichen Browsern laufen.
 
 
 
