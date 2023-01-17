@@ -9,7 +9,6 @@ import json
 import os # OS module in Python: https://www.geeksforgeeks.org/os-module-python-examples/
 import Login, Querries, helper
 
-
 app = Flask(__name__) # Spezialvariable '__name__': https://www.pythontutorial.net/python-basics/python-__name__/#:~:text=The%20__name__%20is,file%20associated%20with%20the%20module.
 app.secret_key = os.urandom(24)
 
