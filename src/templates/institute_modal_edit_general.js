@@ -2,6 +2,7 @@
  *  Wird der Button gedrückt merkt sich die Funktion die ID der Zeile in der sich die Hochschule in der Tabelle befindet
  *  und ruft die Funktionenn loadAgreements() und loadModal() mit dieser ID auf.
  */
+
 function addButtonEvent() {
     $(".edit_inst_btn").on('click', function () {
         let institute_row = $(this).parent().parent(); // speichere die Zeile in der sich der gedrückte Button befindet
@@ -9,7 +10,6 @@ function addButtonEvent() {
         let id = first_column[0].innerHTML; // get ID of institute
         loadAgreements(id);
         loadModal(id);
-        setBlur();
     });
     $('.del-institute').on('click', (e) => {
         let tgt = e.currentTarget;
@@ -17,7 +17,17 @@ function addButtonEvent() {
         deletion(id, "institute");
     });
 }
-
+function makeRowClickable(rowID, type) {    //for every single row, easier to create eventListener for new added agreement
+    if (type === 'agreement') {
+        $(' #'+rowID).on('click', (e) => {
+            let row = e.target.parentElement;
+            let rowID = row['id']; //get ID of mob_agreement that was clicked
+            insertAgreementInformation(rowID);
+            insertRestriction();
+            addNewAgreement();
+        });
+    }
+}
 /** Wird der Bearbeiten Button in der Zeile einer Hochschule gedrückt, werden die Daten des ausgewählten Instituts 
  * aus der Datenbank in das Modal 'Hochschule bearbeiten' geladen und angezeigt
  */ 
@@ -344,7 +354,7 @@ function postData(data, url) {
         data: data,
         method: 'POST',
         url: url
-    })
+    })      
         .done(answer => {
             return answer;
         });

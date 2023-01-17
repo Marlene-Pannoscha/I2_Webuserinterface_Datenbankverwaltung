@@ -69,6 +69,7 @@ function insertInstitutes(data) {
         else {
             x = 'Ja'
         }
+        
         if (sort === "a") {
             $('#addItems').append("<tr><th style=\"display:none;\">" + now['id'] + "</th><th >" + now['name'] + "</th><th >" + x + "</th><th >" + now['agreements'] + "</th><th ><button type=\"button\" class=\"btn btn-sm btn-light edit_inst_btn\" >Bearbeiten</button></th><th><button class='btn btn-sm btn-light del-institute btn-delete' style='display: " + style + "'>Del</button></th></tr>");
         }

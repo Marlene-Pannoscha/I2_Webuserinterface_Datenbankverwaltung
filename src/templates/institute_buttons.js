@@ -43,7 +43,7 @@ function modalEvents(){
     // MODAL: HOCHSCHULE BEARBEITEN -> ANSICHT WECHSELN BUTTONS
     // Funktionalität des Buttons erlaubt Wechseln zwischen den
     // Bearbeiten der Hochschule und der dazugehörige Partnerschaften
-    $('#next').on('click', () => {
+    /*$('#next').on('click', () => {
         $('#first_slide').hide();
         $('#second_slide').show();
     });
@@ -52,12 +52,12 @@ function modalEvents(){
          $('#second_slide').hide();
     });
 
-    // CLEAR INPUT WHEN CLOSING MODAL
+     CLEAR INPUT WHEN CLOSING MODAL
     $('.close_modal_edit').on('click', function(event, modal) {
         console.log("institute_button.js Z.47");
         $('.clear-form').trigger('reset');
         $('#mod_add_inst_save_btn').attr('disabled', "true");
-    });
+    });*/
 }
 
 
@@ -133,7 +133,7 @@ function instituteButtonEvents() {
     // MODAL: HOCHSCHULE BEARBEITEN -> ABBRECHEN / X BUTTON
     $(' .close_modal_edit').on('click', function (){
         $('#first_slide').show();
-        $('#second_slide').hide();
+        $('#second_slide').show();
         $('#addAgreements').empty();
         $('#modal_edit').toggle();
         $('#input-new-restriction').attr('style', 'display: none;');

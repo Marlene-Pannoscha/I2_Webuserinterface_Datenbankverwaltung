@@ -72,7 +72,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -297,6 +297,7 @@ svg {
 }
 
 table {
+  left: 100px;
   caption-side: bottom;
   border-collapse: collapse;
 }
@@ -323,6 +324,7 @@ th {
   border-style: solid;
   border-width: 0;
   font-weight: initial;
+  
 }
 
 label {
@@ -5424,7 +5426,8 @@ textarea.form-control-lg {
 
 .modal-dialog {
   position: relative;
-  width: auto;
+  width:   500px;
+  height: 500px;;
   margin: 0.5rem;
   pointer-events: none;
 }
@@ -5457,7 +5460,7 @@ textarea.form-control-lg {
 
 .modal-dialog-centered {
   display: flex;
-  align-items: center;
+  align-items: left;
   min-height: calc(100% - 1rem);
 }
 
@@ -11224,7 +11227,7 @@ textarea.form-control-lg {
   display: flex;
 }
 
-.column {
-  flex: 50%;
-}
 /*# sourceMappingURL=bootstrap.css.map */
+.column-left{ float: left; width: 20%; }
+.column-right{ float: right; width: 40%; }
+.column-center{ display: inline-block; width: 40%; }

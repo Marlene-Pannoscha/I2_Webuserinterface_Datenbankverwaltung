@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,8 +115,8 @@
 
 
         <!-- Tabelle für die Partnerhochschulen -->
-        <div id="tbl" style = "width: 50%;">
-            <table class="table table-hover font-weight-unset">
+        <div id="tbl" style = "width: 60%;">
+            <table class="table table-hover font-weight-unset column-left">
                 <col style="width:30%">
 	            <col style="width:10%">
 	            <col style="width:5%">
@@ -122,8 +124,8 @@
                 <thead>
                     <tr>
                         <th>Hochschule</th>
-                        <th>Anzeige</th>
-                        <th>Verträge</th>
+                        <th></th>
+                        <th></th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -135,207 +137,216 @@
                 document.addEventListener('click', function) loadmodal(); -->
             </div>
     </div>
-    
 </div>
 
 <!-- MODAL ZUM HOCHSCHULE BEARBEITEN -->
-<div class="modal" id="modal_edit">
-    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalToggleLabel">Hochschule Bearbeitungsansicht</h2>
-                <button type="button" class="btn-close close_modal_edit" id="close_edit_trigger" ></button>
-            </div>
-            <div class="modal-body">
-                <!-- Hochschulinfo anzeigen -->
-                <div id="first_slide" onchange="instituteObjectUpdated()">
-                    <div class="text-center p-3">
-                        <button id="next" class="btn btn-outline-dark w-100"> Partnerschaften </button>
-                    </div>
-                    <div class="row p-3">
-                        <h3>Hochschule</h3>
-                        <div class="col-sm pt-1">
-                        <form class="clear-form" id="edit_left_col">
-                            <h3>Allgemeine Information</h3>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_country">Land</label>
-                                <select class="filter_country form-select" id="edit_mod_country" name="edit_fil_country">
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_modal_eng">Englische Bezeichnung</label>
-                                <input class="form-control" type="text" id="edit_modal_eng" name="eng">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_modal_local">Lokale Bezeichnung</label>
-                                <input class="form-control" type="text" id="edit_modal_local" name="local">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_modal_adr">Adresse</label>
-                                <input class="form-control" type="text" id="edit_modal_adr" name="adress">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_modal_ws">Website</label>
-                                <input class="form-control" type="text" id="edit_modal_ws" name="website">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_modal_ntzn">Notizen</label>
-                                <input class="form-control" type="text" id="edit_modal_ntzn" name="notes">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_modal_ec">Erasmus-Code</label>
-                                <input class="form-control" type="text" id="edit_modal_ec" name="erasmus">
-                            </div>
-                            <div class="mb-3">
-                                <input class="my_check form-control-check" type="checkbox" id="edit_modal_anz" name="visibility">
-                                <label class="form-label" for="edit_modal_anz">Öffentlich anzeigen?</label>
-                            </div>
-                        </form>
-                    </div>
-                        <div class="col-sm ms-3 pt-1">
-                        <h3>Ansprechperson</h3>
-                        <form class="clear-form" id="edit_mid_col">
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_func">Funktion</label>
-                                <input class="form-control" type="text" id="edit_mod_func" name="function">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_gender">Geschlecht</label>
-                                <select class="form-select" id="edit_mod_gender" name="gender">
-                                    <option value="1">Männlich</option>
-                                    <option value="2">Weiblich</option>
-                                    <option value="3">Divers</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_title">Titel</label>
-                                <input class="form-control" type="text" id="edit_mod_title" name="title">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_vn">Vorname</label>
-                                <input class="form-control" type="text" id="edit_mod_vn" name="firstname">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_nn">Nachname</label>
-                                <input class="form-control" type="text" id="edit_mod_nn" name="lastname">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_ap_tel">Telefon</label>
-                                <input class="form-control" type="text" id="edit_mod_ap_tel" name="telephone">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_ap_mail">Email</label>
-                                <input class="form-control" type="text" id="edit_mod_ap_mail" name="email">
-                            </div>
-                        </form>
-                    </div>
-                        <div class="col-sm ms-3 pt-1">
-                        <h3>International Office</h3>
-                        <form class="clear-form" id="edit_right_col">
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_dep">Abteilung</label>
-                                <input class="form-control" type="text" id="edit_mod_dep" name="department">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_tel">Telefon</label>
-                                <input class="form-control" type="text" id="edit_mod_tel" name="tel_office">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_mail">Email</label>
-                                <input class="form-control" type="text" id="edit_mod_mail" name="mail_office">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="edit_mod_int_off_ws">Website International Office</label>
-                                <input class="form-control" type="text" id="edit_mod_int_off_ws" name="website_office">
-                            </div>
-                        </form>
-                    </div>
-                    </div>
+
+    <div class="container" style="display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" style="flex: 20; transform: scale(0.9); height: 850px; width: 800px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalToggleLabel">Hochschule Bearbeitungsansicht</h2>
+                    <button type="button" class="btn-close close_modal_edit" id="close_edit_trigger" ></button>
                 </div>
-                <!-- Vertrag anzeigen -->
-                <div id="second_slide" style="display: none;">
-                    <div class="text-center p-3">
-                        <button id="previous" class="btn btn-outline-dark w-100"> Hochschulinformation</button>
-                    </div>
-                    <div id="space_table" class="p-3">
-                        <h3>Verträge</h3>
-                        <div id="show-all-ps-types">
-
-                        </div>
-                        <div class="d-flex mb-3 mt-3">
-                            <select name="vertragstyp-filter" id="vertragstyp-filter" class="fil_agree form-select w-75 m-1">
-                            </select>
-                            <button id="add_mob_agreement" class="btn btn-outline-primary w-25 m-1">Neuen Vertrag anlegen</button>
-                        </div>
-                        <div class="table-wrap font-weight-light">
-                            <table class="table table-hover fw-light" id="table_agreements">
-                            <thead>
-                             <tr>
-                                <th>Fakultät</th>
-                                <th>Aktiv</th>
-                                <th>Mentor</th>
-                                <th>Bemerkungen</th>
-                                <th>Delete</th>
-                            </tr>
-                            </thead>
-                            <tbody id="addAgreements">
-
-                            </tbody>
-                        </table>
-                        </div>
-
-                    </div>
-                    <div style="display: none" id="add-new-agreement-container"class="p-3">
-                        <button class="btn btn-outline-dark w-30" id="add-new-agreement">Vertrag speichern</button>
-                    </div>
-                      <div id="space_edit_agreement" class="row">
-                            <div class="col-sm p-3 m-3 pt-1">
-                                <label for="mentor_ID" class="form-label mandatory">Mentor</label>
-                                <select class="loadMentor form-select agreementInformation" id="mentor_ID">
-                                    <option value="reset"> - Keine Auswahl - </option>
-                                    <!-- hinzufügen der Mentoren in Dropdown-->
-                                </select><br>
-                                <label for="faculty_ID" class="form-label mandatory">Fakultät</label>
-                                <select class="select_faculty form-select agreementInformation" id="faculty_ID">
-                                    <option value="reset"> - Keine Auswahl - </option>
-                                    <!-- einfügen aller Fakultäten-->
-                                </select><br>
-                                <label for="date_signature" class="form-label">Datum der Unterzeichnung</label>
-                                <input type="text" id="date_signature" class="form-control agreementInformation"><br>
-                                <label for="from_date" class="form-label">Gültigkeitsbeginn</label>
-                                <input type="text" id="from_date" class="form-control agreementInformation"><br>
-                                <label for="until_date" class="form-label">Gültigkeitsende</label>
-                                <input type="text" id="until_date" class="form-control agreementInformation"><br>
-                            </div>
-                            <div class="col-sm p-3 m-3 pt-1">
-                                <label for="in_num_mobility" class="form-label">Anzahl max. eingehender Studenten</label>
-                                <input type="text" id="in_num_mobility" class="form-control agreementInformation"><br>
-                                <label for="in_num_months" class="form-label">Maximale Dauer für eingehende Studenten</label>
-                                <input type="text" id="in_num_months" class="form-control agreementInformation"><br>
-                                <label for="out_num_mobility" class="form-label">Anzahl max. ausgehender Studenten</label>
-                                <input type="text" id="out_num_mobility" class="form-control agreementInformation"><br>
-                                <label for="out_num_months" class="form-label">Maximale Dauer für ausgehende Studenten</label>
-                                <input type="text" id="out_num_months" class="form-control agreementInformation"><br>
-                                <button class="btn btn-outline-primary w-100 mt-2" id="show_restrictions">Studiengänge</button>
-                            </div>
-                            <div class="col-sm p-3 m-3 pt-1">
-                                <label for="notes" class="form-label">Bemerkungen</label>
-                                <textarea id="notes" class="form-control h-50 agreementInformation" name="textarea-notes"></textarea>
-                                <div class="form-check mt-3">
-                                    <input type="checkbox" id="inactive" class="form-check-input agreementInformation">
-                                    <label for="inactive" class="form-check-label">Agreement Inaktiv?</label>
+                <div class="modal-body">
+                    <!-- Hochschulinfo anzeigen -->
+                    <div id="first_slide" onchange="instituteObjectUpdated()">
+                        <div class="row p-3">
+                            <h3>Hochschule</h3>
+                            <div class="col-sm pt-1">
+                            <form class="clear-form" id="edit_left_col">
+                                <h3>Allgemeine Information</h3>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_country">Land</label>
+                                    <select class="filter_country form-select" id="edit_mod_country" name="edit_fil_country">
+                                    </select>
                                 </div>
-                            </div>
-                      </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_modal_eng">Englische Bezeichnung</label>
+                                    <input class="form-control" type="text" id="edit_modal_eng" name="eng">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_modal_local">Lokale Bezeichnung</label>
+                                    <input class="form-control" type="text" id="edit_modal_local" name="local">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_modal_adr">Adresse</label>
+                                    <input class="form-control" type="text" id="edit_modal_adr" name="adress">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_modal_ws">Website</label>
+                                    <input class="form-control" type="text" id="edit_modal_ws" name="website">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_modal_ntzn">Notizen</label>
+                                    <input class="form-control" type="text" id="edit_modal_ntzn" name="notes">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_modal_ec">Erasmus-Code</label>
+                                    <input class="form-control" type="text" id="edit_modal_ec" name="erasmus">
+                                </div>
+                                <div class="mb-3">
+                                    <input class="my_check form-control-check" type="checkbox" id="edit_modal_anz" name="visibility">
+                                    <label class="form-label" for="edit_modal_anz">Öffentlich anzeigen?</label>
+                                </div>
+                            </form>
+                        </div>
+                            <div class="col-sm ms-3 pt-1">
+                            <h3>Ansprechperson</h3>
+                            <form class="clear-form" id="edit_mid_col">
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_func">Funktion</label>
+                                    <input class="form-control" type="text" id="edit_mod_func" name="function">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_gender">Geschlecht</label>
+                                    <select class="form-select" id="edit_mod_gender" name="gender">
+                                        <option value="1">Männlich</option>
+                                        <option value="2">Weiblich</option>
+                                        <option value="3">Divers</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_title">Titel</label>
+                                    <input class="form-control" type="text" id="edit_mod_title" name="title">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_vn">Vorname</label>
+                                    <input class="form-control" type="text" id="edit_mod_vn" name="firstname">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_nn">Nachname</label>
+                                    <input class="form-control" type="text" id="edit_mod_nn" name="lastname">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_ap_tel">Telefon</label>
+                                    <input class="form-control" type="text" id="edit_mod_ap_tel" name="telephone">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_ap_mail">Email</label>
+                                    <input class="form-control" type="text" id="edit_mod_ap_mail" name="email">
+                                </div>
+                            </form>
+                        </div>
+                            <div class="col-sm ms-3 pt-1">
+                            <h3>International Office</h3>
+                            <form class="clear-form" id="edit_right_col">
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_dep">Abteilung</label>
+                                    <input class="form-control" type="text" id="edit_mod_dep" name="department">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_tel">Telefon</label>
+                                    <input class="form-control" type="text" id="edit_mod_tel" name="tel_office">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_mail">Email</label>
+                                    <input class="form-control" type="text" id="edit_mod_mail" name="mail_office">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="edit_mod_int_off_ws">Website International Office</label>
+                                    <input class="form-control" type="text" id="edit_mod_int_off_ws" name="website_office">
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary close_modal_edit">Abbrechen</button>
-                <button type="button" id="mod_edit_inst_save_btn" class="btn btn-primary">Speichern</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close_modal_edit">Abbrechen</button>
+                    <button type="button" id="mod_edit_inst_save_btn" class="btn btn-primary">Speichern</button>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+        
+    <!-- Vertrag anzeigen -->
+        <div class="modal-xl modal-dialog-scrollable" style="flex: 20; transform: scale(0.9); height: 850px; width: 800px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close close_modal_edit" id="close_edit_trigger" ></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Vertrag anzeigen -->
+                    <div id="second_slide">
+                        <div id="space_table" class="p-3">
+                            <h3>Verträge</h3>
+                            <div id="show-all-ps-types">
+
+                            </div>
+                            <div class="d-flex mb-3 mt-3">
+                                <select name="vertragstyp-filter" id="vertragstyp-filter" class="fil_agree form-select w-75 m-1">
+                                </select>
+                                <button id="add_mob_agreement" class="btn btn-outline-primary w-25 m-1">Neuen Vertrag anlegen</button>
+                            </div>
+                            <div class="table-wrap font-weight-light">
+                                <table class="table table-hover fw-light" id="table_agreements">
+                                <thead>
+                                <tr>
+                                    <th>Fakultät</th>
+                                    <th>Aktiv</th>
+                                    <th>Mentor</th>
+                                    <th>Bemerkungen</th>
+                                    <th>Delete</th>
+                                </tr>
+                                </thead>
+                                <tbody id="addAgreements">
+
+                                </tbody>
+                            </table>
+                            </div>
+
+                        </div>
+                        <div style="display: none" id="add-new-agreement-container"class="p-3">
+                            <button class="btn btn-outline-dark w-30" id="add-new-agreement">Vertrag speichern</button>
+                        </div>
+                        <div id="space_edit_agreement" class="row">
+                                <div class="col-sm p-3 m-3 pt-1">
+                                    <label for="mentor_ID" class="form-label mandatory">Mentor</label>
+                                    <select class="loadMentor form-select agreementInformation" id="mentor_ID">
+                                        <option value="reset"> - Keine Auswahl - </option>
+                                        <!-- hinzufügen der Mentoren in Dropdown-->
+                                    </select><br>
+                                    <label for="faculty_ID" class="form-label mandatory">Fakultät</label>
+                                    <select class="select_faculty form-select agreementInformation" id="faculty_ID">
+                                        <option value="reset"> - Keine Auswahl - </option>
+                                        <!-- einfügen aller Fakultäten-->
+                                    </select><br>
+                                    <label for="date_signature" class="form-label">Datum der Unterzeichnung</label>
+                                    <input type="text" id="date_signature" class="form-control agreementInformation"><br>
+                                    <label for="from_date" class="form-label">Gültigkeitsbeginn</label>
+                                    <input type="text" id="from_date" class="form-control agreementInformation"><br>
+                                    <label for="until_date" class="form-label">Gültigkeitsende</label>
+                                    <input type="text" id="until_date" class="form-control agreementInformation"><br>
+                                </div>
+                                <div class="col-sm p-3 m-3 pt-1">
+                                    <label for="in_num_mobility" class="form-label">Anzahl max. eingehender Studenten</label>
+                                    <input type="text" id="in_num_mobility" class="form-control agreementInformation"><br>
+                                    <label for="in_num_months" class="form-label">Maximale Dauer für eingehende Studenten</label>
+                                    <input type="text" id="in_num_months" class="form-control agreementInformation"><br>
+                                    <label for="out_num_mobility" class="form-label">Anzahl max. ausgehender Studenten</label>
+                                    <input type="text" id="out_num_mobility" class="form-control agreementInformation"><br>
+                                    <label for="out_num_months" class="form-label">Maximale Dauer für ausgehende Studenten</label>
+                                    <input type="text" id="out_num_months" class="form-control agreementInformation"><br>
+                                    <button class="btn btn-outline-primary w-100 mt-2" id="show_restrictions">Studiengänge</button>
+                                </div>
+                                <div class="col-sm p-3 m-3 pt-1">
+                                    <label for="notes" class="form-label">Bemerkungen</label>
+                                    <textarea id="notes" class="form-control h-50 agreementInformation" name="textarea-notes"></textarea>
+                                    <div class="form-check mt-3">
+                                        <input type="checkbox" id="inactive" class="form-check-input agreementInformation">
+                                        <label for="inactive" class="form-check-label">Agreement Inaktiv?</label>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close_modal_edit">Abbrechen</button>
+                    <button type="button" id="mod_edit_inst_save_btn" class="btn btn-primary">Speichern</button>
+                </div>
+            </div>
+        </div>
+    </div>    
 
 <!-- MODAL ZUM HOCHSCHULE ANLEGEN -->
 <div class="modal" id="modal_add_inst" >
