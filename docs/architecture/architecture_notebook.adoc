@@ -71,8 +71,23 @@ Die bisherige MariaDB und Access Datenbank werden als Datenbanken genutzt, diese
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
-. Entscheidung oder Einschränkung oder Begründung 1
-. Entscheidung oder Einschränkung oder Begründung 2
+Das Team hat sich darauf geeinigt, den Prototypen/das Modell der vorherigen Gruppe fortzuführen. Dadurch sind vorherige Bemühungen nicht völlig umsonst gewesen. Des Weiteren besteht dadurch eine Basis, durch welche man nicht von Grund auf Neues schaffen muss.
+
+* Nutzen des Vorgängermodells
+** funktionierende, bestehende Basis ermöglicht Zeitersparnis
+** Dokumentation ermöglicht einfachere Einarbeit
+
+* Nutzen/Aneignen der vorher genutzen Programmiersprachen
+** zum Fortführen/Überarbeiten des Vorgängermodells
+** bereits gut ausgewählte und weit verbreitete Programmiersprachen
+
+Dadurch, dass das Rechenzentrum der HTW Dresden den Vorgängern eine Datenbank, in Form einer MariaDB, bereits zur Verfügung gestellt hat, muss das Team keine neue Datenbank erstellen.
+ 
+* Verwendung der MariaDB
+** Möglichkeit zum Ändern der Datensätze außerhalb des Verwaltungsfrontend
+** Backups auf den Servern des Rechenzentrums
+** Aufruf durch phpMyAdmin
+** starke Ähnlichkeit zu MS SQL, mit dem eine Vielzahl der Gruppenmitglied bereits Erfahrung hat
 
 
 == Architekturmechanismen
