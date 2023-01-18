@@ -11,7 +11,6 @@ include::../_includes/default-attributes.inc.adoc[]
 [%header, cols="3,1"]
 |===
 | Meilenstein | Datum
-awf
 | Beginn der Iteration | 27.11.2022
 | Erstes Meeting mit dem Kunden | 01.12.2022
 | Ende der Iteration | 11.12.2022
