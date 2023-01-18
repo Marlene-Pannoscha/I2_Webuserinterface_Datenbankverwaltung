@@ -7,15 +7,15 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
 Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen fesgehalten die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik sowie Produkt- und Lösungsansätze dargestellt unter dem Nutzen von Stakeholdern und essentiellen Anforderungen.
-Die Details, wie die Benutzeroberfläche diese Anforderungen erfüllt, werden in den Use-Cases und den systemweiten Anfoederungen geschildert.
+Die Details, wie die Benutzeroberfläche diese Anforderungen erfüllt, werden in den Use-Cases und den systemweiten Anforderungen geschildert.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben. Gleichzeitig werden Stakeholder definiert und die Hauptproblematik des Projektes in Zusammenarbeit mit dem Auftraggeber dargestellt.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das System des Webinterfaces, dass zur Verwaltung der Datenbank der Stabsstelle Internationals genutzt wird. Dieses Projekt wird von Team I2 entwickelt.
+Dieses Visions-Dokument bezieht sich auf das Webuserinterface (GUI), dass zur Verwaltung der Datenbank von Hochschulpartnerschaften der Stabsstelle Internationals genutzt wird. Dieses Projekt wird von Team I2 entwickelt.
 
-Das System wird es Mitarbeitern der Stabsstelle Internationals erlauben, die Verträge mit den Partnerhochschulen zu verwalten. Es soll ebenfalls möglich sein nach Fakultäten, Hochschulen und Ländern zu filtern.
+Das System wird es Mitarbeitern der Stabsstelle Internationals erlauben, die Verträge mit den Partnerhochschulen zu verwalten. Es soll ebenfalls möglich sein nach Fakultäten, Hochschulen und Ländern zu filtern, sowie Berichte zu erzeugen.
 
 === Definitionen, Akronyme und Abkürzungen
 //Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -31,7 +31,7 @@ Siehe <<#glossary, Glossar>>.
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 Das Projekt wird von Teilnehmern des Moduls Software Engineering beziehungsweise Requirements Engineering (I150 / I925) als Teil der Studiengänge Wirtschaftsinformatik und Wirtschaftsingenieurwesen durchgeführt. 
 
-Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystems ist nicht mehr ausreichend. Durch eine Überführung von Microsoft Access in MySQL ist die Bedienbarkeit der Datenbank erschwert worden. Außerdem fehlt die Möglichkeit, Berichte und Statistiken zu erzeugen. Eine Umgestaltung des derzeitigen Interface-Prototypen soll die Zugänglichkeit der Datenbank für Mitarbeiter des Akademischen Auslandsamtes erhöhen und Fehler minimieren, des Weiteren sollen Funktionen, wie die Anzeige und das Bearbeiten von Austauschstudenten, ergänzt werden.
+Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystems ist nicht mehr ausreichend. Durch eine Überführung von Microsoft Access in MySQL ist die Bedienbarkeit der Datenbank erschwert worden. Außerdem fehlt die Möglichkeit, Berichte und Statistiken zu erzeugen. Eine Umgestaltung des derzeitigen Interface-Prototypen soll die Zugänglichkeit der Datenbank für Mitarbeiter des Akademischen Auslandsamtes erhöhen und Fehler minimieren, des Weiteren sollen Funktionen, wie die Anzeige und das Bearbeiten von Austauschstudenten ergänzt werden.
 
 
 === Problem Statement
@@ -40,8 +40,8 @@ Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystem
 [cols="1,3"]
 |===
 | Das Problem | der nicht mehr zeitgemäßen und umständlichen Bedienbarkeit des Datenbanksystems
-| betrifft | die Mitarbeiter des Akademischen Auslandsamtes, Studierende und Mitglieder der HTW Dresden, sowie interessierte Externe
-| die Auswirkung davon ist | ein erhöhter Zeit- und Arbeitsaufwand für die Mitarbeiter des Akademischen Auslandsamtes
+| betrifft | die Mitarbeiter der Stabsstelle Internationales, Studierende und Mitglieder der HTW Dresden, sowie interessierte Externe
+| die Auswirkung davon ist | ein erhöhter Zeit- und Arbeitsaufwand für die Mitarbeiter der Stabsstelle Internationales
 | eine erfolgreiche Lösung wäre die Aktualisierung des Bestehenden Web-User-Interfaces, sowie eine Ergänzung von intuitiven Funktionen
 |===
 
@@ -63,10 +63,10 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | das Akademische Auslandsamt der HTW Dresden sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)
+| Für | die Stabsstelle Internationales, sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)
 | die | eine vereinfachte Handhabung des Datenbanksystems anstreben
-| die Lösung ist ein | Update des Web-User-Interfaces
-| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann]
+| die Lösung ist ein | Update des GUI
+| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann
 | Im Gegensatz zum | Interface-Prototypen 
 | ist unser Produkt | intuitiv und einfach zu bedienen
 |===
