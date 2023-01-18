@@ -36,13 +36,13 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Meeting mit SI organisieren | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,25 | /
-| Beantragen einer virtuellen Maschine | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,25 | /
-| Identifizierung wichtiger UseCases | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 1 | /
-| Identifizierung wichtiger Stakeholder | hoch | 6 | abgeschlossen | / | 1 | Allesandra Ruff | 1 | /
-| erste Bearbeitung des Projektplans | mittel | 6 | abgeschlossen | Projektplan | 1 | Marlene Pannoscha | 1 | /
-| erste Bearbeitung des Glossars | mittel | 4 | abgeschlossen | Glossar | 1 | Max Listner | 0,5 | /
-| erste Bearbeitung der Risklsit | mittel | 4 | abgeschlossen | Risklist | 1 | Karl Gustav Langer | 0,5 | /
+| Meeting mit SI organisieren | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,5 | /
+| Beantragen einer virtuellen Maschine | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,5 | /
+| Identifizierung wichtiger UseCases | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 2 | /
+| Identifizierung wichtiger Stakeholder | hoch | 6 | abgeschlossen | / | 1 | Allesandra Ruff | 2 | /
+| erste Bearbeitung des Projektplans | mittel | 6 | abgeschlossen | Projektplan | 1 | Marlene Pannoscha | 2 | /
+| erste Bearbeitung des Glossars | mittel | 4 | abgeschlossen | Glossar | 1 | Max Listner | 1 | /
+| erste Bearbeitung der Risklsit | mittel | 4 | abgeschlossen | Risklist | 1 | Karl Gustav Langer | 1 | /
 
 
 |===
