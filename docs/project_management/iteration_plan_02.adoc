@@ -40,10 +40,10 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
 | Analyse der Datenbank | hoch | 8 | abgeschlossen | / | 1 | Alessandra Ruff | 5 | /
-| Hauptanforderungen festhalten und UseCase-Modell erstellen | hoch | 6 | abgeschlossen | UseCase-Modell | 1 | Max Listner | 2 | /
-| UseCases beschreiben | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 2 | /
-| Erstellen von UML-Diagrammen| hoch | 6 | abgeschlossen | / | 1 | Marlene Pannoscha | 2 | /
-| Erstzellen der Wireframes | hoch | 4 | abgeschlossen | / | 1 | Alessandra Ruff | 1 | /
+| Hauptanforderungen festhalten und UseCase-Modell erstellen | hoch | 6 | abgeschlossen | UseCase-Modell | 1 | Max Listner | 3 | /
+| UseCases beschreiben | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 3 | /
+| Erstellen eines UML-Diagrammes| hoch | 6 | abgeschlossen | / | 1 | Marlene Pannoscha | 3 | /
+| Erstellen der Wireframes | hoch | 4 | abgeschlossen | / | 1 | Alessandra Ruff | 2 | /
 
 
 

@@ -58,18 +58,14 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+* Kompatibilität zwischen dem System und der bestehenden Datenbankstruktur
+* strikte Kompetenzvergabe an spezifische Rollen
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* zu beachtende Standards, Normen und Regeln
+* ausführliche und aussagekräftige Dokumentation
+* verständliches Näherbringen an die Stabstelle
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
-* Datenschutz
+* Da die Datenbank, abgesehen von ohnehin schon frei zugänglichen Daten der Mentoren, keine personenbezogenen Daten abspeichert (sondern nur Statistiken) ist die Anwendung datenschutzrechtlich unbedenklich.

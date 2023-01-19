@@ -1,10 +1,10 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
-== Use-Case: <Filterung nach Fakultät und Parnterschaft>
+== Use-Case: <Filterung nach nach Land, Hochschule und Vertragsytp>
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Bei diesem Use-Case soll der Mitarbeiter die angezeigten Hochschulpartnerschaften nach Fakultät bzw. Art der Partnerschaft filtern können.
+Bei diesem Use-Case soll der Mitarbeiter die angezeigten Hochschulpartnerschaften nach Land, Hochschule und Vertragsytp filtern können.
 
 === Kurzbeschreibung der Akteure
 
@@ -21,7 +21,7 @@ Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaf
 
 . Der Use Case beginnt, wenn der Mitarbeiter die angezeigten Hochschulpartnerschaften filtern möchte.
 . Per Klick auf das entsprechende Feld öffnet der Mitarbeiter das Drop-Down-Menü
-. Der Mitarbeiter wählt aus dem Dropdown-Menü die gewünschte Fakultät bzw. die gewünschte Partnerschaft aus
+. Der Mitarbeiter wählt aus dem Dropdown-Menü das gewünschte Land, Hochschule bzw. den gewünschten Vertragsytp aus
 . Die angezeigten Hochschulpartnerschaften werden angepasst, entsprechend der vorher getroffenen Auswahl.
 . Der Use Case ist abgeschlossen.
 

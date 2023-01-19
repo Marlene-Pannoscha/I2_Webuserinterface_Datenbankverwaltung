@@ -7,15 +7,15 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
 Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen fesgehalten die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik sowie Produkt- und Lösungsansätze dargestellt unter dem Nutzen von Stakeholdern und essentiellen Anforderungen.
-Die Details, wie die Benutzeroberfläche diese Anforderungen erfüllt, werden in den Use-Cases und den systemweiten Anfoederungen geschildert.
+Die Details, wie die Benutzeroberfläche diese Anforderungen erfüllt, werden in den Use-Cases und den systemweiten Anforderungen geschildert.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben. Gleichzeitig werden Stakeholder definiert und die Hauptproblematik des Projektes in Zusammenarbeit mit dem Auftraggeber dargestellt.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das System des Webinterfaces, dass zur Verwaltung der Datenbank der Stabsstelle Internationals genutzt wird. Dieses Projekt wird von Team I2 entwickelt.
+Dieses Visions-Dokument bezieht sich auf das Webuserinterface (GUI), dass zur Verwaltung der Datenbank von Hochschulpartnerschaften der Stabsstelle Internationals genutzt wird. Dieses Projekt wird von Team I2 entwickelt.
 
-Das System wird es Mitarbeitern der Stabsstelle Internationals erlauben, die Verträge mit den Partnerhochschulen zu verwalten. Es soll ebenfalls möglich sein nach Fakultäten, Hochschulen und Ländern zu filtern.
+Das System wird es Mitarbeitern der Stabsstelle Internationals erlauben, die Verträge mit den Partnerhochschulen zu verwalten. Es soll ebenfalls möglich sein nach Fakultäten, Hochschulen und Ländern zu filtern, sowie Berichte zu erzeugen.
 
 === Definitionen, Akronyme und Abkürzungen
 //Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -31,7 +31,7 @@ Siehe <<#glossary, Glossar>>.
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 Das Projekt wird von Teilnehmern des Moduls Software Engineering beziehungsweise Requirements Engineering (I150 / I925) als Teil der Studiengänge Wirtschaftsinformatik und Wirtschaftsingenieurwesen durchgeführt. 
 
-Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystems ist nicht mehr ausreichend. Durch eine Überführung von Microsoft Access in MySQL ist die Bedienbarkeit der Datenbank erschwert worden. Außerdem fehlt die Möglichkeit, Berichte und Statistiken zu erzeugen. Eine Umgestaltung des derzeitigen Interface-Prototypen soll die Zugänglichkeit der Datenbank für Mitarbeiter des Akademischen Auslandsamtes erhöhen und Fehler minimieren, des Weiteren sollen Funktionen, wie die Anzeige und das Bearbeiten von Austauschstudenten, ergänzt werden.
+Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystems ist nicht mehr ausreichend. Durch eine Überführung von Microsoft Access in MySQL ist die Bedienbarkeit der Datenbank erschwert worden. Außerdem fehlt die Möglichkeit, Berichte und Statistiken zu erzeugen. Eine Umgestaltung des derzeitigen Interface-Prototypen soll die Zugänglichkeit der Datenbank für Mitarbeiter des Akademischen Auslandsamtes erhöhen und Fehler minimieren, des Weiteren sollen Funktionen, wie die Anzeige und das Bearbeiten von Austauschstudenten ergänzt werden.
 
 
 === Problem Statement
@@ -40,8 +40,8 @@ Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystem
 [cols="1,3"]
 |===
 | Das Problem | der nicht mehr zeitgemäßen und umständlichen Bedienbarkeit des Datenbanksystems
-| betrifft | die Mitarbeiter des Akademischen Auslandsamtes, Studierende und Mitglieder der HTW Dresden, sowie interessierte Externe
-| die Auswirkung davon ist | ein erhöhter Zeit- und Arbeitsaufwand für die Mitarbeiter des Akademischen Auslandsamtes
+| betrifft | die Mitarbeiter der Stabsstelle Internationales, Studierende und Mitglieder der HTW Dresden, sowie interessierte Externe
+| die Auswirkung davon ist | ein erhöhter Zeit- und Arbeitsaufwand für die Mitarbeiter der Stabsstelle Internationales
 | eine erfolgreiche Lösung wäre die Aktualisierung des Bestehenden Web-User-Interfaces, sowie eine Ergänzung von intuitiven Funktionen
 |===
 
@@ -63,10 +63,10 @@ Beispiel:
 
 [cols="1,3"]
 |===
-| Für | das Akademische Auslandsamt der HTW Dresden sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)
+| Für | die Stabsstelle Internationales, sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)
 | die | eine vereinfachte Handhabung des Datenbanksystems anstreben
-| die Lösung ist ein | Update des Web-User-Interfaces
-| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann]
+| die Lösung ist ein | Update des GUI
+| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann
 | Im Gegensatz zum | Interface-Prototypen 
 | ist unser Produkt | intuitiv und einfach zu bedienen
 |===
@@ -91,8 +91,6 @@ Beispiel Produkt:
 [%header, cols="1,3,3"]
 |===
 | Name | Beschreibung | Verantwortlichkeiten
-
-<<<<<<< HEAD
 | Mitarbeiter der Stabstelle Internationales und Studentische Hilfskraft (SHK)
 | Mitarbeiter, die zuständig für die Verwaltung der Datenbank sind
 | Verwaltung des Webseiten-Frontends
@@ -105,19 +103,25 @@ Beispiel Produkt:
 |Austauschstudenten Outgoing
 |Studierende der HTW Dresden, die sich für einen Aufenthalt an einer Partnerhochschule interessieren
 |Informieren sich über Austauschprogramme an Partnerhochschulen über das Frontend
-=======
 |===
+
 === Benutzerumgebung
-Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
+//Beschreiben Sie die Arbeitsumgebung des Nutzers.
+*Mitarbeiter der Stabstelle für Internationales sowie SHK*
 
-//Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?
-. Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
-. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
-. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
-. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
+* Die Mitarbeiter sind dafür verantwortlich die Hochschulpartnerschaften zu verwalten und zu pflegen sowie deren Datensätze aktuell zu halten und Statistiken zu erstellen
+* Aktuell wird eine, den Mitarbeitern vertraute, MS-Access Datenbank verwendet, welche jedoch zu aufwendig zu bedienen ist und lediglich einen Einbenutzerbetrieb zulässt
+* Die Mitarbeiter sind an einer gewohnten und doch aufwandsarmen zu bedienenden Datenbankverwaltung interessiert
+* Die Datenbankverwaltung soll online über eine Webapplikation laufen
+* Die Datenbankverwaltung soll einen Mehrbenutzerbetrieb erlauben
 
-Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+*Externe*
+
+* Darstellung auf einer öffentlich zugänglichen Website der HTW Dresden (bisheriges Frontend)
+* beliebig viele Studierende sollen auf der Website der HTW relevante Daten bezüglich Austauschprogrammen/Partnerhochschulen abfragen/einsehen können
+
+//Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+
 
 
 == Produkt-/Lösungsüberblick

@@ -34,10 +34,10 @@ include::use_case_02.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
 image::use_case_logout.png[]
 
 
-=== *UC03*: Suchleiste
-include::use_case_03.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+//=== *UC03*: Suchleiste
+//include::use_case_03.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
 
-image::use_case_suchleiste.png[]
+//image::use_case_suchleiste.png[]
 
 
 == Use Case Diagramm
@@ -54,11 +54,11 @@ Ein `include` entfernt am Anfang und Ende eine möglich Leerzeile, was in Kombin
 ////
 
 <<<
-include::use_case_01.inc.adoc[]
+//include::use_case_01.inc.adoc[]
 
 
 <<<
-include::use_case_01.inc.adoc[]
+//include::use_case_01.inc.adoc[]
 
 //<<<
 //include::use_case_03.inc.adoc[]

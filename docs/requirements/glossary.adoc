@@ -29,10 +29,12 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 
 | HTW | Hochschule | Hochschule für Technik und Wirtschaft Dresden
 | SI | Stabsstelle Internationales | -
+| SHK | studentische Hilfskraft | -
 | DB | Datenbank | Datenbanksystem für Partnerschaften
 | GUI | Graphical User Interface | -
 | VM | virtuelle Maschine | vom Rechenzentrum bereitgestellter, virtueller Computer
 | UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
+| UC | Use Case | funktionale Anforderung an das System
 |===
 
 == Verzeichnis der Datenstrukturen
