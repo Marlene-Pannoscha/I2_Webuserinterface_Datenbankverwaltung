@@ -66,7 +66,7 @@ Beispiel:
 | Für | die Stabsstelle Internationales, sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)
 | die | eine vereinfachte Handhabung des Datenbanksystems anstreben
 | die Lösung ist ein | Update des GUI
-| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann
+| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, als auch Statistiken und Berichte erzeugen kann und Partnerschaften durch verschiedene Filter gefiltert darstellen kann
 | Im Gegensatz zum | Interface-Prototypen 
 | ist unser Produkt | intuitiv und einfach zu bedienen
 |===
