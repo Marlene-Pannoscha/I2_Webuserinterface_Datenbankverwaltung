@@ -129,11 +129,9 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 
 | I1
 | Analyse des bestehenden Systems
-|a
 * mit bestehendem System vertraut machen
 * Beginnen mit Vision
 * Beginnen mit Glossar und Risikoliste
-|
 | 27.11.2022 - 11.12.2022
 | 15
 
