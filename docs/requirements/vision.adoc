@@ -132,19 +132,14 @@ Beispiel Produkt:
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Login System | - | Gewährt zulässigen Nutzern authorisierten Zugang zur Verwaltung | implementiert
-| Logoff System | 5 | Ordnungsgemäße abmelden vom System |  Wintersemester 2022/2023
-| Filterfunktion | 8 | Aussortieren nicht gesuchter Einträge |  Wintersemester 2022/2023
-| Partnerhochschulen anlegen | 10 | Zum Einfügen neuer Partnerhochschulen und der Verträge im Verwaltungsfrontend | Sommersemester 2023
-| Partnerhochschulen bearbeiten | 10 | Zum Verändern eines oder mehrerer bereits bestehenden Hochschulattribute im Verwaltungsfrontend | Sommersemester 2023
-| Partnerhochschulen löschen | 9 | Zum Entfernen einer Partnerhochschule oder derer Datenattribute im Verwaltungsfrontend | Sommersemester 2023
-| Erweiterte Infos | 7 | Anzeige detailierter Infos einzelner Universitäten sowie deren Ansprechpartner/E-Mails | Sommersemester 2023
-| Modifizieren von Bestandsdaten | 10 | Zum Bearbeiten einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
-| Löschen von Bestandsdaten | 9 | Zum Entfernen einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
-| Anzeige von Austauschstudenten | 7 | Zur Ausgabe von Informationen über Austauschstudenten | Sommersemester 2023
-| Bearbeiten von Austauschstudenten | 8 | Zur Pflege von Statistiken | Sommersemester 2023
-| Anzeige von Statistiken | 9 | Zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
-| Exportieren von Statistiken | 6 | Zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
+| Logoff System | 5 | Ordnungsgemäßes Abmelden vom System |  Wintersemester 2022/2023
+| Filterfunktion | 10 | Aussortieren nicht gesuchter Einträge |  Wintersemester 2022/2023
+| Bearbeiten und Anlegen von Fakultäten | 7 | Zum Einfügen und Bearbeiten von Fakultäten neuer oder bestehender Partnerhochschulen und deren Verträgen im Verwaltungsfrontend | Sommersemester 2023
+| Verwalten von Ansprechpersonen von Fakultäten | 5 | Es soll eine Ansprechperson pro Hochschule eingetragen und ausgelesen werden können | Sommersemester 2023
+| Anlegen neuer Verträge | 7 | Zum Einfügen neuer Verträge im Verwaltungsfrontend | Sommersemester 2023
+| Anlegen neuer Universitäten | 7 | Zum Einfügen neuer Verträge im Verwaltungsfrontend | Sommersemester 2023
+| Erzeugen von Berichten | 10 | Zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
+| Exportieren von Berichten | 5 | Zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
 
 |===
 
