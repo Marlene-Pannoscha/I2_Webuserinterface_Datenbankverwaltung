@@ -137,7 +137,7 @@ Beispiel Produkt:
 | Bearbeiten und Anlegen von Fakultäten | 7 | Zum Einfügen und Bearbeiten von Fakultäten neuer oder bestehender Partnerhochschulen und deren Verträgen im Verwaltungsfrontend | Sommersemester 2023
 | Verwalten von Ansprechpersonen von Fakultäten | 5 | Es soll eine Ansprechperson pro Hochschule eingetragen und ausgelesen werden können | Sommersemester 2023
 | Anlegen neuer Verträge | 7 | Zum Einfügen neuer Verträge im Verwaltungsfrontend | Sommersemester 2023
-| Anlegen neuer Universitäten | 7 | Zum Einfügen neuer Verträge im Verwaltungsfrontend | Sommersemester 2023
+| Anlegen neuer Universitäten | 7 | Zum Einfügen neuer Universitäten im Verwaltungsfrontend | Sommersemester 2023
 | Erzeugen von Berichten | 8 | Zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
 | Exportieren von Berichten | 5 | Zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
 
