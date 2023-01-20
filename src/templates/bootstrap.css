@@ -300,6 +300,8 @@ table {
   left: 100px;
   caption-side: bottom;
   border-collapse: collapse;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
 }
 
 caption {
@@ -324,6 +326,7 @@ th {
   border-style: solid;
   border-width: 0;
   font-weight: initial;
+
   
 }
 
@@ -627,19 +630,19 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  display: flex-center;
-  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  width: 95%;
   margin-left: 5%;
-  margin-right: 5%;
-  justify-content: space-evenly;
+  margin-right: 3%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-basis: 100000px;
+  align-items: flex-start;
 }
 
-@media (min-width: 576px) {
-  .container-sm, .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
+
+/*@media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
@@ -659,6 +662,7 @@ progress {
     max-width: 1320px;
   }
 }
+*/
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -1950,6 +1954,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+
 .table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
@@ -1962,8 +1967,14 @@ progress {
   max-width: 100%;
   margin-bottom: 1rem;
   color: #212529;
-  vertical-align: top;
   border-color: #dee2e6;
+  margin-right: 20px;
+ 
+}
+.table-scrollable {
+  overflow-y:scroll;
+  height:800px;
+  display:block;
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -5452,7 +5463,9 @@ textarea.form-control-lg {
 }
 .modal-dialog-scrollable .modal-content {
   max-height: 100%;
-  overflow: hidden;
+
+  max-width: 100%;
+  
 }
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
@@ -5534,12 +5547,12 @@ textarea.form-control-lg {
   margin: 0.25rem;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
-    margin: 1.75rem auto;
+    margin: 0,5rem auto;
   }
-
+ */
   .modal-dialog-scrollable {
     height: calc(100% - 3.5rem);
   }
@@ -5551,7 +5564,7 @@ textarea.form-control-lg {
   .modal-sm {
     max-width: 300px;
   }
-}
+
 @media (min-width: 992px) {
   .modal-lg,
 .modal-xl {
