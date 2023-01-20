@@ -17,7 +17,6 @@ include::../_includes/default-attributes.inc.adoc[]
 // Liste aller identifizierten Use Cases (priorisiert)
 * <<_uc1_filtern_nach_fakultät_und_partnerschaft>>
 * <<_uc2_logout>>
-* <<_uc3_suchleiste>>
 
 === *UC01*: Filtern nach Fakultät und Partnerschaft
 include::use_case_01.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
@@ -33,11 +32,6 @@ include::use_case_02.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 image::use_case_logout.png[]
 
-
-//=== *UC03*: Suchleiste
-//include::use_case_03.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
-
-//image::use_case_suchleiste.png[]
 
 
 == Use Case Diagramm
