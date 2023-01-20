@@ -11,7 +11,7 @@ include::../_includes/default-attributes.inc.adoc[]
 [%header, cols="3,1"]
 |===
 | Meilenstein | Datum
-| Beginn der Iteration | 27.11.2022
+| Beginn der Iteration | 28.11.2022
 | Erstes Meeting mit dem Kunden | 01.12.2022
 | Ende der Iteration | 11.12.2022
 |===
@@ -23,15 +23,13 @@ include::../_includes/default-attributes.inc.adoc[]
 * Festlegen der Rollenverteilung im Team
 * erstes Meeting mit dem Kunden
 * Verstehen des bestehenden Systems
-* Beginn mit Arbeit an Vision, Projektplan, Glossar und Risklist
+* Beginn mit Arbeit an Vision, Projektplan, Glossar und Risikoliste
 
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
-Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt (hier Verweis einfügen).
-
-_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="3,1,1,1,2,1,1,1,1"]
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden

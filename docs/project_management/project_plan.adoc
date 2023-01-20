@@ -132,7 +132,7 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 * mit bestehendem System vertraut machen
 * Beginnen mit Vision
 * Beginnen mit Glossar und Risikoliste
-| 27.11.2022 - 11.12.2022
+| 28.11.2022 - 11.12.2022
 | 15
 
 | I2
@@ -149,7 +149,7 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 |erste Implementierungschritte
 * erstellen eines Architektur-Modells
 * erstellen eines Prototypen, implementierung der ersten Funktionen
-| 1.01.2023 - 15.01.2023
+| 2.01.2023 - 15.01.2023
 | 16
 
 | I4
@@ -164,7 +164,7 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
-Das System wird auf einer vom Rechenzentrum zur Verfügung gestellten virtuellen Maschine betrieben.
+Das System wird auf einer vom Rechenzentrum zur Verfügung gestellten virtuellen Maschine betrieben. Um neue Funktionen zu testen und den Verlust von Daten zu verhindern, nutzen wir eine lokale Maria-DB.
 
 
 == Erkenntnisse (Lessons learned)
