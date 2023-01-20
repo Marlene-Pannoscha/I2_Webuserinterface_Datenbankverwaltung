@@ -11,18 +11,24 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 // ...
-
+Im folgenden werden identifizierte Use-Cases genannt, sowie die priorisierten Use-Cases genauer erläutert.
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
+
 * <<_uc1_filtern_nach_fakultät_und_partnerschaft>>
 * <<_uc2_logout>>
-* <<_uc3_suchleiste>>
+* <<_uc3_bearbeiten_anlegen_löschen von Fakultäten>> (geplant)
+* <<_uc4_verwalten_von_ansprechpersonen>> (geplant)
+* <<_uc5_anlegen_neuer_vertrtäge>> (geplant)
+* <<_uc6_anlegen_neuer_universitäten>> (geplant)
+* <<_uc7_erzeugen_von_berichten>> (geplant)
+* <<_uc8_löschen_von_datensätzen>> (geplant)
 
 === *UC01*: Filtern nach Fakultät und Partnerschaft
 include::use_case_01.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
 
-image::use_case_filtern.png[]
+//image::use_case_filtern.png[]
 
 image::wf_Mainpage_v1.png[]
 image::wf_mainpage_v2_inst.png[]
@@ -31,13 +37,8 @@ image::wf_mainpage_v2_vertrag.png[]
 === *UC02*: LogOut
 include::use_case_02.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
 
-image::use_case_logout.png[]
+//image::use_case_logout.png[]
 
-
-//=== *UC03*: Suchleiste
-//include::use_case_03.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
-
-//image::use_case_suchleiste.png[]
 
 
 == Use Case Diagramm

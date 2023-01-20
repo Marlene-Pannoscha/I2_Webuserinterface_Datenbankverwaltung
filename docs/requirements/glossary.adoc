@@ -19,6 +19,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Partnerschaft | ein Vertrag zwischen der HTW Dresden und einer ausländischen Hochschule | Partnerschaftsvertrag, Hochschulparnerschaft
 | Kontaktperson | Ansprechpartner der entsprechenden Partnerhochschule | Ansprechpartner/-in
 | Graphical User Interface | ein Computerprogramm, mit dem eine Person mithilfe von Symbolen, visuellen Metaphern und Zeigegeräten mit einem Computer kommunizieren kann | User-Interface
+| Superuser | ein spezieller Benutzer-Account, der weit mehr Berechtigungen hat als ein normaler Account | -
 |===
 
 
@@ -35,6 +36,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | VM | virtuelle Maschine | vom Rechenzentrum bereitgestellter, virtueller Computer
 | UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
 | UC | Use Case | funktionale Anforderung an das System
+| SU | Superuser | -
 |===
 
 == Verzeichnis der Datenstrukturen

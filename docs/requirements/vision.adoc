@@ -6,7 +6,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen fesgehalten die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik sowie Produkt- und Lösungsansätze dargestellt unter dem Nutzen von Stakeholdern und essentiellen Anforderungen.
+Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen fesgehalten, die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik sowie Produkt- und Lösungsansätze dargestellt unter dem Nutzen von Stakeholdern und essentiellen Anforderungen.
 Die Details, wie die Benutzeroberfläche diese Anforderungen erfüllt, werden in den Use-Cases und den systemweiten Anforderungen geschildert.
 
 === Zweck
@@ -31,7 +31,7 @@ Siehe <<#glossary, Glossar>>.
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 Das Projekt wird von Teilnehmern des Moduls Software Engineering beziehungsweise Requirements Engineering (I150 / I925) als Teil der Studiengänge Wirtschaftsinformatik und Wirtschaftsingenieurwesen durchgeführt. 
 
-Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystems ist nicht mehr ausreichend. Durch eine Überführung von Microsoft Access in MySQL ist die Bedienbarkeit der Datenbank erschwert worden. Außerdem fehlt die Möglichkeit, Berichte und Statistiken zu erzeugen. Eine Umgestaltung des derzeitigen Interface-Prototypen soll die Zugänglichkeit der Datenbank für Mitarbeiter des Akademischen Auslandsamtes erhöhen und Fehler minimieren, des Weiteren sollen Funktionen, wie die Anzeige und das Bearbeiten von Austauschstudenten ergänzt werden.
+Das bereits vorhandene Webinterface des Hochschulpartnerschaften-Datenbanksystems ist nicht mehr ausreichend. Durch eine Überführung von Microsoft Access in MySQL ist die Bedienbarkeit der Datenbank erschwert worden. Außerdem fehlt die Möglichkeit, Berichte und Statistiken zu erzeugen. Eine Umgestaltung des derzeitigen Interface-Prototypen soll die Zugänglichkeit der Datenbank für Mitarbeiter der Stabsstelle Internationales erhöhen und Fehler minimieren, des Weiteren sollen Funktionen, wie das Filtern nach Fakultäten, Hochschulen und Ländern ergänzt werden.
 
 
 === Problem Statement
@@ -66,7 +66,7 @@ Beispiel:
 | Für | die Stabsstelle Internationales, sowie betroffene Externe (z.B. Partnerhochschulen o.Ä.)
 | die | eine vereinfachte Handhabung des Datenbanksystems anstreben
 | die Lösung ist ein | Update des GUI
-| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, sowie Statistiken und Berichte erzeugen kann
+| Das |  Daten reibungslos anlegen, verändern und löschen, sowie Bestandsdaten modifizieren kann und die Anzeige und Bearbeiten von Austauschstudenten ermöglicht, als auch Statistiken und Berichte erzeugen kann und Partnerschaften durch verschiedene Filter gefiltert darstellen kann
 | Im Gegensatz zum | Interface-Prototypen 
 | ist unser Produkt | intuitiv und einfach zu bedienen
 |===
@@ -109,7 +109,7 @@ Beispiel Produkt:
 //Beschreiben Sie die Arbeitsumgebung des Nutzers.
 *Mitarbeiter der Stabstelle für Internationales sowie SHK*
 
-* Die Mitarbeiter sind dafür verantwortlich die Hochschulpartnerschaften zu verwalten und zu pflegen sowie deren Datensätze aktuell zu halten und Statistiken zu erstellen
+* Die Mitarbeiter sind dafür verantwortlich die Hochschulpartnerschaften zu verwalten und zu pflegen, sowie deren Datensätze aktuell zu halten und Statistiken zu erstellen
 * Aktuell wird eine, den Mitarbeitern vertraute, MS-Access Datenbank verwendet, welche jedoch zu aufwendig zu bedienen ist und lediglich einen Einbenutzerbetrieb zulässt
 * Die Mitarbeiter sind an einer gewohnten und doch aufwandsarmen zu bedienenden Datenbankverwaltung interessiert
 * Die Datenbankverwaltung soll online über eine Webapplikation laufen
@@ -118,7 +118,7 @@ Beispiel Produkt:
 *Externe*
 
 * Darstellung auf einer öffentlich zugänglichen Website der HTW Dresden (bisheriges Frontend)
-* beliebig viele Studierende sollen auf der Website der HTW relevante Daten bezüglich Austauschprogrammen/Partnerhochschulen abfragen/einsehen können
+* Beliebig viele Studierende sollen auf der Website der HTW relevante Daten bezüglich Austauschprogrammen/Partnerhochschulen abfragen/einsehen können
 
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
@@ -132,20 +132,15 @@ Beispiel Produkt:
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Login System | - | gewährt zulässigen Nutzern authorisierten Zugang zur Verwaltung | implementiert
-| Logoff System | 5 | ordnungsgemäße abmelden vom System | Sommersemester 2023
-| Partnerhochschulen anlegen | 10 | Zum Einfügen neuer Partnerhochschulen und der Verträge im Verwaltungsfrontend | Sommersemester 2023
-| Partnerhochschulen bearbeiten | 10 | Zum Verändern eines oder mehrerer bereits bestehenden Hochschulattribute im Verwaltungsfrontend |Sommersemester 2023
-| Partnerhochschulen löschen | 9 | Zum Entfernen einer Partnerhochschule oder derer Datenattribute im Verwaltungsfrontend | Sommersemester 2023
-| Erweiterte Infos | 7 | Anzeige detailierter Infos einzelner Universitäten sowie deren Ansprechpartner/E-Mails | Sommersemester 2023
-| Modifizieren von Bestandsdaten | 10 | Zum Bearbeiten einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
-| Löschen von Bestandsdaten | 9 | Zum Entfernen einer oder mehrerer Datensätze im Verwaltungsfrontend | Sommersemester 2023
-| Anzeige von Austauschstudenten | 7 | zur Ausgabe von Informationen über Austauschstudenten | Sommersemester 2023
-| Bearbeiten von Austauschstudenten | 8 | zur Pflege von Statistiken | Sommersemester 2023
-| Anzeige von Statistiken | 9 | zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
-| Exportieren von Statistiken | 6 | zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
-| Filterfunktion | 8 | aussortieren nicht gesuchter Einträge | Sommersemester 2023
-| Manuelle Suchfunktion | 7 | Ermögtlicht die manuelle Suche per Texteingabe | Sommersemester 2023
+| Logoff System | 5 | Ordnungsgemäßes Abmelden vom System |  Wintersemester 2022/2023
+| Filterfunktion | 10 | Aussortieren nicht gesuchter Einträge |  Wintersemester 2022/2023
+| Bearbeiten und Anlegen von Fakultäten | 7 | Zum Einfügen und Bearbeiten von Fakultäten neuer oder bestehender Partnerhochschulen und deren Verträgen im Verwaltungsfrontend | Sommersemester 2023
+| Verwalten von Ansprechpersonen von Fakultäten | 5 | Es soll eine Ansprechperson pro Hochschule eingetragen und ausgelesen werden können | Sommersemester 2023
+| Anlegen neuer Verträge | 7 | Zum Einfügen neuer Verträge im Verwaltungsfrontend | Sommersemester 2023
+| Anlegen neuer Universitäten | 7 | Zum Einfügen neuer Universitäten im Verwaltungsfrontend | Sommersemester 2023
+| Erzeugen von Berichten | 8 | Zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
+| Exportieren von Berichten | 5 | Zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
+| Löschen von Datensätzen | 9 | Nur der Superuser soll das Recht haben, Datensätze löschen zu können | Sommersemester 2023
 |===
 
 
@@ -165,8 +160,8 @@ Hinweise:
 | saubere und ausführliche Entwicklerdokumentation | 7 | Sommersemester 2023
 | saubere und ausführliche Nutzerdokumentation für die Stabstelle | 7 | Sommersemester 2023
 | Verbesserung des jetzigen Prototyps bzw. dessen Funktionen | 10 | Sommersemester 2023
-| komprimiert (nicht zu viel offene, unnötige Fenster) | 9 | Sommersemester 2023
-| übersichtlich | 9 | Sommersemester 2023
+| komprimierte Darstellung (nicht zu viel offene, unnötige Fenster) | 9 | Sommersemester 2023
+| übersichtliche Darstellung | 9 | Sommersemester 2023
 | MS-Access ähnliches Schema | 7 | Sommersemester 2023
 | in jedem zeitgemäßem Browser nutzbar | 9 | Sommersemester 2023
 | benutzerfreundliche Handhabung | 8 | Sommersemester 2023

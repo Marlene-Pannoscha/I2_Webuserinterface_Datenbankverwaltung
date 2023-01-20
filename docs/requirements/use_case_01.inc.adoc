@@ -8,7 +8,7 @@ Bei diesem Use-Case soll der Mitarbeiter die angezeigten Hochschulpartnerschafte
 
 === Kurzbeschreibung der Akteure
 
-==== Mitarbeiter Stabsstelle
+==== Mitarbeiter Stabsstelle Internationales
 Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaften mit anderen Hochschulen und Universitäten im Ausland. Sie stellen die Informationen bereit und wirken vermittelnd.
 
 === Vorbedingungen

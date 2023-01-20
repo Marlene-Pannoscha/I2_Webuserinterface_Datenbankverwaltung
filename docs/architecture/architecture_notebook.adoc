@@ -20,7 +20,7 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 Die Absicht der Systemarchitektur ist die Erweiterung der bisher bereitgestellten Webanwendung, welche die Organisation und Verwaltung der Hochschulpartnerschaften erleichtern soll. Den Nutzer/-innen soll (eine userfreundliche) Nutzung im Browser auf Rechnern (Laptop, Notebook, Desktop-Rechnern) gewährt werden, ausgeschlossen sind mobile Endgeräte.
  
 Die Erreichbarkeit des Systems beschränkt sich auf die Arbeitszeiten der Stabstelle Internationales, diese ((bezieht)) sich auf werktags 8h, 7-15 Uhr. Außerhalb der Zeit besteht keine Verpflichtung der Arbeitszeit.
-Die bisherige MariaDB und Access Datenbank werden als Datenbanken genutzt, diese werden vom Rechenzentrum bereitgestellt. Die bisherige Software setzt sinngemäß auf der MariaDB auf, jedoch bedarf es an Ergänzung bei der  Kommunikation zwischen den Inhalten und dem Frontend. Das Backend soll so erweitert werden, dass das Verwaltungsfrontend die Statistiken der Auslandsaktivitäten von Studierenden darstellt. 
+Die bisherige MariaDB und Access Datenbank werden als Datenbanken genutzt, diese werden vom Rechenzentrum bereitgestellt. Die bisherige Software setzt sinngemäß auf der MariaDB auf, jedoch bedarf es an Ergänzung bei der Kommunikation zwischen den Inhalten und dem Frontend. Das Backend soll so erweitert werden, dass das Verwaltungsfrontend die Statistiken der Auslandsaktivitäten von Studierenden darstellt. 
 
 
 == Annahmen und Abhängigkeiten
@@ -39,26 +39,26 @@ Die bisherige MariaDB und Access Datenbank werden als Datenbanken genutzt, diese
 . Abhängigkeit von Vorkenntnissen der Teammitglieder
 .. Die Teammitglieder haben angeeignetes Wissen bezüglich der Webentwicklung mittels Python, Html sowie JavaScript (jQuery)
 . Abhängigkeit von Einsatzbereitschaft und Instandhaltung der genutzten Frameworks sowie externen Komponenten
-.. Die eingesetzten Frameworks (Flask, JQuery) müssen vom Hersteller, um deren Funktionen einwandfrei nutzen zu können, regelmäßig gewartet werden.
+.. Die eingesetzten Frameworks (Flask, jQuery) müssen vom Hersteller, um deren Funktionen einwandfrei nutzen zu können, regelmäßig gewartet werden.
 
 == Architektur-relevante Anforderungen
 //Fügen Sie eine Referenz / Link zu den Anforderungen ein, die implementiert werden müssen, um die Architektur zu erzeugen.
 
 *Funktional*
  
-* SWFA-1: Das System muss jegliche Daten bezüglich den Hochschulpartnerschaften speichern
+* SWFA-1: Das System muss jegliche Daten bezüglich der  Hochschulpartnerschaften speichern
 * SWFA-2: Zugriff auf das Verwaltungsfrontend dürfen lediglich autorisierte Mitarbeiter/-innen der Stabstelle Internationales haben. 
 
 *Zuverlässigkeit*
 
-* NFAR-1: Beim Abruf eines vorherigen Zustandes der Datenbank, muss das Verwaltungsfrontend weiterhin funktionieren.
+* NFAR-1: Beim Abruf eines vorherigen Zustandes der Datenbank muss das Verwaltungsfrontend weiterhin funktionieren.
 * NFAR-2: Es besteht die Möglichkeit, dass Verwaltungs- und Informationsfrontend gleichzeitig Daten abrufen können.
-* NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen. (Multi-User-System)
+* NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen (Multi-User-System).
  
 *Effizienz (Performance)*
 
 * NFAP-1: Das Wechseln von Seiten innerhalb des Verwaltungsforntends sollte innerhalb von maximal 3 Sekunden stattfinden.
-* NFAP-2: Datenbankrelevante Funktionen sollten möglichst schnell, maximal 2 Sekunden, ausführbar sein.
+* NFAP-2: Datenbankrelevante Funktionen sollten möglichst schnell, innerhalb maximal 2 Sekunden, ausführbar sein.
 * Erweiterbarkeit der Systemfunktionalität
 
 *Benutzbarkeit*

@@ -12,7 +12,7 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 awf
-| Beginn der Iteration | 11.12.2022
+| Beginn der Iteration | 12.12.2022
 | Bestätigung der Anforderungsanalyse durch SI | 15.12.2022
 | Ende der Iteration | 25.12.2022
 |===
@@ -24,7 +24,7 @@ awf
 * Festhalten der Hauptanforderungen an das System
 * Erstellen der wichtigsten UseCases
 * Erstellen von Wireframes
-* Erstellen von UML-Diagrammen
+* Erstellen des Domönen-Modells
 * Ergänzen der Vision, Risklist und des Glossars
 * Analyse des Datenbanksystems
 
@@ -32,9 +32,7 @@ awf
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
-Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt (hier Verweis einfügen).
-
-_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="3,1,1,1,2,1,1,1,1"]
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
@@ -42,7 +40,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Analyse der Datenbank | hoch | 8 | abgeschlossen | / | 1 | Alessandra Ruff | 5 | /
 | Hauptanforderungen festhalten und UseCase-Modell erstellen | hoch | 6 | abgeschlossen | UseCase-Modell | 1 | Max Listner | 3 | /
 | UseCases beschreiben | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 3 | /
-| Erstellen eines UML-Diagrammes| hoch | 6 | abgeschlossen | / | 1 | Marlene Pannoscha | 3 | /
+| Erstellen des Domönen-Modells| hoch | 6 | abgeschlossen | / | 1 | Marlene Pannoscha | 3 | /
 | Erstellen der Wireframes | hoch | 4 | abgeschlossen | / | 1 | Alessandra Ruff | 2 | /
 
 
@@ -65,8 +63,9 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
 * ersichtbarer Fortschritt in der Dokumentation
-* Termineinhaltung
-* Rückmeldung bei Unklarheiten im Team
+* Bestätigung der analysierten Anforderugnen durch die SI
+* Erweiterung des Verständnisses des Problems und des vorliegenden Systems
+
 
 
 == Assessment
@@ -89,7 +88,8 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 * Geplante vs. erledigte Aufgaben
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 ** die Dokumentation wurde größenteils eingehalten, einzelne Analyse- und Dokumentationsschritte müssen noch ergänzt werden
-** die Programmierumgebung wurde geschaffen, wodruch die Implementierung / das Erstellen des Prototypen im nächsten Iterationsabschnitt beginnen kann
+** die Programmierumgebung wurde geschaffen
+** das System wurde durch eine tiefliegende Analyse größenteils verstanden, so dass erste Implementierungsschritte in der nächsten Iteration erfolgen können
 
 
 * Beurteilung im Vergleich zu den Bewertungskriterien
@@ -97,7 +97,8 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
 ** Termine wurden eingehalten, Unklarheiten wurden geklärt
 ** ein deutlicher Dokumentationsfortschritt lässt sich erkennen
-** das Team ist bereit am Prototypen zu arbeiten
+** die SI bestätigt die vom Team festgelegten Hauptanforderungen
+** durch ein grundlegenes Verständniss, ist das Team ist bereit am Prototypen zu arbeiten
 
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.

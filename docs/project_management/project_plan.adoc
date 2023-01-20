@@ -84,7 +84,9 @@ a|
 * Karl Gustav Langer
 * Dilara Eichler
 |
-|
+a| 
+* Architektur Notebook
+
 |Implementierung
 a|
 * Karl Gustav Langer
@@ -110,9 +112,9 @@ a|
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
 Zur Dokumentation dieses Projektes nutzen wir ein GitHub-Repository. Die entsprechenden Dokumente werden mit Visual Studio Code erstellt, bearbeitet und dann ins Repository gepusht bzw. von dort aus gepullt.
 
-Um unser Projekt erfolgreich durchzuführen, nutzen wir den Open Unified Process (OpenUP). Aufgaben werden hierbei in Iterationen bearbeitet, welche jeweils 2 bis 3 Wochen andauern. Die zu erledigenden Aufgaben werden als Issues festgehalten und dem jeweiligen Gruppenmitglied zugewiesen.
+Um unser Projekt erfolgreich durchzuführen, nutzen wir die Dokumentvorlagen des Open Unified Process (OpenUP). Aufgaben werden hierbei in Iterationen bearbeitet, welche jeweils 2 Wochen andauern. Die zu erledigenden Aufgaben werden als Issues festgehalten und dem jeweiligen Gruppenmitglied zugewiesen.
 
-Zur Kommunikation wurde größenteils Discord, sowie WhatsApp und Mail benutzt. Dokumente wurden entweder über Discord oder über GitHub geteilt. Wir haben versucht, unsere Meetings immer in präsenz durchzuführen, was uns mit der Stabsstelle Internationales auch gelungen ist.
+Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente wurden entweder über Discord oder über GitHub geteilt. Wir haben versucht, unsere Meetings immer in präsenz durchzuführen, was uns mit der Stabsstelle Internationales auch gelungen ist.
 
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
@@ -130,14 +132,15 @@ Zur Kommunikation wurde größenteils Discord, sowie WhatsApp und Mail benutzt. 
 * mit bestehendem System vertraut machen
 * Beginnen mit Vision
 * Beginnen mit Glossar und Risikoliste
-| 27.11.2022 - 11.12.2022
+| 28.11.2022 - 11.12.2022
 | 15
 
 | I2
 | Funktions- und Anforderungsanalyse
 * festhalten der Hauptanforderungen an das GUI
 * erstellen der wichtigsten UseCases
-* erstellen von Wireframes und UML-Diagrammen
+* erstellen von Wireframes
+* erstellen des Domänen-Modells
 * ergänzen von Vision, Glossar und Risiokoliste 
 | 12.12.2022-25.12.2022
 | 15
@@ -146,7 +149,7 @@ Zur Kommunikation wurde größenteils Discord, sowie WhatsApp und Mail benutzt. 
 |erste Implementierungschritte
 * erstellen eines Architektur-Modells
 * erstellen eines Prototypen, implementierung der ersten Funktionen
-| 1.01.2023 - 15.01.2023
+| 2.01.2023 - 15.01.2023
 | 16
 
 | I4
@@ -161,7 +164,7 @@ Zur Kommunikation wurde größenteils Discord, sowie WhatsApp und Mail benutzt. 
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
-Das System wird auf einer vom Rechenzentrum zur Verfügung gestellten virtuellen Maschine betrieben.
+Das System wird auf einer vom Rechenzentrum zur Verfügung gestellten virtuellen Maschine betrieben. Um neue Funktionen zu testen und den Verlust von Daten zu verhindern, nutzen wir eine lokale Maria-DB.
 
 
 == Erkenntnisse (Lessons learned)
