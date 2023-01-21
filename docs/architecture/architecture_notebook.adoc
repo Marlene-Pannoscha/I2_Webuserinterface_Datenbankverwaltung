@@ -98,13 +98,47 @@ Dadurch, dass das Rechenzentrum der HTW Dresden den Vorgängern eine Datenbank, 
 
 //Beschreiben Sie den Zweck, Eigenschaften und Funktion der Architekturmechanismen.
 
-. Architekturmechanismus 1
-. Architekturmechanismus 2
+
+
+. Benutzeroberfläche
+.. Die Webanwendung wird mithilfe von HTML, CSS und JavaScript realisiert, weil diese eine hohe Modularität aufweisen, relativ einfach zu bedienen sind und bereits vorhanden waren. Wir nutzen Higher Level-Sprachen, um eine hohe Wartbarkeit und einfache Implementation zu erreichen.
+
+. Webserver
+.. Die Verfügbarkeit der Anwendung wird durch den www2-Server des HTW-Rechenzentrums gewährleistet.
+
+. Kommunikation mit Datenbank
+.. PHP bietet mit mysql und ODBC ein breites Spektrum an Kompatibilität mit Datenbanken und z.B. Excel-Dateien. Dadurch wird der Zugriff auf die Datenbank und der Import statistischer Daten aus Excel-Dateien realisiert.
+
+. Zugriffsschutz
+.. Logins für das Verwaltungsfrontend mit Schreibzugriff werden nur für Mitarbeiter bereitgestellt.
+... Diese müssen den Login eines validen Datenbankusers nutzen. Bei falschen Logindaten kann das Verwaltungsfrontend gar nicht auf die Datenbank zugreifen.
+.. Das öffentliche Informationsfrontend für die Studierenden wird nur Lesezugriff auf unsere Datenbank erhalten.
+.. Weiterhin besteht ein Zugriff auf das Verwaltungsfrontend nur innerhalb des HTW-Netzes, was durch eine `.htaccess`-Datei realisiert wird.
+
 
 
 == Wesentliche Abstraktionen
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
 
+//*Objekte* sind die bereitgestellten Daten. Für eine ausführlichere Auflistung, siehe das Glossar.
+
+* Land: enthält Länderinformationen und die Erasmusverfügbarkeit
+
+* Fakultät: enthält Fakultätsinformationen
+
+* Studienfach: enthält Studienfachinformationen und 1:n Beziehungen zu einer Fakultät
+
+* Hochschule: enthält Kontaktinformationen der Hochschule und ggf einen Erasmuscode
+
+* Mentor: enthält Kontaktinformationen der betreuenden Person des Austauschprogramms
+
+* Hochschulvereinbarung: enthält die Art der Vereinbarung, Länge, Anzahl der Incomings/Outgoings pro Studienfach und deren maximale Aufenthaltszeit
+
+*Dienste* verarbeiten die bereitgestellten Daten: Anzeige und Änderung.
+
+*Workflows* geben die Reihenfolge der Abarbeitung der Dienste an.
+
+Für die Beziehungen zwischen den einzelnen Objekten siehe das Domänenmodel.
 
 == Schichten oder Architektur-Framework
 //[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
@@ -118,9 +152,32 @@ Folgende Sichten werden empfohlen:
 
 === Logische Sicht
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
+// MUSS BEARBEITET WERDEN!
 
+Das nachfolgende C4 Modell beschreibt die logische Verknüpfung von Systemteilen in dem System.
+
+//Ein User kann sich entweder über die Hochschulpartnerschaften informieren oder diese verwalten.
+//Das Informationsfrontend ist eine Webseite mit der sich interessierte User (z.B. Studierende) über die Hochschulpartnerschaften erkundigen können.
+//Die Verwaltungsanwendung besteht aus einem Frontend als Webseite, welche die Workflows vorgibt und einem Backend, welches die Dienste bereitstellt.
+//Es wird lesend im Falle der Informationsanwendung und auch schreibend bei der Verwaltungsanwendung durch SQL Befehle auf die Datenbank zugegriffen.
+//Da die Daten außerhalb der Verwaltungsanwendung gespeichert werden, müssen keine Schnittstellen für andere Systeme bereitgestellt werden.
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
+Das Verwaltungsfrontend wird im Browser des Nutzers ausgeführt.
+
+Das Backend wird auf dem www2-Server des Rechenzentrums bereitgestellt.
+
+Die Datenbank läuft auf einem MariaDB-Server des Rechenzentrums.
+
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
+
+.Architekturrelevante Use Cases
+[%header]
+|===
+|Use Case ID| Use Case Name
+|UC01| Login in das System
+|UC02| Filterung nach Ländern
+|UC3| Logout 
+|===
