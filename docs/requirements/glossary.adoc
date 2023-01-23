@@ -15,11 +15,14 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 
 | Stabstelle Internationales  | Organisationsteam der HTW Dresden, dass sich der Internationalisierungsaufgabe stellt und internationale Beziehungen pflegt | -
 | Fakultät | eine Gruppe zusammengehörender Wissenschaften oder Wissenschaftsgebiete umfassende Abteilung als Lehr- und Verwaltungseinheit einer Universität oder Hochschule | -
-| Mitarbeiter-/in | Person, die für die Stabsstelle Internationales arbeitet | -
+| Mitarbeiter/-in | Person, die für die Stabsstelle Internationales arbeitet | interne/-r Nutzer/-in
 | Partnerschaft | ein Vertrag zwischen der HTW Dresden und einer ausländischen Hochschule | Partnerschaftsvertrag, Hochschulparnerschaft
-| Kontaktperson | Ansprechpartner der entsprechenden Partnerhochschule | Ansprechpartner/-in
+| Kontaktperson | Ansprechpartner/-in der entsprechenden Partnerhochschule | Ansprechpartner/-in
 | Graphical User Interface | ein Computerprogramm, mit dem eine Person mithilfe von Symbolen, visuellen Metaphern und Zeigegeräten mit einem Computer kommunizieren kann | User-Interface
+| Informationsfrontend | das Frontend auf der HTW Website, welches Daten aus der Datenbank ausliest und zur Information darstellt | -
+| Verwaltungsfrontend | das von der Stabsstelle Internationales genutze Frontend, zur Bearbeitung und Einsicht von Datensätzen | Bearbeitungsansicht
 | Superuser | ein spezieller Benutzer-Account, der weit mehr Berechtigungen hat als ein normaler Account | -
+| externe/-r Nuter/-in | Person, die sich über Partnerschaften der HTW Dresden informieren möchte  | -
 |===
 
 
@@ -37,6 +40,10 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
 | UC | Use Case | funktionale Anforderung an das System
 | SU | Superuser | -
+| HTML | Hypertext Markup Language | textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente
+| CSS | Cascading Style Sheets | eine Stylesheet-Sprache für elektronische Dokumente
+
+
 |===
 
 == Verzeichnis der Datenstrukturen
