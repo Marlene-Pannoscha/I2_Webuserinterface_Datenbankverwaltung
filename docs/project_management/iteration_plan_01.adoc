@@ -38,6 +38,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Beantragen einer virtuellen Maschine | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,5 | /
 | Identifizierung wichtiger UseCases | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 2 | /
 | Identifizierung wichtiger Stakeholder | hoch | 6 | abgeschlossen | / | 1 | Allesandra Ruff | 2 | /
+| Identifizierung Hauptfunktion und Produktanforderungen | hoch | 6 | abgeschlossen | Vision | 1 | Kevin Freund | 1,5 | 
 | erste Bearbeitung des Projektplans | mittel | 6 | abgeschlossen | Projektplan | 1 | Marlene Pannoscha | 2 | /
 | erste Bearbeitung des Glossars | mittel | 4 | abgeschlossen | Glossar | 1 | Max Listner | 1 | /
 | erste Bearbeitung der Risklsit | mittel | 4 | abgeschlossen | Risklist | 1 | Karl Gustav Langer | 1 | /
