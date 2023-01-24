@@ -10,4 +10,4 @@ Platzhalter für weitere Dokumenten-Attribute
 Das Domain Model bildet die relevante Terminolgie der Fachdomäne ab, mit dem Ziel, eine gemeinsame Sprache zwischen Entwicklern und Fachexpertne herzustellen, um Missverständnissen vorzubeugen. Es handelt sich um ein so genanntes „Visual Data Dictionary", welches für ein besseres Verständnis im Team über fachliche Zusammenhänge sorgen soll.
 
 == Domänenmodel
-image::domain_model.png[]
+image::domain_modell.png[]

@@ -1,3 +1,4 @@
+:imagesdir: images
 = Architecture Notebook: {project-name}
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
@@ -147,7 +148,6 @@ Für die Beziehungen zwischen den einzelnen Objekten siehe das Domänenmodel.
 == Architektursichten (Views)
 //C4 Modell
 //[Describe the architectural views that you will use to describe the software architecture. This illustrates the different perspectives that you will make available to review and to document architectural decisions.]
-
 Folgende Sichten werden empfohlen:
 
 === Logische Sicht
@@ -155,6 +155,9 @@ Folgende Sichten werden empfohlen:
 // MUSS BEARBEITET WERDEN!
 
 Das nachfolgende C4 Modell beschreibt die logische Verknüpfung von Systemteilen in dem System.
+
+.Architecture-Modell der vorherigen Gruppen
+image::architecture_modell.png[Architecture-Modell der vorherigen Gruppen]
 
 //Ein User kann sich entweder über die Hochschulpartnerschaften informieren oder diese verwalten.
 //Das Informationsfrontend ist eine Webseite mit der sich interessierte User (z.B. Studierende) über die Hochschulpartnerschaften erkundigen können.
