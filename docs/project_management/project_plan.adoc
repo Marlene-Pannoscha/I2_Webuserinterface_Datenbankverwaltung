@@ -80,7 +80,7 @@ a|
 
 |Entwurf
 a|
-* Rober Alexander Pfund
+* Robert Alexander Pfund
 * Karl Gustav Langer
 * Dilara Eichler
 |
