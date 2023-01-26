@@ -27,6 +27,14 @@ image::use_case_modell.png[]
 //=== *UC01*: Filtern nach Fakultät und Partnerschaft
 include::use_case_01.inc.adoc[]
 
+.Datenbearbeitung
+image::wf_Mainpage_v1.png[]
+
+.detaillierte Hochschulbearbeitung
+image::wf_mainpage_v2_inst.png[]
+
+.detaillierte Vertragsbearbeitung
+image::wf_mainpage_v2_vertrag.png[]
 
 //=== *UC02*: LogOut
 include::use_case_02.inc.adoc[]

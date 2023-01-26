@@ -2,11 +2,12 @@
 Marlene Pannoscha <marlene.pannoscha@stud.htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
-Platzhalter für weitere Dokumenten-Attribute
+//Platzhalter für weitere Dokumenten-Attribute
 
 
 == Allgemeine Informationen
 Das Domain Model bildet die relevante Terminolgie der Fachdomäne ab, mit dem Ziel, eine gemeinsame Sprache zwischen Entwicklern und Fachexpertne herzustellen, um Missverständnissen vorzubeugen. Es handelt sich um ein so genanntes „Visual Data Dictionary", welches für ein besseres Verständnis im Team über fachliche Zusammenhänge sorgen soll.
 
 == Domänenmodel
+
 image::domain_modell.png[]

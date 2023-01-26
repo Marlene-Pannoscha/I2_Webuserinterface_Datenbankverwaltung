@@ -47,13 +47,3 @@ Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaf
 ==== <Nachbedingung 1>
 Die Anzeige der Partnerhochschulen wurde angepasst und zeigt nur noch Hochschulen an, die den Filter erfüllen.
 
-:imagesdir: images
-=== Wireframes
-Einige Wireframes zur geplanten Websiteansicht
-
-.Datenbearbeitung
-image::wf_Mainpage_v1.png[]
-.detaillierte Hochschulbearbeitung
-image::wf_mainpage_v2_inst.png[]
-.detaillierte Vertragsbearbeitung
-image::wf_mainpage_v2_vertrag.png[]
