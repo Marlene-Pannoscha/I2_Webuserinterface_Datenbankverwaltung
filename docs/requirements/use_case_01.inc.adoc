@@ -1,6 +1,6 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
-== Use-Case: <Filterung nach nach Land, Hochschule und Vertragsytp>
+== Use-Case: UC01 Filterung nach nach Land, Hochschule und Vertragsytp
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -47,3 +47,13 @@ Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaf
 ==== <Nachbedingung 1>
 Die Anzeige der Partnerhochschulen wurde angepasst und zeigt nur noch Hochschulen an, die den Filter erfüllen.
 
+:imagesdir: images
+=== Wireframes
+Einige Wireframes zur geplanten Websiteansicht
+
+.Datenbearbeitung
+image::wf_Mainpage_v1.png[]
+.detaillierte Hochschulbearbeitung
+image::wf_mainpage_v2_inst.png[]
+.detaillierte Vertragsbearbeitung
+image::wf_mainpage_v2_vertrag.png[]

@@ -1,5 +1,5 @@
 // Meta
-:project-name: <I2_Webuserinterface_für_Datenbankverwaltung>
+:project-name: I2 Webuserinterface für Datenbankverwaltung
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis

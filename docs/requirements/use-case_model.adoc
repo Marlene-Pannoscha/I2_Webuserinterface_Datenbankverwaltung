@@ -1,7 +1,3 @@
-:imagesdir: images
-:diagramsdir: diagrams
-:plantumlsdir: plantuml
-
 = Use-Case Model: {project-name}
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
@@ -25,24 +21,23 @@ Im folgenden werden identifizierte Use-Cases genannt, sowie die priorisierten Us
 * <<_uc7_erzeugen_von_berichten>> (geplant)
 * <<_uc8_löschen_von_datensätzen>> (geplant)
 
-=== *UC01*: Filtern nach Fakultät und Partnerschaft
-include::use_case_01.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+== Use Case Diagramm
+image::use_case_modell.png[]
+
+//=== *UC01*: Filtern nach Fakultät und Partnerschaft
+include::use_case_01.inc.adoc[]
 
 //image::use_case_filtern.png[]
 
-image::wf_Mainpage_v1.png[]
-image::wf_mainpage_v2_inst.png[]
-image::wf_mainpage_v2_vertrag.png[]
 
-=== *UC02*: LogOut
-include::use_case_02.inc.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+//=== *UC02*: LogOut
+include::use_case_02.inc.adoc[]
 
 //image::use_case_logout.png[]
 
 
 
-== Use Case Diagramm
-image::use_case_modell.png[]
 
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
