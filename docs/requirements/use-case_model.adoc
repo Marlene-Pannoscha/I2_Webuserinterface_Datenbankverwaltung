@@ -27,17 +27,9 @@ image::use_case_modell.png[]
 //=== *UC01*: Filtern nach Fakultät und Partnerschaft
 include::use_case_01.inc.adoc[]
 
-//image::use_case_filtern.png[]
-
-
 
 //=== *UC02*: LogOut
 include::use_case_02.inc.adoc[]
-
-//image::use_case_logout.png[]
-
-
-
 
 
 //Fügen Sie nachfolgend alle detaillierten Use-Cases per Include ein.
