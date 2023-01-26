@@ -6,8 +6,8 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen fesgehalten, die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik sowie Produkt- und Lösungsansätze dargestellt unter dem Nutzen von Stakeholdern und essentiellen Anforderungen.
-Die Details, wie die Benutzeroberfläche diese Anforderungen erfüllt, werden in den Use-Cases und den systemweiten Anforderungen geschildert.
+Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen festgehalten, die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik, Produkt- und Lösungsansätze, sowie essenzielle Anforderungen für den Nutzer und potentielle Stakeholder dargestellt.
+Wie die Benutzeroberfläche diese Anforderungen erfüllt, wird im Detail in den Use-Cases und den systemweiten Anforderungen geschildert.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben. Gleichzeitig werden Stakeholder definiert und die Hauptproblematik des Projektes in Zusammenarbeit mit dem Auftraggeber dargestellt.

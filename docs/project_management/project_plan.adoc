@@ -2,25 +2,25 @@
 
 
 Max Listner
-<max.listner@htw-dresden.de>;
+<max.listner@stud.htw-dresden.de>
 
 Alessandra Ruff
-<alessandra.ruff@stud.htw-dresden.de>;
+<alessandra.ruff@stud.htw-dresden.de>
 
 Dilara Eichler
-<dilara.eichler@stud.htw-dresden.de>;
+<dilara.eichler@stud.htw-dresden.de>
 
 Kevin Freund
-<kevin.freund@stud.htw-dresden.de>;
+<kevin.freund@stud.htw-dresden.de>
 
 Robert Alexander Pfund
-<robertalexander.pfund@stud.htw-dresden.de>;
+<robertalexander.pfund@stud.htw-dresden.de>
 
 Karl Gustav Langer
-<karlgustav.langer@stud.htw-dresden.de>;
+<karlgustav.langer@stud.htw-dresden.de>
 
 Marlene Pannoscha
-<marlene.pannoscha@stud.htw-dresden.de>;
+<marlene.pannoscha@stud.htw-dresden.de>
 
 
 
@@ -84,7 +84,8 @@ a|
 * Robert Alexander Pfund
 * Karl Gustav Langer
 * Dilara Eichler
-|
+a|
+* Erstellen eines Systementwurfes
 a| 
 * Architektur Notebook
 
@@ -94,7 +95,8 @@ a|
 * Alessandra Ruff
 * Kevin Freund
 * Dilara Eichler
-|
+a|
+* Implementierung des erstellten Systementwurfes und der wichtigsten Funktionen
 a|
 * Architektur Notebook
 
@@ -102,7 +104,9 @@ a|
 a|
 * Karl Gustav Langer
 * Alessandra Ruff
-|
+a|
+* Testen der implementierten Funktionen
+* Testen der Funktionalitäten des Systems
 a|
 * Test Cases
 |===
@@ -130,6 +134,7 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 
 | I1
 | Analyse des bestehenden Systems
+a|
 * mit bestehendem System vertraut machen
 * Beginnen mit Vision
 * Beginnen mit Glossar und Risikoliste
@@ -138,6 +143,7 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 
 | I2
 | Funktions- und Anforderungsanalyse
+a|
 * festhalten der Hauptanforderungen an das GUI
 * erstellen der wichtigsten UseCases
 * erstellen von Wireframes
@@ -148,6 +154,7 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 
 | I3
 |erste Implementierungschritte
+a|
 * erstellen eines Architektur-Modells
 * erstellen eines Prototypen, implementierung der ersten Funktionen
 | 2.01.2023 - 15.01.2023
@@ -155,6 +162,7 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 
 | I4
 |weitere Implementierungschritte
+a|
 * weitere wichtige Funktionen werden im Prototypen implementiert
 * die systemweiten Anforderungen und das Architektur-Modell werden angepasst bzw. vervollständigt
 | 16.01.2023 - 27.01.2023 (Projektabgabe)
