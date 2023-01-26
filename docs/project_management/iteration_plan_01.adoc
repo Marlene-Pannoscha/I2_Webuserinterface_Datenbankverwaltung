@@ -82,7 +82,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 * Beurteilung im Vergleich zu den Zielen
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 ** Vision, Projekltplan, Glossar und Risklist müssen weiter ergänzt werden
-** die Kenntniss zum Web-Programming muss vertieft werden
+** die Kenntnisse zum Web-Programming müssen vertieft werden
 ** die wichtigsten Anforderungen an das System müssen genauer abgesprochen werden
 ** auf das bestehende Datenbanksystem muss über die virtuelle Maschine zugegriffen werden, um diese zu analysieren
 
