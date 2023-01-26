@@ -3,7 +3,7 @@
 // --- 2. Teammitglieder -----------------------
 Max Listner <s82411@htw-dresden.de>; Marlene Pannoscha <s83814@htw-dresden.de>; Alessandra Ruff <s83852@htw-dresden.de>; Kevin Freund <s83794@htw-dresden.de>; Dilara Eichler <s83792@htw-dresden.de>; Robert Alexander Pfund <s83761@htw-dresden.de>; Karl Gustav Langer <s83815@htw-dresden.de>
 // --- 3. Abgabedatum --------------------------
-26. Januar 2023
+27. Januar 2023
 // ---------------------------------------------
 :docs: ../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
