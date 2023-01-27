@@ -155,6 +155,7 @@ Folgende Sichten werden empfohlen:
 
 Das nachfolgende C4 Modell beschreibt die logische Verknüpfung von Systemteilen in dem System.
 
+:imagesdir: images
 .Architecture-Modell der vorherigen Gruppen
 image::architecture_modell.png[Architecture-Modell der vorherigen Gruppen]
 

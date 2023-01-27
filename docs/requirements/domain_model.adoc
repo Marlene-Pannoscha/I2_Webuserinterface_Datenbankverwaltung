@@ -10,4 +10,5 @@ Das Domain Model bildet die relevante Terminolgie der Fachdomäne ab, mit dem Zi
 
 == Domänenmodel
 
+:imagesdir: images
 image::domain_modell.png[]

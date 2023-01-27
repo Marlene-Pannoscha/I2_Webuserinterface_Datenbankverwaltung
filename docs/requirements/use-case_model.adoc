@@ -21,6 +21,7 @@ Im folgenden werden identifizierte Use-Cases genannt, sowie die priorisierten Us
 * <<_uc7_erzeugen_von_berichten>> (geplant)
 * <<_uc8_löschen_von_datensätzen>> (geplant)
 
+:imagesdir: images
 == Use Case Diagramm
 image::use_case_modell.png[]
 
