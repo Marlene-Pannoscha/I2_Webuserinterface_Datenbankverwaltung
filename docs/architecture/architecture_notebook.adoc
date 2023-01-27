@@ -179,7 +179,6 @@ Die Datenbank läuft auf einem MariaDB-Server des Rechenzentrums.
 [%header]
 |===
 |Use Case ID| Use Case Name
-|UC01| Login in das System
-|UC02| Filterung nach Ländern
-|UC3| Logout 
+|UC01| Filterung nach Ländern
+|UC02| Logout 
 |===

@@ -83,6 +83,7 @@ a|
 a|
 * Robert Alexander Pfund
 * Karl Gustav Langer
+* Kevin Freund
 * Dilara Eichler
 a|
 * Erstellen eines Systementwurfes

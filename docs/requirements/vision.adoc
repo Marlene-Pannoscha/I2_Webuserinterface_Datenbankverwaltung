@@ -6,7 +6,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen festgehalten, die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik, Produkt- und Lösungsansätze, sowie essenzielle Anforderungen für den Nutzer und potentielle Stakeholder dargestellt.
+Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen festgehalten, die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Hauptproblematik, Produkt- und Lösungsansätze, sowie essenzielle Anforderungen für den Nutzer und potentielle Stakeholder dargestellt.
 Wie die Benutzeroberfläche diese Anforderungen erfüllt, wird im Detail in den Use-Cases und den systemweiten Anforderungen geschildert.
 
 === Zweck
@@ -22,7 +22,7 @@ Das System wird es Mitarbeitern der Stabsstelle Internationals erlauben, die Ver
 Siehe <<#glossary, Glossar>>.
 
 === Referenzen
-(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
+//(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
 
 == Positionierung
@@ -132,7 +132,7 @@ Beispiel Produkt:
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Logoff System | 5 | Ordnungsgemäßes Abmelden vom System |  Wintersemester 2022/2023
+| Log-Out System | 5 | Ordnungsgemäßes Abmelden vom System |  Wintersemester 2022/2023
 | Filterfunktion | 10 | Aussortieren nicht gesuchter Einträge |  Wintersemester 2022/2023
 | Bearbeiten und Anlegen von Fakultäten | 7 | Zum Einfügen und Bearbeiten von Fakultäten neuer oder bestehender Partnerhochschulen und deren Verträgen im Verwaltungsfrontend | Sommersemester 2023
 | Verwalten von Ansprechpersonen von Fakultäten | 5 | Es soll eine Ansprechperson pro Hochschule eingetragen und ausgelesen werden können | Sommersemester 2023
