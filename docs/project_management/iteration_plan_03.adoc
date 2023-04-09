@@ -1,0 +1,100 @@
+= Iteration Plan 03: {project-name}
+Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein | Datum
+awf
+| Beginn der Iteration | 11.04.2023
+| Abnahme durch SI |
+| Ende der Iteration | 25.04.2023
+|===
+
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+* Filterung nach Land, Hochschule und Vertragstyp
+* Verwalten von Ansprechpersonen von Fakultäten
+* Layout der Fenster (Liste, Hochshule und Verträge) anpassen
+* Dokumentation vereinheitlichen
+* Überarbeitung der Risikoliste
+* Essenced Kernel nutzen 
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header, cols="3,1,1,1,2,1,1,1,1"]
+|===
+| Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
+
+| Filtern nach Land, Fakultät und Vertragstyp | hoch | 8 | laufend | / | 1 | ausstehend | 3 | /
+| Verwalten von Ansprechpersonen von Hochschulen | hoch | 7 | laufend | / | 1 | ausstehend | 5 | /
+| Layout der Fenster anpassen | hoch | 6 | laufend | / | 1 | ausstehend | 4 | /
+| Snapshot von der Datenbank einbinden| hoch | 5 | laufend | / | 1 | ausstehend | 3 | /
+| Essence Kernel Navigator | hoch | 4 | laufend | / | 1 | ausstehend | 2 | /
+| Risikoliste überarbeiten | hoch | 3 | laufend | / | 1 | ausstehend | 4 | /|
+| Login Use Case ergänzen| 2 |laufend | / | 1 | ausstehend | 1| / | 
+| Einheitliche Dokumentation und Codingstil festlegen | 3 | laufend | / | 1 | ausstehend | 2 | /
+
+
+
+|===
+
+
+== Probleme (optional)
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+
+| Snapshot der Datenbank von SHK bekommen | ausstehend |
+
+|===
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+
+* ersichtbarer Fortschritt in der Dokumentation
+
+
+
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Projektfortschritt
+
+| Assessment Datum | 25.04.2023
+| Teilnehmer | Team I2
+| Projektstatus	|
+|===
+
+* Beurteilung im Vergleich zu den Zielen
+//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+
+
+* Geplante vs. erledigte Aufgaben
+//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+
+
+
+* Beurteilung im Vergleich zu den Bewertungskriterien
+//Document whether you met the evaluation criteria as specified in the Iteration Plan.
+//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+
+
+* Andere Belange und Abweichungen
+//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+** keine
