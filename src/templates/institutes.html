@@ -167,16 +167,14 @@
                 <div class="modal-body">
                     <!-- Hochschulinfo anzeigen -->
                     <div id="first_slide" onchange="instituteObjectUpdated()">
-                        <div class="row p-3">
-                            <h3>Hochschule</h3>
+                        <div class="row p-3">                            
                             <div class="col-sm pt-1">
+                                <h3>Hochschule</h3>
                                 <form class="clear-form" id="edit_left_col">
-                                    <h3>Allgemeine Information</h3>
+                                    
                                     <div class="mb-3">
-                                        <label class="form-label" for="edit_mod_country">Land</label>
-                                        <select class="filter_country
-                                                form-select" id="edit_mod_country" name="edit_fil_country">
-                                        </select>
+                                        <label class="form-label" for="edit_modal_ec">Erasmus-Code</label>
+                                        <input class="form-control" type="text" id="edit_modal_ec" name="erasmus">
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="edit_modal_eng">Englische
@@ -189,9 +187,15 @@
                                         <input class="form-control" type="text" id="edit_modal_local" name="local">
                                     </div>
                                     <div class="mb-3">
+                                        <label class="form-label" for="edit_mod_country">Land</label>
+                                        <select class="filter_country
+                                                form-select" id="edit_mod_country" name="edit_fil_country">
+                                        </select>
+                                    </div>                           
+                                    <!-- <div class="mb-3">
                                         <label class="form-label" for="edit_modal_adr">Adresse</label>
                                         <input class="form-control" type="text" id="edit_modal_adr" name="adress">
-                                    </div>
+                                    </div> -->
                                     <div class="mb-3">
                                         <label class="form-label" for="edit_modal_ws">Website</label>
                                         <input class="form-control" type="text" id="edit_modal_ws" name="website">
@@ -199,10 +203,6 @@
                                     <div class="mb-3">
                                         <label class="form-label" for="edit_modal_ntzn">Notizen</label>
                                         <input class="form-control" type="text" id="edit_modal_ntzn" name="notes">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label" for="edit_modal_ec">Erasmus-Code</label>
-                                        <input class="form-control" type="text" id="edit_modal_ec" name="erasmus">
                                     </div>
                                     <div class="mb-3">
                                         <input class="my_check
@@ -213,9 +213,10 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-sm ms-3 pt-1">
+                            <div class="col-sm pt-1">
                                 <h3>Ansprechperson</h3>
                                 <form class="clear-form" id="edit_mid_col">
+                                    <!--
                                     <div class="mb-3">
                                         <label class="form-label" for="edit_mod_func">Funktion</label>
                                         <input class="form-control" type="text" id="edit_mod_func" name="function">
@@ -232,6 +233,11 @@
                                         <label class="form-label" for="edit_mod_title">Titel</label>
                                         <input class="form-control" type="text" id="edit_mod_title" name="title">
                                     </div>
+                                    -->
+                                    <div class="mb-3">
+                                        <label class="form-label" for="edit_mod_ap_mail">Email</label>
+                                        <input class="form-control" type="text" id="edit_mod_ap_mail" name="email">
+                                    </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="edit_mod_vn">Vorname</label>
                                         <input class="form-control" type="text" id="edit_mod_vn" name="firstname">
@@ -240,14 +246,13 @@
                                         <label class="form-label" for="edit_mod_nn">Nachname</label>
                                         <input class="form-control" type="text" id="edit_mod_nn" name="lastname">
                                     </div>
+                                    <!--
                                     <div class="mb-3">
                                         <label class="form-label" for="edit_mod_ap_tel">Telefon</label>
                                         <input class="form-control" type="text" id="edit_mod_ap_tel" name="telephone">
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label" for="edit_mod_ap_mail">Email</label>
-                                        <input class="form-control" type="text" id="edit_mod_ap_mail" name="email">
-                                    </div>
+                                    -->
+                                    
                                 </form>
                             </div>
                             <div class="col-sm ms-3 pt-1">
