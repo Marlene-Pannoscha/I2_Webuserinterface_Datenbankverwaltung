@@ -12,10 +12,10 @@ In diesem Dokument sind die wesentlichen Risiken des Projekts aufgeführt.
 
 Dabei werden folgende Attribute verwendet:
 
-* *Typ*: Ressourcen, Geschäftlich, Technisch, Zeitlich
-* *Auswirkung (IMP)*: Wert zwischen 1 (niedrig) und 5 (hoch), der die Auswirkungen auf das Projekt angibt, wenn das Risiko eintritt
+* *Typ*: Ressourcen, Geschäftlich, Technisch, Zeitlich, Organisatorisch, Rechtlich
+* *Auswirkung (IMP)*: Wert zwischen 1 (niedrig) und 10 (hoch), der die Auswirkungen auf das Projekt angibt, wenn das Risiko eintritt
 * *Wahrscheinlichkeit (PRB)*: Prozentangabe für die Eintrittswahrscheinlichkeit des Risikos
-* *Stärke (MAG)*: Produkt aus Auswirkung und Wahrscheinlichkeit (damit kann die Liste sortiert werden)
+* *Ausmaß (MAG)*: Produkt aus Auswirkung und Wahrscheinlichkeit (damit kann die Liste sortiert werden)
 
 == Risiken
 
@@ -23,7 +23,7 @@ Die Risiken sind in folgender Tabelle: <<table_risks>> dargestellt. Das Datum de
 
 [#table_risks]
 .Risiken
-image::risk_list.png[]
+image::risk_list_I3.png[]
 
 // Die inkludierte csv-Datei "risks.csv" verwendet `;` Semmikolons als Trennzeichen. Achten Sie beim Export als csv-Datei auf das Angeben des entsprechenden Trennzeichens. Verwenden Sie stattdessen `,` Kommas, kann das Tabellenattribut `separator=` weggelassen werden oder muss entprechend angepasst werden.
 
