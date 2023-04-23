@@ -21,6 +21,7 @@ Dabei werden folgende Attribute verwendet:
 
 Die Risiken sind in folgender Tabelle: <<table_risks>> dargestellt. Das Datum des Dokuments oben gibt an, wann die Risikoliste zuletzt aktualisiert wurde.
 
+:imagesdir: images
 [#table_risks]
 .Risiken
 image::risk_list_I3.png[]
