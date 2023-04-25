@@ -42,6 +42,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | UseCases beschreiben | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 3 | /
 | Erstellen des Domönen-Modells| hoch | 6 | abgeschlossen | / | 1 | Marlene Pannoscha | 3 | /
 | Erstellen der Wireframes | hoch | 4 | abgeschlossen | / | 1 | Alessandra Ruff | 2 | /
+| Architecture Notebook ausarbeiten | hoch | 6 | In Arbeit | Architecture | 1 | Kevin Freund, Dilara Eichler | 4 | /
 
 
 

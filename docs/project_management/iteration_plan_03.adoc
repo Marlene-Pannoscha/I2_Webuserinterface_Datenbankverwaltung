@@ -1,4 +1,4 @@
-= Iteration Plan 01: {project-name}
+= Iteration Plan 03: {project-name}
 Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -11,20 +11,22 @@ include::../_includes/default-attributes.inc.adoc[]
 [%header, cols="3,1"]
 |===
 | Meilenstein | Datum
-| Beginn der Iteration | 28.11.2022
-| Erstes Meeting mit dem Kunden | 01.12.2022
-| Ende der Iteration | 11.12.2022
+awf
+| Beginn der Iteration | 11.04.2023
+| Abnahme durch SI |
+| Ende der Iteration | 25.04.2023
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Festlegen der Rollenverteilung im Team
-* erstes Meeting mit dem Kunden
-* Verstehen des bestehenden Systems
-* Beginn mit Arbeit an Vision, Projektplan, Glossar und Risikoliste
-
+* Filterung nach Land, Hochschule und Vertragstyp
+* Verwalten von Ansprechpersonen von Fakultäten
+* Layout der Fenster (Liste, Hochshule und Verträge) anpassen
+* Dokumentation vereinheitlichen
+* Überarbeitung der Risikoliste
+* Essenced Kernel nutzen
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
@@ -34,14 +36,14 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Meeting mit SI organisieren | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,5 | /
-| Beantragen einer virtuellen Maschine | hoch | 3 | abgeschlossen | / | 1 | Max Listner | 0,5 | /
-| Identifizierung wichtiger UseCases | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 2 | /
-| Identifizierung wichtiger Stakeholder | hoch | 6 | abgeschlossen | / | 1 | Allesandra Ruff | 2 | /
-| Identifizierung Hauptfunktion und Produktanforderungen | hoch | 6 | abgeschlossen | Vision | 1 | Kevin Freund | 1,5 | 
-| erste Bearbeitung des Projektplans | mittel | 6 | abgeschlossen | Projektplan | 1 | Marlene Pannoscha | 2 | /
-| erste Bearbeitung des Glossars | mittel | 4 | abgeschlossen | Glossar | 1 | Max Listner | 1 | /
-| erste Bearbeitung der Risklsit | mittel | 4 | abgeschlossen | Risklist | 1 | Karl Gustav Langer | 1 | /
+| Filtern nach Land, Fakultät und Vertragstyp | hoch | 8 | laufend | / | 1 | ausstehend | 3 | /
+| Verwalten von Ansprechpersonen von Hochschulen | hoch | 7 | laufend | / | 1 | ausstehend | 5 | /
+| Layout der Fenster anpassen | hoch | 6 | laufend | / | 1 | ausstehend | 4 | /
+| Snapshot von der Datenbank einbinden| hoch | 5 | laufend | / | 1 | ausstehend | 3 | /
+| Essence Kernel Navigator | hoch | 4 | laufend | / | 1 | ausstehend | 2 | /
+| Risikoliste überarbeiten | hoch | 3 | laufend | / | 1 | ausstehend | 4 | /
+|| Einheitliche Dokumentation und Codingstil festlegen | 3 | laufend | / | 1 | ausstehend | 2 | /
+
 
 
 |===
@@ -54,17 +56,16 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-| Problem bei der Terminabsprache mit der SI | gelöst | Die SI hat auf die erste Mail des Teamleiters nicht reagiert, weswegen das Projekt erst verzögert starten konnte. Nach erneuter Anfrage konnte das Problem gelöst werden.
-| Fehlende Kenntnisse zu Web-Programming | gelöst | In unserem Team hatte kein Mitglied siginifikante Web-Programmning-Kenntnisse. Diese wurden und werden durch Tutorials aufgebaut.
-|===
+| Snapshot der Datenbank von SHK bekommen | ausstehend |
 
+|===
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
 * ersichtbarer Fortschritt in der Dokumentation
-* Termineinhaltung
-* Rückmeldung bei Unklarheiten im Team
+
+
 
 
 == Assessment
@@ -74,30 +75,24 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Projektfortschritt
 
-| Assessment Datum | 11.12.2022
+| Assessment Datum | 25.04.2023
 | Teilnehmer | Team I2
-| Projektstatus	| Ziele wurden eingehalten, die weiterführende Dokumentation erfolgt in der nächsten Iteration
+| Projektstatus	|
 |===
 
 * Beurteilung im Vergleich zu den Zielen
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
-** Vision, Projekltplan, Glossar und Risklist müssen weiter ergänzt werden
-** die Kenntnisse zum Web-Programming müssen vertieft werden
-** die wichtigsten Anforderungen an das System müssen genauer abgesprochen werden
-** auf das bestehende Datenbanksystem muss über die virtuelle Maschine zugegriffen werden, um diese zu analysieren
+
 
 * Geplante vs. erledigte Aufgaben
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
-** das bestehene System wurde größenteils verstanden, weitere Analyseschritte erfolgen in der nächsten Iteration
-** Aufgaben wurden größtenteils bearbeitet, es kann mit der nächsten Iteration fortgefahren werden
 
 
 
 * Beurteilung im Vergleich zu den Bewertungskriterien
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
-** Termine wurden eingehalten, Unklarheiten wurden geklärt
-** ein deutlicher Dokumentationsfortschritt lässt sich erkennen
+
 
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.

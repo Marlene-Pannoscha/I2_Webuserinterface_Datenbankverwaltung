@@ -1,6 +1,6 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
-== Use-Case: <LogOut>
+== Use-Case: UC02 LogOut
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -14,7 +14,7 @@ Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaf
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Nutzer ist angemeldet>
+Nutzer ist angemeldet
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")

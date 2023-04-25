@@ -1,6 +1,6 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
 
-== Use-Case: <Filterung nach nach Land, Hochschule und Vertragsytp>
+== Use-Case: UC01 Filterung nach nach Land, Hochschule und Vertragsytp
 
 === Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -14,7 +14,8 @@ Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaf
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 
-<Nutzer ist angemeldet>
+. Nutzer ist angemeldet und ist dazu authorisiert, diese Funktionen zu tätigen
+. Es gibt Datensätze, die man filtern kann
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -46,4 +47,7 @@ Die Mitarbeiter der SI verwalten die Verträge und Informationen zu Partnerschaf
 
 ==== <Nachbedingung 1>
 Die Anzeige der Partnerhochschulen wurde angepasst und zeigt nur noch Hochschulen an, die den Filter erfüllen.
+
+
+=== Wireframes
 

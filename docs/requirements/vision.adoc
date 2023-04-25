@@ -1,13 +1,13 @@
 = Vision: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen fesgehalten, die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Haupproblematik sowie Produkt- und Lösungsansätze dargestellt unter dem Nutzen von Stakeholdern und essentiellen Anforderungen.
-Die Details, wie die Benutzeroberfläche diese Anforderungen erfüllt, werden in den Use-Cases und den systemweiten Anforderungen geschildert.
+Da das Projekt I2 Webuserinterface_zur_Datenbankverwaltung einen großen Umfang besitzt, werden in diesem Dokument Rahmenbedingungen festgehalten, die das allgemeine Verständnis des Projektes unterstützen sollen. Dafür werden die Hauptproblematik, Produkt- und Lösungsansätze, sowie essenzielle Anforderungen für den Nutzer und potentielle Stakeholder dargestellt.
+Wie die Benutzeroberfläche diese Anforderungen erfüllt, wird im Detail in den Use-Cases und den systemweiten Anforderungen geschildert.
 
 === Zweck
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben. Gleichzeitig werden Stakeholder definiert und die Hauptproblematik des Projektes in Zusammenarbeit mit dem Auftraggeber dargestellt.
@@ -22,7 +22,7 @@ Das System wird es Mitarbeitern der Stabsstelle Internationals erlauben, die Ver
 Siehe <<#glossary, Glossar>>.
 
 === Referenzen
-(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
+//(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
 
 == Positionierung
@@ -132,7 +132,7 @@ Beispiel Produkt:
 [%header, cols="4,1,4,1"]
 |===
 | Bedarf | Priorität | Features | Geplantes Release
-| Logoff System | 5 | Ordnungsgemäßes Abmelden vom System |  Wintersemester 2022/2023
+| Log-Out System | 5 | Ordnungsgemäßes Abmelden vom System |  Wintersemester 2022/2023
 | Filterfunktion | 10 | Aussortieren nicht gesuchter Einträge |  Wintersemester 2022/2023
 | Bearbeiten und Anlegen von Fakultäten | 7 | Zum Einfügen und Bearbeiten von Fakultäten neuer oder bestehender Partnerhochschulen und deren Verträgen im Verwaltungsfrontend | Sommersemester 2023
 | Verwalten von Ansprechpersonen von Fakultäten | 5 | Es soll eine Ansprechperson pro Hochschule eingetragen und ausgelesen werden können | Sommersemester 2023
@@ -146,13 +146,6 @@ Beispiel Produkt:
 
 == Zusätzliche Produktanforderungen
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-Hinweise:
-
-. Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
-. Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
-. Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
-. Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
-. Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
 
 [%header, cols="4,1,1"]
 |===

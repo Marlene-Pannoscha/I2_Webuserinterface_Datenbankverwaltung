@@ -1,5 +1,5 @@
 = System-Wide Requirements: {project-name}
-Max Listner <max.listner@htw-dresden.de>;Marlene Pannoscha <marlene.pannoscha@htw-dresden.de>; Alessandra Ruff <alessandra.ruff@htw-dresden.de>; Dilara Eichler   <dilara.eichler@htw-dresden.de>; Kevin Freund <kevin.freund@htw-dresden.de>; Robert Alexander Pfund <robertalexander.pfund@htw-dresden.de>; Karl Gustav Langer <karlgustav.langer@htw-dresden.de>
+//Max Listner <max.listner@htw-dresden.de>; Marlene Pannoscha <marlene.pannoscha@htw-dresden.de>; Alessandra Ruff <alessandra.ruff@htw-dresden.de>; Dilara Eichler   <dilara.eichler@htw-dresden.de>; Kevin Freund <kevin.freund@htw-dresden.de>; Robert Alexander Pfund <robertalexander.pfund@htw-dresden.de>; Karl Gustav Langer <karlgustav.langer@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -52,7 +52,9 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
-
+* NFAS-1: Übersichtliche und ausführliche Hinweise/Dokumentation, um Erweiterbarkeit zu erleichtern
+* NFAS-2: Mögliche Erweiterbarkeit des Systems
+** Zur Überprüfung wird im Verlauf des Projektes das System stetig um neue Funktionen erweitert 
 
 == Zusätzliche Anforderungen
 

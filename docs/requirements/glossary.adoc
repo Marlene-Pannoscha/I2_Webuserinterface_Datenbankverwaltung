@@ -1,12 +1,12 @@
 = Glossar: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
-{localdatetime}
+//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+//{localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Einführung
-In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) der <Projektthema-Systems> definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
+In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fachdomäne) des Datenbank-Systems definiert. Zur besseren Übersichtlichkeit sind Begriffe, Abkürzungen und Datendefinitionen gesondert aufgeführt.
 
 == Begriffe
 [%header]
@@ -15,11 +15,14 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 
 | Stabstelle Internationales  | Organisationsteam der HTW Dresden, dass sich der Internationalisierungsaufgabe stellt und internationale Beziehungen pflegt | -
 | Fakultät | eine Gruppe zusammengehörender Wissenschaften oder Wissenschaftsgebiete umfassende Abteilung als Lehr- und Verwaltungseinheit einer Universität oder Hochschule | -
-| Mitarbeiter-/in | Person, die für die Stabsstelle Internationales arbeitet | -
+| Mitarbeiter/-in | Person, die für die Stabsstelle Internationales arbeitet | interne/-r Nutzer/-in
 | Partnerschaft | ein Vertrag zwischen der HTW Dresden und einer ausländischen Hochschule | Partnerschaftsvertrag, Hochschulparnerschaft
-| Kontaktperson | Ansprechpartner der entsprechenden Partnerhochschule | Ansprechpartner/-in
+| Kontaktperson | Ansprechpartner/-in der entsprechenden Partnerhochschule | Ansprechpartner/-in
 | Graphical User Interface | ein Computerprogramm, mit dem eine Person mithilfe von Symbolen, visuellen Metaphern und Zeigegeräten mit einem Computer kommunizieren kann | User-Interface
+| Informationsfrontend | das Frontend auf der HTW Website, welches Daten aus der Datenbank ausliest und zur Information darstellt | -
+| Verwaltungsfrontend | das von der Stabsstelle Internationales genutze Frontend, zur Bearbeitung und Einsicht von Datensätzen | Bearbeitungsansicht
 | Superuser | ein spezieller Benutzer-Account, der weit mehr Berechtigungen hat als ein normaler Account | -
+| externe/-r Nuter/-in | Person, die sich über Partnerschaften der HTW Dresden informieren möchte  | -
 |===
 
 
@@ -37,6 +40,10 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | UP | Unified Process | Vorgehensmodell für die Softwareentwicklung
 | UC | Use Case | funktionale Anforderung an das System
 | SU | Superuser | -
+| HTML | Hypertext Markup Language | textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente
+| CSS | Cascading Style Sheets | eine Stylesheet-Sprache für elektronische Dokumente
+
+
 |===
 
 == Verzeichnis der Datenstrukturen
@@ -50,9 +57,43 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Emailadresse muss `@`-Zeichen und `.` Punkt enthalten.
 | Login
 
-| xx
-| xx
-| xx
-| xx
-| xx
+| Fakultät
+| Fakultätsnamen in Englisch und Deutsch und deren Webadresse
+| String
+| Webadresse muss Punkt und Top Level Domain enthalten
+| --
+
+| Hochschule
+| Hochschulname in Englisch und der nationalen Sprache, sowie die Anschrift, Webadresse und ggf. Erasmuscode
+| String
+a| - Anschrift muss Ort, Postleitzahl, Straßenname und Nummer enthalten
+- Webadresse muss Punkt und Top Level Domain enthalten
+- Erasmuscode ist nach Schema: XX XXXXXXX11 aufgebaut (Ländercode in 2 Buchstaben gefolgt von 7 Buchstaben und 2 Zahlen zur Hochschulidentifikation)
+| Partnerhochschule, Universität, Partneruniversität, Partner
+
+| Hochschulvereinbarung
+| Vereinbarungstyp auf Englisch und Deutsch, Gültigkeitsdauer, Anzahl Incomings und Outgoings insgesamt und pro Studienfach, sowie deren maximale Aufenthaltszeit
+| String, Integer
+a| - Gültigkeitsdauer muss "von-bis"-Datum sein
+- Aufenthaltsdauer muss in Monaten angegeben werden
+| Hochschulpartnerschaft, Mobility Agreement, Vertrag
+
+| Land
+| Ländernamen auf Englisch und Deutsch, sowie das Kürzel und ob Erasmus für das Land verfügbar ist
+| String
+| Ländercode muss 2 Buchstaben enthalten
+| --
+
+| Mentor
+| Name, Titel, E-Mail und Webadresse
+| String
+a| - E-Mail-Adresse muss @-Zeichen und Punkt enthalten
+- Webadresse muss Punkt und Top Level Domain enthalten
+| --
+
+| Studienfach
+| Namen des Fachs auf Englisch und Deutsch, sowie die zugehörige Fakultät
+| String
+| --
+| --
 |===
