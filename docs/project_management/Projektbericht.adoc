@@ -1,0 +1,3 @@
+= Projektbericht: {project-name}
+include::../_includes/default-attributes.inc.adoc[]
+:doctype: book
