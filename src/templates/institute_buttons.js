@@ -36,7 +36,7 @@ function modalEvents(){
         checkIfUpdated();
         checkIfNew();
         $('#close_edit_trigger').trigger('click');
-        unsetBlur();
+       
         //location.reload();
     });
 
@@ -118,17 +118,17 @@ function instituteButtonEvents() {
         console.log("institute_button.js Z.76");
         $('.modal_form_add').trigger("reset");
         $('#modal_add_inst').toggle();
-        setBlur();
+        
     });
     // MODAL: HOCHSCHULE ANLEGEN -> ABBRECHEN / X BUTTON
     $(' .close_modal_add').on('click', function (){
         $('#modal_add_inst').toggle();
-        unsetBlur();
+        
         $('#mod_add_inst_save_btn').attr('disabled', 'true');
     });
     $('.close_modal_restriction').on('click', function (){
         $('#modal_agreement_restrictions').toggle();
-        unsetBlur();
+      
     });
     // MODAL: HOCHSCHULE BEARBEITEN -> ABBRECHEN / X BUTTON
     $(' .close_modal_edit').on('click', function (){
@@ -140,7 +140,7 @@ function instituteButtonEvents() {
         console.log("institute_button.js Z.92");
         clearSessionStorage(); //delete cached data from local storage (important data to keep up edit functionality)
         clearAgreementSpace();
-        unsetBlur();
+        
     });
 }
 

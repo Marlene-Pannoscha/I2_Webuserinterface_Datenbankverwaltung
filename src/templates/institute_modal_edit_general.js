@@ -4,24 +4,26 @@
  */
 
 function addButtonEvent() {
-    $(".edit_inst_btn").on('click', function () {
-        let institute_row = $(this).parent().parent(); // speichere die Zeile in der sich der gedrückte Button befindet
-        let first_column = institute_row[0].children; // extract <th> where id is inside
-        let id = first_column[0].innerHTML; // get ID of institute
+    $('#addItems').on('click', 'tr', function() {
+        let institute_row = $(this);
+        let first_column = institute_row.find('th:first-child');
+        let id = first_column.text();
         loadAgreements(id);
         loadModal(id);
     });
+
     $('.del-institute').on('click', (e) => {
         let tgt = e.currentTarget;
         const id = tgt.parentElement.parentElement.children[0];
         deletion(id, "institute");
     });
 }
-function makeRowClickable(rowID, type) {    //for every single row, easier to create eventListener for new added agreement
+
+function makeRowClickable(rowID, type) {
     if (type === 'agreement') {
-        $(' #'+rowID).on('click', (e) => {
+        $('#' + rowID).on('click', (e) => {
             let row = e.target.parentElement;
-            let rowID = row['id']; //get ID of mob_agreement that was clicked
+            let rowID = row.id;
             insertAgreementInformation(rowID);
             insertRestriction();
             addNewAgreement();

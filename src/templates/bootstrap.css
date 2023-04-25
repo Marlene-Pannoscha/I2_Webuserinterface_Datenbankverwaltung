@@ -99,12 +99,12 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -122,7 +122,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1rem + 0.6vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -296,13 +296,20 @@ svg {
   vertical-align: middle;
 }
 
-table {
-  left: 100px;
+.left table {
+  
   caption-side: bottom;
   border-collapse: collapse;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
+  width: 100%;
+  overflow-y:scroll;
+  height:750px;
+  display:block;
+  font-size: 11px;
+  
 }
+
 
 caption {
   padding-top: 0.5rem;
@@ -311,10 +318,7 @@ caption {
   text-align: left;
 }
 
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-}
+
 
 thead,
 tbody,
@@ -322,10 +326,15 @@ tfoot,
 tr,
 td,
 th {
+  
   border-color: inherit;
   border-style: solid;
   border-width: 0;
   font-weight: initial;
+  padding: 5px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 15px;
 
   
 }
@@ -637,7 +646,7 @@ progress {
   margin-right: 3%;
   justify-content: flex-start;
   flex-wrap: wrap;
-  flex-basis: 100000px;
+  flex-basis: 10px;
   align-items: flex-start;
 }
 
@@ -1964,18 +1973,13 @@ progress {
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #212529;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 1rem;
   color: #212529;
   border-color: #dee2e6;
-  margin-right: 20px;
  
 }
-.table-scrollable {
-  overflow-y:scroll;
-  height:800px;
-  display:block;
-}
+
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);
@@ -2158,7 +2162,7 @@ progress {
   }
 }
 .form-label {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .col-form-label {
@@ -2190,10 +2194,10 @@ progress {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  padding: 0.3rem 0.2rem;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1;
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
@@ -2369,10 +2373,10 @@ textarea.form-control-lg {
 
 .form-select {
   display: block;
-  width: 100%;
+  width:100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -5488,6 +5492,8 @@ textarea.form-control-lg {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  font-size: smaller;
+  min-height: 750px;
 }
 
 .modal-backdrop {
@@ -5523,7 +5529,8 @@ textarea.form-control-lg {
 
 .modal-title {
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1;
+  font-size: 1.5rem;
 }
 
 .modal-body {
@@ -11236,15 +11243,58 @@ textarea.form-control-lg {
   }
 }
 
-.row {
-  display: flex;
-}
 
 .container {
   display: flex;
+
 }
 
-/*# sourceMappingURL=bootstrap.css.map */
-.column-left{ float: left; width: 20%; }
-.column-right{ float: right; width: 40%; }
-.column-center{ display: inline-block; width: 40%; }
+
+
+.left {
+	flex: 1;
+  padding: 10px;
+  width: 350px;
+ 
+}
+
+.middle {
+	flex: 2.5;
+  padding: 10px;
+}
+
+.right {
+	flex: 3;
+  padding: 10px;
+}
+
+tr:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.mentor-header, .inst-header {
+  background-color: #f2f2f2;
+}
+
+.btn-2 {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #0d6efd;
+  border-color: #0d6efd;
+}

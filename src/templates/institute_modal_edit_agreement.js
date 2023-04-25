@@ -5,6 +5,8 @@
  * Die Funktion erhält dann aus der Datenbank die Mobilityagreements zurück
 */
 function loadAgreements(inst_id) {
+     // Leere den Bereich, bevor neue Vereinbarungen eingefügt werden
+     $('#addAgreements').empty();
     //einfügen der Daten auf zweiter Seite des Modals
     $.ajax({
         method: 'POST',
