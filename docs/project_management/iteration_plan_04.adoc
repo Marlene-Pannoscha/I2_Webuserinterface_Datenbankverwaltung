@@ -1,5 +1,5 @@
-= Iteration Plan 02: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Iteration Plan 04: {project-name}
+//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -11,22 +11,20 @@ include::../_includes/default-attributes.inc.adoc[]
 [%header, cols="3,1"]
 |===
 | Meilenstein | Datum
-| Beginn der Iteration | 12.12.2022
-| Bestätigung der Anforderungsanalyse durch SI | 15.12.2022
-| Ende der Iteration | 25.12.2022
+| Beginn der Iteration | 03.05.2023
+| Abnahme durch SI |
+| Ende der Iteration | 17.05.2023
 |===
 
 
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Festhalten der Hauptanforderungen an das System
-* Erstellen der wichtigsten UseCases
-* Erstellen von Wireframes
-* Erstellen des Domönen-Modells
-* Ergänzen der Vision, Risklist und des Glossars
-* Analyse des Datenbanksystems
-
+* Filterung nach Land, Hochschule und Vertragstyp
+* Möglichkeiten zum Bearbeiten und Anlegen der Fakultäten
+* Dokumentation vereinheitlichen (Development)
+** Standards festlegen
+* Essenced Kernel nutzen
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
@@ -36,12 +34,13 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Analyse der Datenbank | hoch | 8 | abgeschlossen | / | 1 | Alessandra Ruff | 5 | /
-| Hauptanforderungen festhalten und UseCase-Modell erstellen | hoch | 6 | abgeschlossen | UseCase-Modell | 1 | Max Listner | 3 | /
-| UseCases beschreiben | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 3 | /
-| Erstellen des Domönen-Modells| hoch | 6 | abgeschlossen | / | 1 | Marlene Pannoscha | 3 | /
-| Erstellen der Wireframes | hoch | 4 | abgeschlossen | / | 1 | Alessandra Ruff | 2 | /
-| Architecture Notebook ausarbeiten | hoch | 6 | In Arbeit | Architecture | 1 | Kevin Freund, Dilara Eichler | 4 | /
+| Filterfunktionen | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
+| Möglichkeiten zum Bearbeiten und Anlegen der Fakultäten | hoch | 6 | laufend | / | 1 | ausstehend | 5 | /
+| Entwicklerdokumentation | hoch | 6 | laufend | / | 1 | ausstehend | 4 | /
+| Standards in Dokumentation festhalten  | hoch | 5 | laufend | / | 1 | ausstehend  | 3 | /
+| Essence Kernel Navigator | hoch | 6 | laufend | / | 1 | Marlene Pannoscha | 2 | /
+|Backend Überarbeitung | hoch | 5 | laufend | / | 1 | ausstehend | 4 | /
+
 
 
 
@@ -55,16 +54,12 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-| Problem bei der Terminfindung im Team | gelöst | Aufgrund der bevorstehenden Feiertage verlief die team-interne Terminfindung etwas schwierig. Es wurde auf den Kommunikations-Service Discord zurückgegriffen, um Meetings online abzuhalten.
+|  |  | 
 
 |===
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
-
-* ersichtbarer Fortschritt in der Dokumentation
-* Bestätigung der analysierten Anforderugnen durch die SI
-* Erweiterung des Verständnisses des Problems und des vorliegenden Systems
 
 
 
@@ -75,30 +70,27 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Projektfortschritt
 
-| Assessment Datum | 25.12.2022
+| Assessment Datum | 
 | Teilnehmer | Team I2
-| Projektstatus	| Ziele wurden größtenteils eingehalten, Teile der Dokumentation werden in der nächsten Iteration fortgeführt
+| Projektstatus	|
 |===
 
 * Beurteilung im Vergleich zu den Zielen
+//Geplante vs. erledigte Aufgaben
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
-** der Zusammenhang zwischen dem aktuellen System und den angestrebten Veränderungen / Verbesserungen muss noch besser verstanden werden
-** über die Semeterferien muss sich durch Tutorials das noch fehlende Web-Programming-Wissen angeeignet werden
-
-* Geplante vs. erledigte Aufgaben
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
-** die Dokumentation wurde größenteils eingehalten, einzelne Analyse- und Dokumentationsschritte müssen noch ergänzt werden
-** die Programmierumgebung wurde geschaffen
-** das System wurde durch eine tiefliegende Analyse größenteils verstanden, so dass erste Implementierungsschritte in der nächsten Iteration erfolgen können
 
+//** Die Entwicklung und Implementierung der Use Cases Filterung nach Land, Fakultät noch nicht ganz und Vertragstyp und Verwalten von Ansprechpersonen von Hochschulen wurde erfolgreich abgeschlossen.
+
+
+
+
+//ausstehend
 
 * Beurteilung im Vergleich zu den Bewertungskriterien
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
-** Termine wurden eingehalten, Unklarheiten wurden geklärt
-** ein deutlicher Dokumentationsfortschritt lässt sich erkennen
-** die SI bestätigt die vom Team festgelegten Hauptanforderungen
-** durch ein grundlegenes Verständniss, ist das Team ist bereit am Prototypen zu arbeiten
+
 
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
