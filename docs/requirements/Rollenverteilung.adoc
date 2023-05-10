@@ -1,0 +1,14 @@
+== Rollenverteilung: {project-name}
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+[%header, cols="3,1"]
+
+|===
+| Rollenbezeichnung |Teammitglied |
+Projektleitung | Marlene Pannoscha, Kevin Freund (Max Listner) |
+Analyse| Marlene Pannoscha, Kevin Freund (Max Listner) |
+Architektur | Robert Pfund, Karl Langer, Dilara Eichler |
+Implementation | Alessandra Ruff, Dilara Eichler, Robert Pfund, Karl Langer|
+Testen | Alessandra Ruff, Karl Langer
+ ===|
