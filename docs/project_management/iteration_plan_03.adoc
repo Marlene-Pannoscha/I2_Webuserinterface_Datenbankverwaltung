@@ -1,5 +1,5 @@
 = Iteration Plan 03: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -11,7 +11,6 @@ include::../_includes/default-attributes.inc.adoc[]
 [%header, cols="3,1"]
 |===
 | Meilenstein | Datum
-awf
 | Beginn der Iteration | 11.04.2023
 | Abnahme durch SI |
 | Ende der Iteration | 25.04.2023
@@ -36,12 +35,12 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Filtern nach Land, Fakultät und Vertragstyp | hoch | 8 | laufend | / | 1 | ausstehend | 3 | /
-| Verwalten von Ansprechpersonen von Hochschulen | hoch | 7 | laufend | / | 1 | ausstehend | 5 | /
+| Filtern nach Land, Fakultät und Vertragstyp | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
+| Verwalten von Ansprechpersonen von Hochschulen | hoch | 7 | laufend | / | 1 | Robert Pfund, Karl Langer | 5 | /
 | Layout der Fenster anpassen | hoch | 6 | laufend | / | 1 | ausstehend | 4 | /
-| Snapshot von der Datenbank einbinden| hoch | 5 | laufend | / | 1 | ausstehend | 3 | /
-| Essence Kernel Navigator | hoch | 4 | laufend | / | 1 | ausstehend | 2 | /
-| Risikoliste überarbeiten | hoch | 3 | laufend | / | 1 | ausstehend | 4 | /
+| Snapshot von der Datenbank einbinden| hoch | 5 | fertig | / | 1 | Kevin Freund,  | 3 | /
+| Essence Kernel Navigator | hoch | 4 | laufend | / | 1 | Marlene Pannoscha | 2 | /
+| Risikoliste überarbeiten | hoch | 3 | fertig | / | 1 | Kevin Freund | 4 | /
 || Einheitliche Dokumentation und Codingstil festlegen | 3 | laufend | / | 1 | ausstehend | 2 | /
 
 
@@ -56,7 +55,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-| Snapshot der Datenbank von SHK bekommen | ausstehend |
+| Bestehende Entwicklerdokumentation unzureichend für effektive Arbeitsweise | laufend, muss in folgende Iteration aufgenommen werden | Aufarbeitung der Dokumentation zwingend notwenndig
 
 |===
 
@@ -81,13 +80,21 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 
 * Beurteilung im Vergleich zu den Zielen
+//Geplante vs. erledigte Aufgaben
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
-
-
-* Geplante vs. erledigte Aufgaben
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 
+//** Die Entwicklung und Implementierung der Use Cases Filterung nach Land, Fakultät noch nicht ganz und Vertragstyp und Verwalten von Ansprechpersonen von Hochschulen wurde erfolgreich abgeschlossen.
+** Des Weiteren wurde das Layout der einzelnen Fenster auf der Website angepasst.
+** Der Snapshot von der aktuellen Datenbank von der SI wurde erfasst aber noch nicht implemeniert.
+** Die Risikoliste und die Dokumentation wurde aufbereitet.
+*** Dennoch ist die Projekt- und Entwicklerdokumentation noch unzureichend und muss mit in die folgende Iteration aufgenommen werden.
+** Der Essence Kernel muss ebenfalls in die folgende Iteration aufgenommen werden.
 
+
+
+
+//ausstehend
 
 * Beurteilung im Vergleich zu den Bewertungskriterien
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
