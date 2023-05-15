@@ -4,6 +4,6 @@ $(document).on('DOMContentLoaded', () => {
         success: function(data, status, xhr){
             location.replace("/")
         }});
-        $.ajax('/', {type: 'GET'});
+       
     });
 });
