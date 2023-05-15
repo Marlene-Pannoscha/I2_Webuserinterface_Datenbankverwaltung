@@ -11,7 +11,8 @@ Filterung nach Land, Hochschule und Vertragstyp| in Bearbeitung |Untere Filterze
  funktionsfähiger LogOut-Button| erledigt | / |
  Löschen von Inhalten| | Superuser oder Passwortfunktion (nur Frau Terpe Berechtigungen geben) |===|
 
-=== Rechtes Fenster
+
+== Rechtes Fenster
 
 [%header, cols="3,1,1"]
 |===
@@ -20,9 +21,9 @@ Filterung nach Land, Hochschule und Vertragstyp| in Bearbeitung |Untere Filterze
 Namen ausführlicher anzeigen)
 | | abgelehnt von uns |
  Erasmus und Hochschulpartnerschaften Anzahl weg| | |
-Layout des Fensters anpassen| erledigt | |===|
+Layout des Fensters anpassen| erledigt | | ===|
 
-=== Mittlers Fenster
+== Mittlers Fenster
 
 [%header, cols="3,1,1"]
 |===
@@ -32,7 +33,7 @@ Name der Ansprechperson kann in den Hintergrund rücken, wichtig sind hierbei di
  |
 Name von Partnerhochschule in Englisch und in Originalsprache darstellen + ERASMUSCODE |erledigt|laut Frau Terpe soll es ein Popup-Fenster für Notizen geben, obwohl Notizfeld bereits vorhanden ist und Kunde eigentlich streng gegen Popup-Fernster ist|===|
 
-=== Linkes Fenster
+== Linkes Fenster
 
 [%header, cols="3,1,1"]
 |===

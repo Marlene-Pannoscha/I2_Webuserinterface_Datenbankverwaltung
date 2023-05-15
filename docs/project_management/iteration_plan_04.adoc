@@ -11,9 +11,9 @@ include::../_includes/default-attributes.inc.adoc[]
 [%header, cols="3,1"]
 |===
 | Meilenstein | Datum
-| Beginn der Iteration | 03.05.2023
+| Beginn der Iteration | 14.05.2023
 | Abnahme durch SI |
-| Ende der Iteration | 17.05.2023
+| Ende der Iteration | 28.05.2023
 |===
 
 
@@ -21,28 +21,29 @@ include::../_includes/default-attributes.inc.adoc[]
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
 * Filterung nach Land, Hochschule und Vertragstyp
-* Möglichkeiten zum Bearbeiten und Anlegen der Fakultäten
+* Anlegen neuer Berichte
 * Dokumentation vereinheitlichen (Development)
-** Standards festlegen
-* Essenced Kernel nutzen
+** Standards festlegen bezüglich Code
+* Entwicklerdokumentation
+** Softwaredokumentation
+** Designdokumentation
+
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
 Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
-[%header, cols="3,1,1,1,2,1,1,1,1"]
+[%header, cols="3,1,1,1,2,1,2,1,1"]
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Filterfunktionen | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
-| Möglichkeiten zum Bearbeiten und Anlegen der Fakultäten | hoch | 6 | laufend | / | 1 | ausstehend | 5 | /
-| Entwicklerdokumentation | hoch | 6 | laufend | / | 1 | ausstehend | 4 | /
-| Standards in Dokumentation festhalten  | hoch | 5 | laufend | / | 1 | ausstehend  | 3 | /
-| Essence Kernel Navigator | hoch | 6 | laufend | / | 1 | Marlene Pannoscha | 2 | /
-|Backend Überarbeitung | hoch | 5 | laufend | / | 1 | ausstehend | 4 | /
-
-
-
+| Filterfunktionen (Sortierungsreiter entfernen) | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
+| Reiter Berichte implementieren | hoch | 6 | laufend | / | 1 | ausstehend | 5 | /
+| Entwicklerdokumentation (Design) | hoch | 5 | laufend | / | 1 | ausstehend | 4 | /
+| Entwicklerdokumentation (Software) | hoch | 5 | laufend | / | | | |
+| Standards in Dokumentation festhalten (Belegdokumentation) | hoch | 5 | laufend | / | 1 | Marlene Pannoscha  | 3 | /
+| Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson Fenster) | hoch | 6 | laufend | / | 1 | ausstehen| 2 | /
+|Button Land hinzufügen implementieren| hoch | 5 | laufend | / | 1 | ausstehend | 4 | /  Deployment Engineer bestimmen | hoch | 1 | laufend | / |
 
 |===
 
@@ -54,7 +55,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-|  |  | 
+|  |  |
 
 |===
 
@@ -70,7 +71,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Projektfortschritt
 
-| Assessment Datum | 
+| Assessment Datum |
 | Teilnehmer | Team I2
 | Projektstatus	|
 |===

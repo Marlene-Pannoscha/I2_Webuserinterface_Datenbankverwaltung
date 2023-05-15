@@ -17,7 +17,7 @@ app.secret_key = os.urandom(24)
 
 def login_required(f):
     '''
-    Andere Funktionen werden nur aufgerufen, 
+    Andere Funktionen werden nur aufgerufen,
     wenn der Benutzer eingeloggt ist
     '''
     @wraps(f)
