@@ -3,9 +3,135 @@ Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vor
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
-
+:imagesdir: images
 
 == Allgemeine Informationen
+Dieses Dokument enthält Modelle/Beschreibungen zu diskreten Entwurfsentscheidungen, die aus einzelnen Use-Cases und den Konzepten des Architecture-Notebooks hervorgehen.
 
 
-== ...
+// tag::include_development[]
+
+== Technische Designaspekte
+Technische Designaspekte beschreiben Entwurfsentscheidungen, die direkten Einfluss auf die Funktionsweise einzelner Systemkomponenten haben.
+
+=== Datenbankserver
+
+Es wird ein bereits existenter MariaDB Datenbankserver vom Rechenzentrum genutzt, dieser führt täglich automatische Backups aus. Außerdem obliegt somit auch dem Rechenzentrum die Nutzerverwaltung. Dadurch besitzt der DB-Server eine exzellente Verfügbarkeit, Skalierung und Wartbarkeit.
+
+==== Datenbankmodell
+
+Aufgrund der geforderten Kompatibilität mit dem Informationsfrontend ist die Datenbankstruktur weitestgehend vorgeschrieben und festgelegt. Unsere Vorgruppen haben hierbei bereits eine vielzahl an Änderungen vorgenommen, um die Komplexität und Effizienz zu steigern aber auch die Qualität der Datensätze zu erhöhen.
+
+Darunter beispielsweise die Auflösung einiger 1:n Beziehungen von Hochschulen und ihren Ansprechpartnern .
+
+
+In folgendem Diagramm wurden Spalten ohne Beziehungen weggelassen, um eine bessere Übersicht zu erzielen. 
+//Fix folgt
+
+[[phys_erm]]
+.physisches Entity-Relationship-Diagram (der Vorgruppe entnommen)
+image::physical_erm.svg[]
+
+==== Tabellen
+
+Unten stehend werden alle enthaltenen Tabellen aufgelistet, erläutert sowie deren Möglichkeiten innerhalb des Verwaltungsforntends aufgezeigt:
+
+// tag::explain_tables[]
+
+|===
+|Tabelle |Inhalt |Modifikation durch Verwaltungsfrontend
+
+|tbl_faculty |Fakultäten der HTW |(Anlegen, Ändern, Deaktivieren)
+
+|tbl_mentor |Betreuer der Hochschulverträge (der HTW) |Anlegen, Ändern, Deaktivieren
+
+|tbl_gender |Geschlechterauswahl für Mentoren sowie Ansprechpersonen |-
+
+// |tbl_country |so gut wie alle Länder der Welt |-
+
+|tbl_institute |Partnerhochschule, International office |auf Informationsfrontend: Anlegen, Ändern, Verstecken (auf Informationsfrontend)
+
+|tbl_partnership |Zuweisung eines Partnerschaftstypes (1:n) zu tbl_institute |Anlegen (implizit mit Vertrag)
+
+|tbl_partnership_type |Definition unterschiedliche Abkommenstypen |-
+
+|tbl_mobility_agreement |Vertragsinformationen, verweist auf den Mentor und den Vertragstyp / Hochschule in _tbl_partnership_ |Anlegen, Ändern, Deaktivieren
+
+|tbl_mobility_agreement_x_course |optionale Beschränkungen der Anzahl der Incoming / Outgoing pro Vertrag und Studiengang
+
+Bsp.: Vertrag der Fakultät Informatik/Mathematik für 7 Studenten;
+Incoming/Outgoing -> davon dürfen nur 3 Wirtschaftsinformatiker, 2 Medieninformatiker und 2 Verwaltungsinformatiker sein. |Anlegen, Ändern, Deaktivieren
+
+|tbl_course |Kurse der HTW, genutzt von _tbl_mobility_agreement_x_course_ und der Statistik |-
+
+|tbl_exchange_type |Definition der Art des Austausches z.B. Erasmus, Promos, Freemover (Verwendung für die Statistik genutzt) |-
+
+|tbl_exchange |anonymisierte Daten von Incoming / Outgoing Studenten |-
+
+Hinweis: faculty_ID bezieht sich auf die Fakultäten der HTW; course_ID wird bei incoming nicht genutzt; hat auch institute_ID da es Freemover gibt, zu diesen Unis gibt es keine Verträge |Hinzufügen von Datensätzen durch Import von Excel Datei (nicht implementiert)
+|===
+// end::explain_tables[]
+
+TIP: Für eine detaillierte Anzeige der Tabellen betrachten Sie bitte die mitgelieferte SQL Backup Datei. Diese ist als Text lesbar und bildet die gesamte Struktur mitsamt Kommentaren ab.
+
+NOTE: Um Probleme mit Modifikationen von Stammdaten zu vermeiden, ist allein dem Super-User das Löschen fehlerhafter oder nicht mehr benötigter Datensätze erlaubt. Der Nutzen dieser Funktion sollte jedoch die Ausnahme bilden und nicht die Regel.
+
+==== Views
+Für das Informationsfrontend müssen passende Views für jede jeweilige Tabelle (außer für _tbl_exchange_ und _tbl_exchange_type_) eingerichtet werden. In diesen dürfen nur aktive Verträge angezeigt werden.
+
+==== Verwaltung der Datenbank
+Das Rechenzentrum der HTW Dresden betreut/pflegt die MarieDB.
+
+=== Webserver
+
+==== Aufbau
+Der www2-Server des Rechenzentrums dient als Webserver. Auf diesem hat der Funktionsaccount einen Webspace. Dort läuft das Backend in PHP, das Frontend wird mittels HTML, JavaScript, Bootstrap und jQuery realisiert.
+
+// Louis
+==== Authentifizierung im Browser
+
+Die Authentifizierung eines Nutzers erfolgt grundlegend über die `$_SESSION`-Variable in PHP. Der Nutzer loggt sich zunächst auf der Login-Seite ein. Die Zugangsdaten gleichen dabei dem Datenbank-Nutzer. Somit existiert keine seperate Nutzerdatenverwaltung.
+
+Während des Logins wird überprüft, ob mit dem angegebenen Nutzernamen und dem Passwort erfolgreich eine Verbindung zum Datenbankserver hergestellt werden kann. Ist dies der Fall, so wird man auf die Startseite weitergeleitet. Für alle Seiten gilt: erst wird überprüft, ob in der `$_SESSION`-Variable ein Nutzername und Passwort hinterlegt sind, dann wird ein Verbindungsaufbau versucht. Somit verhindert man direkten Zugriff auf einzelne Seiten, indem der Nutzer bei einem nicht erfolgten Zugriff auf die Datenbank zur Login-Seite weitergeleitet wird.
+
+// Louis
+==== Darstellung
+
+Das User Interface ist recht einfach gestaltet, es gibt eine Navigationsleiste mit den wichtigsten Links und in der Tabellenansicht weisen Icons auf die Funktion der Buttons hin (z.B. Stift - bearbeiten). In der Formularansicht sind Eingabefelder mit Labels versehen, um eine einfache Zuordnung durch den Nutzer zu gewährleisten. Der "Speichern"-Button in dieser Ansicht ist grün hinterlegt, um dem Nutzer direkt seine Funktion zu übermitteln.
+
+Die Anwendung ist in mobiler Ansicht grundsätzlich zwar bedienbar, jedoch nicht responsive gestaltet und dementsprechend auch nicht für eine solche Nutzung optimiert.
+
+// Louis
+==== Validierung von Daten
+
+Da eine bloße Validierung von Daten im Frontend unsicher ist, werden eingegebene Daten im Backend validiert. Prinzipiell geschieht das über `if`-Abfragen im Code, es wird z.B. überprüft, ob der übergebene POST-Parameter existiert, ob er ein leerer String oder gegebenenfalls numerisch ist. Die letzte Instanz der Validierung stellt die Datenbank dar, da nicht valide Formate in einer SQL-Query abgewiesen werden.
+
+
+=== Synchronisation
+Es werden keine Daten in einer anderen Datenbank zwischengespeichert, somit zeigt die Webseite immer den aktuellen Stand zum Zeitpunkt des Aufrufs an. Andersherum werden Änderungen direkt an die Datenbank gesendet.
+
+-> Es wird kein Synchronisationsmechanismus benötigt.
+
+// Louis
+=== Schnittstelle zwischen Front- und Backend
+
+Anfragen aus dem Frontend werden an PHP-Skripte auf dem Webserver gestellt, gegebenenfalls wird auch eine Antwort in Form eines JSON-Strings zurückgesendet.
+
+Eine Übersicht der Parameter und zurückgegebenen Daten ist im Dokument "Softwaredokumentation für PHP" ersichtlich.
+
+
+== Graphische Designaspekte
+Graphische Designaspekte beschreiben Entwurfsentscheidungen, die direkten Einfluss auf die Darstellungsweise einzelner Systemkomponenten für den Benutzer haben.
+
+Da der Kunde bereits vorher mit Microsoft Access gearbeitet hatte, wurde bei der Erstellung der Anwendung der Fokus auf eine möglichst nahe Anlehnung der Gestaltung gelegt. So befinden sich beispielsweise die Partnerschaften einer Hochschule direkt im Bearbeitungs-Formular einer Hochschule.
+
+// Louis
+=== Verwaltungsfrontend
+
+Generell wird für die Darstellung eine Mischung aus Bootstrap und lokalem CSS benutzt.
+
+Die Listen von Hochschulen, Mentoren, Ländern, usw. werden beim Aufruf der Seite durch das PHP-Skript geladen und zusätzlich bei der Auswahl eines Filters aktualisiert. Sie sind in einer Tabelle angeordnet.
+
+Das Bearbeitungsformular, das sich quasi als neues Fenster über dem Inhalt einer Seite auftut, ist zu Beginn des Seitenaufrufs versteckt. Durch das Drücken eines Bearbeiten-Buttons bzw. des Erstellen-Buttons wird das Formular sichtbar und die Daten werden in die Eingabefelder hineingeladen.
+
+// end::include_development[]
