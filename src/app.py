@@ -70,6 +70,8 @@ def hp_file(name):
         return render_template('faculty.html')
     elif name == 'institutes':
         return render_template('institutes.html')
+    elif name == 'reports':
+        return render_template('reports.html')
 
 
 # return of filter objects
