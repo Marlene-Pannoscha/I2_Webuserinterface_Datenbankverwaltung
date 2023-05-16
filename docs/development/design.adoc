@@ -66,9 +66,7 @@ Incoming/Outgoing -> davon dürfen nur 3 Wirtschaftsinformatiker, 2 Medieninform
 
 |tbl_exchange_type |Definition der Art des Austausches z.B. Erasmus, Promos, Freemover (Verwendung für die Statistik genutzt) |-
 
-|tbl_exchange |anonymisierte Daten von Incoming / Outgoing Studenten |-
-
-Hinweis: faculty_ID bezieht sich auf die Fakultäten der HTW; course_ID wird bei incoming nicht genutzt; hat auch institute_ID da es Freemover gibt, zu diesen Unis gibt es keine Verträge |Hinzufügen von Datensätzen durch Import von Excel Datei (nicht implementiert)
+|tbl_exchange |anonymisierte Daten von Incoming / Outgoing Studenten | Import von Excel Datei zum Hinzufügen von Datensätzen
 |===
 // end::explain_tables[]
 
@@ -85,53 +83,59 @@ Das Rechenzentrum der HTW Dresden betreut/pflegt die MarieDB.
 === Webserver
 
 ==== Aufbau
-Der www2-Server des Rechenzentrums dient als Webserver. Auf diesem hat der Funktionsaccount einen Webspace. Dort läuft das Backend in PHP, das Frontend wird mittels HTML, JavaScript, Bootstrap und jQuery realisiert.
+Dank Bereitstellung des Laborbereichs Informatik der HTW Dresden, fungiert eine virtuelle Maschine als Webserver. Das Backend läuft dort in Python während das Frontend über HTML, CSS sowie Javascript läuft.
 
-// Louis
 ==== Authentifizierung im Browser
 
-Die Authentifizierung eines Nutzers erfolgt grundlegend über die `$_SESSION`-Variable in PHP. Der Nutzer loggt sich zunächst auf der Login-Seite ein. Die Zugangsdaten gleichen dabei dem Datenbank-Nutzer. Somit existiert keine seperate Nutzerdatenverwaltung.
+Vor dem Zugriff auf die Webanwendung muss sich der User per Login authentifizieren. Die Anmeldedaten (hier Admin-Login) entsprechen den vom Rechenzentrum bereitgestellten Nutzern der Datenbank, wodurch die Lese-/Schreibrechte über die Datenbank geregelt sind.
 
-Während des Logins wird überprüft, ob mit dem angegebenen Nutzernamen und dem Passwort erfolgreich eine Verbindung zum Datenbankserver hergestellt werden kann. Ist dies der Fall, so wird man auf die Startseite weitergeleitet. Für alle Seiten gilt: erst wird überprüft, ob in der `$_SESSION`-Variable ein Nutzername und Passwort hinterlegt sind, dann wird ein Verbindungsaufbau versucht. Somit verhindert man direkten Zugriff auf einzelne Seiten, indem der Nutzer bei einem nicht erfolgten Zugriff auf die Datenbank zur Login-Seite weitergeleitet wird.
-
-// Louis
 ==== Darstellung
 
-Das User Interface ist recht einfach gestaltet, es gibt eine Navigationsleiste mit den wichtigsten Links und in der Tabellenansicht weisen Icons auf die Funktion der Buttons hin (z.B. Stift - bearbeiten). In der Formularansicht sind Eingabefelder mit Labels versehen, um eine einfache Zuordnung durch den Nutzer zu gewährleisten. Der "Speichern"-Button in dieser Ansicht ist grün hinterlegt, um dem Nutzer direkt seine Funktion zu übermitteln.
+Das User-Interface hat das Ziel intuitiv nutzbar zu sein aber auch vertraut auf die Stabstelle zu wirken. Die Vorgruppe hat hier einen sehr guten Prototypen erstellt, weswegen wir diesen übernommen und erweitert haben.
 
-Die Anwendung ist in mobiler Ansicht grundsätzlich zwar bedienbar, jedoch nicht responsive gestaltet und dementsprechend auch nicht für eine solche Nutzung optimiert.
+* Das Farbschema der gesamten Anwendung beschränkt sich auf einen weißen Hintergrund, schwarz für Standardschrift, die Navigationsleiste und die Tabellenlinien, blau und grau für Buttons sowie rot für wichtige Schrift
+* Die Navigationsleiste zeigt die wichtigsten Links zu den Ansichten der Fakultäten, Hochschulen, Länder, Mentoren und Studiengänge und ist schwarz mit weißer bzw grauer Schrift
+* Standardmäßig sind die Reiterüberschriften dunkelgrau und werden erst beim Mouseover hovern heller hervorgehoben
+* Alle Buttons haben abgerundete Ecken
+* Buttons zum Anlegen neuer Datensätze haben keine Hintergrundfüllung, sind blau umrandet und haben eine ebenfalls blaue Schrift
+* Der Zurücksetzenbutton auf der Hauptseite hat keine Hintergrundfüllung und ist grau umrandet mit grauer Schrift
+* Die Daten der verschiedenen Hochschulen etc. werden als Tabelle auf den jeweiligen Seiten dargestellt
+* In den Tabellen der Hochschulen und Mentoren wird für jede Zeile und damit jede Hochschule bzw. jeden Mentoren ein Button zum Bearbeiten für jeden Datensatz von Hoschschulen und Mentoren
+* Für den Admin-Login wird zusätzlich neben dem Bearbeiten-Button ein weiterer Button zum löschen eines Datensatzes angezeigt. Dieser ist nur für den Admin-Login sichtbar
+* Auf der Seite der Hochschulen befinden sich oberhalb der Seite Dropdowns zum Filtern der Inhalte nach: Land, Fakultät, Anzeige auf HTW-Seite, Inaktive/aktive/gesamte Vertäge, Vertragstyp sowie der Sortierung aufsteigend oder absteigend alphabetisch
+* Ebenfalls auf der Seite der Hochschule sind die Infos der Hochschule sowie der Verträge nebeneinander angeordnet in jeweiligen Fenster, um eine gewisse einfache Übersichtlichkeit zu bieten und die Klickarbeit zu meiden 
+* Auf der Seite der Mentoren befindet sich am Seitenanfang ein Eingabefeld, welches die Textsuche über den Namen eines Mentoren ermöglicht
+* Über den Bearbeiten- oder Hinzufügen-Button auf den Seiten der Mentoren und Hochschulen öffnet sich jeweils ein Formular mit Eingabemöglichkeiten für die jeweiligen Daten der Datensätze. 
+* Die Formularansicht wurde mit Eingabefelder und Labels versehen, um die einfache Zuordnung durch einen Nutzer zu garantieren. Der Speichern-Button ist auch hier Blau hinterlegt, um die Funktion zu verdeutlichen.
+* Die Pflichtfelder in den Eingabeformularen sind jeweils rot markiert
 
-// Louis
 ==== Validierung von Daten
 
-Da eine bloße Validierung von Daten im Frontend unsicher ist, werden eingegebene Daten im Backend validiert. Prinzipiell geschieht das über `if`-Abfragen im Code, es wird z.B. überprüft, ob der übergebene POST-Parameter existiert, ob er ein leerer String oder gegebenenfalls numerisch ist. Die letzte Instanz der Validierung stellt die Datenbank dar, da nicht valide Formate in einer SQL-Query abgewiesen werden.
+* Im Formular zum anlegen einer neuen Hochschule können Daten nur dann gespeichert werden, wenn bereits eine englische Bezeichnung eingetragen wurde. Bis dahin ist der Speichern-Button inaktiv.
 
+* Die letzte Instanz der Validierung stellt die Datenbank selbst dar; dort werden nicht valide Formate in einer SQL-Query abgewiesen.
 
 === Synchronisation
-Es werden keine Daten in einer anderen Datenbank zwischengespeichert, somit zeigt die Webseite immer den aktuellen Stand zum Zeitpunkt des Aufrufs an. Andersherum werden Änderungen direkt an die Datenbank gesendet.
 
--> Es wird kein Synchronisationsmechanismus benötigt.
+* Es werden beim Öffnen der Webanwendung die aktuellsten Daten geladen und diese werden dem Nutzer angezeigt
 
-// Louis
+//* Tätigt der Nutzer Eingaben zum Anlegen oder Ändern von Datensätzen werden die Eingaben zunächst Zwischengespeichert und erst beim drücken des Speicherbuttons persistiert || Anmerkung Kev: erste Teil bisher irgendwie nicht .-.
+
 === Schnittstelle zwischen Front- und Backend
 
-Anfragen aus dem Frontend werden an PHP-Skripte auf dem Webserver gestellt, gegebenenfalls wird auch eine Antwort in Form eines JSON-Strings zurückgesendet.
+Durch POST-Requests wird die Übergabe von Daten aus dem Frontend ins Backend geregelt. Verschiedene Javascript-Skripte werten, je nach Anfrage, die Nutzerdaten aus und senden sie an das Backend. Die einzelnen Parameter der Anfrage werden dort ausgewertet und weiterverarbeitet. Geht es um die reine Darstellung der Webseiten, so nutzt der Client, GET-Anfragen um die entsprechende Website vom Server zurückgeliefert zu bekommen.
 
-Eine Übersicht der Parameter und zurückgegebenen Daten ist im Dokument "Softwaredokumentation für PHP" ersichtlich.
-
+Um eine einfache Verarbeitung, der vom Server geschickten Daten, im Frontend vornehmen zu können, haben wir uns für die Methode der Vorgruppe entschieden, eine übermittlung per JSON-Datei. Es gibt eine einfache Möglichkeit Pythoneigene Datentypen in eine JSON-Datei zu packen, somit ist der Clientseitige Zugriff auf die Daten ähnlich wie auf dem Server.
 
 == Graphische Designaspekte
-Graphische Designaspekte beschreiben Entwurfsentscheidungen, die direkten Einfluss auf die Darstellungsweise einzelner Systemkomponenten für den Benutzer haben.
 
-Da der Kunde bereits vorher mit Microsoft Access gearbeitet hatte, wurde bei der Erstellung der Anwendung der Fokus auf eine möglichst nahe Anlehnung der Gestaltung gelegt. So befinden sich beispielsweise die Partnerschaften einer Hochschule direkt im Bearbeitungs-Formular einer Hochschule.
 
-// Louis
-=== Verwaltungsfrontend
+Grafische Designaspekte beschreiben Entwurfsentscheidungen, die direkten Einfluss auf die Darstellungsweise einzelner Systemkomponenten für den Benutzer haben.
 
-Generell wird für die Darstellung eine Mischung aus Bootstrap und lokalem CSS benutzt.
+Da der Kunde bereits vorher mit Microsoft Access gearbeitet hat und vertraut war, wurde hierbei der Prototyp stark an jenes Programm angelehnt, um einen einfachen Übergang in eine neue, aber vertrautwirkende Umgebung für den Nutzer zu ermöglichen. Die vorhandenen Daten werden größtenteils durch Tabellen dargestellt. Formulare dienen dem Anlegen oder der Bearbeitung von Datensätzen durch den Nutzer. Generell soll möglichst zusätzliche Arbeit, sei es Scrollen oder zusätzliche Klicks, gemieden werden, wodurch diverse Funktionalitäten und Ansichten auf ein weites, kompaktes Fenster komprimiert wurden. Die Schriftart ist einfach und breit dargestellt, wodurch sie gut und angenehm zu lesen ist.
 
-Die Listen von Hochschulen, Mentoren, Ländern, usw. werden beim Aufruf der Seite durch das PHP-Skript geladen und zusätzlich bei der Auswahl eines Filters aktualisiert. Sie sind in einer Tabelle angeordnet.
+Die Liste von Hochschulen, Ländern, Vertragstypen etc. werden beim Laden der Seite durch Javascript-Skripte geladen zusätzlich bei der Auswahl eines Filters aktualisiert. Sie sind in einer Tabelle angeordnet.
 
-Das Bearbeitungsformular, das sich quasi als neues Fenster über dem Inhalt einer Seite auftut, ist zu Beginn des Seitenaufrufs versteckt. Durch das Drücken eines Bearbeiten-Buttons bzw. des Erstellen-Buttons wird das Formular sichtbar und die Daten werden in die Eingabefelder hineingeladen.
+Die Bearbeitungsformulare der Hochschule werden direkt neben der Hochschulliste dargestellt, um zusätzliche Klickarbeit zu vermeiden aber auch einer besseren Übersicht zuliebe.
 
 // end::include_development[]
