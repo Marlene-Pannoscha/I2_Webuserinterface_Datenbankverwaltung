@@ -3,7 +3,6 @@ Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vor
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
-:imagesdir: images
 
 == Allgemeine Informationen
 Dieses Dokument enthält Modelle/Beschreibungen zu diskreten Entwurfsentscheidungen, die aus einzelnen Use-Cases und den Konzepten des Architecture-Notebooks hervorgehen.
@@ -28,9 +27,9 @@ Darunter beispielsweise die Auflösung einiger 1:n Beziehungen von Hochschulen u
 In folgendem Diagramm wurden Spalten ohne Beziehungen weggelassen, um eine bessere Übersicht zu erzielen. 
 //Fix folgt
 
-[[phys_erm]]
+:imagesdir: images
 .physisches Entity-Relationship-Diagram (der Vorgruppe entnommen)
-image::physical_erm.svg[]
+image::physical_erm.svg[physisches Entity-Relationship-Diagram (der Vorgruppe entnommen)]
 
 ==== Tabellen
 
