@@ -9,8 +9,7 @@ include::../_includes/default-attributes.inc.adoc[]
 |Anforderungsspezifikationen |Status | Kommentar |
 Filterung nach Land, Hochschule und Vertragstyp| in Bearbeitung |Untere Filterzeile weg, Filter-Rücksetzen führt teilweise zu Aufhängen der Website (Probleme im Code) |
  funktionsfähiger LogOut-Button| erledigt | / |
- Löschen von Inhalten| | Superuser oder Passwortfunktion (nur Frau Terpe Berechtigungen geben) |===|
-
+ Löschen von Inhalten| / | Superuser oder Passwortfunktion (nur Frau Terpe Berechtigungen geben) |===|
 
 == Rechtes Fenster
 
