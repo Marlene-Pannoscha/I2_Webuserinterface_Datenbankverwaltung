@@ -9,7 +9,7 @@ include::../_includes/default-attributes.inc.adoc[]
 |Anforderungsspezifikationen |Status | Kommentar |
 Filterung nach Land, Hochschule und Vertragstyp| in Bearbeitung |Untere Filterzeile weg, Filter-Rücksetzen führt teilweise zu Aufhängen der Website (Probleme im Code) |
  funktionsfähiger LogOut-Button| erledigt | / |
- Löschen von Inhalten| / | Superuser oder Passwortfunktion (nur Frau Terpe Berechtigungen geben) |===|
+ Löschen von Inhalten| / | Superuser oder Passwortfunktion (nur Frau Terpe Berechtigungen geben) |===
 
 == Rechtes Fenster
 
@@ -17,7 +17,7 @@ Filterung nach Land, Hochschule und Vertragstyp| in Bearbeitung |Untere Filterze
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
 Extra-Bearbeitungsfenster als Alternative, da Fokus auf Vertrags Fenster liegt (komprimieren, Namen ausführlicher anzeigen) | abgelehnt von uns | 
-Erasmus und Hochschulpartnerschaften Anzahl weg | Layout des Fensters anpassen | erledigt | / |===|
+Erasmus und Hochschulpartnerschaften Anzahl weg | Layout des Fensters anpassen | erledigt | / |===
 
 == Mittlers Fenster
 
@@ -27,14 +27,14 @@ Erasmus und Hochschulpartnerschaften Anzahl weg | Layout des Fensters anpassen |
 eine Ansprechperson + eine Extra-Ansprechperson pro Hochschule eingetragen und ausgelesen werden können| erledigt | laut Spezifikation nur Name, Vorname und Email|
 Name der Ansprechperson kann in den Hintergrund rücken, wichtig sind hierbei die Mail-Adressen, welche sofort sichtbar sein sollen| erledigt |Bei Ansprechperson nicht nötig (wechselt auch zu offen) → nur International Office benötigt
  |
-Name von Partnerhochschule in Englisch und in Originalsprache darstellen + ERASMUSCODE |erledigt|laut Frau Terpe soll es ein Popup-Fenster für Notizen geben, obwohl Notizfeld bereits vorhanden ist und Kunde eigentlich streng gegen Popup-Fernster ist|===|
+Name von Partnerhochschule in Englisch und in Originalsprache darstellen + ERASMUSCODE |erledigt|laut Frau Terpe soll es ein Popup-Fenster für Notizen geben, obwohl Notizfeld bereits vorhanden ist und Kunde eigentlich streng gegen Popup-Fernster ist|===
 
 == Linkes Fenster
 
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
-direktes Auswählen von Universitäten per Anklicken | erledigt | ebenfalls Format angepasst, weniger Zeilenumbrüche |===|
+direktes Auswählen von Universitäten per Anklicken | erledigt | ebenfalls Format angepasst, weniger Zeilenumbrüche |===
 
 == Fakultät
 //Reiter Fakultät
@@ -42,7 +42,7 @@ direktes Auswählen von Universitäten per Anklicken | erledigt | ebenfalls Form
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
-Möglichkeit zum Bearbeiten, Anlegen und Löschen von Fakultäten| wird nicht umgesetzt |Aufgabe SHK| ===|
+Möglichkeit zum Bearbeiten, Anlegen und Löschen von Fakultäten| wird nicht umgesetzt |Aufgabe SHK|===
 
 == Mentoren
 //Reiter Metoren
@@ -58,8 +58,7 @@ Bei Mentor Name: Feld größer, da viele Titel Länderauswahl/Hochschulauswahl s
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
-Erstellen von Berichten für Vertragstypen, Fakultäten und Länder | Iteration 5 geplant | in PDF ausdruckbar sein|
-===|
+Erstellen von Berichten für Vertragstypen, Fakultäten und Länder | Iteration 5 geplant | in PDF ausdruckbar sein|===
 
 == Nice To Have
 
