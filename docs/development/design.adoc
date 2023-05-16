@@ -138,4 +138,5 @@ Die Liste von Hochschulen, Ländern, Vertragstypen etc. werden beim Laden der Se
 
 Die Bearbeitungsformulare der Hochschule werden direkt neben der Hochschulliste dargestellt, um zusätzliche Klickarbeit zu vermeiden aber auch einer besseren Übersicht zuliebe.
 
+
 // end::include_development[]
