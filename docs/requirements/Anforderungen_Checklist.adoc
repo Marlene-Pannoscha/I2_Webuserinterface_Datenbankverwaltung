@@ -17,11 +17,8 @@ Filterung nach Land, Hochschule und Vertragstyp| in Bearbeitung |Untere Filterze
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
- Extra-Bearbeitungsfenster als Alternative, da Fokus auf Vertrags Fenster liegt (komprimieren,
-Namen ausführlicher anzeigen)
-| | abgelehnt von uns |
- Erasmus und Hochschulpartnerschaften Anzahl weg| | |
-Layout des Fensters anpassen| erledigt | | ===|
+Extra-Bearbeitungsfenster als Alternative, da Fokus auf Vertrags Fenster liegt (komprimieren, Namen ausführlicher anzeigen) | abgelehnt von uns | 
+Erasmus und Hochschulpartnerschaften Anzahl weg | Layout des Fensters anpassen | erledigt | / |===|
 
 == Mittlers Fenster
 
@@ -38,8 +35,7 @@ Name von Partnerhochschule in Englisch und in Originalsprache darstellen + ERASM
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
-direktes Auswählen von Universitäten per Anklicken| erledigt | ebenfalls Format angepasst, weniger Zeilenumbrüche|
- ===|
+direktes Auswählen von Universitäten per Anklicken | erledigt | ebenfalls Format angepasst, weniger Zeilenumbrüche |===|
 
 == Fakultät
 //Reiter Fakultät
@@ -54,11 +50,8 @@ Möglichkeit zum Bearbeiten, Anlegen und Löschen von Fakultäten| wird nicht um
 
 [%header, cols="3,1,1"]
 |===
-|Anforderungsspezifikationen |Status | Kommentar |
-Bei Mentor Name: Feld größer, da viele Titel
-Länderauswahl/Hochschulauswahl soll sich nicht schon bei Veränderung d. Verträge
-zurücksetzen|/ |Mentoren: Mentor suchen größer, Filtern nach Fakultät, Mentor im Detail: Fakultät stimmt
-nicht überein | ===|
+|Anforderungsspezifikationen | Status | Kommentar |
+Bei Mentor Name: Feld größer, da viele Titel Länderauswahl/Hochschulauswahl soll sich nicht schon bei Veränderung d. Verträge zurücksetzen| / |Mentoren: Mentor suchen größer, Filtern nach Fakultät, Mentor im Detail: Fakultät stimmt nicht überein | ===|
 
 == Berichte
 //Reiter Berichte
