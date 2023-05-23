@@ -120,3 +120,9 @@ table {
 .rounded-border {
   border-radius: 10px;
 }
+
+#modal_add_mentor {
+  width: 50rem;
+  left: 50%;
+  transform:translateX(-50%);
+}
