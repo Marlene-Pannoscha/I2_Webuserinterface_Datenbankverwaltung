@@ -126,3 +126,11 @@ table {
   left: 50%;
   transform:translateX(-50%);
 }
+
+/* Partnerhochschule anlegen*/ 
+#modal_add_inst{
+  width: 50rem;
+  left: 50%;
+  transform:translateX(-50%);
+}
+
