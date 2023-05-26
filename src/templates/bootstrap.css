@@ -11309,3 +11309,9 @@ tr:hover {
 #fil_shown {
   display: none;
 }
+
+textarea {
+  resize: vertical; /* Aktiviert das vertikale Scrollen */
+  max-height: 70px; /* Maximale Höhe des Textarea-Feldes */
+  max-width: 100%; /* Maximale Breite des Textarea-Feldes */
+}
