@@ -67,6 +67,8 @@ function showGuidedAgreements(agreements_object) {
  * 
 */
 function insertAgreementInTable(data, addField, addType) {
+    // Tabelle leeren, bevor neue Daten eingefügt werden
+    addField.empty();
     let newRow = '';
     let id = '';
     let style = 'none;';
@@ -276,7 +278,11 @@ function insertAgreementInformation(agreement) {
     $('#out_num_months').val(setAgreement.out_num_months);
     let x = document.getElementById('notes');
     x.value = setAgreement.notes;
+
+
 }
+
+
 
 /** Wird durch die Funktion insertAgreementInformation() aufgerufen
  *  Dieser Funktion wird die ID des ausgewählten Agreements übergeben.
