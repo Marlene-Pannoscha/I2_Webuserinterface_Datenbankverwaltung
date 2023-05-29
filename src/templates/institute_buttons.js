@@ -132,14 +132,12 @@ function instituteButtonEvents() {
     });
     // MODAL: HOCHSCHULE BEARBEITEN -> ABBRECHEN / X BUTTON
     $(' .close_modal_edit').on('click', function (){
-        $('#first_slide').show();
-        $('#second_slide').show();
-        $('#addAgreements').empty();
-        $('#modal_edit').toggle();
+        
+        
         $('#input-new-restriction').attr('style', 'display: none;');
         console.log("institute_button.js Z.92");
         clearSessionStorage(); //delete cached data from local storage (important data to keep up edit functionality)
-        clearAgreementSpace();
+        
         
     });
 }

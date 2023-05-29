@@ -54,9 +54,9 @@ function loadMentorDropdown() {
            let mentor = data[index];
            $(' .loadMentor').append($('<option>', {
                value: `${mentor['ID']}`,
-               text: `${mentor['title']} ${mentor['firstname']} ${mentor['lastname']}`
+               text: ` ${mentor['firstname']} ${mentor['lastname']}`
             }));
-           mentors[mentor['ID']] = {'title': mentor['title'], 'firstname': mentor['firstname'], 'lastname': mentor['lastname']};
+           mentors[mentor['ID']] = { 'firstname': mentor['firstname'], 'lastname': mentor['lastname']};
        });
        sessionStorage.setItem('mentors', JSON.stringify(mentors));
     });
