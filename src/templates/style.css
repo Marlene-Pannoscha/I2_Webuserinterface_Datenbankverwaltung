@@ -125,6 +125,7 @@ table {
   width: 50rem;
   left: 50%;
   transform:translateX(-50%);
+  overflow: hidden;
 }
 
 /* Partnerhochschule anlegen*/ 
@@ -132,5 +133,6 @@ table {
   width: 50rem;
   left: 50%;
   transform:translateX(-50%);
+  overflow: hidden;
 }
 
