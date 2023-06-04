@@ -68,7 +68,7 @@ function showGuidedAgreements(agreements_object) {
 */
 function insertAgreementInTable(data, addField, addType) {
     // Tabelle leeren, bevor neue Daten eingefügt werden
-    addField.empty();
+    
     let newRow = '';
     let id = '';
     let style = 'none;';
@@ -104,6 +104,7 @@ function insertAgreementInTable(data, addField, addType) {
     makeRowClickable(id, "agreement");
     let agreementObj = createAgreementObject(data);
     agreementObj = checkInput(agreementObj);
+    
     return agreementObj;
 }
 

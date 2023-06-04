@@ -4,12 +4,15 @@
  */
 
 function addButtonEvent() {
-    $('#addItems').on('click', 'tr', function() {
-        let institute_row = $(this);
-        let first_column = institute_row.find('th:first-child');
-        let id = first_column.text();
-        loadAgreements(id);
-        loadModal(id);
+    let selectedInstituteId; // Deklariere eine Variable für die ausgewählte ID
+
+    $(".edit_inst_btn").on('click', function () {
+        let institute_row = $(this).parent().parent();
+        let first_column = institute_row[0].children;
+        selectedInstituteId = first_column[0].innerHTML; // Speichere die ID in der Variable
+        clearAgreementSpace();
+        loadAgreements(selectedInstituteId);
+        loadModal(selectedInstituteId);
     });
 
     $('.del-institute').on('click', (e) => {
@@ -17,7 +20,15 @@ function addButtonEvent() {
         const id = tgt.parentElement.parentElement.children[0];
         deletion(id, "institute");
     });
+
+    $(' .close_modal_edit').on('click', function () {
+        $('.clear-form').trigger('reset');
+        clearAgreementSpace();
+        loadModal(selectedInstituteId);
+        loadAgreements(selectedInstituteId);
+    });
 }
+
 
 function makeRowClickable(rowID, type) {
     if (type === 'agreement') {
