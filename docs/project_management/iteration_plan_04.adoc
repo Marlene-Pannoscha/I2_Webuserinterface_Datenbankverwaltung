@@ -38,11 +38,11 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
 | Filterfunktionen (Sortierungsreiter entfernen) | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
-| Reiter Berichte implementieren | hoch | 6 | laufend | / | 1 | ausstehend | 5 | /
-| Entwicklerdokumentation (Design) | hoch | 5 | laufend | / | 1 | ausstehend | 4 | /
-| Entwicklerdokumentation (Software) | hoch | 5 | laufend | / | | | |
+| Reiter Berichte implementieren | hoch | 6 | laufend | / | 1 | Alessandra Russ | 5 | /
+| Entwicklerdokumentation (Design) | hoch | 5 | fertig | / | 1 | Kevin Freund | 4 | /
+| Entwicklerdokumentation (Software) | hoch | 5 | laufend | / | 2 | Kevin Freund | |
 | Standards in Dokumentation festhalten (Belegdokumentation) | hoch | 5 | laufend | / | 1 | Marlene Pannoscha  | 3 | /
-| Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson Fenster) | hoch | 6 | laufend | / | 1 | ausstehen| 2 | /
+| Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson Fenster) | hoch | 6 | laufend | / | 1 | Dilara Eichler | 2 | /
 |Button Land hinzufügen implementieren| hoch | 5 | laufend | / | 1 | ausstehend | 4 | /  Deployment Engineer bestimmen | hoch | 1 | laufend | / |
 
 |===

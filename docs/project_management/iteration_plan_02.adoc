@@ -39,9 +39,9 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Analyse der Datenbank | hoch | 8 | abgeschlossen | / | 1 | Alessandra Ruff | 5 | /
 | Hauptanforderungen festhalten und UseCase-Modell erstellen | hoch | 6 | abgeschlossen | UseCase-Modell | 1 | Max Listner | 3 | /
 | UseCases beschreiben | hoch | 6 | abgeschlossen | / | 1 | Robert Pfund | 3 | /
-| Erstellen des Domönen-Modells| hoch | 6 | abgeschlossen | / | 1 | Marlene Pannoscha | 3 | /
+| Erstellen des Domänen-Modells| hoch | 6 | abgeschlossen | / | 1 | Marlene Pannoscha | 3 | /
 | Erstellen der Wireframes | hoch | 4 | abgeschlossen | / | 1 | Alessandra Ruff | 2 | /
-| Architecture Notebook ausarbeiten | hoch | 6 | In Arbeit | Architecture | 1 | Kevin Freund, Dilara Eichler | 4 | /
+| Architecture Notebook ausarbeiten | hoch | 6 | abgeschlossen | Architecture | 1 | Kevin Freund, Dilara Eichler | 4 | /
 
 
 
