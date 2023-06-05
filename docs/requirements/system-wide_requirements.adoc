@@ -17,9 +17,9 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
-* SWFA-1: Das System muss jegliche Daten bezüglich den Hochschulpartnerschaften speichern
+* SWFA-1: Das System muss jegliche Daten bezüglich den Hochschulpartnerschaften speichern.
 ** Zur Überprüfung wird die Seite nach dem Speichern neu geladen.
-* SWFA-2: Zugriff auf das Verwaltungsfrontend dürfen lediglich autorisierte Mitarbeiter/-innen der Stabstelle Internationales haben. 
+* SWFA-2: Zugriff auf das Verwaltungsfrontend dürfen lediglich autorisierte Mitarbeiter/-innen der Stabstelle Internationales haben.
 ** Zur Überprüfung wird versucht, das Verwaltungsfrontend außerhalb des HTW-Netzes zu öffnen sowie sich mit falschen Login-Daten anzumelden.
 
 
@@ -52,9 +52,9 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 === Wartbarkeit (Supportability)
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
-* NFAS-1: Übersichtliche und ausführliche Hinweise/Dokumentation, um Erweiterbarkeit zu erleichtern
+* NFAS-1: Übersichtliche und ausführliche Hinweise/Dokumentation, um Erweiterbarkeit zu erleichtern.
 * NFAS-2: Mögliche Erweiterbarkeit des Systems
-** Zur Überprüfung wird im Verlauf des Projektes das System stetig um neue Funktionen erweitert 
+** Zur Überprüfung wird im Verlauf des Projektes das System stetig um neue Funktionen erweitert.
 
 == Zusätzliche Anforderungen
 
