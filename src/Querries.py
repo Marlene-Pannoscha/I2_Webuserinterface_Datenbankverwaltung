@@ -257,7 +257,7 @@ def new_mentor(columns, values):
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     query_parameter = helper.dynamic_querries(columns)
-    query = "INSERT INTO tbl_mentor (" + query_parameter[0] + ") VALUES(" + query_parameter[1] + ")"
+    query = "INSERT INTO new_tbl_mentor (" + query_parameter[0] + ") VALUES(" + query_parameter[1] + ")"
     try:
         insert = tuple(values)
         print(insert)
@@ -278,7 +278,7 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     state = "failed" # set initial status that is returned when it failed to set changes in db
     query_parameter = helper.dynamic_querries(tuple_columns)
     type_dict = {
-        'mentor': 'tbl_mentor',
+        'mentor': 'new_tbl_mentor',
         'institute': 'tbl_institute',
         'agreement': 'tbl_mobility_agreement',
         'restriction': 'tbl_mobility_agreement_x_course'
@@ -358,10 +358,9 @@ def return_mentor():  # get all mentor information and store on client storage
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    query = """SELECT m.ID, m.faculty_ID, m.active, m.title, m.firstname, m.lastname, m.gender_ID,
-                m.homepage, m.email,count(mentor_ID) 
+    query = """SELECT m.ID, m.faculty_ID, m.active, m.gender_ID, m.title, m.firstname, m.lastname, count(mentor_ID) 
                 FROM tbl_mobility_agreement ma 
-                RIGHT JOIN tbl_mentor m  
+                RIGHT JOIN new_tbl_mentor m  
                 ON ma.mentor_ID = m.ID 
                 GROUP BY m.ID
                 ORDER BY m.lastname"""
@@ -376,13 +375,13 @@ def return_mentor():  # get all mentor information and store on client storage
             'ID': mentor[0],
             'faculty_ID': mentor[1],
             'active': display,
-            'title': mentor[3],
-            'firstname': mentor[4],
-            'lastname': mentor[5],
-            'gender_ID': mentor[6],
-            'homepage': mentor[7],
-            'email': mentor[8],
-            'agreements': mentor[9]
+            'gender_ID': mentor[3],
+            'title': mentor[4],
+            'firstname': mentor[5],
+            'lastname': mentor[6],
+             #'homepage': mentor[7],
+             #'email': mentor[8],
+            'agreements': mentor[7]
         }
         payload.append(content)
     cnxn.close()
@@ -437,7 +436,7 @@ def edit(keys, values, change_id, change_type):  # institute = institute ID
     '''
     Die geänderte Werte in der Datenbank aktualisieren
     '''
-    tbl_names = {'institute': "tbl_institute", 'agreement': "tbl_mobility_agreement", 'restriction': "tbl_mobility_agreement_x_course", 'mentor': 'tbl_mentor'}
+    tbl_names = {'institute': "tbl_institute", 'agreement': "tbl_mobility_agreement", 'restriction': "tbl_mobility_agreement_x_course", 'mentor': 'new_tbl_mentor'}
     parameter = helper.dynamic_querries(keys)
     query_string = helper.create_update_string(keys)
     cnxn = Login.newConnection()
