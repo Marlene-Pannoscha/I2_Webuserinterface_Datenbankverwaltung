@@ -280,8 +280,8 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     type_dict = {
         'mentor': 'new_tbl_mentor',
         'institute': 'new_tbl_institute',
-        'agreement': 'tbl_mobility_agreement',
-        'restriction': 'tbl_mobility_agreement_x_course'
+        'agreement': 'new_tbl_mobility_agreement',
+        'restriction': 'new_tbl_mobility_agreement_x_course'
     } # define all possible tables where a new object could be created
     # create dynamic insert query
     query = f"INSERT INTO {type_dict[object_type]} ({query_parameter[0]}) VALUES ({query_parameter[1]})"
@@ -359,7 +359,7 @@ def return_mentor():  # get all mentor information and store on client storage
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     query = """SELECT m.ID, m.faculty_ID, m.active, m.gender_ID, m.title, m.firstname, m.lastname, count(mentor_ID) 
-                FROM tbl_mobility_agreement ma 
+                FROM new_tbl_mobility_agreement ma 
                 RIGHT JOIN new_tbl_mentor m  
                 ON ma.mentor_ID = m.ID 
                 GROUP BY m.ID
@@ -396,7 +396,7 @@ def return_faculties():
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     query = """SELECT f.deu, f.eng, COUNT(m.faculty_ID) 
-                FROM tbl_mobility_agreement m
+                FROM new_tbl_mobility_agreement m
                 JOIN new_tbl_faculty f 
                 ON f.ID = m.faculty_ID
                 GROUP BY m.faculty_ID
@@ -436,7 +436,7 @@ def edit(keys, values, change_id, change_type):  # institute = institute ID
     '''
     Die geänderte Werte in der Datenbank aktualisieren
     '''
-    tbl_names = {'institute': "new_tbl_institute", 'agreement': "tbl_mobility_agreement", 'restriction': "tbl_mobility_agreement_x_course", 'mentor': 'new_tbl_mentor'}
+    tbl_names = {'institute': "new_tbl_institute", 'agreement': "new_tbl_mobility_agreement", 'restriction': "new_tbl_mobility_agreement_x_course", 'mentor': 'new_tbl_mentor'}
     parameter = helper.dynamic_querries(keys)
     query_string = helper.create_update_string(keys)
     cnxn = Login.newConnection()
@@ -463,7 +463,7 @@ def checkLength(key, object_id):
     cur = cnxn.cursor()
     dict = {
         'institute': ['agreements_for_institute', 'new_tbl_institute'],
-        'agreement': ['courses_for_agreement', 'tbl_mobility_agreement']
+        'agreement': ['courses_for_agreement', 'new_tbl_mobility_agreement']
     }
     if key in dict:
         procedure_name = dict[key][0]
@@ -476,7 +476,7 @@ def checkLength(key, object_id):
             else:
                 return {'state': 'failed'}
     else:
-        delete('tbl_mobility_agreement_x_course', strip)
+        delete('new_tbl_mobility_agreement_x_course', strip)
     return {'state': 'successful'}
 
 

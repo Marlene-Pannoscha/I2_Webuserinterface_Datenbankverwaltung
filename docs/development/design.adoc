@@ -54,9 +54,9 @@ Unten stehend werden alle enthaltenen Tabellen aufgelistet, erläutert sowie der
 
 |tbl_partnership_type |Definition unterschiedliche Abkommenstypen |-
 
-|tbl_mobility_agreement |Vertragsinformationen, verweist auf den Mentor und den Vertragstyp / Hochschule in _tbl_partnership_ |Anlegen, Ändern, Deaktivieren
+|new_tbl_mobility_agreement |Vertragsinformationen, verweist auf den Mentor und den Vertragstyp / Hochschule in _tbl_partnership_ |Anlegen, Ändern, Deaktivieren
 
-|tbl_mobility_agreement_x_course |optionale Beschränkungen der Anzahl der Incoming / Outgoing pro Vertrag und Studiengang
+|new_tbl_mobility_agreement_x_course |optionale Beschränkungen der Anzahl der Incoming / Outgoing pro Vertrag und Studiengang
 
 Bsp.: Vertrag der Fakultät Informatik/Mathematik für 7 Studenten;
 Incoming/Outgoing -> davon dürfen nur 3 Wirtschaftsinformatiker, 2 Medieninformatiker und 2 Verwaltungsinformatiker sein. |Anlegen, Ändern, Deaktivieren
