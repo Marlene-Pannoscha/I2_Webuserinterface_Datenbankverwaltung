@@ -40,7 +40,7 @@ Unten stehend werden alle enthaltenen Tabellen aufgelistet, erläutert sowie der
 |===
 |Tabelle |Inhalt |Modifikation durch Verwaltungsfrontend
 
-|tbl_faculty |Fakultäten der HTW |(Anlegen, Ändern, Deaktivieren)
+|new_tbl_faculty |Fakultäten der HTW |(Anlegen, Ändern, Deaktivieren)
 
 |new_tbl_mentor |Betreuer der Hochschulverträge (der HTW) |Anlegen, Ändern, Deaktivieren
 

@@ -75,11 +75,11 @@ def all_countries():
 # Laden der Fakultäten in den Filter Fakultäten
 def faculty():
     '''
-    Alle Fakultäten, die in tbl_faculty gespeichert sind, holen
+    Alle Fakultäten, die in new_tbl_faculty gespeichert sind, holen
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    cur.execute("SELECT ID, deu FROM tbl_faculty ORDER BY deu")
+    cur.execute("SELECT ID, deu FROM new_tbl_faculty ORDER BY deu")
     x = cur.fetchall()
     payload = []
     for i in x:
@@ -397,7 +397,7 @@ def return_faculties():
     cur = cnxn.cursor()
     query = """SELECT f.deu, f.eng, COUNT(m.faculty_ID) 
                 FROM tbl_mobility_agreement m
-                JOIN tbl_faculty f 
+                JOIN new_tbl_faculty f 
                 ON f.ID = m.faculty_ID
                 GROUP BY m.faculty_ID
                 ORDER BY f.deu"""
