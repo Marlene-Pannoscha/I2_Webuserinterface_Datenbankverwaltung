@@ -30,7 +30,7 @@ def ag_type_ret():
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    cur.execute('SELECT ID, deu FROM tbl_partnership_type ORDER BY deu')
+    cur.execute('SELECT ID, deu FROM new_tbl_partnership_type ORDER BY deu')
     x = cur.fetchall()
     payload = []
     for i in x:
@@ -292,7 +292,7 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
         print(query, parameters)
         cur.execute(query, parameters,)
         cnxn.commit()
-        # query for insert into tbl_partnership
+        # query for insert into new_tbl_partnership
         if object_type == 'institute':
             all_parameters = (inst_name, inst_ps_type)
             cur.callproc('insert_partnership', all_parameters,)
@@ -487,7 +487,7 @@ def delete(tbl, row_id):
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     if tbl == 'new_tbl_institute':
-        query = f"DELETE FROM tbl_partnership WHERE institute_ID = {row_id}"
+        query = f"DELETE FROM new_tbl_partnership WHERE institute_ID = {row_id}"
         cur.execute(query)
         cnxn.commit()
     query = f"DELETE FROM {tbl} WHERE ID = {row_id}"

@@ -28,7 +28,7 @@ def checkValidPartnership(partnership_id, institute_id):
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    query = f"SELECT ID FROM tbl_partnership WHERE institute_ID = {institute_id} AND partnership_type_ID = {partnership_id}"
+    query = f"SELECT ID FROM new_tbl_partnership WHERE institute_ID = {institute_id} AND partnership_type_ID = {partnership_id}"
     cur.execute(query)
     result_set = cur.fetchall()
     if len(result_set) > 0:
