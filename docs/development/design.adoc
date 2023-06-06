@@ -46,7 +46,7 @@ Unten stehend werden alle enthaltenen Tabellen aufgelistet, erläutert sowie der
 
 |tbl_gender |Geschlechterauswahl für Mentoren sowie Ansprechpersonen |-
 
-// |tbl_country |so gut wie alle Länder der Welt |-
+// |new_tbl_country |so gut wie alle Länder der Welt |-
 
 |tbl_institute |Partnerhochschule, International office |auf Informationsfrontend: Anlegen, Ändern, Verstecken (auf Informationsfrontend)
 

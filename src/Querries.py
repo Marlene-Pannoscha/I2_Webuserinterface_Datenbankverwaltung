@@ -49,14 +49,14 @@ def ag_type_ret():
 # Laden der Länderliste in den Filter Länder
 def all_countries():
     '''
-    Alle Länder, die in tbl_country gespeichert sind, für die Filterwerte holen
+    Alle Länder, die in new_tbl_country gespeichert sind, für die Filterwerte holen
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    #cur.execute("SELECT de, id FROM tbl_country ORDER BY de")
-    #cur.execute("CREATE VIEW val_coun AS SELECT de, id FROM tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
+    #cur.execute("SELECT de, id FROM new_tbl_country ORDER BY de")
+    #cur.execute("CREATE VIEW val_coun AS SELECT de, id FROM new_tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
     #cur.execute("SELECT de, id FROM val_coun")
-    cur.execute("SELECT de, id FROM tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
+    cur.execute("SELECT de, id FROM new_tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
     x = cur.fetchall()
     payload = []
     for i in x:
@@ -313,8 +313,8 @@ def return_countries():
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    #cur.execute('SELECT de, en, erasmus FROM tbl_country ORDER BY de')
-    cur.execute("SELECT de, en, erasmus FROM tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
+    #cur.execute('SELECT de, en, erasmus FROM new_tbl_country ORDER BY de')
+    cur.execute("SELECT de, en, erasmus FROM new_tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
     rows = cur.fetchall()  # zusammenfassen aller Objekte der Datenbankanfrage
     payload = []
     for row in rows:
