@@ -61,7 +61,7 @@ Unten stehend werden alle enthaltenen Tabellen aufgelistet, erläutert sowie der
 Bsp.: Vertrag der Fakultät Informatik/Mathematik für 7 Studenten;
 Incoming/Outgoing -> davon dürfen nur 3 Wirtschaftsinformatiker, 2 Medieninformatiker und 2 Verwaltungsinformatiker sein. |Anlegen, Ändern, Deaktivieren
 
-|tbl_course |Kurse der HTW, genutzt von _tbl_mobility_agreement_x_course_ und der Statistik |-
+|new_tbl_course |Kurse der HTW, genutzt von _tbl_mobility_agreement_x_course_ und der Statistik |-
 
 |tbl_exchange_type |Definition der Art des Austausches z.B. Erasmus, Promos, Freemover (Verwendung für die Statistik genutzt) |-
 

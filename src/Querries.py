@@ -336,7 +336,7 @@ def return_courses():
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    cur.execute('SELECT deu, eng, ID FROM tbl_course ORDER BY deu')
+    cur.execute('SELECT deu, eng, ID FROM new_tbl_course ORDER BY deu')
     x = cur.fetchall()
     payload = []
     for row in x:
