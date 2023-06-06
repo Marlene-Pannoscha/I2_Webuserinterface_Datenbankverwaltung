@@ -4,10 +4,10 @@ import Login
 from flask import jsonify
 
 
-# get all institutes saved in tbl_institutes
+# get all institutes saved in new_tbl_institutes
 def institutes_ret():
     '''
-    Alle Institute, die in tbl_institutes gespeichert sind, holen
+    Alle Institute, die in new_tbl_institutes gespeichert sind, holen
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
@@ -279,7 +279,7 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     query_parameter = helper.dynamic_querries(tuple_columns)
     type_dict = {
         'mentor': 'new_tbl_mentor',
-        'institute': 'tbl_institute',
+        'institute': 'new_tbl_institute',
         'agreement': 'tbl_mobility_agreement',
         'restriction': 'tbl_mobility_agreement_x_course'
     } # define all possible tables where a new object could be created
@@ -288,7 +288,7 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     # define tuple for parameters that need to be inserted
     parameters = tuple(tuple_values)
     try:
-        # insert into tbl_institute
+        # insert into new_tbl_institute
         print(query, parameters)
         cur.execute(query, parameters,)
         cnxn.commit()
@@ -436,7 +436,7 @@ def edit(keys, values, change_id, change_type):  # institute = institute ID
     '''
     Die geänderte Werte in der Datenbank aktualisieren
     '''
-    tbl_names = {'institute': "tbl_institute", 'agreement': "tbl_mobility_agreement", 'restriction': "tbl_mobility_agreement_x_course", 'mentor': 'new_tbl_mentor'}
+    tbl_names = {'institute': "new_tbl_institute", 'agreement': "tbl_mobility_agreement", 'restriction': "tbl_mobility_agreement_x_course", 'mentor': 'new_tbl_mentor'}
     parameter = helper.dynamic_querries(keys)
     query_string = helper.create_update_string(keys)
     cnxn = Login.newConnection()
@@ -462,7 +462,7 @@ def checkLength(key, object_id):
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     dict = {
-        'institute': ['agreements_for_institute', 'tbl_institute'],
+        'institute': ['agreements_for_institute', 'new_tbl_institute'],
         'agreement': ['courses_for_agreement', 'tbl_mobility_agreement']
     }
     if key in dict:
@@ -486,7 +486,7 @@ def delete(tbl, row_id):
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    if tbl == 'tbl_institute':
+    if tbl == 'new_tbl_institute':
         query = f"DELETE FROM tbl_partnership WHERE institute_ID = {row_id}"
         cur.execute(query)
         cnxn.commit()

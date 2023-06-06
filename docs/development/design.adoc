@@ -48,9 +48,9 @@ Unten stehend werden alle enthaltenen Tabellen aufgelistet, erläutert sowie der
 
 // |new_tbl_country |so gut wie alle Länder der Welt |-
 
-|tbl_institute |Partnerhochschule, International office |auf Informationsfrontend: Anlegen, Ändern, Verstecken (auf Informationsfrontend)
+|new_tbl_institute |Partnerhochschule, International office |auf Informationsfrontend: Anlegen, Ändern, Verstecken (auf Informationsfrontend)
 
-|tbl_partnership |Zuweisung eines Partnerschaftstypes (1:n) zu tbl_institute |Anlegen (implizit mit Vertrag)
+|tbl_partnership |Zuweisung eines Partnerschaftstypes (1:n) zu new_tbl_institute |Anlegen (implizit mit Vertrag)
 
 |tbl_partnership_type |Definition unterschiedliche Abkommenstypen |-
 
