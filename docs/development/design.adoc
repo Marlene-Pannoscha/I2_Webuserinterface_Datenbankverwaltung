@@ -44,7 +44,7 @@ Unten stehend werden alle enthaltenen Tabellen aufgelistet, erläutert sowie der
 
 |new_tbl_mentor |Betreuer der Hochschulverträge (der HTW) |Anlegen, Ändern, Deaktivieren
 
-|tbl_gender |Geschlechterauswahl für Mentoren sowie Ansprechpersonen |-
+|new_tbl_gender |Geschlechterauswahl für Mentoren sowie Ansprechpersonen |-
 
 // |new_tbl_country |so gut wie alle Länder der Welt |-
 
