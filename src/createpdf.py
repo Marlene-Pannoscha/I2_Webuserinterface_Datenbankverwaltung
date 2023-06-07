@@ -20,6 +20,7 @@ def querry_to_html(data, faculty_id):
     <html>
       <head>
 
+        <meta charset="utf-8">
         <meta name="pdfkit-page-size" content="Legal"/>
         <meta name="pdfkit-orientation" content="Landscape"/>
 
@@ -70,7 +71,7 @@ def querry_to_html(data, faculty_id):
     result += style
 
     closingtag = """
-    createPDF();
+    createPDF()
     </body>
     </html>
     """
