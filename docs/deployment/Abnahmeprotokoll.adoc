@@ -52,13 +52,55 @@ Use-Case: exterene Informationsabfrage (UC09)| Nein | |
 
 
 
-=== Systemweite Anforderungen
+=== Systemweite funktionale Anforderungen
 
 [%header, cols="3,1,3"]
 
 |===
-|Anforderung | Erfüllt | Anmerkung
+|Anforderung | Erfüllt | Anmerkung |
+SWFA-1: Das System muss jegliche Daten bezüglich den Hochschulpartnerschaften speichern. Zur Überprüfung wird die Seite nach dem Speichern neu geladen. | |  | SWFA-2: Zugriff auf das Verwaltungsfrontend dürfen lediglich autorisierte Mitarbeiter/-innen der Stabstelle Internationales haben. Zur Überprüfung wird versucht, das Verwaltungsfrontend außerhalb des HTW-Netzes zu öffnen sowie sich mit falschen Login-Daten anzumelden.| | |
 |===
+
+=== Qualitätsanforderungen für das Gesamtsystem
+
+==== Benutzbarkeit (Usability)
+
+[%header, cols="3,1,3"]
+
+|===
+|Anforderung | Erfüllt | Anmerkung |
+NFAU-1: Das System sollte benutzerfreundlich formatiert und bedienbar sein, für kleine als auch größere PC-Monitore. Zur Überprüfung werden PC-Monitore verschiedensten Größen bedient. | || NFAU-2: Das Verwaltungsfrontend sollte auf verschiedenen Betriebssystemen mit unterschiedlichen Browsern laufen. Zur Überprüfung wird das Verwaltungsfrontend auf Rechner mit den gängigen Betriebssystemen und deren Browsern aufgerufen. |
+|===
+
+==== Zuverlässigkeit (Reliability)
+
+[%header, cols="3,1,3"]
+
+|===
+|Anforderung | Erfüllt | Anmerkung |
+NFAR-1: Beim Abruf eines vorherigen Zustandes der Datenbank, muss das Verwaltungsfrontend weiterhin funktionieren. Zur Überprüfung werden Backups der Datenbank hochgeladen. | | | NFAR-2: Es besteht die Möglichkeit, dass Verwaltungs- und Informationsfrontend gleichzeitig Daten abrufen können.
+Zur Überprüfung wird an einem Rechner im Verwaltungsfrontend ein bestehender Datensatz modifiziert, während dieser parallel an einem anderem Rechner im Informationsfrontend angesehen wird.| | |NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen. (Multi-User-System) Zur Überprüfung werden jeweils zwei verschiedene Login-Sessions laufen, um einerseits einen Datensatz zu lesen und andererseits parallel dazu einen Datensatz zu schreiben. |||
+|===
+
+==== Effizienz (Performance)
+
+[%header, cols="3,1,3"]
+
+|===
+|Anforderung | Erfüllt | Anmerkung |
+NFAP-1: Das Wechseln von Seiten innerhalb des Verwaltungsforntends sollte innerhalb maximal 3 Sekunden stattfinden. Zur Überprüfung werden Seitenaufrufe per Skript simuliert und dabei auf deren Antwortzeit gemessen. |||NFAP-2: Datenbankrelevante Funktionen sollten möglichst schnell, maximal in 2 Sekunden, ausführbar sein. Zur Überprüfung werden Funktionen per SQL-Befehle ausgeführt und dabei auf deren Ausführungszeit gemessen. |
+|===
+
+==== Wartbarkeit (Supportability)
+
+[%header, cols="3,1,3"]
+|===
+|Anforderung | Erfüllt | Anmerkung |
+NFAS-1: Übersichtliche und ausführliche Hinweise/Dokumentation, um Erweiterbarkeit zu erleichtern.| | |
+NFAS-2: Mögliche Erweiterbarkeit des Systems. Zur Überprüfung wird im Verlauf des Projektes das System stetig um neue Funktionen erweitert.|
+|===
+
+
 
 == Unterschriften
 

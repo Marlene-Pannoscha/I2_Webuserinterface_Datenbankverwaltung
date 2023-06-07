@@ -50,15 +50,16 @@ Die Rollen wurden von den Studierenden wie folgt eingenommen:
 
 | Teamleitung
 a|
-* Max Listner
+* (Max Listner)
 * Marlene Pannoscha
+* Kevin Freund
 a|
 * Leitung des Projektes
 * Kommunikation/Schnittstelle mit Auftraggeber, Coach, Stakeholder und Gruppe
 * Planung der Iterationsschritte
 * Kontrolle des Projektvortschrittes
 a|
-* Proketplan
+* Projektplan
 * Iterationplan
 * Vision
 //ergänzen
@@ -105,6 +106,7 @@ a|
 a|
 * Karl Gustav Langer
 * Alessandra Ruff
+* Dilara Eichler
 a|
 * Testen der implementierten Funktionen
 * Testen der Funktionalitäten des Systems
@@ -148,21 +150,22 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 * erstellen von Wireframes
 * erstellen des Domänen-Modells
 * ergänzen von Vision, Glossar und Risiokoliste 
+* Implementierung der ersten Funktionen
 | 12.12.2022-25.12.2022
 | 15
 
 | I3
 |erste Implementierungschritte
 * erstellen eines Architektur-Modells
-* erstellen eines Prototypen, implementierung der ersten Funktionen
-| 2.01.2023 - 15.01.2023
+* erstellen eines Prototypen, Implementierung weiterer Funktionen
+| 11.04.2023 - 25.04.2023
 | 16
 
 | I4
 |weitere Implementierungschritte
 * weitere wichtige Funktionen werden im Prototypen implementiert
 * die systemweiten Anforderungen und das Architektur-Modell werden angepasst bzw. vervollständigt
-| 16.01.2023 - 27.01.2023 (Projektabgabe)
+| 14.05.2023 - 28.05.2023
 | 16
 |===
 
