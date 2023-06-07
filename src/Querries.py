@@ -396,7 +396,7 @@ def return_faculties():
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    query = """SELECT f.deu, f.eng, COUNT(m.faculty_ID) 
+    query = """SELECT f.deu, f.eng, COUNT(m.faculty_ID), f.id
                 FROM tbl_mobility_agreement m
                 JOIN tbl_faculty f 
                 ON f.ID = m.faculty_ID
@@ -409,7 +409,8 @@ def return_faculties():
         content = {
             'de': fac[0],
             'eng': fac[1],
-            'agreements': fac[2]
+            'agreements': fac[2],
+            'id': fac[3]
         }
         payload.append(content)
     cnxn.close()
@@ -497,3 +498,48 @@ def delete(tbl, row_id):
     cnxn.commit()
     cnxn.close()
     cur.close()
+
+# pyodbc-Abfragen für Berichte
+
+def facultyReport(faculty_id):
+
+	cnxn = Login.newConnection()
+	cur = cnxn.cursor()
+
+    # "\" benötigt um String mit Zeilenumbrüchen zu realisieren, alternativ muss die Abfrage als stored procedure angelegt werden
+	cur.execute(f"SELECT c.de, i.eng, pt.deu, m.email, ma.until_date \
+				FROM tbl_mobility_agreement AS ma, \
+					tbl_mentor AS m, \
+					tbl_partnership_type AS pt, \
+					tbl_country AS c, \
+					tbl_partnership AS p, \
+                    tbl_institute AS i \
+				WHERE \
+                    (\
+					((ma.mentor_ID = m.ID) \
+					AND (ma.partnership_ID = p.ID) \
+					AND (p.institute_ID = i.ID) \
+					AND (p.partnership_type_ID = pt.ID) \
+					AND (i.country_ID = c.ID) \
+                    ) \
+				    AND \
+					(ma.faculty_ID = {faculty_id}) \
+                    )")
+
+	x = cur.fetchall()
+	payload = []
+	for i in x:
+		content = {
+			'Land': i[0],
+			'Name': i[1],
+			'Vertrag': i[2],
+			'Mentor': i[3],
+			'Dauer (bis)': i[4]
+		}
+		payload.append(content)
+
+
+	cur.close()
+	cnxn.close()
+
+	return payload
