@@ -395,10 +395,8 @@ def return_faculties():
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
+ 
     query = """SELECT f.deu, f.eng, COUNT(m.faculty_ID), f.id
-                FROM tbl_mobility_agreement m
-                JOIN tbl_faculty f 
-    query = """SELECT f.deu, f.eng, COUNT(m.faculty_ID) 
                 FROM new_tbl_mobility_agreement m
                 JOIN new_tbl_faculty f 
                 ON f.ID = m.faculty_ID
