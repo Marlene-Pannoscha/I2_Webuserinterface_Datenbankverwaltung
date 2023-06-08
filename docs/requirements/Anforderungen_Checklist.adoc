@@ -4,26 +4,39 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Website allgemein
 //Reiter Hochschule
+
+
 [%header, cols="3,1,1"]
+
+
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
-Filterung nach Land, Hochschule und Vertragstyp| in Bearbeitung |Untere Filterzeile weg, Filter-Rücksetzen führt teilweise zu Aufhängen der Website (Probleme im Code) |
+Filterung nach Land, Hochschule und Vertragstyp| erledigt |Problem behoben: Untere Filterzeile weg, Filter-Rücksetzen führt teilweise zu Aufhängen der Website (Probleme im Code) |
  funktionsfähiger LogOut-Button| erledigt | / |
- Löschen von Inhalten| | Superuser oder Passwortfunktion (nur Frau Terpe Berechtigungen geben) |
- |=== |
+ Löschen von Inhalten| Passwortfunktion wurde genehmigt | Superuser oder Passwortfunktion (nur Frau Terpe Berechtigungen geben)
+ |===
+
+//ich musste das hier einfügen, sonst funktioniert die Tabelle nicht
+=== Mittleres Fenster
+
+[%header, cols="3,1,1"]
+|===
 
 //Zeigt Tabelle nicht an
 === Rechtes Fenster
 
 [%header, cols="3,1,1"]
+
+
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
  Extra-Bearbeitungsfenster als Alternative, da Fokus auf Vertrags Fenster liegt (komprimieren,
 Namen ausführlicher anzeigen)
-| | abgelehnt von uns |
- Erasmus und Hochschulpartnerschaften Anzahl weg| | |
+| wird nicht umgesetzt| abgelehnt von uns |
+ Erasmus und Hochschulpartnerschaften Anzahl weg| bleibt bestehend |ist notwendigt |
 Layout des Fensters anpassen| erledigt | |
-|=== |
+|===
+
 
 === Mittlers Fenster
 
@@ -32,28 +45,29 @@ Layout des Fensters anpassen| erledigt | |
 |Anforderungsspezifikationen |Status | Kommentar
 |eine Ansprechperson + eine Extra-Ansprechperson pro Hochschule eingetragen und ausgelesen werden können| erledigt | laut Spezifikation nur Name, Vorname und Email|
 Name der Ansprechperson kann in den Hintergrund rücken, wichtig sind hierbei die Mail-Adressen, welche sofort sichtbar sein sollen| erledigt |Bei Ansprechperson nicht nötig (wechselt auch zu offen) → nur International Office benötigt|
-Name von Partnerhochschule in Englisch und in Originalsprache darstellen + ERASMUSCODE |erledigt|laut Frau Terpe soll es ein Popup-Fenster für Notizen geben, obwohl Notizfeld bereits vorhanden ist und Kunde eigentlich streng gegen Popup-Fernster ist|
-|=== |
+Name von Partnerhochschule in Englisch und in Originalsprache darstellen + ERASMUSCODE |erledigt|laut Frau Terpe soll es ein Popup-Fenster für Notizen geben, obwohl Notizfeld bereits vorhanden ist und Kunde eigentlich streng gegen Popup-Fernster ist
+|===
 
 //Zeigt Tabelle nicht an
+
 === Linkes Fenster
 
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen | Status | Kommentar |
-direktes Auswählen von Universitäten per Anklicken| erledigt | ebenfalls Format angepasst, weniger Zeilenumbrüche|
-===|
+direktes Auswählen von Universitäten per Anklicken| erledigt | ebenfalls Format angepasst, weniger Zeilenumbrüche|===
 
-== Fakultät
+//Reiter Fakultät zeigt es nicht an
+=== Reiter Fakultät
 //Reiter Fakultät
 
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen | Status | Kommentar |
-Möglichkeit zum Bearbeiten, Anlegen und Löschen von Fakultäten| wird nicht umgesetzt |Aufgabe SHK| ===|
+Möglichkeit zum Bearbeiten, Anlegen und Löschen von Fakultäten| wird nicht umgesetzt |Aufgabe SHK|===
 
 //Zeigt Tabelle nicht an
-== Mentoren
+=== Reiter Mentoren
 //Reiter Metoren
 
 [%header, cols="3,1,1"]
@@ -62,21 +76,27 @@ Möglichkeit zum Bearbeiten, Anlegen und Löschen von Fakultäten| wird nicht um
 Bei Mentor Name: Feld größer, da viele Titel
 Länderauswahl/Hochschulauswahl soll sich nicht schon bei Veränderung d. Verträge
 zurücksetzen|/ |Mentoren: Mentor suchen größer, Filtern nach Fakultät, Mentor im Detail: Fakultät stimmt
-nicht überein | ===|
+nicht überein |===
+
 
 //Zeigt Tabelle nicht an
-== Berichte
+=== Berichte
 //Reiter Berichte
 
 [%header, cols="3,1,1"]
 
-|=== |Anforderungsspezifikationen |Status | Kommentar |
+|===
+|Anforderungsspezifikationen |Status | Kommentar |
 Erstellen von Berichten für Vertragstypen, Fakultäten und Länder | Iteration 5 geplant | in PDF ausdruckbar sein|
-|=== |
+|===
 
-== Nice To Have
+
+//Funktioniert nicht
+
+=== Nice To Have
 
 [%header, cols="3,1,1"]
+
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
 
@@ -92,5 +112,5 @@ Länderübersicht ok: bis auf Neues Land hinzufügen fehlt| | |
 
 Verträge / Partnerschaften der Fakultät Wirtschaftswissenschaften (7700) sollen auf der externen Website nach Studiengängen gefiltert werden können| /| SHK|
 
-Kompatibilität des Systems mit dem Typo-3-PlugIn| erledigt | SHK |
-===|
+Kompatibilität des Systems mit dem Typo-3-PlugIn| erledigt | SHK
+ |===
