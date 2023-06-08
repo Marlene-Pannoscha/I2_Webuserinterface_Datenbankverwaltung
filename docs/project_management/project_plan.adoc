@@ -57,59 +57,66 @@ a|
 * Leitung des Projektes
 * Kommunikation/Schnittstelle mit Auftraggeber, Coach, Stakeholder und Gruppe
 * Planung der Iterationsschritte
-* Kontrolle des Projektvortschrittes
+* Kontrolle des Projektfortschrittes
 a|
 * Projektplan
 * Iterationplan
 * Vision
+* Projektbericht
 //ergänzen
 
 |Analyse
 a|
-* Max Listner
 * Kevin Freund
 * Marlene Pannoscha
+* (Max Listner)
 a|
-* Erfassen und genaue Beschreibung von Kundenwüschen- und Anforderungen
+* Erfassen und genaue Beschreibung von Kundenwüschen und Anforderungen
 * Probleme identifizieren
 * Prioritäten festlegen
 a|
 * Glossary
 * System-Wide Requirements
 * Use Case Model
+* Risikoliste
 * Domänenmodel
 
 
 |Entwurf
 a|
-* Robert Alexander Pfund
-* Karl Gustav Langer
-* Kevin Freund
 * Dilara Eichler
+* Kevin Freund
 a|
 * Erstellen eines Systementwurfes
+* Entscheidung wichtiger technischer Aspekte und Bestimmung von Rahmenbedingungen
 a| 
 * Architektur Notebook
+* Softwaredokumentation
+* Design
 
 |Implementierung
 a|
-* Karl Gustav Langer
 * Alessandra Ruff
-* Kevin Freund
+* Robert Alexander Pfund
 * Dilara Eichler
+* Kevin Freund
+* Karl Gustav Langer
 a|
 * Implementierung des erstellten Systementwurfes und der wichtigsten Funktionen
+* Use Cases
 a|
 * Architektur Notebook
 
 |Testen
 a|
-* Karl Gustav Langer
-* Alessandra Ruff
+* Robert Alexander Pfund
 * Dilara Eichler
+* Alessandra Ruff
+* Karl Gustav Langer
 a|
 * Testen der implementierten Funktionen
 * Testen der Funktionalitäten des Systems
+* Protokollierung und Auswertung der Testergebnisse
 a|
 * Test Cases
 |===
