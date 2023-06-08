@@ -9,32 +9,32 @@ Marlene Pannoscha
 
 === Ausgangssituation in SE II
 ==== Aufgabenstellung und Auftraggeber
-Die Stabsstelle Internationales (SI) der HTW Dresden waren Auftraggeber:innen des Projektes "I2 Webuserinterface für Datenbankverwaltung". Die HTW Dresden kooperiert weltweit mit über 170 Hochschulen im Rahmen von Hochschulvereinbarungen
-bzw. im Rahmen des EU-Programms Erasmus+. Diese vielfältigen Kontakte bilden die Grundlage sowohl für die wissenschaftliche Zusammenarbeit in Lehre und Forschung als auch für den Austausch von Studierenden und Hochschullehrern. Um diese Informationen zu Kontakten und Partnerschaften zu pflegen, sei es Institut, Art der Vereinbarung, Kontakte, Mentoren, etc., nutzen Sie aktuell eine MS Access Datenbank, welche jedoch zu aufwändig und veraltet sei. Der Auftrag des Projektteams I2 war es, den Prototypen der Webanwendung ihrer Vorgängergruppe, welcher die Verwaltung jener Daten vereinfachen soll, zu überarbeiten, zu erweitern und fertig zu stellen.
+Die Stabsstelle Internationales (SI) der HTW Dresden waren Auftraggeber:innen des Projektes "I2 Webuserinterface für Datenbankverwaltung". Die HTW Dresden kooperiert weltweit mit über 170 Hochschulen im Rahmen von Hochschulvereinbarungen bzw. im Rahmen des EU-Programms Erasmus+. Diese vielfältigen Kontakte bilden die Grundlage sowohl für die wissenschaftliche Zusammenarbeit in Lehre und Forschung als auch für den Austausch von Studierenden und Hochschullehrern. Um diese Informationen zu Kontakten und Partnerschaften zu pflegen, sei es Institut, Art der Vereinbarung, Kontakte, Mentoren, etc., nutzen Sie aktuell eine MS Access Datenbank, welche jedoch zu aufwändig und veraltet sei. Der Auftrag des Projektteams I2 war es, den Prototypen der Webanwendung ihrer Vorgängergruppe, welcher die Verwaltung jener Daten vereinfachen soll, zu überarbeiten, zu erweitern und fertig zu stellen.
 
 ==== Situation Semesterbeginn
 Im WS22/23 wurden die Inception- und Elaborationsphase bereits abgeschlossen (Softwarte Engineering I). Des Weiteren wurden im vorherigen Semester bereits zwei Funktionen implementiert.
 
 ==== Teamaufstellung
-Zu Beginn des Pojektes bestand das Team aus 7 Mitgliedern (SE I), aus sechs Wirtschaftinformatiker:innen und einem Wirtschaftsingenieur. Zu Beginn des SS23 bestand das Team in Software Engineering II jedoch nur noch aus 6 Mitgliedern, durch das geplante Ausscheiden Wirtschaftsingenieurs....
+Zu Beginn des Pojektes bestand das Team aus 7 Mitgliedern (SE I), aus sechs Wirtschaftinformatikstudenten:innen und einem Wirtschaftsingenieurstudent. Zu Beginn des SS23 bestand das Team in Software Engineering II hingegen nur noch aus 6 Mitgliedern, durch das geplante Ausscheiden des Wirtschaftsingenieurs. 
 
 === Projektorganisation
 ==== Team
-Das Projektteam bildet sich aktuell aus 6 Mitgliedern, alle aus der Wirtschaftsinformatik.....
+Im vorherigen Semester, während SE I, wurde schnell klar, dass ein Projekt solchen Umfanges eine Menge Vertrauen, ein hohes Maß an Initiative und vor allem festen Zusammenhalt untereinander benötigt. All dies wurde glücklicherweise in SE I aufgewiesen, weswegen es umso wichtig war das alles im Verlauf des Projektes beizubehalten. Um dies unter anderem zu ermöglichen gab es regelmäßige Teammeetings, bei aufkommenden Fragen konnte man immer im Team um Rat bitten und bei Problemen wurde einem stets geholfen.
 
 ==== Rollenverteilung
-
-Die Rollenaufteilung erfolgte anhand von Interessen und Fähigkeiten und lautet wie folgt:
+Das Team empfand, dass die Rollen eher einer Art Verantwortungsbereich entsprachen statt einer festen Zuordnung zu einem Gebiet, weswegen bei der Rollenverteilung darauf geachtet wurde, dass sich ein Mitglied um die Verantwortung des Gebietes kümmert, dieser ein Back-Up/Stellvertreter hat und die anderen Mitglieder bei den jeweiligen Aufgaben zur Seite stehen, wodurch eine gute Mischung aus Rollenspezialisierung, Einbringen verschiedener Kenntnisse und Verteilung von Kapazitäten ermöglicht wurde. +
+Die Verantwortungsaufteilung lautet wie folgt:
 
 * Project-Manager: Marlene Pannoscha (MP), Kevin Freund (KF)
 * Analyst: Kevin Freund, Marlene Pannoscha 
 * Architect: Dilara Eichler (DE), Kevin Freund
-* Developers: Alessandra Ruff (AR), Robert Alexander Pfund (RP), Dilara Eichler, Kevin Freund
-* Tester: Dilara Eichler, Alessandra Ruff, Karl Gustav Langer (KL)
-* Deployment Engineer: (aktuell) nicht besetzt
-* Technical Writers: (aktuell) nicht besetzt
+* Developers: Alessandra Ruff (AR), Robert Alexander Pfund (RP)
+* Tester: Robert Alexander Pfund, Dilara Eichler
+* Deployment Engineer: Alessandra Ruff
+* Technical Writers: Karl Gustav Langer (KL)
 
-Ehemals mit Max Listner (ML), als Project-Manager und Analyst.
+_Ehemals mit Max Listner (ML), als Project-Manager und Analyst._ +
+Die genauere Mitgliedereinteilung zu einem jeweiligem Gebiet befindet sich in der Rollenübersicht.
 
 === Ablauf der Kommunikation unter Verwendung eingesetzter Tools
 
