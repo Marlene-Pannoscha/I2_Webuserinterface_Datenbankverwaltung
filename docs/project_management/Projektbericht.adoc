@@ -1,7 +1,7 @@
 = Projektbericht: {project-name}
 include::../_includes/default-attributes.inc.adoc[]
 :doctype: book
-Marlene Pannoscha
+Marlene Pannoscha, Kevin Freund
 
 == Webuserinterface für Datenbankverwaltung (I2)
 
