@@ -524,7 +524,9 @@ def facultyReport(faculty_id):
                     ) \
 				    AND \
 					(ma.faculty_ID = {faculty_id}) \
-                    )")
+                    ) \
+                ORDER BY \
+                    c.de, pt.deu, i.eng, ma.until_date, m.email")
 
 	x = cur.fetchall()
 	payload = []
