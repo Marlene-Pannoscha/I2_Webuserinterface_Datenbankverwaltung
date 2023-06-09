@@ -3,7 +3,7 @@
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis
-:toclevels: 2
+:toclevels: 3
 :sectnums:
 :icons: font
 //:source-highlighter: highlightjs

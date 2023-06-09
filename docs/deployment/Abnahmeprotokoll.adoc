@@ -1,5 +1,4 @@
 = Abnahmeprotokoll: {project-name}
-
 include::../_includes/default-attributes.inc.adoc[]
 
 == Projektangaben
@@ -80,7 +79,16 @@ NFAU-1: Das System sollte benutzerfreundlich formatiert und bedienbar sein, für
 |Anforderung | Erfüllt | Anmerkung |
 NFAR-1: Beim Abruf eines vorherigen Zustandes der Datenbank, muss das Verwaltungsfrontend weiterhin funktionieren. Zur Überprüfung werden Backups der Datenbank hochgeladen. | | | NFAR-2: Es besteht die Möglichkeit, dass Verwaltungs- und Informationsfrontend gleichzeitig Daten abrufen können.
 Zur Überprüfung wird an einem Rechner im Verwaltungsfrontend ein bestehender Datensatz modifiziert, während dieser parallel an einem anderem Rechner im Informationsfrontend angesehen wird.| | |NFAR-3: Das System muss paralleles Lesen und Schreiben im Verwaltungsfrontend unterstützen. (Multi-User-System) Zur Überprüfung werden jeweils zwei verschiedene Login-Sessions laufen, um einerseits einen Datensatz zu lesen und andererseits parallel dazu einen Datensatz zu schreiben. |||
-|===
+|=== 
+
+//Damit 2.5.3 Effizienz auf einer neuen Seite, ohne Zwischenbruch erscheint, bei Änderungen "{empty} +" entfernen/hinzufügen
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
 
 ==== Effizienz (Performance)
 
@@ -99,7 +107,6 @@ NFAP-1: Das Wechseln von Seiten innerhalb des Verwaltungsforntends sollte innerh
 NFAS-1: Übersichtliche und ausführliche Hinweise/Dokumentation, um Erweiterbarkeit zu erleichtern.| | |
 NFAS-2: Mögliche Erweiterbarkeit des Systems. Zur Überprüfung wird im Verlauf des Projektes das System stetig um neue Funktionen erweitert.|
 |===
-
 
 
 == Unterschriften

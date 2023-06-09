@@ -6,9 +6,10 @@ include::../_includes/default-attributes.inc.adoc[]
 
 |===
 | Rollenbezeichnung |Teammitglied |
-Projektleitung | Marlene Pannoscha, Kevin Freund (Max Listner) |
-Analyse| Marlene Pannoscha, Kevin Freund (Max Listner) |
-Architektur | Robert Pfund, Karl Langer, Dilara Eichler |
-Implementation | Alessandra Ruff, Dilara Eichler, Robert Pfund, Karl Langer|
-Testen | Alessandra Ruff, Karl Langer
- ===|
+Projektleitung | Marlene Pannoscha, Kevin Freund, (Max Listner) |
+Analyse| Kevin Freund, Marlene Pannoscha, (Max Listner) |
+Architektur | Dilara Eichler, Kevin Freund |
+Implementation | Alessandra Ruff, Robert Alexander Pfund, Dilara Eichler, Kevin Freund, Karl Langer |
+Testen | Robert Alexander Pfund, Dilara Eichler, Alessandra Ruff, Karl Langer
+|===
+
