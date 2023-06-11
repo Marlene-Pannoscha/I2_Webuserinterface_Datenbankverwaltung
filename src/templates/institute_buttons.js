@@ -117,9 +117,11 @@ function instituteButtonEvents() {
     $('#add_institute_btn').on('click', function (){
         console.log("institute_button.js Z.76");
         $('.modal_form_add').trigger("reset");
-        $('#modal_add_inst').toggle();
+        $('#modal_add_faculty').toggle();
         
     });
+
+    
     // MODAL: HOCHSCHULE ANLEGEN -> ABBRECHEN / X BUTTON
     $(' .close_modal_add').on('click', function (){
         $('#modal_add_inst').toggle();
@@ -130,8 +132,12 @@ function instituteButtonEvents() {
         $('#modal_agreement_restrictions').toggle();
       
     });
-    // MODAL: HOCHSCHULE BEARBEITEN -> ABBRECHEN / X BUTTON
-    
+  
+    $(document).ready(function() {
+        $('#add_faculty_btn').click(function() {
+          alert(2);
+        });
+      });
 }
 
 function activeDeleteButton() {

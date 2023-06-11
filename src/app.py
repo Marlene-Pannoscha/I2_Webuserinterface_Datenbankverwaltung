@@ -44,12 +44,25 @@ def LoginPage():
         else:
             return render_template('login.html')
     else:
-        if Login.LoginDB(request.form['usr'], request.form['pwd']):
-            session['admin'] = False
-            if request.form['usr'] == 'aaapartnerhs':
+        username = request.form['usr']
+        password = request.form['pwd']
+
+        # Festlegen des Benutzernamens und des Passworts für den nicht-administrativen Benutzer
+        non_admin_username = 'sihtwd'
+        non_admin_password = 'MeTeOUS'
+        # Festlegen des Benutzernamens und des Passworts für den administrativen Benutzer
+        adminusername= 'aaapartnerhs'
+        adminpassword = 'a6D6d2c5X0'
+        if request.form['usr'] == adminusername and password == adminpassword:
                 session['admin'] = True
                 session['usr'] = 'yes'
-            return redirect('/homepage/institutes')
+                Login.LoginDB(adminusername , adminpassword)
+                return redirect('/homepage/institutes' )
+        elif username == non_admin_username and password == non_admin_password:
+                session['admin'] = False
+                session['usr'] = username
+                Login.LoginDB(adminusername , adminpassword)
+                return redirect('/homepage/institutes')
         else:
             return redirect('/')
 
@@ -232,6 +245,36 @@ def new_object(name):
                 restriction_values.append(add_restriction[key])
         print('new restriction: ', restriction_values, restriction_columns)
         return Querries.new_object('restriction', restriction_columns, restriction_values)
+    elif name == 'Faculty':
+        print("einmal")
+        faculty_obj = request.form.to_dict()
+        faculty_columns = []
+        faculty_values = []
+
+        if 'faculty_id' in faculty_obj:
+            faculty_columns.append('ID')  # Spaltennamen in der Tabelle
+            faculty_values.append(faculty_obj['faculty_id'])  # Wert von 'faculty_id'
+            del faculty_obj['faculty_id']
+
+        key_mapping = {
+            'faculty_de': 'deu',
+            'faculty_en': 'eng',
+            'faculty_url': 'url'
+        }
+
+        for key in faculty_obj:
+            if faculty_obj[key] != '':
+                if key in key_mapping:
+                    mapped_key = key_mapping[key]
+                    faculty_columns.append(mapped_key)
+                    faculty_values.append(faculty_obj[key])
+                else:
+                    faculty_columns.append(key)
+                    faculty_values.append(faculty_obj[key])
+
+        print(faculty_columns, faculty_values)
+        return Querries.new_object('faculty', faculty_columns, faculty_values)
+
     else:
         return jsonify({'status': 'unexpected request'})
 

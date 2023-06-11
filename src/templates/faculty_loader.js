@@ -10,6 +10,10 @@ $(document).on('DOMContentLoaded', () => {
         .done((data) => {
            insertFac(data);
         });
+        facultyButtonFunctionality();
+        
+        insertFaculty();
+        insertFac();
 });
 
 
