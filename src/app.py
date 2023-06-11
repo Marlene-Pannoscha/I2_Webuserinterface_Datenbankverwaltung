@@ -284,7 +284,6 @@ def new_object(name):
 
         print(faculty_columns, faculty_values)
         return Querries.new_object('faculty', faculty_columns, faculty_values)
-
     else:
         return jsonify({'status': 'unexpected request'})
 
