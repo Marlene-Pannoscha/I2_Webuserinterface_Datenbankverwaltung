@@ -45,12 +45,12 @@ function cacheMentors(mentorArray) {
             faculty_ID: cur['faculty_ID'],
             mentor_ID: cur['ID'],
             active: cur['active'],
+            gender_ID: cur['gender_ID'],
             title: cur['title'],
             firstname: cur['firstname'],
             lastname: cur['lastname'],
-            gender_ID: cur['gender_ID'],
-            homepage: cur['homepage'],
-            email: cur['email'],
+            /* homepage: cur['homepage'],
+            email: cur['email'], */
             agreements: cur['agreements']
         }
         mentArr.push(cur['ID'], obj)

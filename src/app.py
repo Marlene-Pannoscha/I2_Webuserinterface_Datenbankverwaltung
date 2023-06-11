@@ -7,7 +7,7 @@ from flask_wtf import CSRFProtect
 from werkzeug.utils import redirect
 import json
 import os # OS module in Python: https://www.geeksforgeeks.org/os-module-python-examples/
-import Login, Querries, helper
+import Login, Querries, helper, createpdf
 
 app = Flask(__name__) # Spezialvariable '__name__': https://www.pythontutorial.net/python-basics/python-__name__/#:~:text=The%20__name__%20is,file%20associated%20with%20the%20module.
 app.secret_key = os.urandom(24)
@@ -102,8 +102,18 @@ def load_filter(name):
         return Querries.all_countries()
     elif name == 'faculties':
         return Querries.faculty()
+    # neuer Querries-Zugriff, zum Holen aller Partnerschaften einer Fakultät
+    elif name == 'reports_fac':
+        return Querries.facultyReport(request.form['id'])
     else:
         return None
+    
+@app.route('/pdf/<name>/<id>', methods=['GET'])
+@login_required
+def pdf_load(name, id):
+
+    if name == 'fac_report':
+        return createpdf.make_pdf(id)
 
 
 @app.route('/delete/<object_type>', methods=['POST'])
@@ -161,7 +171,7 @@ def new_object(name):
         return Querries.new_object('mentor', columns, values)
     elif name == 'Institute':
         my_var = request.form.to_dict()
-        # for insert into tbl_institute
+        # for insert into new_tbl_institute
         col_list_institute = []
         val_list_institute = []
         if 'display' not in request.form:

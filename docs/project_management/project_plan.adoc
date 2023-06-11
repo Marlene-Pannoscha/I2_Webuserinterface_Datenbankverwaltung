@@ -50,64 +50,73 @@ Die Rollen wurden von den Studierenden wie folgt eingenommen:
 
 | Teamleitung
 a|
-* Max Listner
+* (Max Listner)
 * Marlene Pannoscha
+* Kevin Freund
 a|
 * Leitung des Projektes
 * Kommunikation/Schnittstelle mit Auftraggeber, Coach, Stakeholder und Gruppe
 * Planung der Iterationsschritte
-* Kontrolle des Projektvortschrittes
+* Kontrolle des Projektfortschrittes
 a|
-* Proketplan
+* Projektplan
 * Iterationplan
 * Vision
+* Projektbericht
 //ergänzen
 
 |Analyse
 a|
-* Max Listner
 * Kevin Freund
 * Marlene Pannoscha
+* (Max Listner)
 a|
-* Erfassen und genaue Beschreibung von Kundenwüschen- und Anforderungen
+* Erfassen und genaue Beschreibung von Kundenwüschen und Anforderungen
 * Probleme identifizieren
 * Prioritäten festlegen
 a|
 * Glossary
 * System-Wide Requirements
 * Use Case Model
+* Risikoliste
 * Domänenmodel
 
 
 |Entwurf
 a|
-* Robert Alexander Pfund
-* Karl Gustav Langer
-* Kevin Freund
 * Dilara Eichler
+* Kevin Freund
 a|
 * Erstellen eines Systementwurfes
+* Entscheidung wichtiger technischer Aspekte und Bestimmung von Rahmenbedingungen
 a| 
 * Architektur Notebook
+* Softwaredokumentation
+* Design
 
 |Implementierung
 a|
-* Karl Gustav Langer
 * Alessandra Ruff
-* Kevin Freund
+* Robert Alexander Pfund
 * Dilara Eichler
+* Kevin Freund
+* Karl Gustav Langer
 a|
 * Implementierung des erstellten Systementwurfes und der wichtigsten Funktionen
+* Use Cases
 a|
 * Architektur Notebook
 
 |Testen
 a|
-* Karl Gustav Langer
+* Robert Alexander Pfund
+* Dilara Eichler
 * Alessandra Ruff
+* Karl Gustav Langer
 a|
 * Testen der implementierten Funktionen
 * Testen der Funktionalitäten des Systems
+* Protokollierung und Auswertung der Testergebnisse
 a|
 * Test Cases
 |===
@@ -148,21 +157,22 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 * erstellen von Wireframes
 * erstellen des Domänen-Modells
 * ergänzen von Vision, Glossar und Risiokoliste 
+* Implementierung der ersten Funktionen
 | 12.12.2022-25.12.2022
 | 15
 
 | I3
 |erste Implementierungschritte
 * erstellen eines Architektur-Modells
-* erstellen eines Prototypen, implementierung der ersten Funktionen
-| 2.01.2023 - 15.01.2023
+* erstellen eines Prototypen, Implementierung weiterer Funktionen
+| 11.04.2023 - 25.04.2023
 | 16
 
 | I4
 |weitere Implementierungschritte
 * weitere wichtige Funktionen werden im Prototypen implementiert
 * die systemweiten Anforderungen und das Architektur-Modell werden angepasst bzw. vervollständigt
-| 16.01.2023 - 27.01.2023 (Projektabgabe)
+| 14.05.2023 - 28.05.2023
 | 16
 |===
 

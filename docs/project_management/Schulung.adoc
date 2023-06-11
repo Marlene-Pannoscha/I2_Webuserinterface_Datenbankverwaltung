@@ -1,0 +1,57 @@
+= Schulung zur effektiven Nutzung der Website für die Stabsstelle Internationales
+
+//13.06.2023 9-10Uhr durchgeführt
+
+include::../_includes/default-attributes.inc.adoc[]
+
+== Einführung
+
+* Zeitplan
+** 5min Einführung
+** 20min Theorie (Einführung in Website)
+** 30min Praxis (Anwendung mit gegebenen Testdaten)
+** 5min Abschluss
+
+
+=== Vorstellung der Schulungsziele
+
+* Ersten Einblick in die Funktionalitäten und Möglichkeiten der Website
+* Erleichterte Arbeitsweise für die Zukunft
+
+
+=== Erläuterung der Schulungsziele
+
+* Überblick über die Struktur der Schulung - Hinweis auf den theoretischen und praktischen (interaktiv) Teil
+** 20min Theorie (Einführung in Website)
+** 30min Praxis (Anwendung mit gegebenen Testdaten)
+
+
+== Theorie: Grundfunktionalitäten der Website-Nutzung
+
+=== Einführung in die Benutzeroberfläche und Navigation
+* Vorstellung der verschiedenen Elemente auf der Website (Menüs, Links, Suchfelder, etc.)
+** Partnerhochschule hinzufügen + Vertrag anlegen + Studiengang anlegen + Mentor hinzufügen (Berichte)
+* Erläuterung der Hierarchie der Inhalte und wie man durch die Website navigiert
+
+=== Vorstellung der wichtigsten Funktionen und Reiter
+
+* Hervorhebung der Hauptaspekte und deren Zweck
+** Einzelne Reiter durchgehen und dort Anwendungen erläutern
+* Erklärung spezifischer Funktionen wie Filter oder Suchfunktionen + versteckte Funktionen
+
+== Praxis
+
+* Interaktive Demonstration der Website-Nutzung
+** Vorstellung der wichtigsten Funktionen anhand von Live-Beispielen
+*** Präsentation des Bildschirms mit der Website und Live
+(Demonstration der Nutzung - Hervorhebung spezifischer Funktionen und Aktionen, die während der Demonstration erklärt werden)
+
+// Testdatensätz festlegen
+
+== Zusammenfasssung der Schulungsinhalte
+
+* Kurze Wiederholung der wichtigsten Punkte aus dem theoretischen und praktischen Teil
+* Betonung der Schlüsselkonzepte für eine effektive Nutzung der Website
+
+
+

@@ -41,7 +41,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Identifizierung Hauptfunktion und Produktanforderungen | hoch | 6 | abgeschlossen | Vision | 1 | Kevin Freund | 1,5 | 
 | erste Bearbeitung des Projektplans | mittel | 6 | abgeschlossen | Projektplan | 1 | Marlene Pannoscha | 2 | /
 | erste Bearbeitung des Glossars | mittel | 4 | abgeschlossen | Glossar | 1 | Max Listner | 1 | /
-| erste Bearbeitung der Risklsit | mittel | 4 | abgeschlossen | Risklist | 1 | Karl Gustav Langer | 1 | /
+| erste Bearbeitung der Risikoliste | mittel | 4 | abgeschlossen | Risklist | 1 | Karl Gustav Langer | 1 | /
 
 
 |===

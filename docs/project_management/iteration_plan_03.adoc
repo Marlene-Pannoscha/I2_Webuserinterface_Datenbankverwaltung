@@ -37,11 +37,11 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 | Filtern nach Land, Fakultät und Vertragstyp | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
 | Verwalten von Ansprechpersonen von Hochschulen | hoch | 7 | laufend | / | 1 | Robert Pfund, Karl Langer | 5 | /
-| Layout der Fenster anpassen | hoch | 6 | laufend | / | 1 | ausstehend | 4 | /
-| Snapshot von der Datenbank einbinden| hoch | 5 | fertig | / | 1 | Kevin Freund,  | 3 | /
+| Layout der Fenster anpassen | hoch | 6 | laufend | / | 1 | Alessandra Russ, Kevin Freund | 4 | /
+| Snapshot von der Datenbank einbinden| hoch | 5 | fertig | / | 1 | Kevin Freund | 3 | /
 | Essence Kernel Navigator | hoch | 4 | laufend | / | 1 | Marlene Pannoscha | 2 | /
 | Risikoliste überarbeiten | hoch | 3 | fertig | / | 1 | Kevin Freund | 4 | /
-|| Einheitliche Dokumentation und Codingstil festlegen | 3 | laufend | / | 1 | ausstehend | 2 | /
+| Einheitliche Dokumentation und Codingstil festlegen | hoch | 3 | laufend | / | 1 | ausstehend | 2 | /
 
 
 

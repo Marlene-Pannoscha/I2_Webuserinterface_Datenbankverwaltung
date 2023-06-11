@@ -10,6 +10,8 @@
     <!-- Funktionalität -->
     <script src="../ajax.js"></script>
     <script src="../navbar_functionality.js"></script>
+    <script src="../report_helper.js"></script>
+
 </head>
 <body>
 <div id="Page_one" >
@@ -46,6 +48,27 @@
         </ul>
     </div>
     </nav>
+
+    <!-- Drop-Down-Menü zur Auswahl der Fakultät für fakultätsspezifische Verträge -->
+    <div class="my-content" id="my-content">
+        <form action="">
+
+            <label for="select-faculty-for-report"></label>
+
+            <select class="filter filter_country form-select" name="faculty" id="select-faculty-for-report" required>
+                
+                <option value="">-Fakultät-</option>
+            
+            </select>
+
+            <button type="button" class="btn btn-outline-primary me-3" id="create_pdf_button" style="margin-top: 10px; left: 50%; transform:translateX(-50%);" onclick="createPDF($('#select-faculty-for-report').val())">Erzeugen</button>
+        
+
+        </form>
+        <ul id="report-list">
+            
+        </ul>
+    </div>
 
     
 </div>
