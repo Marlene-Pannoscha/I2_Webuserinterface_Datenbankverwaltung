@@ -117,7 +117,7 @@ function instituteButtonEvents() {
     $('#add_institute_btn').on('click', function (){
         console.log("institute_button.js Z.76");
         $('.modal_form_add').trigger("reset");
-        $('#modal_add_faculty').toggle();
+        $('#modal_add_inst').toggle();
         
     });
 
