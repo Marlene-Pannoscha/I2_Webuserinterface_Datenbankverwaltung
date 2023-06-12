@@ -278,7 +278,7 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     state = "failed" # set initial status that is returned when it failed to set changes in db
     query_parameter = helper.dynamic_querries(tuple_columns)
     type_dict = {
-        'mentor': 'tbl_mentor',
+        'mentor': 'new_tbl_mentor',
         'institute': 'tbl_institute',
         'agreement': 'tbl_mobility_agreement',
         'restriction': 'tbl_mobility_agreement_x_course',
