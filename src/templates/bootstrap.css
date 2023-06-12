@@ -11313,3 +11313,12 @@ textarea {
   max-height: 70px; /* Maximale Höhe des Textarea-Feldes */
   max-width: 100%; /* Maximale Breite des Textarea-Feldes */
 }
+
+#modal_add_faculty{
+  top:20%;
+  width: 50rem;
+  left: 50%;
+  transform:translateX(-50%);
+  overflow: hidden;
+  max-height: 400px;
+}

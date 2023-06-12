@@ -1,15 +1,17 @@
  function facultyButtonFunctionality() {
- // HAUPTANSICHT: Fakultät -> HOCHSCHULE ANLEGEN BUTTON
+ // HAUPTANSICHT: Fakultät -> Fakultät ANLEGEN BUTTON
  $('#add_faculty_btn').on('click', function (){
     $('.modal_form_add').trigger("reset");
     $('#modal_add_faculty').toggle();
+    setBlur();
     
 });
 
-  // MODAL: HOCHSCHULE BEARBEITEN -> ABBRECHEN / X BUTTON
+  // MODAL: Fakultät BEARBEITEN -> ABBRECHEN / X BUTTON
   $(' .close_modal_add').on('click', function (){
     $('#modal_add_faculty').toggle();
     $('#mod_add_faculty_save_btn').attr('disabled', 'true');
+    unsetBlur();
 });
 
 
