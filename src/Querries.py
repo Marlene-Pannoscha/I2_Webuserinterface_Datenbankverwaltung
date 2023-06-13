@@ -507,9 +507,11 @@ def facultyReport(faculty_id):
 
 	cnxn = Login.newConnection()
 	cur = cnxn.cursor()
+        
+    #(m.title + ' ' + m.firstname + ' ' + 
 
     # "\" benötigt um String mit Zeilenumbrüchen zu realisieren, alternativ muss die Abfrage als stored procedure angelegt werden
-	cur.execute(f"SELECT c.de, i.eng, pt.deu, m.email, ma.until_date \
+	cur.execute(f"SELECT c.de, i.eng, pt.deu, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date \
 				FROM new_tbl_mobility_agreement AS ma, \
 					new_tbl_mentor AS m, \
 					new_tbl_partnership_type AS pt, \
@@ -528,7 +530,7 @@ def facultyReport(faculty_id):
 					(ma.faculty_ID = {faculty_id}) \
                     ) \
                 ORDER BY \
-                    c.de, pt.deu, i.eng, ma.until_date, m.email")
+                    c.de, pt.deu, i.eng, ma.until_date, mentordata")
 
 	x = cur.fetchall()
 	payload = []
@@ -553,7 +555,7 @@ def erasmusReport():
     cnxn = Login.newConnection()
     cur = cnxn.cursor()    
 
-    cur.execute("""SELECT c.de, i.eng, (m.title + m.firstname + m.lastname) AS mentordata, ma.until_date, pt.deu
+    cur.execute("""SELECT c.de, i.eng, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date, pt.deu
                 FROM new_tbl_mobility_agreement AS ma
                 JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
                 JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
