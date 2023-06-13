@@ -79,6 +79,12 @@ def erasmus_querry_to_html(report, data):
 
     result += style
 
+    for dataset in data:
+        
+      agreement_count = dataset["AnzahlVereinbarungen"]
+      country_count = dataset["AnzahlLaender"]
+      partner_count = dataset["AnzahlPartner"]
+
     closingtag = f"""
     <br>
     <p>Anzahl Vereinbarungen : {agreement_count} <br>
