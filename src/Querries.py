@@ -279,10 +279,10 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     query_parameter = helper.dynamic_querries(tuple_columns)
     type_dict = {
         'mentor': 'new_tbl_mentor',
-        'institute': 'tbl_institute',
-        'agreement': 'tbl_mobility_agreement',
-        'restriction': 'tbl_mobility_agreement_x_course',
-        'faculty': 'tbl_faculty'        
+        'institute': 'new_tbl_institute',
+        'agreement': 'new_tbl_mobility_agreement',
+        'restriction': 'new_tbl_mobility_agreement_x_course',
+        'faculty': 'new_tbl_faculty'        
     } 
     # define all possible tables where a new object could be created
     # create dynamic insert query
@@ -510,12 +510,12 @@ def facultyReport(faculty_id):
 
     # "\" benötigt um String mit Zeilenumbrüchen zu realisieren, alternativ muss die Abfrage als stored procedure angelegt werden
 	cur.execute(f"SELECT c.de, i.eng, pt.deu, m.email, ma.until_date \
-				FROM tbl_mobility_agreement AS ma, \
-					tbl_mentor AS m, \
-					tbl_partnership_type AS pt, \
-					tbl_country AS c, \
-					tbl_partnership AS p, \
-                    tbl_institute AS i \
+				FROM new_tbl_mobility_agreement AS ma, \
+					new_tbl_mentor AS m, \
+					new_tbl_partnership_type AS pt, \
+					new_tbl_country AS c, \
+					new_tbl_partnership AS p, \
+                    new_tbl_institute AS i \
 				WHERE \
                     (\
 					((ma.mentor_ID = m.ID) \
