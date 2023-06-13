@@ -84,12 +84,22 @@ function listReport(faculty_id) {
     }
 }
 
-function createPDF(id) {
+function createPDF(type, id) {
 
-    let url = '/pdf/fac_report/' + id;
+    let url;
+    let erasmus = '0001';
+    let institute = '0002';
+
+    if(type == 'pdf1') {
+        url = '/pdf/fac_report/' + id;
+    } else if (type == 'pdf2') {
+        url = '/pdf/erasmus_report/' + erasmus;
+    } else if (type == 'pdf3') {
+        url = '/pdf/institute_report/' + institute;
+    }
+    
     //console.log(url);
     window.open(url);
-
 }
 
 

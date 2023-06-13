@@ -547,3 +547,70 @@ def facultyReport(faculty_id):
 	cnxn.close()
 
 	return payload
+
+def erasmusReport():
+
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()    
+
+    cur.execute("""SELECT c.de, i.eng, (m.title + m.firstname + m.lastname) AS mentordata, ma.until_date, pt.deu
+                FROM new_tbl_mobility_agreement AS ma
+                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN new_tbl_institute i ON i.ID = p.institute_ID
+                JOIN new_tbl_country c ON c.ID = i.country_ID
+                JOIN new_tbl_mentor m ON m.ID = ma.mentor_ID
+                WHERE (c.erasmus = '1' AND pt.ID = '3')
+                ORDER BY c.de, i.eng, ma.until_date, mentordata, pt.deu""")
+
+
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {
+			'Land': i[0],
+			'Name': i[1],			
+			'Mentor': i[2],
+			'Dauer' : i[3],
+            'Vertrag': i[4]
+		}
+
+        payload.append(content)
+
+
+    cur.close()
+    cnxn.close()
+
+    return payload
+
+def erasmusData():
+
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()    
+
+    cur.execute("""SELECT c.de, i.eng, COUNT(*), COUNT(DISTINCT c.de), COUNT(DISTINCT i.eng)
+                FROM new_tbl_mobility_agreement AS ma
+                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN new_tbl_institute i ON i.ID = p.institute_ID
+                JOIN new_tbl_country c ON c.ID = i.country_ID
+                WHERE (c.erasmus = '1' AND pt.ID = '3')
+                ORDER BY c.de, i.eng""")
+
+
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {
+            'AnzahlVereinbarungen' : i[2],
+            'AnzahlLaender' : i[3],
+            'AnzahlPartner' : i[4]
+		}
+
+        payload.append(content)
+
+
+    cur.close()
+    cnxn.close()
+
+    return payload
