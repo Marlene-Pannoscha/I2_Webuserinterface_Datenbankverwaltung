@@ -25,8 +25,14 @@ Diese kann unter https://www.informatik.htw-dresden.de/~s82099/jsdocFiles/index.
 
 == Python
 
-Für den Python Quellcode wurde die Dokumentation automatisch erzeugt. 
-Diese kann unter https://www.informatik.htw-dresden.de/~s82099/docs/_build/html/index.html abgerufen werden. 
+//Für den Python Quellcode wurde die Dokumentation automatisch erzeugt. 
+//Diese kann unter https://www.informatik.htw-dresden.de/~s82099/docs/_build/html/index.html abgerufen werden. 
+Für den Python Quellcode wurde die Dokumentation mittels PDoc automatisch erzeugt. +
+Diese kann bisher lokal im Terminal aufgerufen werden:
+[start = 1]
+. pip install pdoc3
+. cd \I2_Webuserinterface_Datenbankverwaltung\src
+. pdoc app.py createpdf.py helper.py Login.py Querries.py
 
 Login.py
 
@@ -49,16 +55,27 @@ app.py
 
 Querries.py
 
-* stellt Abfragen an die Datenbank aus Anwendung
-* gibt Daten aus Datenbank an Anwendung zurück
+* stellt Abfragen an die Datenbank von der Anwendung aus
+* gibt abgefragte Daten aus Datenbank an die Anwendung zurück
 * wichtige Funktionen:
-** Alle Hochschulen, Verträge, Ländern, Fakultäten, Mentor, die in der Datenbank gespeichert sind, aus Datenbank bereitstellen
+** Bereitstellung aller Hochschulen, Verträge, Ländern, Fakultäten, Studiengänge, Mentoren, die in der Datenbank gespeichert sind
 ** Alle Daten, die für die Bearbeitungsmodale benötigt werden, werden aus der Datenbank abgefragt
 ** Die möglichen Werte für die Filteroption aus der Datenbank abfragen
-** Neu angelegte Objekte in der Datenbank speichern
+** Funktion zum Speichern neuer Objekte in der Datenbank
 ** Die geänderten Werte von Hochschule / Verträge / Restriktion / Mentor in der Datenbank aktualisieren
 ** Funktion zum Prüfen der Löschbarkeit von Hochschulen
 ** Funktion zum Löschen von Hochschulen / Verträgen / Restriktionen
+** Funktion zum Erstellen von Berichten
+
+createpdf.py
+
+* erstellt Berichte / Statistiken anhand der Daten der Datenbank
+* wichtige Funktionen:
+** Umwandlung der Daten der Datenbank in HTML
+** Bereitstellung / Darstellung jener Daten in Tabellenform
+** Aufzählung / Listung der abgefragten Daten
+** Erstellung der Berichte als PDF-Datei
+** Speicherung der Berichte auf den Server
 
 helper.py
 
