@@ -62,8 +62,31 @@ Die genauere Mitgliedereinteilung zu einem jeweiligem Gebiet befindet sich in de
 === Reflexion der Teammitglieder
 
 ==== Marlene Pannoscha
+
+
 ==== Dilara Eichler
+
+
 ==== Alessandra Ruff
-==== Robert Pfund
-==== Karl Langer
+
+
 ==== Kevin Freund
+Bereits im ersten Semester war mir klar, dass dieses Projekt hier wesentlich anspruchsvoller, aufwendiger und komplexer sein würde als kleinere Schulprojekte von damals. Es war für mich das erste Mal ein Projekt solcher Größe zu bewältigen, welches so langwierig und von so vielen Faktoren abhängig ist.
+
+Ursprünglich war ich für die Analyse und den Entwurf zuständig. Es war interessant zu sehen, wie viel Aspekte vor der eigentlichen Erstellung eines Systems beachtet und ausführlich behandelt werden müssen und wie vielseitig Anforderungen sein können, sei es funktional oder nicht funktional. Hier habe ich gelernt, wie wichtig doch die regelmäßige Kommunikation mit dem Kunden ist, wie oft und schnell sich dessen Anforderungen ändern können, dass dieser sich selbst manchmal noch unsicher darüber ist was genau er eigentlich haben möchte und wie anstrengend er doch manchmal sein kann. Die womöglich größte Herausforderung und Lehre des ersten Projektsemesters war es aber, sich in ein bereits bestehendes System, das unserer Vorgängergruppe, hineinzufinden, dessen Aufbau zu begreifen und Inhalt zu verstehen. Um hierbei und im weiteren Verlauf des Projektes effektiv mitarbeiten zu können, habe ich mich über die Programmiersprachen HTML und JavaScript informiert, was mir definitiv noch nützlich sein dürfte. +
+Im Zuge des zweiten Semesters war ich sowohl im Projektmanagement als auch in der Implementierung tätig. Anfangs war beides zugegebenermaßen fordernd und teilweise frustrierend, einerseits die Planung und ausführliche Dokumentation von allem bzw. dem regelmäßigen Überschauen, ob alles stimmt als auch die Instandhaltung der Risikoliste, andererseits die Überarbeitung und Erweiterung des Systems. Letzteres zeigte mir aber deutlich, dass nicht alles sofort funktionieren kann, dass man immer wieder neue Ansätze probieren sollte, dass manches wesentlich komplexer ist und mehr benötigt, dass man vor allem manche Probleme nicht immer alleine bewältigen kann, sondern eher nur im Team. 
+
+Hierbei bin ich wirklich froh darüber, ein so offenes und hilfsbereites Team gehabt zu haben, welches jederzeit für einen da war und niemanden alleine lies. Die Terminplanung war glücklicherweise relativ einfach, wodurch es uns möglich war regelmäßige Teammeetings abhalten zu können. Außerdem gefiel mir, dass, wenn man eine Aufgabe hatte, man sich für diese auch Zeit nahm und man sich um deren Erledigung stets bemühte, was einerseits die Zuverlässigkeit und das Vertrauen untereinander stärkte, andererseits die Arbeit wesentlich angenehmer und kontinuierlicher machte. Es war auch schön mitanzusehen, wie das System Stück für Stück erweitert wurde und mehr Funktionen bot, worauf wir als Team wirklich stolz sein konnten.
+
+Im Kontrast dazu war die Kommunikation mit dem Kunden an manchen Stellen eher frustrierend, sei es die öfters aufkommende Unzuverlässigkeit oder der regelmäßige Ansturm an neuen Anforderungen bzw. Ausfall bereits implementierter Anforderungen, was die Arbeitsweise und den Zeitplan gelegentlich aus der Bahn brachte. Hierbei würde ich in Zukunft dem Kunden gegenüber mehr Deadlines setzen, mehr Druck und Konditionen ansetzen, um allen eine angenehmere Arbeitsatmosphäre bieten zu können. Des Weiteren muss ich zugeben, dass die Dokumentation an manchen Stellen etwas sehr aufwendig und übertrieben war. Nichtsdestotrotz sollte diese niemals unterschätzt werden, besonders deren Bedeutsamkeit für Anwender und kommende Entwickler, die dieses System warten oder überarbeiten.
+
+Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, die ich hier gesammelt habe, froh bin.
+
+
+==== Robert Pfund
+
+
+==== Karl Langer
+
+
+
