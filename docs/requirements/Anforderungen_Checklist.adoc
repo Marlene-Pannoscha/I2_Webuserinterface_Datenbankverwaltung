@@ -53,7 +53,7 @@ direktes Auswählen von Universitäten per Anklicken| erledigt | ebenfalls Forma
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen | Status | Kommentar |
-Möglichkeit zum Bearbeiten, Anlegen und Löschen von Fakultäten| wird nicht umgesetzt |Aufgabe SHK
+Möglichkeit zum Bearbeiten, Anlegen und Löschen von Fakultäten| teilweise erledeigt |Anlegen von Fakultäten möglich, dass Bearbeiten passiert unter dem Reiter Hochschule (Aufgabe SHK für Löschen Funktionalität)
 |===
 
 
@@ -76,7 +76,7 @@ nicht überein
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
-Erstellen von Berichten für Vertragstypen, Fakultäten und Länder | erledigt | in PDF ausdruckbar sein|
+Erstellen und Exportieren von Berichten für Vertragstypen, Fakultäten und Länder | erledigt | in PDF ausdruckbar sein|
 |===
 
 
