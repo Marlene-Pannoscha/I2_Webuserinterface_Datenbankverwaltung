@@ -21,7 +21,7 @@ include::../_includes/default-attributes.inc.adoc[]
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
 * Filterung nach Land, Hochschule und Vertragstyp
-* Anlegen neuer Berichte
+* Verwalten von Ansprechpersonen von Fakultäten
 * Dokumentation vereinheitlichen (Development)
 ** Standards festlegen bezüglich Code
 * Entwicklerdokumentation
@@ -37,13 +37,16 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Filterfunktionen (Sortierungsreiter entfernen) | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
-| Reiter Berichte implementieren | hoch | 6 | laufend | / | 1 | Alessandra Russ | 5 | /
+| Filterfunktionen (Sortierungsreiter entfernen) | hoch | 8 | fertig | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
+| Reiter Berichte implementieren | hoch | 2 | fertig | / | 1 | Alessandra Russ | 2 | /
 | Entwicklerdokumentation (Design) | hoch | 5 | fertig | / | 1 | Kevin Freund | 4 | /
 | Entwicklerdokumentation (Software) | hoch | 5 | laufend | / | 2 | Kevin Freund | |
 | Standards in Dokumentation festhalten (Belegdokumentation) | hoch | 5 | laufend | / | 1 | Marlene Pannoscha  | 3 | /
-| Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson Fenster) | hoch | 6 | laufend | / | 1 | Dilara Eichler | 2 | /
-|Button Land hinzufügen implementieren| hoch | 5 | laufend | / | 1 | ausstehend | 4 | /  Deployment Engineer bestimmen | hoch | 1 | laufend | / |
+| Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson Fenster) | hoch | 6 | fertig | / | 1 | Dilara Eichler | 2 | /
+| Button Land hinzufügen implementieren| hoch | 5 | fertig | / | 1 | Karl Langer | 4 | /
+| Deployment Engineer bestimmen | hoch | 1 | fertig | / | 2 |in Zusammenarbeit mit SHK   | 1|
+| Verwalten von Ansprechpersonen von Fakultäten | hoch |7 |fertig | / | | Karl Langer und Robert Pfund | 1 | 
+| Fakultät anglegen Funktion implementieren | hoch | | | || Alessandra Ruff | |
 
 |===
 
@@ -55,8 +58,8 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Problem | Status | Notizen
 
-|  |  |
-
+| Berichte Generierung beansprucjt wesentlich mehr Zeit als geschätzt | wird in Iteration 4 mit übernommen | Berichtarten wurden in Zusammenarbeit mit FRau Terpe eingegrenzt |
+Kontinuierliche Anforderungen durch Kunden | Problem behoben | Absprache mit Frau Terpe, welche Anforderungen realistisch sind. Es wurde eine Anforderungscheckliste erstellt, die eine Übersicht über notwendige und nice-to-have Anforderungen schafft.
 |===
 
 == Bewertungskriterien
@@ -71,9 +74,9 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Assessment Ziel | Projektfortschritt
 
-| Assessment Datum |
+| Assessment Datum | 30.05.2023
 | Teilnehmer | Team I2
-| Projektstatus	|
+| Projektstatus	| Die Implementierung der Use-Cases entspricht nicht dem gewünschten Fortschritt, da teilweise Unklahrheiten über deren exakte Realisierung bestehen.
 |===
 
 * Beurteilung im Vergleich zu den Zielen
