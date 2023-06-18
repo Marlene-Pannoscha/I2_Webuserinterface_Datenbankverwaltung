@@ -14,8 +14,8 @@ include::../_includes/default-attributes.inc.adoc[]
 
 |Beginn der Iteration | 29.05.2023
 
-|
-|
+|Abnahme durch SI
+|06.06.2023
 
 
 | Ende der Iteration | 05.06.2023
@@ -27,9 +27,16 @@ include::../_includes/default-attributes.inc.adoc[]
 
 Beispiele:
 
-* Beheben der Usability-Probleme, die von Abteilung X berichtet wurden
-* Ausliefern der Hauptszenarios, die die Integration mit System Y zeigen
-* Present a technical demonstration (demo).
+* Reiter Mentoren neue Funktionalitäten implementieren
+* Anlegen neuer Verträge (UC04)
+* Anlegen neuer Universitäten(Partnerhochschulen)(UC05)
+* Snapshot der Datenbank einführen
+* Berichte erzeugen (UC06)
+* Berichte exportieren (UC07)
+* Demonstration der bisherigen Funktionalitäten am 15.06.2023 vorgesehen
+* Abnahmeprotokoll entwerfen
+* Projektbericht konzipieren
+* Layout vereinheitlichen
 
 
 == Aufgabenzuordnung
@@ -42,9 +49,17 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Mentoren Suchleiste und Filtern nach Fakultät| x | x | x | x | x | x | x | x |
-Anlegen neuer Universitäten(Partnerhochschulen) | Dilara Eichler | Snapshot der Datenbank exportieren und einführen | Kevin | Freund
-Layout der Pop- Up Fenster vereinheitlichen Dilara, Alesasandra, Kevin | Berichte anzeigen und exportieren  Robert Pfund | Abnahmeprotokoll | Schulung | Projektbericht anfangen
+| Mentoren Suchleiste implementieren | hoch|5 | fertig| /|1| Dilara Eichler | | /|
+Mentoren nach Fakultät filtern | hoch | 6 | fertig | / | 1 | Dilara Eichler |  | /|
+Anlegen neuer Universitäten(Partnerhochschulen)(UC05) | hoch | 7| fertig |/| 1| Alessandra Ruff | | /|
+Snapshot der Datenbank exportieren und einführen | hoch | 4| ferig |/| 1| Kevin Freund||/|
+Layout der Pop- Up Fenster vereinheitlichen | niedrig | 3 |fertig | / | 2 |Dilara Eichler, Alesasandra Ruff, Kevin Freund |  |/ |
+Berichte erzeugen (UC06) | hoch | 7| fertig | |1 | Robert Pfund | | / |
+Berichte exportieren (UC07) | hoch | 8 | in Bearbeitung | /| 2 | Robert Pfund | | / |
+ Anlegen neuer Verträge (UC04) | hoch | 6 | fertig | / | 1 | Alessandra Ruff | | / |
+ Abnahmeprotokoll |mittel | 2 | in Bearbeitung | / | 1 |  Marlene Pannoscha | 1 | 0,5 |
+ Schulung | mittel | 5| abgesagt | Frau Terpe hat den Termin wegen Krankheit abgesagt | 1 | Marlene Pannoscha | nur Vorbereitung | 7 |
+Projektbericht Outline | hoch | 4| fertig | Ausarbeitung in folgender Iteration | 1 | Marlene Pannoscha |1 |/
 |===
 
 
@@ -55,19 +70,22 @@ Layout der Pop- Up Fenster vereinheitlichen Dilara, Alesasandra, Kevin | Bericht
 |===
 | Problem | Status | Notizen
 
-| Speichen Mentoren und Partnerhochschulen Dilara und Alesssandra| x | x |
-Verträge: Hochschulvereinbarung falsche Anzahl bzw doppelte Auflistung | Abbrechen Button bei Verträge
+| Speichen Mentoren | behoben | Dilara Eichler hat den Fehler behoben |
+Speichern neuer Verträge und Partnerhochschulen | behoben | Alessandra Ruff hat den Fehler behoben |
+Verträge: Hochschulvereinbarung falsche Anzahl bzw doppelte Auflistung |behoben |Alessandra Ruff hat den Fehler behoben |
+ Abbrechen Button bei Verträge funktioniert nicht | behoben |Alessandra Ruff hat den Fehler behoben
 |===
 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-Beispiele:
-
-* 97% der Testfälle auf Systemebene sind erfolgreich.
-* Gemeinsame Inspektion des Iterations-Ergebnisses (Inkrement) mit den Abteilungen X und Y ergibt positive Rückmeldung.
-* Technische Präsentation / Demo erhält positive Rückmeldungen.
+* Benutzeroberfläche soll Kundenzufriedenheit entsprechen
+* Erfüllung der Use-Cases
+** UC04
+** UC05
+** UC06
+** UC07
 
 
 == Assessment
@@ -77,20 +95,23 @@ Beispiele:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | ...
-| Teilnehmer | ...
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Assessment Datum | 06.06.2023
+| Teilnehmer | komplettes Team
+| Projektstatus	| Großer Fortschritt im Vergleich zu vorgehensder Iteration.
 |===
 
 * Beurteilung im Vergleich zu den Zielen
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 
-* Geplante vs. erledigte Aufgaben
-//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+Die Funktionen bezüglich der Berichte wurden in dieser Iteration vollständig implementiert, da noch Aufgaben aus der vorhergehenden Iteration bestanden. Mentoren können nun per Suchleiste gefunden werden oder per Fakultät filtern. Das Anlegen von neuen Verträgen und Partnerhochschulen ist möglich. Bei Mentoren und Hochschulen gab es Speicherprobleme, die viel Zeit in Anspruch genommen haben aber schlussendlich behoben wurden. Bezüglich der Dokumentation gab es große Fortschritte, dass Abnahmeprotokoll sowie erste Teile des Projekberichtes wurden verfasst. Es war eine Schulung für die Mitarbeiter der Stabsstelle Internationales angesetzt, diese wurde vorbereitet aber schließlich einen Tag vorher durch Frau Terpe kranksheitsbedingt abgesagt. Diese Thematik wird in einem Erklärungsvideo als Anleitung für die Mitarbeiter zu Verfügung gestellt.
+
 
 * Beurteilung im Vergleich zu den Bewertungskriterien
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
 
+Die Use-Cases UC04, UC05, UC06 und UC07 wurden alle realisiert.
+
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+Implementierung der Funktionen bezüglich dem Reiter Länder auf kommende Iteration verschoben.
