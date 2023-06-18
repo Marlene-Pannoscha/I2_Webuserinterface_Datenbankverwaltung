@@ -14,9 +14,8 @@ include::../_includes/default-attributes.inc.adoc[]
 
 |Beginn der Iteration | 12.06.2023
 
-|
-|
-
+|Abnahme durch SI
+|wahrscheinlich erst 29.06.2023 (Frau Terpe außer Haus)
 
 | Ende der Iteration | 18.06.2023
 |===
@@ -25,12 +24,13 @@ include::../_includes/default-attributes.inc.adoc[]
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-Beispiele:
-
-* Beheben der Usability-Probleme, die von Abteilung X berichtet wurden
-* Ausliefern der Hauptszenarios, die die Integration mit System Y zeigen
-* Present a technical demonstration (demo).
-
+* Projektbericht Dokumentation
+* Löschen von Daten (UC08)
+* Lizenzen bestimmen
+* Anwenderdokumenation für Mirarbeiten (Video)
+* Test Berichte
+* Land hinzufügen Funktion
+* Berichttyp hinzufügen
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
@@ -42,9 +42,13 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| x | x | x | x | x | x | x | x | x
-Berichte erzeugen (verschiedene Typen) Robert Pfund | Projektbericht Dokumentation Kevin Freund, Marlene Pannoscha |
-Löschen von Daten mit Passwortabfrage Alessansra Ruff | Lizenzen bestimmen | Alessandra Ruff | Anwenderdokumentation für Mitarbeiten (in Video Form)
+| Berichte erzeugen (verschiedene Typen) (UC06) | hoch | 7 | laufend | / | 1 | Robert Pfund || / |
+Löschen von Daten mit Passwortabfrage |hoch | 6 |fertig | / |  1 | Alessansra Ruff | | /|
+Lizenzen bestimmen |mittel | 4 | fertig | / | 1 |  Alessandra Ruff | | / |
+Anwenderdokumentation für Mitarbeiten (in Video Form) | hoch |5 | laufend |/ | 1 | Marlene Pannoscha | | / |
+Projektbericht Dokumentation | hoch| 8 | laufend | wird auf Github in kleine Issues unterteielt und dem ganzen Team zugewiesen | 2 | Team | | / |
+Test Berichte| mittel | 6 | laufend | / | 1 | Robert Pfund | | / |
+Land hinzufügen Fuktionalität implementieren |hoch | 6 | laufend | / | 1 | Karl Langer | | / |
 |===
 
 
