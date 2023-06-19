@@ -72,7 +72,16 @@ Die genauere Mitgliedereinteilung zu einem jeweiligem Gebiet befindet sich in de
 <<<
 
 ==== Alessandra Ruff
-//Text
+Die Arbeit an unserem Software-Engineering-Projekt hat mein Wissen und meine Fähigkeiten in verschiedenen Bereichen erweitert. Das Projekt konzentrierte sich auf die Erstellung von einer Web-Benutzeroberfläche für die Datenbankverwaltung der Stabstelle Internationales an der HTW Dresden. Um einen sinnvollen Beitrag zu leisten, musste ich mich intensiv mit verschiedenen Technologien der Webprogrammierung und des Datenbankmanagements auseinandersetzen.
+
+Eine der größten Herausforderungen bestand darin, mich in den Code der Vorgängergruppe einzuarbeiten. Als jemand mit wenig Erfahrung in Webtechnologien wurde ich in eine immense Menge unbekannten Codes geworfen, den ich verstehen und in seine Wirkung und Zusammenhänge einordnen musste. Ich musste mich also mit Frontend-Technologien wie HTML, CSS und JavaScript vertraut machen, um die Benutzeroberfläche zu gestalten, ohne dabei die dahinterliegenden Funktionen zu beeinträchtigen.
+
+Neben den technischen Herausforderungen stellte das Projektmanagement, insbesondere die Dokumentation meiner eigenen Entwicklungsschritte am Anfang, eine größere Hürde dar. Mit der Zeit erkannte ich jedoch, wie wichtig diese Schritte sind, um erfolgreich an einem Projekt zu arbeiten. Die Dokumentation gewährleistete, dass ich mich an Deadlines hielt, einen kontinuierlichen Arbeitsfluss aufrechterhielt und klar strukturierte Ziele festlegte, um nicht vom eigentlichen Thema abzukommen.
+
+Der wohl wichtigste Aspekt unseres Projekts war die Interaktion mit dem Kunden. Da unsere Aufgaben größtenteils optische Anpassungen des Interfaces betrafen, war es sehr wichtig, regelmäßige Treffen mit dem Kunden abzuhalten, um Änderungen und Fortschritte abzustimmen. Mir wurde klar, wie herausfordernd es ist, eine effektive und regelmäßige Kundeninteraktion aufrechtzuerhalten, da sie von zahlreichen externen Einflüssen beeinflusst wird, die nicht immer vorhersehbar sind. Es kam häufig vor, dass neue Anforderungen oder sogar widersprüchliche Erwartungen in kurzer Zeit geäußert wurden, die nicht immer im geforderten Ausmaß umsetzbar waren. Dies erforderte von uns ein hohes Maß an Flexibilität, um angemessen darauf reagieren zu können.
+
+Die Arbeit an diesem Software-Engineering-Projekt hat mir wertvolle Erkenntnisse und wertvolle Erfahrungen beschert. Es war anfangs eine Herausforderung, mit wenig Erfahrung in Webtechnologien in das Projekt einzusteigen und mich in den vorhandenen Code einzuarbeiten.  Durch diese Herausforderungen konnte ich jedoch mein technisches Wissen und meine Fähigkeiten in kurzer Zeit erheblich erweitern. Ich habe gelernt wie wichtig ein strukturiertes Projektmanagement und eine klare Dokumentation sind, um effizient und erfolgreich zu arbeiten. Die Kundeninteraktion stellte sich als entscheidender Faktor heraus, der Flexibilität und Kommunikationsfähigkeiten erforderte, um den Anforderungen und Erwartungen des Kunden gerecht zu werden. Insgesamt war dieses Projekt eine äußerst wertvolle Erfahrung, die mein Verständnis für Softwareentwicklung und Zusammenarbeit vertieft hat und mich für zukünftige Projekte weiter stärkt.
+
 
 <<<
 
