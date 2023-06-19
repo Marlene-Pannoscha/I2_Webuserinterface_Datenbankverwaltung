@@ -117,7 +117,7 @@ def pdf_load(name, id):
     elif name == 'erasmus_report':
         return createpdf.make_erasmus_pdf()
     elif name == 'institute_report':
-        return "hello2"
+        return createpdf.make_institute_pdf()
 
 
 @app.route('/delete/<object_type>', methods=['POST'])

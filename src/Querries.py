@@ -550,6 +550,8 @@ def facultyReport(faculty_id):
 
 	return payload
 
+# für den Eramus- (und Hochschul-) Berichte werden je zwei Abfragen verwendet, jeweils eine für die "allgemeinen" Daten der Verträge und eine zweite für die aggregierten Daten über die Anzahlen der Verträge
+
 def erasmusReport():
 
     cnxn = Login.newConnection()
@@ -616,3 +618,67 @@ def erasmusData():
     cnxn.close()
 
     return payload
+
+def instituteReport():
+    
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()
+    
+    cur.execute("""SELECT i.eng, c.de, pt.deu, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date
+                FROM new_tbl_mobility_agreement AS ma
+                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN new_tbl_institute i ON i.ID = p.institute_ID
+                JOIN new_tbl_country c ON c.ID = i.country_ID
+                JOIN new_tbl_mentor m ON m.ID = ma.mentor_ID
+                ORDER BY i.eng, c.de, pt.deu, mentordata, ma.until_date""")
+    
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {
+			'Name': i[0],
+			'Land': i[1],			
+			'Vertrag': i[2],
+			'Mentor' : i[3],
+            'Dauer': i[4]
+		}
+
+        payload.append(content)
+
+
+    cur.close()
+    cnxn.close()
+
+    return payload
+
+def instituteReportData():
+    
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()    
+
+    cur.execute("""SELECT c.de, i.eng, COUNT(*), COUNT(DISTINCT c.de), COUNT(DISTINCT i.eng)
+                FROM new_tbl_mobility_agreement AS ma
+                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN new_tbl_institute i ON i.ID = p.institute_ID
+                JOIN new_tbl_country c ON c.ID = i.country_ID
+                ORDER BY c.de, i.eng""")
+
+
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {
+            'AnzahlVereinbarungen' : i[2],
+            'AnzahlLaender' : i[3],
+            'AnzahlPartner' : i[4]
+		}
+
+        payload.append(content)
+
+
+    cur.close()
+    cnxn.close()
+
+    return payload    
