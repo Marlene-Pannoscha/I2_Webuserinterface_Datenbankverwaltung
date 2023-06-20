@@ -100,7 +100,17 @@ Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Lebe
 <<<
 
 ==== Robert Pfund
-//Text
+Das zweite Semester des Software Engineering Moduls stand von Anfang an unter einem Stern als das letzte. Gerade da wir bereits im ersten Semester aktiv und engagiert an der Anforderungsanalyse gearbeitet hatten, war klar, dass unser Projekt einen größeren Einsatz brauchen würde.
+
+Der nun bereits im dritten Jahr bearbeitete Code hatte ein großes Ausmaß angenommen. Dies sprengte meinen Erfahrungshorizont in Hinsicht auf die Komplexität und Verpflechtungen zwischen den Modulen. Angesichts dieser Problematik waren alle Mitglieder meines Teams eingeschüchtert, doch in unserer Absicht das Projekt erfolgreich abzuschließen, haben wir uns alle tapfer durch dieses Wirr-Warr an Code gekämpft. Im Rahmen dessen wurde mir schnell die Bedeutung von guter Dokumentation klar. Auch wenn unsere Vorgänger den Code im Generellen dokumentiert hatten, war es schwierig ihn zu verfolgen - denn gerade die Verweise waren leider nur schlecht dokumentiert. So musste ich vor allem anfangs manuell Klassen beziehungsweise Methoden suchen um die größeren Abhängigkeiten nachzuvollziehen. Doch gerade das ist eine Herausforderung, von der es nicht unwahrscheinlich ist, dass sie mich auch in meinem späteren Arbeitsleben ereilen wird.
+
+Neben den durch den bereits bestehenden Stand des Projektes entstandenen Problemen, kamen auch die Technologien, welche für die Umsetzung unseres Projektes benötigt wurden, wie ein Sprung ins kalte Wasser. Während Python mir bereits bekannt war, musste ich mich in HTML, CSS und Javascript erst einarbeiten. Gerade in der zweiten Hälfte dieses Semesters gab es allerdings deutliche Erkenntnisfortschritte. Diese waren neben selbst gesammelten Erfahrungen auch durch die theoretischen Erklärungen in den Vorlesungen des Moduls Internet Technologien I bedingt. Ebenso war das Konzept einer REST-API mir neu. Diese Thematik konnte ich mir aber mithilfe von Youtube-Tutorials verständlich machen.
+
+Ein großes Lob muss dabei an meine Gruppe gehen. Durch die beiden Semester hindurch haben wir gut zusammengearbeitet. Seit Anfang an waren alle aufgeschlossen und bereit an dem Projekt zu arbeiten und zu lernen. Über den Verlauf des Jahres hat sich unsere gemeinsames Verständnis und unsere gemeinsame Arbeitsweise nur gesteigert. Besonders die Projektleitung ist hier hervorzuheben, welche gerade im zweiten Semester sehr auf unsere Vorschläge zu möglichen Optimierungen eingegangen ist. In einem so respektvollen und netten Team zu arbeiten, war eine sehr positive Erfahrung.
+
+Auch der Kundenkontakt war für mich eine neue Erfahrung. Bisher hatten Programmieraufgaben nur einen kleinen Umfang gehabt und waren in ihrer Natur statisch. Nun waren wir hier mit sich ändernden Anforderungen und einem "unerfahrenen" beziehungsweise typischen Kunden konfrontiert. Doch auch hier konnten sich die meisten Probleme mit dem Fortschreiten des Projekts und unserem besseren Verständnis unseres Kunden beiseite legen lassen.
+
+
 
 <<<
 
