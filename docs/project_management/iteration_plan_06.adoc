@@ -43,12 +43,15 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
 | Berichte erzeugen (verschiedene Typen) (UC06) | hoch | 7 | laufend | / | 1 | Robert Pfund || / |
-Löschen von Daten mit Passwortabfrage |hoch | 6 |fertig | / |  1 | Alessansra Ruff | | /|
-Lizenzen bestimmen |mittel | 4 | fertig | / | 1 |  Alessandra Ruff | | / |
-Anwenderdokumentation für Mitarbeiten (in Video Form) | hoch |5 | laufend |/ | 1 | Marlene Pannoscha | | / |
-Projektbericht Dokumentation | hoch| 8 | laufend | wird auf Github in kleine Issues unterteielt und dem ganzen Team zugewiesen | 2 | Team | | / |
+Löschen von Daten mit Passwortabfrage |hoch | 6 |fertig | / |  1 | Alessandra Ruff | | /|
+Lizenzen bestimmen | mittel | 4 | fertig | / | 1 |  Alessandra Ruff | | / |
+Anwenderdokumentation für Mitarbeiter (in Video Form) | hoch |5 | laufend |/ | 1 | Marlene Pannoscha | | / |
+Projektbericht - Projektplanung | hoch | 8 | laufend | / | 2 | Kevin Freund, Alessandra Ruff | | / |
+Projektbericht - Projektdurchführung | hoch | 8 | laufend | / | 2 | ... | | / |
+Projektbericht - Projektergebnisse | hoch | 8 | laufend | / | 2 | ... | | / |
+Projektbericht - Reflexionen | hoch | 8 | laufend | / | 1 | Team | | / |
 Test Berichte| mittel | 6 | laufend | / | 1 | Robert Pfund | | / |
-Land hinzufügen Fuktionalität implementieren |hoch | 6 | laufend | / | 1 | Karl Langer | | / |
+Land hinzufügen Fuktionalität implementieren | hoch | 6 | laufend | / | 1 | Karl Langer | | / |
 |===
 
 

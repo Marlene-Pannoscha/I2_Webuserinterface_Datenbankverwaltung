@@ -11322,3 +11322,12 @@ textarea {
   overflow: hidden;
   max-height: 400px;
 }
+
+#modal_add_country{
+  top:20%;
+  width: 50rem;
+  left: 50%;
+  transform:translateX(-50%);
+  overflow: hidden;
+  max-height: 500px;
+}

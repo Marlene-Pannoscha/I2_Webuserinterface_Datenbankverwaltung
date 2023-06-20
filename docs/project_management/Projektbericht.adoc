@@ -37,6 +37,9 @@ _Ehemals mit Max Listner (ML), als Project-Manager und Analyst._ +
 Die genauere Mitgliedereinteilung zu einem jeweiligem Gebiet befindet sich in der Rollenübersicht.
 
 === Ablauf der Kommunikation unter Verwendung eingesetzter Tools
+Während des gesamten Projektes erfolgte die Kommunikation innerhalb der Gruppe über Discord, WhatsApp und in Präsenz. Über WhatsApp wurden per Umfragen, zur Ermittlung passender Zeiträume der jeweiligen Teammitglieder, die Teammeetings geplant und abgesprochen, es wurden aber auch schnelle Austausche durchgeführt, sollte schnell eine Antwort benötigt werden innerhalb des Teams. In Präsenz hingegen fanden die eigentlichen Teammeetings statt (später auch über Discord, sei es ganz oder im Hybrid-Modell). Mittels Discord haben wir innerhalb eines Teamservers die anstehenden Termine und Protokolle der Meetings, sei es mit Kunden, Coach oder des Teams, festgehalten, aber auch Updates zu veröffentlichten, neuen Features.
+
+Die Kommunikation mit Coach und Kunden hingegen erfolgte rein per E-Mail, zur Terminfindung, und in Präsenz, um hier einerseits offene Fragen zu klären und Feedback einzuholen, andererseits zur Planung des weiteren Projektverlaufs und Entgegennahme verschiedener Kundenwünsche.
 
 === Dokumentation und eigesetzte Tools
 
