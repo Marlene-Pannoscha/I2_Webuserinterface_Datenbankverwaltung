@@ -504,55 +504,55 @@ def delete(tbl, row_id):
 # pyodbc-Abfragen für Berichte
 
 def facultyReport(faculty_id):
+    '''
+    Daten für Fakultätsbericht holen
+    '''
 
-	cnxn = Login.newConnection()
-	cur = cnxn.cursor()
-        
-    #(m.title + ' ' + m.firstname + ' ' + 
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()
 
     # "\" benötigt um String mit Zeilenumbrüchen zu realisieren, alternativ muss die Abfrage als stored procedure angelegt werden
-	cur.execute(f"SELECT c.de, i.eng, pt.deu, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date \
-				FROM new_tbl_mobility_agreement AS ma, \
-					new_tbl_mentor AS m, \
-					new_tbl_partnership_type AS pt, \
-					new_tbl_country AS c, \
-					new_tbl_partnership AS p, \
-                    new_tbl_institute AS i \
-				WHERE \
-                    (\
-					((ma.mentor_ID = m.ID) \
-					AND (ma.partnership_ID = p.ID) \
-					AND (p.institute_ID = i.ID) \
-					AND (p.partnership_type_ID = pt.ID) \
-					AND (i.country_ID = c.ID) \
-                    ) \
-				    AND \
-					(ma.faculty_ID = {faculty_id}) \
-                    ) \
-                ORDER BY \
-                    c.de, pt.deu, i.eng, ma.until_date, mentordata")
+    cur.execute(f"SELECT c.de, i.eng, pt.deu, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date \
+			FROM new_tbl_mobility_agreement AS ma, \
+				new_tbl_mentor AS m, \
+				new_tbl_partnership_type AS pt, \
+				new_tbl_country AS c, \
+				new_tbl_partnership AS p, \
+                new_tbl_institute AS i \
+            WHERE \
+                (\
+				((ma.mentor_ID = m.ID) \
+				AND (ma.partnership_ID = p.ID) \
+				AND (p.institute_ID = i.ID) \
+				AND (p.partnership_type_ID = pt.ID) \
+				AND (i.country_ID = c.ID) \
+                ) \
+				AND \
+				(ma.faculty_ID = {faculty_id}) \
+                ) \
+            ORDER BY \
+                c.de, pt.deu, i.eng, ma.until_date, mentordata")
 
-	x = cur.fetchall()
-	payload = []
-	for i in x:
-		content = {
-			'Land': i[0],
-			'Name': i[1],
-			'Vertrag': i[2],
-			'Mentor': i[3],
-			'Dauer (bis)': i[4]
-		}
-		payload.append(content)
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {'Land': i[0],
+            'Name': i[1],
+            'Vertrag': i[2],
+            'Mentor': i[3],
+            'Dauer (bis)': i[4]
+        }
+        payload.append(content)
+            
+    cur.close()
+    cnxn.close()
 
-
-	cur.close()
-	cnxn.close()
-
-	return payload
+    return payload
 
 # für den Eramus- (und Hochschul-) Berichte werden je zwei Abfragen verwendet, jeweils eine für die "allgemeinen" Daten der Verträge und eine zweite für die aggregierten Daten über die Anzahlen der Verträge
 
 def erasmusReport():
+    '''Daten für den Erasmusbericht holen [Teil 1]'''
 
     cnxn = Login.newConnection()
     cur = cnxn.cursor()    
@@ -588,6 +588,7 @@ def erasmusReport():
     return payload
 
 def erasmusData():
+    '''Daten für den Erasmusbericht holen [Teil 2, lädt nur die aggregierten Daten zur Zusammenfassung]'''
 
     cnxn = Login.newConnection()
     cur = cnxn.cursor()    
@@ -620,7 +621,8 @@ def erasmusData():
     return payload
 
 def instituteReport():
-    
+    '''Daten für den Hochschulpartnerschaftsbericht holen [Teil 1]'''
+        
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     
@@ -653,6 +655,7 @@ def instituteReport():
     return payload
 
 def instituteReportData():
+    '''Daten für den Hochschulpartnerschaftsbericht holen [Teil 2, lädt nur die aggregierten Daten zur Zusammenfassung]'''
     
     cnxn = Login.newConnection()
     cur = cnxn.cursor()    
