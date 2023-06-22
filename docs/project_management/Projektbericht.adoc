@@ -44,6 +44,28 @@ Die Kommunikation mit Coach und Kunden hingegen erfolgte rein per E-Mail, zur Te
 === Dokumentation und eigesetzte Tools
 
 === Way of Working
+Unsere Arbeitsweise basiert auf dem Ansatz des Open Unified Process. Wir haben einen iterativen Ansatz gewählt, um den Fortschritt kontinuierlich zu überwachen und Anpassungen vorzunehmen. Um einen effizienten Arbeitsablauf zu gewährleisten, betrug die Iterationsdauer zwei Wochen.
+
+1.	Iterationsplanung:
+-	Aufnahme von Ergänzungen aus Kundengesprächen
+-	Bewertung der Priorität der Aufgaben
+-	Schätzen der Zeitkomplexität 
+-	Erstellen von Issues auf Github (teilweise Zuteilung der Aufgaben, teilweise Selbsteinschreibung nach Stärken)
+
+2.	Durchführung:
+-	Bearbeiten der Aufgaben gemäß ihrer Priorität und des geschätzten Aufwands
+-	Regelmäßige Absprachen zum Fortschritt, um Herausforderungen zu erkennen und Unterstützung zu bieten
+
+3.	Ende der Iteration:
+-	Gruppenmeeting zur Besprechung des Stands und Präsentation der implementierten Funktionen bzw. der vorgenommenen Änderungen
+-	Treffen mit dem Kunden, um Änderungen/Erweiterungen abzusprechen und Anmerkungen für die nächste Iteration festzuhalten
+-	Dokumentation des Fortschritts und der Iterationsergebnisse
+
+Diese Schritte ermöglichen es uns, den Projektablauf strukturiert zu gestalten, Feedback vom Kunden einzuholen und dieses flexibel in die Planung der nächsten Iteration zu übernehmen.
+
+== Kritik am Way of Working
+Eine Herausforderung, die sich in unserem Way of Working ergab, war die Abhängigkeit von der Verfügbarkeit des Kunden für das Feedback und die Planung der nächsten Iteration. Obwohl wir bestrebt waren, das Kundenfeedback in die nächste Iteration einzubeziehen, gestaltete sich die Terminfindung schwierig. Dadurch konnten wir nicht immer alle Ziele zu Beginn der Iteration festlegen, da das abschließende Kundenmeeting häufig erst zu einem späteren Zeitpunkt stattfand. Dies führte zu einem nicht immer nahtlosen Übergang in die nächste Iteration.
+Diese Herausforderung erforderte von uns Flexibilität und die Fähigkeit, auf unvorhergesehene Verzögerungen zu reagieren. Wir mussten unsere Planung anpassen und uns darauf einstellen, dass einige Ziele möglicherweise erst in späteren Iterationen umgesetzt werden konnten. Dennoch haben wir uns bemüht, das Beste aus der Situation zu machen und das Kundenfeedback so effektiv wie möglich in den Projektablauf einzubinden.
 
 == Projektdurchführung
 
