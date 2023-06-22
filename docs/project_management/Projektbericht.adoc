@@ -83,7 +83,26 @@ Nach Weihnachten haben wir bereits angefangen das erste Use-Case, den Log-out Bu
 === SE II
 
 ==== Start in das Neue Semester (Datum ergänzen)
-//Zeitmanagement und orga Probleme behoben wöcchentliche Meetings erweiterungen über discord main form of communication von whats app eheer weg und issues detaillierter möglichkeiten von github genutzt
+
+//ist noch nicht überarbeitet, aber damit ihr für die anderen punkte eine grobe vorstellung habt
+
+//Am Anfang des zweiten Semesters hat uns unser Projektleiter Max Listner verlassen, da er dieses Modul nur ein Semester lang belegen musste. Auf diese Veränderung waren wir allerdings vorbereitet und die stellvertretende Projektleiterin Marlene Pannoscha übernahm die Führung.
+
+//Es wurde einheitlich beschlossen, dass die iterative Vorgehensweise in Zweiwochen Sprints, die realistischste und effektive Methode für den Arbeitsrhythmus der Gruppe ist. Dieser Ablauf funktionierte über die ersten beiden Zyklen zufrieden stellend, jedoch schwand danach langsam die Motivation und das Projekt stand für eine Iteration still.  Innerhalb des Fachaustausches Projektmanagement kamen wir mit anderen Kommilitonen in den Dialog über deren ähnliche Organisationsprobleme. Beruhend auf deren Empfehlungen haben wir wöchentliche Meetings in Präsenz eingeführt, sind von Whats App als unser Hauptkommunikationsmedium weg und haben die Möglichkeiten von Discord und GitHub effizienter genutzt.
+
+//Zwischen März und April haben wir die Elaboration Phase mit einem zweistündigen Meeting beendet, in dem wir die Website mit all ihren Funktionalitäten noch einmal durchgegangen sind. Dort mussten wir feststellen, dass der Implementierungsaufwand der Use-Cases deutlich höher als geschätzt war. Das größere Problem stellten allerdings die bereits bestehenden Funktionalitäten von der Vorgruppe, von Speicherproblemen bis hin zu voneinander abhängigen Funktionen, die es so eigentlich gar nicht geben sollte. Parallel dazu war der Einarbeitungsaufwand aus der Inception Phase unzureichend. Schließlich mussten wir unsere Herangehensweise an die Aufteilung der Github Issues ändern, indem wir detailliert an einzelne Probleme herangehen und vor allem auch im Tandemprinzip arbeiteten.  Mit dieser Erkenntnis überarbeiteten wir die Risikoliste und schätzten teilweise den doppelten Aufwand, um noch genügend Puffer für unerwartete Zwischenfälle zu haben.
+
+//wichtigsten Ziele
+
+//* Filterfunktion für Partnerhochschulen zu implementieren
+//* Verwalten von Ansprechpersonen von Hochschulen
+//* Benutzeroberfläche intuitiver gestalten
+//* Aktuelle Version von der Datenbank einbinden
+
+
+//Probleme
+
+//Ergebnisse
 
 ==== Vorbereitung auf die Entwicklung
 ==== Entwicklung vorantreiben
