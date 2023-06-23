@@ -100,13 +100,25 @@ Wichtigsten Ziele:
 
 *Filterfunktion für Partnerhochschulen*
 
+Die Filterfunktion für Partnerhochschulen ist unter dem Reiter Hochschule realisiert und kann über sechs verschiedene Dropdown Menüs genutzt werden. Diese Funktion ist das Hauptwerkzeug für die Mitarbeiter, um Verträge zu pflegen. Aber nicht alle Filter werden benötigt, teilweise funktionieren sie auch nicht richtig. Nach Absprache welche Filter relevant sind, wurde die Filterfunktion auf Partnerhochschulen, Verträge und Länder beschränkt. Aus theoretischer Sicht können die übrigen drei Dropdown Menüs einfach entfernt werden. Jedoch als wir ein Menü entfernt haben funktionierten alle Filter nicht mehr. Eine simple Aufgabe stellte sich, als äußert komplex heraus und forderte eine neue Einschätzung des Aufwands. Schlussendlich haben wir Teile von diesem Problem mit in die folgende Iteration übernommen.
+
 *Verwalten von Ansprechpersonen von Hochschulen*
+
+Zu jeder Partnerhochschule gibt es eine Ansprechperson, die mit deren Angaben vermerkt ist. In der aktuellen Access Datenbank sind diese Daten nicht gepflegt, es gibt keine einheitlichen Bezeichnungen und alte Ansprechpersonen werden nicht gelöscht, sondern schlichtweg umbenannt. Unsere Aufgabe war es für dieses Problem eine einheitliche Lösung zu finden. In Absprache mit dem Kunden sollte es Felder geben, in die man den vollständigen Namen sowie die zugehörige E-Mail-Adresse eintragen kann. Nach dem diese Aufgabe implementiert wurde haben wir dazu das Feedback eingeholt. In der Zwischenzeit hat die Stabsstelle Internationales sich intern neu organisiert und ein eigenständiges Verwaltungsprinzip für die Ansprechpersonen aufgestellt. Somit lautete das Feedback, dass die Angaben zur Ansprechperson nicht mehr notwendig seien. Daraufhin entfernten wir all unsere implementierten Fortschritt.
 
 *Benutzeroberfläche anpassen*
 
+Die bestehende Benutzeroberfläche hat eine Vielzahl von versteckten Funktionalitäten und ist generell, ohne eine Einführung schwer zu bedienen. Dies war der Hauptkritikpunkt der Stabsstelle an dem Vorgängermodell. Wir haben grundlegende und vor allem einheitliche Gestaltungsentscheidungen getroffen und diese mit Hilfe von Wireframes dem Kunden präsentiert. Der Einsatz von Pop-Up Fenstern wurde hierbei als besonders effektiv empfunden, da die Mitarbeiter sich nicht durch aufeinanderfolgende Fenster navigieren wollten. Es soll ein einfach verständliches, intuitives und präzises Design der Webseite entstehen.
+
 *Datenbankstand aktualisieren*
 
-Ergebnisse
+Relativ zu Beginn des zweiten Semesters sprach unser Coach Herr Ringel bereits das Deployment an, denn die Version der Datenbank die aktuell hinterlegt war, ist auf dem Stand von November 2022.  Wenn die Datenbank nicht auf einem aktuelleren Stand ist, bietet dies ein großes Risiko für die Inbetriebnahme, deshalb war es wichtig sich so schnell wie möglich darum zu kümmern.
+
+Damals hat die ehemalige Studentische Hilfskraft Raphael Rezaii-Djafari, sich mit dieser Thematik befasst. Wir kontaktierten die neue SHK, glücklicherweise ist er ein direkter Kommilitone und konnte uns zeitnah einen Snapshot der Datenbank zur Verfügung stellen.
+
+*Ergebnisse*
+
+
 
 ==== Vorbereitung auf die Entwicklung
 ==== Entwicklung vorantreiben
