@@ -23,7 +23,7 @@ include::../_includes/default-attributes.inc.adoc[]
 * Filterung nach Land, Hochschule und Vertragstyp (UC02)
 * Verwalten von Ansprechpersonen von Fakultäten (UC03)
 * Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)
-*  Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson)
+*  Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson)(UC05)
 * Entwicklerdokumentation
 ** Softwaredokumentation
 ** Designdokumentation
@@ -93,13 +93,6 @@ Kontinuierliche Anforderungen durch Kunden | Problem behoben | Absprache mit Fra
 Erfolgreich implementiert wurde die Filterfunktion, der Reiter Berichte, der Button Land hinzufügen und die Möglichkeit zum Bearbeiten und Anlegen von Fakultäten. In dem mittleren Fentster wurden die Informationen zur Ansprechperson vollständig entfernt, da diese nicjt mehr notwendig sind.
 Erfolgreich dokumentiert wurde die Entwicklerdokumentation (Design) allerdings muss die Entwicklerdokumentation (Software) in die nächste Interation übernommen werden.
 Die Funktionalitäten, die die Berichte betreffen müssen noch implementiert werden. Der aktuelle Stand des Projektes wurde vom Kunden für gut befunden, allerdings wurden viele neue Dinge angesprochen die nicht vorhergesehen waren. Wir haben Maßnahmen getroffen, um diese Probleme erfolgreich einzugrenzen.
-
-
-
-
-
-//Document whether you met the evaluation criteria as specified in the Iteration Plan.
-//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
 
 
 * Andere Belange und Abweichungen

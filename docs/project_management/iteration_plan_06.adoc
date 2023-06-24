@@ -43,7 +43,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
 | Berichte erzeugen (verschiedene Typen) (UC06) | hoch | 7 | laufend | / | 1 | Robert Pfund || / |
-Löschen von Daten mit Passwortabfrage |hoch | 6 |fertig | / |  1 | Alessandra Ruff | | /|
+Löschen von Daten mit Passwortabfrage(UC08) |hoch | 6 |fertig | / |  1 | Alessandra Ruff | | /|
 Lizenzen bestimmen | mittel | 4 | fertig | / | 1 |  Alessandra Ruff | | / |
 Anwenderdokumentation für Mitarbeiter (in Video Form) | hoch |5 | laufend |/ | 1 | Marlene Pannoscha | | / |
 Projektbericht - Projektplanung | hoch | 8 | laufend | / | 2 | Kevin Freund, Alessandra Ruff | | / |
@@ -62,19 +62,17 @@ Land hinzufügen Fuktionalität implementieren | hoch | 6 | laufend | / | 1 | Ka
 |===
 | Problem | Status | Notizen
 
-| x | x | x
+| Für umfangreiche Tests nicht genügend Zeit. | abgeschlossen | Teststrategien entwickeln und dokumentieren
 |===
 
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
 
-Beispiele:
-
-* 97% der Testfälle auf Systemebene sind erfolgreich.
-* Gemeinsame Inspektion des Iterations-Ergebnisses (Inkrement) mit den Abteilungen X und Y ergibt positive Rückmeldung.
-* Technische Präsentation / Demo erhält positive Rückmeldungen.
-
+* Erfüllung der Use-Cases, geforderte Funktionen und Features sollen korrekt implementiert werden
+** UC06
+** UC08
+* Projektbericht- Dokumentation weiter führen
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
@@ -83,20 +81,12 @@ Beispiele:
 |===
 | Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
 
-| Assessment Datum | ...
-| Teilnehmer | ...
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Assessment Datum | 18.06.2023
+| Teilnehmer | Team
+| Projektstatus	| In der letzten Woche vor der Abgabe wird nur noch dokumentiert und die Implentierung ist hiermit abgeschlossen.
 |===
 
-* Beurteilung im Vergleich zu den Zielen
+* Beurteilung im Vergleich zu den Zielen und Bewertungskriterien
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+Die Implementierungsphase endet mit dieser Itertion und alle Use-Cases sowie zusätzliche Funktionalitäten konnten implmentiert werden. Ausstehend ist die Vollendung des Projektberichtes.
 
-* Geplante vs. erledigte Aufgaben
-//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
-
-* Beurteilung im Vergleich zu den Bewertungskriterien
-//Document whether you met the evaluation criteria as specified in the Iteration Plan.
-//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
-
-* Andere Belange und Abweichungen
-//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.

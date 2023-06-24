@@ -20,8 +20,8 @@ include::../_includes/default-attributes.inc.adoc[]
 == Wesentliche Ziele
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
-* Filterung nach Land, Hochschule und Vertragstyp
-* Verwalten von Ansprechpersonen von Fakultäten
+* Filterung nach Land, Hochschule und Vertragstyp(UC02)
+* Verwalten von Ansprechpersonen von Fakultäten (UC03)
 * Layout der Fenster (Liste, Hochshule und Verträge) anpassen
 * Dokumentation vereinheitlichen
 * Überarbeitung der Risikoliste
