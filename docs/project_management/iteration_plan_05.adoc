@@ -1,0 +1,119 @@
+= Iteration Plan 05: {project-name}
+//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+|Meilenstein | Datum
+
+|Beginn der Iteration | 29.05.2023
+
+|Abnahme durch SI
+|06.06.2023
+
+
+| Ende der Iteration | 05.06.2023
+|===
+
+
+== Wesentliche Ziele
+//Nennen Sie 1-5 wesentliche Ziele für die Iteration.
+
+Beispiele:
+
+* Reiter Mentoren neue Funktionalitäten implementieren
+* Anlegen neuer Verträge (UC04)
+* Anlegen neuer Universitäten(Partnerhochschulen)(UC05)
+* Snapshot der Datenbank einführen
+* Berichte erzeugen (UC06)
+* Berichte exportieren (UC07)
+* Demonstration der bisherigen Funktionalitäten am 15.06.2023 vorgesehen
+* Abnahmeprotokoll entwerfen
+* Projektbericht konzipieren
+* Layout vereinheitlichen
+
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt (hier Verweis einfügen).
+
+_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+[%header, cols="3,1,1,1,2,1,1,1,1"]
+|===
+| Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
+
+| Mentoren Suchleiste implementieren | hoch|5 | fertig| / | 1 | Dilara Eichler | | / |
+Mentoren nach Fakultät filtern | hoch | 6 | fertig | / | 1 | Dilara Eichler |  | / |
+Anlegen neuer Universitäten(Partnerhochschulen)(UC05) | hoch | 7 | fertig | / | 1 | Alessandra Ruff | | / |
+Snapshot der Datenbank exportieren und einführen | hoch | 4| ferig |/| 1| Kevin Freund||/|
+Layout der Pop- Up Fenster vereinheitlichen | niedrig | 3 |fertig | / | 2 |Dilara Eichler, Alesasandra Ruff, Kevin Freund |  | / |
+Berichte erzeugen (UC06) | hoch | 7| fertig | |1 | Robert Pfund | | / |
+Berichte exportieren (UC07) | hoch | 8 | in Bearbeitung | / | 2 | Robert Pfund | | / |
+Anlegen neuer Verträge (UC04) | hoch | 6 | fertig | / | 1 | Alessandra Ruff | | / |
+Abnahmeprotokoll |mittel | 2 | in Bearbeitung | / | 1 |  Marlene Pannoscha | 1 | 0,5 |
+Schulung | mittel | 5 | abgesagt | Frau Terpe hat den Termin wegen Krankheit abgesagt | 1 | Marlene Pannoscha | nur Vorbereitung | 7 |
+Projektbericht Outline | hoch | 4 | fertig | Ausarbeitung in folgender Iteration | 1 | Marlene Pannoscha | 1 | / |
+Betriebsdokumentation | hoch | 7 | laufend | / | 2 | Karl Langer | | / |
+Anwenderdokumentation | hoch | 8 | laufend | / | 2 | Karl Langer | | / |
+|===
+
+
+== Probleme (optional)
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3"]
+|===
+| Problem | Status | Notizen
+
+| Speichen Mentoren | behoben | Dilara Eichler hat den Fehler behoben |
+Speichern neuer Verträge und Partnerhochschulen | behoben | Alessandra Ruff hat den Fehler behoben |
+Verträge: Hochschulvereinbarung falsche Anzahl bzw doppelte Auflistung |behoben |Alessandra Ruff hat den Fehler behoben |
+ Abbrechen Button bei Verträge funktioniert nicht | behoben |Alessandra Ruff hat den Fehler behoben
+|===
+
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+
+* Benutzeroberfläche soll Kundenzufriedenheit entsprechen
+* Erfüllung der Use-Cases
+** UC04
+** UC05
+** UC06
+** UC07
+
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+
+| Assessment Datum | 06.06.2023
+| Teilnehmer | komplettes Team
+| Projektstatus	| Großer Fortschritt im Vergleich zu vorgehensder Iteration.
+|===
+
+* Beurteilung im Vergleich zu den Zielen
+//Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+
+Die Funktionen bezüglich der Berichte wurden in dieser Iteration vollständig implementiert, da noch Aufgaben aus der vorhergehenden Iteration bestanden. Mentoren können nun per Suchleiste gefunden werden oder per Fakultät filtern. Das Anlegen von neuen Verträgen und Partnerhochschulen ist möglich. Bei Mentoren und Hochschulen gab es Speicherprobleme, die viel Zeit in Anspruch genommen haben aber schlussendlich behoben wurden. Bezüglich der Dokumentation gab es große Fortschritte, dass Abnahmeprotokoll sowie erste Teile des Projekberichtes wurden verfasst. Es war eine Schulung für die Mitarbeiter der Stabsstelle Internationales angesetzt, diese wurde vorbereitet aber schließlich einen Tag vorher durch Frau Terpe kranksheitsbedingt abgesagt. Diese Thematik wird in einem Erklärungsvideo als Anleitung für die Mitarbeiter zu Verfügung gestellt.
+
+
+* Beurteilung im Vergleich zu den Bewertungskriterien
+//Document whether you met the evaluation criteria as specified in the Iteration Plan.
+//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+
+Die Use-Cases UC04, UC05, UC06 und UC07 wurden alle realisiert.
+
+* Andere Belange und Abweichungen
+//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+Implementierung der Funktionen bezüglich dem Reiter Länder auf kommende Iteration verschoben.

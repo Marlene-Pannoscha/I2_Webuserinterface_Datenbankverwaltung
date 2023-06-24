@@ -1,5 +1,5 @@
 = Projektplan: {project-name}
-
+include::../_includes/default-attributes.inc.adoc[]
 
 Max Listner
 <max.listner@stud.htw-dresden.de>

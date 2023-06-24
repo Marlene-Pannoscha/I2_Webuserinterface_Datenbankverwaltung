@@ -279,10 +279,10 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     query_parameter = helper.dynamic_querries(tuple_columns)
     type_dict = {
         'mentor': 'new_tbl_mentor',
-        'institute': 'tbl_institute',
-        'agreement': 'tbl_mobility_agreement',
-        'restriction': 'tbl_mobility_agreement_x_course',
-        'faculty': 'tbl_faculty'        
+        'institute': 'new_tbl_institute',
+        'agreement': 'new_tbl_mobility_agreement',
+        'restriction': 'new_tbl_mobility_agreement_x_course',
+        'faculty': 'new_tbl_faculty'        
     } 
     # define all possible tables where a new object could be created
     # create dynamic insert query
@@ -504,46 +504,184 @@ def delete(tbl, row_id):
 # pyodbc-Abfragen für Berichte
 
 def facultyReport(faculty_id):
+    '''
+    Daten für Fakultätsbericht holen
+    '''
 
-	cnxn = Login.newConnection()
-	cur = cnxn.cursor()
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()
 
     # "\" benötigt um String mit Zeilenumbrüchen zu realisieren, alternativ muss die Abfrage als stored procedure angelegt werden
-	cur.execute(f"SELECT c.de, i.eng, pt.deu, m.email, ma.until_date \
-				FROM tbl_mobility_agreement AS ma, \
-					tbl_mentor AS m, \
-					tbl_partnership_type AS pt, \
-					tbl_country AS c, \
-					tbl_partnership AS p, \
-                    tbl_institute AS i \
-				WHERE \
-                    (\
-					((ma.mentor_ID = m.ID) \
-					AND (ma.partnership_ID = p.ID) \
-					AND (p.institute_ID = i.ID) \
-					AND (p.partnership_type_ID = pt.ID) \
-					AND (i.country_ID = c.ID) \
-                    ) \
-				    AND \
-					(ma.faculty_ID = {faculty_id}) \
-                    ) \
-                ORDER BY \
-                    c.de, pt.deu, i.eng, ma.until_date, m.email")
+    cur.execute(f"SELECT c.de, i.eng, pt.deu, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date \
+			FROM new_tbl_mobility_agreement AS ma, \
+				new_tbl_mentor AS m, \
+				new_tbl_partnership_type AS pt, \
+				new_tbl_country AS c, \
+				new_tbl_partnership AS p, \
+                new_tbl_institute AS i \
+            WHERE \
+                (\
+				((ma.mentor_ID = m.ID) \
+				AND (ma.partnership_ID = p.ID) \
+				AND (p.institute_ID = i.ID) \
+				AND (p.partnership_type_ID = pt.ID) \
+				AND (i.country_ID = c.ID) \
+                ) \
+				AND \
+				(ma.faculty_ID = {faculty_id}) \
+                ) \
+            ORDER BY \
+                c.de, pt.deu, i.eng, ma.until_date, mentordata")
 
-	x = cur.fetchall()
-	payload = []
-	for i in x:
-		content = {
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {'Land': i[0],
+            'Name': i[1],
+            'Vertrag': i[2],
+            'Mentor': i[3],
+            'Dauer (bis)': i[4]
+        }
+        payload.append(content)
+            
+    cur.close()
+    cnxn.close()
+
+    return payload
+
+# für den Eramus- (und Hochschul-) Berichte werden je zwei Abfragen verwendet, jeweils eine für die "allgemeinen" Daten der Verträge und eine zweite für die aggregierten Daten über die Anzahlen der Verträge
+
+def erasmusReport():
+    '''Daten für den Erasmusbericht holen [Teil 1]'''
+
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()    
+
+    cur.execute("""SELECT c.de, i.eng, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date, pt.deu
+                FROM new_tbl_mobility_agreement AS ma
+                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN new_tbl_institute i ON i.ID = p.institute_ID
+                JOIN new_tbl_country c ON c.ID = i.country_ID
+                JOIN new_tbl_mentor m ON m.ID = ma.mentor_ID
+                WHERE (c.erasmus = '1' AND pt.ID = '3')
+                ORDER BY c.de, i.eng, ma.until_date, mentordata, pt.deu""")
+
+
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {
 			'Land': i[0],
-			'Name': i[1],
-			'Vertrag': i[2],
-			'Mentor': i[3],
-			'Dauer (bis)': i[4]
+			'Name': i[1],			
+			'Mentor': i[2],
+			'Dauer' : i[3],
+            'Vertrag': i[4]
 		}
-		payload.append(content)
+
+        payload.append(content)
 
 
-	cur.close()
-	cnxn.close()
+    cur.close()
+    cnxn.close()
 
-	return payload
+    return payload
+
+def erasmusData():
+    '''Daten für den Erasmusbericht holen [Teil 2, lädt nur die aggregierten Daten zur Zusammenfassung]'''
+
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()    
+
+    cur.execute("""SELECT c.de, i.eng, COUNT(*), COUNT(DISTINCT c.de), COUNT(DISTINCT i.eng)
+                FROM new_tbl_mobility_agreement AS ma
+                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN new_tbl_institute i ON i.ID = p.institute_ID
+                JOIN new_tbl_country c ON c.ID = i.country_ID
+                WHERE (c.erasmus = '1' AND pt.ID = '3')
+                ORDER BY c.de, i.eng""")
+
+
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {
+            'AnzahlVereinbarungen' : i[2],
+            'AnzahlLaender' : i[3],
+            'AnzahlPartner' : i[4]
+		}
+
+        payload.append(content)
+
+
+    cur.close()
+    cnxn.close()
+
+    return payload
+
+def instituteReport():
+    '''Daten für den Hochschulpartnerschaftsbericht holen [Teil 1]'''
+        
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()
+    
+    cur.execute("""SELECT i.eng, c.de, pt.deu, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date
+                FROM new_tbl_mobility_agreement AS ma
+                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN new_tbl_institute i ON i.ID = p.institute_ID
+                JOIN new_tbl_country c ON c.ID = i.country_ID
+                JOIN new_tbl_mentor m ON m.ID = ma.mentor_ID
+                ORDER BY i.eng, c.de, pt.deu, mentordata, ma.until_date""")
+    
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {
+			'Name': i[0],
+			'Land': i[1],			
+			'Vertrag': i[2],
+			'Mentor' : i[3],
+            'Dauer': i[4]
+		}
+
+        payload.append(content)
+
+
+    cur.close()
+    cnxn.close()
+
+    return payload
+
+def instituteReportData():
+    '''Daten für den Hochschulpartnerschaftsbericht holen [Teil 2, lädt nur die aggregierten Daten zur Zusammenfassung]'''
+    
+    cnxn = Login.newConnection()
+    cur = cnxn.cursor()    
+
+    cur.execute("""SELECT c.de, i.eng, COUNT(*), COUNT(DISTINCT c.de), COUNT(DISTINCT i.eng)
+                FROM new_tbl_mobility_agreement AS ma
+                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN new_tbl_institute i ON i.ID = p.institute_ID
+                JOIN new_tbl_country c ON c.ID = i.country_ID
+                ORDER BY c.de, i.eng""")
+
+
+    x = cur.fetchall()
+    payload = []
+    for i in x:
+        content = {
+            'AnzahlVereinbarungen' : i[2],
+            'AnzahlLaender' : i[3],
+            'AnzahlPartner' : i[4]
+		}
+
+        payload.append(content)
+
+
+    cur.close()
+    cnxn.close()
+
+    return payload    

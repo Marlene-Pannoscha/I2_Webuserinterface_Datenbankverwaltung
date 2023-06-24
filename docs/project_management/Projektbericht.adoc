@@ -37,20 +37,110 @@ _Ehemals mit Max Listner (ML), als Project-Manager und Analyst._ +
 Die genauere Mitgliedereinteilung zu einem jeweiligem Gebiet befindet sich in der Rollenübersicht.
 
 === Ablauf der Kommunikation unter Verwendung eingesetzter Tools
+Während des gesamten Projektes erfolgte die Kommunikation innerhalb der Gruppe über Discord, WhatsApp und in Präsenz. Über WhatsApp wurden per Umfragen, zur Ermittlung passender Zeiträume der jeweiligen Teammitglieder, die Teammeetings geplant und abgesprochen, es wurden aber auch schnelle Austausche durchgeführt, sollte schnell eine Antwort benötigt werden innerhalb des Teams. In Präsenz hingegen fanden die eigentlichen Teammeetings statt (später auch über Discord, sei es ganz oder im Hybrid-Modell). Mittels Discord haben wir innerhalb eines Teamservers die anstehenden Termine und Protokolle der Meetings, sei es mit Kunden, Coach oder des Teams, festgehalten, aber auch Updates zu veröffentlichten, neuen Features.
+
+Die Kommunikation mit Coach und Kunden hingegen erfolgte rein per E-Mail, zur Terminfindung, und in Präsenz, um hier einerseits offene Fragen zu klären und Feedback einzuholen, andererseits zur Planung des weiteren Projektverlaufs und Entgegennahme verschiedener Kundenwünsche.
 
 === Dokumentation und eigesetzte Tools
+Für unser Github Repository haben wir die vorgefertigte OpenUP Ordnerstruktur aus dem vorherigen Semester übernommen. Um unsere Dokumentation zu erstellen, haben wir uns für AsciiDoc entschieden, da es unseren Anforderungen entsprach und eine einfache Handhabung ermöglichte.
+
+Als Entwicklungsumgebung haben wir uns zunächst unsicher gefühlt, aber letztendlich haben wir uns für Visual Studio Code entschieden. Dies war eine Software, die wir bereits kannten und die Einarbeitungszeit deswegen war minimal. Wir haben den integrierten Development Server von Visual Studio Code genutzt, um unsere Software lokal testen und ausführen zu können.
+Um auf die virtuelle Maschine zuzugreifen, die als unser bereitgestellter Entwicklungsserver diente, haben wir WinSCP und PuTTY verwendet. Mit Hilfe dieser Tools konnten wir unseren Webserver ausführen und den neusten Stand der Software zu bestimmten Zeiten für den Kunden verfügbar machen.
+
+Für die Vorbereitung unserer Meetings haben wir ein Google Docs Template erstellt. In diesem konnten die Teammitglieder relevante Punkte ergänzen, die während des Meetings besprochen werden sollten. Somit wurde sichergestellt, dass das gesamte Team an der Planung teilhat.
+
+Die Aufgabenverteilung haben wir hauptsächlich über Github Issues vorgenommen. Dieses Tool war eines der wichtigsten während unseres Projekts, da es uns ermöglichte, den Fortschritt und den Stand unserer Aufgaben übersichtlich zu verfolgen. Es erleichterte auch die Kommunikation innerhalb des Teams, da wir dort Informationen und Updates austauschen konnten.
+
+Zusätzlich haben wir einen Discord Server genutzt, der uns sowohl für die Kommunikation als auch für die Dokumentation des Fortschritts diente. Auf unserem Discord Server hatten wir einen dedizierten Kanal namens "Updates", in dem wir regelmäßig den aktuellen Stand und die erzielten Fortschritte festgehalten haben. Dies ermöglichte allen Teammitgliedern einen schnellen Überblick über den Projektstatus.
+
+Des Weiteren haben wir den Discord Server genutzt, um wichtige Termine und Deadlines zu dokumentieren. Wir haben einen speziellen Kanal eingerichtet, in dem wir alle relevanten Informationen zu anstehenden Meetings, Abgabefristen und anderen wichtigen Ereignissen festgehalten haben. Dadurch hatten wir jederzeit einen zentralen Ort, an dem wir diese Informationen abrufen konnten.
+
+Der Discord Server war auch ein praktisches Kommunikationsmittel für Fragen und den Austausch von wichtigen Informationen. Teammitglieder konnten jederzeit Fragen stellen oder aufkommende Probleme diskutieren und alle relevanten Informationen blieben an einem leicht zugänglichen Ort gespeichert.
 
 === Way of Working
+Unsere Arbeitsweise basiert auf dem Ansatz des Open Unified Process. Wir haben einen iterativen Ansatz gewählt, um den Fortschritt kontinuierlich zu überwachen und Anpassungen vorzunehmen. Um einen effizienten Arbeitsablauf zu gewährleisten, betrug die Iterationsdauer zwei Wochen.
+
+1.	Iterationsplanung:
+-	Aufnahme von Ergänzungen aus Kundengesprächen
+-	Bewertung der Priorität der Aufgaben
+-	Schätzen der Zeitkomplexität 
+-	Erstellen von Issues auf Github (teilweise Zuteilung der Aufgaben, teilweise Selbsteinschreibung nach Stärken)
+
+2.	Durchführung:
+-	Bearbeiten der Aufgaben gemäß ihrer Priorität und des geschätzten Aufwands
+-	Regelmäßige Absprachen zum Fortschritt, um Herausforderungen zu erkennen und Unterstützung zu bieten
+
+3.	Ende der Iteration:
+-	Gruppenmeeting zur Besprechung des Stands und Präsentation der implementierten Funktionen bzw. der vorgenommenen Änderungen
+-	Treffen mit dem Kunden, um Änderungen/Erweiterungen abzusprechen und Anmerkungen für die nächste Iteration festzuhalten
+-	Dokumentation des Fortschritts und der Iterationsergebnisse
+
+Diese Schritte ermöglichen es uns, den Projektablauf strukturiert zu gestalten, Feedback vom Kunden einzuholen und dieses flexibel in die Planung der nächsten Iteration zu übernehmen.
+
+== Kritik am Way of Working
+Eine Herausforderung, die sich in unserem Way of Working ergab, war die Abhängigkeit von der Verfügbarkeit des Kunden für das Feedback und die Planung der nächsten Iteration. Obwohl wir bestrebt waren, das Kundenfeedback in die nächste Iteration einzubeziehen, gestaltete sich die Terminfindung schwierig. Dadurch konnten wir nicht immer alle Ziele zu Beginn der Iteration festlegen, da das abschließende Kundenmeeting häufig erst zu einem späteren Zeitpunkt stattfand. Dies führte zu einem nicht immer nahtlosen Übergang in die nächste Iteration.
+Diese Herausforderung erforderte von uns Flexibilität und die Fähigkeit, auf unvorhergesehene Verzögerungen zu reagieren. Wir mussten unsere Planung anpassen und uns darauf einstellen, dass einige Ziele möglicherweise erst in späteren Iterationen umgesetzt werden konnten. Dennoch haben wir uns bemüht, das Beste aus der Situation zu machen und das Kundenfeedback so effektiv wie möglich in den Projektablauf einzubinden.
 
 == Projektdurchführung
 
 === SE I
 
+Zu Beginn des ersten Semesters Software Engineering lag der Schwerpunkt auf der Aufarbeitung und Analyse des bestehenden Systems. Gleichzeitig haben wir Kontakt mit dem Kunden aufgenommen und in Zusammenarbeit deren Anforderungen ausgewertet. Außerordentlich wichtig waren dabei herauszufinden, weshalb die vorhergehenden Projekte unzureichend für die Nutzung waren.
+
+Innerhalb der Gruppe haben wir Rollen zugeordnet und Kommunikationswege festgelegt. Bei jedem Mitglied wird sichergestellt, dass das Repository eingerichtet wurde und eine einheitliche Entwicklungsumgebung vorhanden ist.
+
+Der Fokus der zweiten Iteration erstreckte sich über das Erstellen diverser Modelle, beispielsweise das Domänenmodell, dass sehr wichtig für die Darstellung des Zusammenhanges unserer Datenbankstruktur ist. In Verbindung dazu verfassten wir das Architecture Notebook und die systemweiten Anforderungen. Um dem Kunden eine visuelle Abbildung des Prototyps zu präsentieren, nutzten wir vor allem Wireframes. Wir haben eine Vielzahl an Wireframes erstellt, da wir mit diesen am besten dem Kunden den Sachverhalt erklären konnten.
+
+Nach Weihnachten haben wir bereits angefangen das erste Use-Case, den Log-out Button zu implementieren. Wir wählten das Use-Case mit dem geringsten Aufwand, um schnell erste Erfolgserlebnisse zu sehen. Während der direkten Konfrontation mit dem vorhandenen Code ist uns bewusst geworden, dass eine unzureichende Dokumentation Folgen für die restliche Implementierung im kommenden Semester haben wird. Um weitere Auswirkungen zu vermeiden, verwerfen wir kurzer Handkurzerhand die bestehende Risikoliste und befassten uns von Grund auf neu mit dem Thema Risikomanagement.
+
+
 === SE II
 
 ==== Start in das Neue Semester (Datum ergänzen)
+
+Am Anfang des zweiten Semesters hat unser Projektleiter Max Listner das Team verlassen, da er dieses Modul nur ein Semester lang belegte.  Auf diese Veränderung waren wir allerdings vorbereitet und die stellvertretende Projektleiterin Marlene Pannoscha übernahm die Führung.
+
+Es wurde gemeinschaftlich beschlossen, dass die iterative Vorgehensweise in Zweiwochen Sprints, die realistischste und effektivste Methode für den Arbeitsrhythmus der Gruppe ist. Dieser Ablauf funktionierte über die ersten beiden Zyklen zufrieden stellend, jedoch schwand danach langsam die Motivation und das Projekt stand für eine Iteration still.  Innerhalb des Fachaustausches Projektmanagement kamen wir mit anderen Kommilitonen in den Dialog über deren ähnliche Organisationsprobleme. Beruhend auf deren Empfehlungen haben wir wöchentliche Meetings in Präsenz eingeführt, sind von Whats App als unser Hauptkommunikationsmedium weg und haben die Möglichkeiten von Discord und GitHub effizienter genutzt.
+
+Zwischen März und April haben wir die Elaboration Phase mit einem zweistündigen Meeting beendet, in dem wir die Website mit all ihren Funktionalitäten noch einmal durchgegangen sind. Dort mussten wir feststellen, dass der Implementierungsaufwand der Use-Cases deutlich höher als geschätzt war. Die größeren Probleme stellten allerdings die bereits bestehenden Funktionalitäten der Vorgruppe, von Speicherkomplikationen bis hin zu voneinander abhängigen Funktionen, die es so eigentlich gar nicht geben sollte. Parallel dazu war der Einarbeitungsaufwand aus der Inception Phase unzureichend. Schließlich mussten wir unsere Herangehensweise an die Einteilung der Github Issues ändern, indem wir detailliert an einzelne Probleme herangehen und vor allem auch im Tandemprinzip arbeiteten.  Mit dieser Erkenntnis überarbeiteten wir die Risikoliste und schätzten teilweise den doppelten Aufwand, um noch genügend Puffer für eventuell unerwartete Zwischenfälle zu haben.
+
+
+Wichtigsten Ziele:
+
+* Filterfunktion für Partnerhochschulen zu implementieren
+* Verwalten von Ansprechpersonen von Hochschulen
+* Benutzeroberfläche intuitiver gestalten
+* Aktuelle Version von der Datenbank einbinden
+
+*Filterfunktion für Partnerhochschulen*
+
+Die Filterfunktion für Partnerhochschulen ist unter dem Reiter Hochschule realisiert und kann über sechs verschiedene Dropdown Menüs genutzt werden. Diese Funktion ist das Hauptwerkzeug für die Mitarbeiter, um Verträge zu pflegen. Aber nicht alle Filter werden benötigt, teilweise funktionieren sie auch nicht richtig. Nach Absprache welche Filter relevant sind, wurde die Filterfunktion auf Partnerhochschulen, Verträge und Länder beschränkt. Aus theoretischer Sicht können die übrigen drei Dropdown Menüs einfach entfernt werden. Jedoch als wir ein Menü entfernt haben funktionierten alle Filter nicht mehr. Eine simple Aufgabe stellte sich, als äußert komplex heraus und forderte eine neue Einschätzung des Aufwands. Schlussendlich haben wir Teile von diesem Problem mit in die folgende Iteration übernommen.
+
+*Verwalten von Ansprechpersonen von Hochschulen*
+
+Zu jeder Partnerhochschule gibt es eine Ansprechperson, die mit deren Angaben vermerkt ist. In der aktuellen Access Datenbank sind diese Daten nicht gepflegt, es gibt keine einheitlichen Bezeichnungen und alte Ansprechpersonen werden nicht gelöscht, sondern schlichtweg umbenannt. Unsere Aufgabe war es für dieses Problem eine einheitliche Lösung zu finden. In Absprache mit dem Kunden sollte es Felder geben, in die man den vollständigen Namen sowie die zugehörige E-Mail-Adresse eintragen kann. Nach dem diese Aufgabe implementiert wurde haben wir dazu das Feedback eingeholt. In der Zwischenzeit hat die Stabsstelle Internationales sich intern neu organisiert und ein eigenständiges Verwaltungsprinzip für die Ansprechpersonen aufgestellt. Somit lautete das Feedback, dass die Angaben zur Ansprechperson nicht mehr notwendig seien. Daraufhin entfernten wir all unsere implementierten Fortschritt.
+
+*Benutzeroberfläche anpassen*
+
+Die bestehende Benutzeroberfläche hat eine Vielzahl von versteckten Funktionalitäten und ist generell, ohne eine Einführung schwer zu bedienen. Dies war der Hauptkritikpunkt der Stabsstelle an dem Vorgängermodell. Wir haben grundlegende und vor allem einheitliche Gestaltungsentscheidungen getroffen und diese mit Hilfe von Wireframes dem Kunden präsentiert. Der Einsatz von Pop-Up Fenstern wurde hierbei als besonders effektiv empfunden, da die Mitarbeiter sich nicht durch aufeinanderfolgende Fenster navigieren wollten. Es soll ein einfach verständliches, intuitives und präzises Design der Webseite entstehen.
+
+*Datenbankstand aktualisieren*
+
+Relativ zu Beginn des zweiten Semesters sprach unser Coach Herr Ringel bereits das Deployment an, denn die Version der Datenbank die aktuell hinterlegt war, ist auf dem Stand von November 2022.  Wenn die Datenbank nicht auf einem aktuelleren Stand ist, bietet dies ein großes Risiko für die Inbetriebnahme, deshalb war es wichtig sich so schnell wie möglich darum zu kümmern.
+
+Damals hat die ehemalige Studentische Hilfskraft Raphael Rezaii-Djafari, sich mit dieser Thematik befasst. Wir kontaktierten die neue SHK, glücklicherweise ist er ein direkter Kommilitone und konnte uns zeitnah einen Snapshot der Datenbank zur Verfügung stellen.
+
+*Retrospektive*
+
+Wir haben uns für diese Iteration zwei scheinbar einfache Use-Cases ausgesucht, um schnelle Ergebnisse zu sehen. Im Endeffekt stellte sich die Filterfunktion komplexer als gedacht heraus und da die Verwaltung zur Ansprechperson komplett entfallen ist, war diese Iteration hinsichtlich der Implementierung nicht zufrieden stellend. Die Erkenntnis, dass der gewünschte Fortschritt doch nicht so schnell eintritt wie gedacht wirkte sich in Form von Entmutigung auf das Team aus und durch die vielen Feiertage schwand die Motivation. Erst nach ungefähr zwei Wochen Pause trafen wir die Entscheidung zusätzliche Planungsinstanzen zu nutzen, um das Projekt voranzutreiben. Uns wurde bewusst, dass es zeitlich knapp werden könnte.
+
+
+
 ==== Vorbereitung auf die Entwicklung
+//Dilara 
+
 ==== Entwicklung vorantreiben
+
 ==== System abschließen um Kunden Inkremente präsentieren
 ==== Systemoptimierung und Übergabe an den Kunden
 
@@ -62,8 +152,73 @@ Die genauere Mitgliedereinteilung zu einem jeweiligem Gebiet befindet sich in de
 === Reflexion der Teammitglieder
 
 ==== Marlene Pannoscha
+//Text
+
+<<<
+
 ==== Dilara Eichler
+
+Im Rahmen des zweisemestrigen Software Engineering Projekts erhielt ich erstmals die Möglichkeit, umfassende Einblicke in die Webentwicklung und Projektarbeit zu erlangen.
+
+Unsere Projektgruppe hatte das Ziel, das bestehende Webbenutzerinterface für das Datenbankverwaltungssystem der Stabstelle Internationales funktional zu erweitern. Ein besonderer Fokus lag zudem auf der Verbesserung der Benutzerfreundlichkeit der Website.
+
+Zu Beginn hatten wir große Schwierigkeiten bei der Einarbeitung in das Projekt, da keines unserer Teammitglieder umfangreiche Kenntnisse in den Programmiersprachen besaß. Das Projekt erschien groß und einschüchternd. Zusätzlich wurde schnell klar, dass die bisherige Dokumentation des Projekts kaum Antworten auf unsere Fragen bieten konnte. Diese Herausforderung wurde verstärkt, als die Studentische Hilfskraft nach dem ersten Semester uns verlies. Die Anforderung, unsere Arbeit ordnungsgemäß zu dokumentieren, wurde schnell zu einer der wichtigsten Prioritäten des Projekts.
+
+Trotz dieser Herausforderungen gelang es uns schnell, ein besseres Verständnis für das Projekt zu erlangen. Wesentlich hierbei waren Gespräche mit dem Kunden, den Teammitgliedern und unserem Coach. Der Kundenkontakt bestand durchgehend, war jedoch zu Beginn des Projekts nicht sehr zielführend. Mir war zuvor nicht bewusst, wie unterschiedlich die Meinungen zur Benutzerfreundlichkeit einer Website sein können. Viele unserer Ideen wurden verworfen. Wir erkannten frühzeitig, dass regelmäßige Präsentationen der Website-Weiterentwicklungen gegenüber des Kundens, essenziell für den Projektfortschritt seien.
+
+Die Teamarbeit funktionierte hingegen sehr gut. Wir trafen uns regelmäßig und niemand wurde mit offenen Fragen in bestimmten Bereichen allein gelassen. Der kontinuierliche Fortschritt der Website motivierte uns gegenseitig und jeder aus unserem Team erlangte Einblicke in verschiedene Bereiche. 
+
+Abschließend bin ich äußerst dankbar, Teil dieses Projekts gewesen zu sein. Ich freue mich besonders über das erlangte Wissen in den Programmiersprachen HTML, CSS und JavaScript.
+
+<<<
+
 ==== Alessandra Ruff
-==== Robert Pfund
-==== Karl Langer
+Die Arbeit an unserem Software-Engineering-Projekt hat mein Wissen und meine Fähigkeiten in verschiedenen Bereichen erweitert. Das Projekt konzentrierte sich auf die Erstellung von einer Web-Benutzeroberfläche für die Datenbankverwaltung der Stabstelle Internationales an der HTW Dresden. Um einen sinnvollen Beitrag zu leisten, musste ich mich intensiv mit verschiedenen Technologien der Webprogrammierung und des Datenbankmanagements auseinandersetzen.
+
+Eine der größten Herausforderungen bestand darin, mich in den Code der Vorgängergruppe einzuarbeiten. Als jemand mit wenig Erfahrung in Webtechnologien wurde ich in eine immense Menge unbekannten Codes geworfen, den ich verstehen und in seine Wirkung und Zusammenhänge einordnen musste. Ich musste mich also mit Frontend-Technologien wie HTML, CSS und JavaScript vertraut machen, um die Benutzeroberfläche zu gestalten, ohne dabei die dahinterliegenden Funktionen zu beeinträchtigen.
+
+Neben den technischen Herausforderungen stellte das Projektmanagement, insbesondere die Dokumentation meiner eigenen Entwicklungsschritte am Anfang, eine größere Hürde dar. Mit der Zeit erkannte ich jedoch, wie wichtig diese Schritte sind, um erfolgreich an einem Projekt zu arbeiten. Die Dokumentation gewährleistete, dass ich mich an Deadlines hielt, einen kontinuierlichen Arbeitsfluss aufrechterhielt und klar strukturierte Ziele festlegte, um nicht vom eigentlichen Thema abzukommen.
+
+Der wohl wichtigste Aspekt unseres Projekts war die Interaktion mit dem Kunden. Da unsere Aufgaben größtenteils optische Anpassungen des Interfaces betrafen, war es sehr wichtig, regelmäßige Treffen mit dem Kunden abzuhalten, um Änderungen und Fortschritte abzustimmen. Mir wurde klar, wie herausfordernd es ist, eine effektive und regelmäßige Kundeninteraktion aufrechtzuerhalten, da sie von zahlreichen externen Einflüssen beeinflusst wird, die nicht immer vorhersehbar sind. Es kam häufig vor, dass neue Anforderungen oder sogar widersprüchliche Erwartungen in kurzer Zeit geäußert wurden, die nicht immer im geforderten Ausmaß umsetzbar waren. Dies erforderte von uns ein hohes Maß an Flexibilität, um angemessen darauf reagieren zu können.
+
+Die Arbeit an diesem Software-Engineering-Projekt hat mir wertvolle Erkenntnisse und wertvolle Erfahrungen beschert. Es war anfangs eine Herausforderung, mit wenig Erfahrung in Webtechnologien in das Projekt einzusteigen und mich in den vorhandenen Code einzuarbeiten.  Durch diese Herausforderungen konnte ich jedoch mein technisches Wissen und meine Fähigkeiten in kurzer Zeit erheblich erweitern. Ich habe gelernt wie wichtig ein strukturiertes Projektmanagement und eine klare Dokumentation sind, um effizient und erfolgreich zu arbeiten. Die Kundeninteraktion stellte sich als entscheidender Faktor heraus, der Flexibilität und Kommunikationsfähigkeiten erforderte, um den Anforderungen und Erwartungen des Kunden gerecht zu werden. Insgesamt war dieses Projekt eine äußerst wertvolle Erfahrung, die mein Verständnis für Softwareentwicklung und Zusammenarbeit vertieft hat und mich für zukünftige Projekte weiter stärkt.
+
+
+<<<
+
 ==== Kevin Freund
+Bereits im ersten Semester war mir klar, dass dieses Projekt hier wesentlich anspruchsvoller, aufwendiger und komplexer sein würde als kleinere Schulprojekte von damals. Es war für mich das erste Mal ein Projekt solcher Größe zu bewältigen, welches so langwierig und von so vielen Faktoren abhängig ist.
+
+Ursprünglich war ich für die Analyse und den Entwurf zuständig. Es war interessant zu sehen, wie viel Aspekte vor der eigentlichen Erstellung eines Systems beachtet und ausführlich behandelt werden müssen und wie vielseitig Anforderungen sein können, sei es funktional oder nicht funktional. Hier habe ich gelernt, wie wichtig doch die regelmäßige Kommunikation mit dem Kunden ist, wie oft und schnell sich dessen Anforderungen ändern können, dass dieser sich selbst manchmal noch unsicher darüber ist was genau er eigentlich haben möchte und wie anstrengend er doch manchmal sein kann. Die womöglich größte Herausforderung und Lehre des ersten Projektsemesters war es aber, sich in ein bestehendes System, das unserer Vorgängergruppe, hineinzufinden, dessen Aufbau zu begreifen und Inhalt zu verstehen. Um im Verlauf des Projektes effektiv mitarbeiten zu können, habe ich mich über die Programmiersprachen HTML und JavaScript informiert, was mir definitiv noch nützlich sein dürfte. +
+Im Zuge des zweiten Semesters war ich sowohl im Projektmanagement als auch in der Implementierung tätig. Anfangs war beides zugegebenermaßen fordernd und teilweise frustrierend, einerseits die Planung und ausführliche Dokumentation von allem bzw. dem regelmäßigen Überschauen, ob alles stimmt als auch die Instandhaltung der Risikoliste, andererseits die Überarbeitung und Erweiterung des Systems. Letzteres zeigte mir aber deutlich, dass nicht alles sofort funktionieren kann, dass man immer wieder neue Ansätze probieren sollte, dass manches wesentlich komplexer ist und mehr benötigt, dass man vor allem manche Probleme nicht immer alleine bewältigen kann, sondern eher nur im Team. 
+
+Hierbei bin ich wirklich froh darüber, ein so offenes und hilfsbereites Team gehabt zu haben, welches jederzeit für einen da war und niemanden alleine lies. Die Terminplanung war glücklicherweise relativ einfach, wodurch es uns möglich war regelmäßige Teammeetings abhalten zu können. Außerdem gefiel mir, dass, wenn man eine Aufgabe hatte, man sich für diese auch Zeit nahm und man sich um deren Erledigung stets bemühte, was einerseits die Zuverlässigkeit und das Vertrauen untereinander stärkte, andererseits die Arbeit wesentlich angenehmer und kontinuierlicher machte. Es war auch schön mitanzusehen, wie das System Stück für Stück erweitert wurde und mehr Funktionen bot, worauf wir als Team wirklich stolz sein konnten.
+
+Im Kontrast dazu war die Kommunikation mit dem Kunden an manchen Stellen eher frustrierend, sei es die öfters aufkommende Unzuverlässigkeit oder der regelmäßige Ansturm an neuen Anforderungen bzw. Ausfall bereits implementierter Anforderungen, was die Arbeitsweise und den Zeitplan gelegentlich aus der Bahn brachte. Hierbei würde ich in Zukunft dem Kunden gegenüber mehr Deadlines setzen, mehr Druck und Konditionen ansetzen, um allen eine angenehmere Arbeitsatmosphäre bieten zu können. Des Weiteren war die Dokumentation an manchen Stellen etwas sehr aufwendig und übertrieben war. Nichtsdestotrotz sollte diese niemals unterschätzt werden, besonders deren Bedeutsamkeit für Anwender und kommende Entwickler, die dieses System warten oder überarbeiten.
+
+Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, die ich hier gesammelt habe, froh bin.
+
+<<<
+
+==== Robert Pfund
+Mit dem Beginn des zweiten Semester des Moduls Software Engineering startete unser Team zuversichtlich in die Construction Phase. Aus den ersten beiden Phasen wussten ich bereits, dass unser Projekt einen, für uns, enormen Umfang hat. Somit war klar, dass ein großes Engagement nötig ist, um alle Auftragsbestandteile unserer Aufgabe zu erfüllen. Die drei Punkte, die mir am Anfang des Semesters am meisten Sorgen machten, waren die Komplexität unseres Projekts, Unsichterheit über die Technologien auf meiner Seite und die "Unerfahrenheit" unseres Kunden als "Kunden".
+
+Der nun bereits im dritten Jahr bearbeitete Code hatte ein großes Ausmaß angenommen. Dies sprengte meinen Erfahrungshorizont in Hinsicht auf die Komplexität und Verpflechtungen zwischen den Modulen. Angesichts dieser Problematik blieb uns, in unserer Absicht das Projekt erfolgreich abzuschließen, nur die Option den Code in kleinsten Schritten manuell nachzuvollziehen. Im Rahmen dessen wurde mir schnell die Bedeutung von guter Dokumentation klar. Auch wenn unsere Vorgänger den Code im Generellen dokumentiert hatten, war es schwierig ihn zu verfolgen - denn gerade Verweise zwischen den Quelltextdateien waren leider nur wenig dokumentiert. So musste ich vor allem anfangs manuell Klassen beziehungsweise Methoden suchen um die größeren Abhängigkeiten nachzuvollziehen. Doch gerade das ist eine Herausforderung, von der es nicht unwahrscheinlich ist, dass sie mich auch in meinem späteren Arbeitsleben ereilen wird. Von daher denke ich, dass es gut ist "so früh" mit fremden und teils unübersichtlichem Code in Berührung zu kommen.
+
+Das vermeintliche Problem des fehlenden Wissens bezüglich der Technologien stellte sich bald als zwar nicht unbegründet, aber auch nicht eintretend heraus. Zum Beginn des Projekts, im 3. Fachsemester hatten ich kaum Ahnung von den eingesetzten Technologien. Ein wenig HTML war mir bekannt, aber gerade mit Javascript hatte ich bis zu diesem Zeitpunkt noch nicht zu tun. Auch die genutzte REST-API war mir nur vom Konzept her bekannt, ohne genaue Vorstellungen, wie eine Umsetzung tatsächlich aussehen würde. Gerade in diesem zweiten Semester gab es allerdings deutliche Erkenntnisfortschritte, als  wirklich aktiv am Code gearbeitet wurde. Neben diesem selbstständigen Lernen, half auch, dass wir im Moduls Internet Technologien I nun die theoretischen Grundlagen zu HTML, CSS und Javascript vermittelt bekamen.
+
+Auch mit unserem Kunden kamen wir mit der Zeit immer besser klar. Das kam vor allem durch ein besseres Verständnis für diesen. Vergleich "Autofahrer" - der Kunde möchte nicht wissen, wie jedes Detail funktioniert, sondern möchte ein funktionsfähiges Auto, in dem er sich wohlfühlt. Zwar gab es einige Änderungswünsche, die erst nach Abschluss unserer Elaboration Phase an uns weitergegeben wurden, aber nach Manier des agilen Software Engineerings, haben wir auch diese so gut es ging berücksichtigt. Das unser Kunde damit zumindest ein wenig das Klische des "typischen Kunden" erfüllt, bringt für die Zukunft Erkenntnisse über den Umgang mit solchen.
+
+Ein großes Lob muss dabei an meine Gruppe gehen. Durch die beiden Semester hindurch haben wir gut zusammengearbeitet. Seit Anfang an waren alle aufgeschlossen und bereit an dem Projekt zu arbeiten und zu lernen. Über den Verlauf des Jahres hat sich unsere gemeinsames Verständnis und unsere gemeinsame Arbeitsweise nur gesteigert. Besonders die Projektleitung ist hier hervorzuheben, welche gerade im zweiten Semester sehr auf unsere Vorschläge zu möglichen Optimierungen eingegangen ist und so unser Vorgehen deutlich effizienter gemacht hat. In einem so respektvollen und netten Team zu arbeiten, war eine sehr positive Erfahrung.
+
+
+<<<
+
+==== Karl Langer
+//Text
+
+<<<
+
+
+// <<< zum Seitenbruch
+

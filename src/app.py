@@ -112,8 +112,12 @@ def load_filter(name):
 @login_required
 def pdf_load(name, id):
 
-    if name == 'fac_report':
-        return createpdf.make_pdf(id)
+    if name == 'fac_report' and id:
+        return createpdf.make_faculty_pdf(id)
+    elif name == 'erasmus_report':
+        return createpdf.make_erasmus_pdf()
+    elif name == 'institute_report':
+        return createpdf.make_institute_pdf()
 
 
 @app.route('/delete/<object_type>', methods=['POST'])

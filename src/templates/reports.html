@@ -51,6 +51,9 @@
 
     <!-- Drop-Down-Menü zur Auswahl der Fakultät für fakultätsspezifische Verträge -->
     <div class="my-content" id="my-content">
+
+        <br>
+        <h4>Bericht zu Fakultät:</h4>
         <form action="">
 
             <label for="select-faculty-for-report"></label>
@@ -61,13 +64,19 @@
             
             </select>
 
-            <button type="button" class="btn btn-outline-primary me-3" id="create_pdf_button" style="margin-top: 10px; left: 50%; transform:translateX(-50%);" onclick="createPDF($('#select-faculty-for-report').val())">Erzeugen</button>
+            <button type="button" class="btn btn-outline-primary me-3" id="create_pdf_button" style="margin-top: 10px; left: 50%; transform:translateX(-50%);" onclick="createPDF('pdf1',$('#select-faculty-for-report').val())">Erzeugen</button>
         
 
         </form>
         <ul id="report-list">
             
         </ul>
+
+        <h4>Bericht zu Erasmus-Partnerschaft</h4>
+        <button class="btn btn-outline-primary me-3" id="create_pdf2_button" onclick="createPDF('pdf2', 'x')">Erzeugen</button>
+
+        <h4>Bericht zu Hochschulpartnerschaften</h4>
+        <button class="btn btn-outline-primary me-3" id="create_pdf3_button" onclick="createPDF('pdf3', 'x')">Erzeugen</button>
     </div>
 
     
