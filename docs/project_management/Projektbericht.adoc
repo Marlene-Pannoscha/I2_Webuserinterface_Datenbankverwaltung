@@ -107,8 +107,8 @@ Zwischen März und April haben wir die Elaboration Phase mit einem zweistündige
 
 Wichtigsten Ziele:
 
-* Filterfunktion für Partnerhochschulen zu implementieren
-* Verwalten von Ansprechpersonen von Hochschulen
+* Filterfunktion für Partnerhochschulen zu implementieren (UC02)
+* Verwalten von Ansprechpersonen von Hochschulen(UC04)
 * Benutzeroberfläche intuitiver gestalten
 * Aktuelle Version von der Datenbank einbinden
 
