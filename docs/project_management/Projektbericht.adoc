@@ -152,7 +152,22 @@ Wir haben uns für diese Iteration zwei scheinbar einfache Use-Cases ausgesucht,
 === Reflexion der Teammitglieder
 
 ==== Marlene Pannoscha
-//Text
+
+Im ersten Semester erklärte ich mich bereit als stellvertretende Projektleiterin zu fungieren und in der Analyse meinen Beitrag zum Projekt zu leisten. Meine Fähigkeiten, was Implementierung anbetrifft, empfand ich als unzureichend, um hier einen konstruktiven Input zu erbringen.
+
+Meine projektorganisatorischen Aufgaben waren im Wintersemester eher beschränkt.  Sie bezogen sich auf die Pflege des direkten Kundenkontaktes, Protokolle zu verfassen und die gemeinsame Projektbetreuung mit Max Listner.
+Am Ende des ersten Semesters wurde mir langsam bewusst, dass ich die Projektleitung übernehmen muss. Von Projektleiter Tätigkeiten hatte ich kaum bis keine Erfahrung noch Ahnung, deshalb versuchte ich mich an Max zu orientieren. Im Laufe der ersten Wochen fand ich jedoch schnell meinen eigenen Rhythmus und verknüpfte bestehende Strukturen mit meinen Entscheidungen.
+
+Die größte Herausforderung stellten für mich die Meetings, normalerweise halte ich mich im Hintergrund dies war nicht mehr möglich. Ich musste Initiative ergreifen und für meine Teammitglieder sprechen. Gerade zu Beginn des zweiten Semesters viel mir dies noch sehr schwer, aber teilweise hatte ich keine andere Wahl.  Da ich keinen meiner Mitglieder enttäuschen wollte, bemühte ich mich alle immer miteinzubinden. Dankbar versuchte ich jegliche Kritik und Verbesserungsvorschläge anzunehmen, da diese mir als Hilfestellung dienten meine Arbeitsweise zu optimieren.
+
+Ich möchte mich bei allen Teammitgliedern bedanken für deren Unterstützung, Vertrauen und offene Kommunikation mit mir und untereinander. Einen besonderen Dank geht an Kevin Freund, er übernahm auf meine Anfrage, ob er als neuer Stellvertreter agieren kann, wie selbstverständlich diese Aufgabe.
+
+Durch die lobenswerte Eigeninitiative der Gruppenmitglieder konnten wir ein angenehmes Arbeitsklima schaffen sowie eine gute Dynamik innerhalb des Teams.  Ich bin sehr froh über diese Entwicklung, denn durch den Austausch mit Kommilitonen aus anderen Teams ist mir bewusst geworden, dass dies nicht selbstverständlich ist.  Als Projektleiter konnte ich zusehen, wie sich das ganze Team parallel zu dem Projekt mitentwickelte und daran gewachsen ist.
+
+Einem guten Kontakt zum Kunden aufzubauen war mir sehr wichtig. Da der Fokus auf einer intuitiven Benutzeroberfläche lag, haben wir regelmäßig das Gespräch mit Frau Terpe gesucht und jegliche Veränderungen mit Ihr besprochen. Allerdings führte dies zu ständig neuen Anforderungen, deshalb mussten wir mit Frau Terpe ein transparentes Gespräch führen, welche Punkte realistisch sind und welche nur Nice-To-Have sind.  Die Terminfindung mit dem Kunden stellte sich ebenfalls als eine Herausforderung dar, denn Frau Terpe war oftmals wochenlang außerhaus.
+
+Schlussendlich bin ich zufrieden mich für die Rolle Projektleitung entschieden zu haben. Das Projekt gab mir die Möglichkeit wertvolle Erkenntnisse in Themengebieten zu gewinnen, die ich vielleicht nie so bekommen hätte.
+
 
 <<<
 
