@@ -42,6 +42,20 @@ Während des gesamten Projektes erfolgte die Kommunikation innerhalb der Gruppe 
 Die Kommunikation mit Coach und Kunden hingegen erfolgte rein per E-Mail, zur Terminfindung, und in Präsenz, um hier einerseits offene Fragen zu klären und Feedback einzuholen, andererseits zur Planung des weiteren Projektverlaufs und Entgegennahme verschiedener Kundenwünsche.
 
 === Dokumentation und eigesetzte Tools
+Für unser Github Repository haben wir die vorgefertigte OpenUP Ordnerstruktur aus dem vorherigen Semester übernommen. Um unsere Dokumentation zu erstellen, haben wir uns für AsciiDoc entschieden, da es unseren Anforderungen entsprach und eine einfache Handhabung ermöglichte.
+
+Als Entwicklungsumgebung haben wir uns zunächst unsicher gefühlt, aber letztendlich haben wir uns für Visual Studio Code entschieden. Dies war eine Software, die wir bereits kannten und die Einarbeitungszeit deswegen war minimal. Wir haben den integrierten Development Server von Visual Studio Code genutzt, um unsere Software lokal testen und ausführen zu können.
+Um auf die virtuelle Maschine zuzugreifen, die als unser bereitgestellter Entwicklungsserver diente, haben wir WinSCP und PuTTY verwendet. Mit Hilfe dieser Tools konnten wir unseren Webserver ausführen und den neusten Stand der Software zu bestimmten Zeiten für den Kunden verfügbar machen.
+
+Für die Vorbereitung unserer Meetings haben wir ein Google Docs Template erstellt. In diesem konnten die Teammitglieder relevante Punkte ergänzen, die während des Meetings besprochen werden sollten. Somit wurde sichergestellt, dass das gesamte Team an der Planung teilhat.
+
+Die Aufgabenverteilung haben wir hauptsächlich über Github Issues vorgenommen. Dieses Tool war eines der wichtigsten während unseres Projekts, da es uns ermöglichte, den Fortschritt und den Stand unserer Aufgaben übersichtlich zu verfolgen. Es erleichterte auch die Kommunikation innerhalb des Teams, da wir dort Informationen und Updates austauschen konnten.
+
+Zusätzlich haben wir einen Discord Server genutzt, der uns sowohl für die Kommunikation als auch für die Dokumentation des Fortschritts diente. Auf unserem Discord Server hatten wir einen dedizierten Kanal namens "Updates", in dem wir regelmäßig den aktuellen Stand und die erzielten Fortschritte festgehalten haben. Dies ermöglichte allen Teammitgliedern einen schnellen Überblick über den Projektstatus.
+
+Des Weiteren haben wir den Discord Server genutzt, um wichtige Termine und Deadlines zu dokumentieren. Wir haben einen speziellen Kanal eingerichtet, in dem wir alle relevanten Informationen zu anstehenden Meetings, Abgabefristen und anderen wichtigen Ereignissen festgehalten haben. Dadurch hatten wir jederzeit einen zentralen Ort, an dem wir diese Informationen abrufen konnten.
+
+Der Discord Server war auch ein praktisches Kommunikationsmittel für Fragen und den Austausch von wichtigen Informationen. Teammitglieder konnten jederzeit Fragen stellen oder aufkommende Probleme diskutieren und alle relevanten Informationen blieben an einem leicht zugänglichen Ort gespeichert.
 
 === Way of Working
 Unsere Arbeitsweise basiert auf dem Ansatz des Open Unified Process. Wir haben einen iterativen Ansatz gewählt, um den Fortschritt kontinuierlich zu überwachen und Anpassungen vorzunehmen. Um einen effizienten Arbeitsablauf zu gewährleisten, betrug die Iterationsdauer zwei Wochen.
