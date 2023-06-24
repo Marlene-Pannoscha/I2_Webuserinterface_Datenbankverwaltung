@@ -124,6 +124,7 @@ def institute_querry_to_html(report, data):
   pdfkit.from_string(result, output_path=naming, configuration=config)
 
   return send_from_directory(workingdir, naming)
+  return result
 
 def erasmus_querry_to_html(report, data):
   '''
