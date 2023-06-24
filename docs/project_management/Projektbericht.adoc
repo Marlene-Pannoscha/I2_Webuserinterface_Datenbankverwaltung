@@ -123,7 +123,10 @@ Wir haben uns für diese Iteration zwei scheinbar einfache Use-Cases ausgesucht,
 
 
 ==== Vorbereitung auf die Entwicklung
+//Dilara 
+
 ==== Entwicklung vorantreiben
+
 ==== System abschließen um Kunden Inkremente präsentieren
 ==== Systemoptimierung und Übergabe an den Kunden
 
@@ -140,7 +143,18 @@ Wir haben uns für diese Iteration zwei scheinbar einfache Use-Cases ausgesucht,
 <<<
 
 ==== Dilara Eichler
-//Text
+
+Im Rahmen des zweisemestrigen Software Engineering Projekts erhielt ich erstmals die Möglichkeit, umfassende Einblicke in die Webentwicklung und Projektarbeit zu erlangen.
+
+Unsere Projektgruppe hatte das Ziel, das bestehende Webbenutzerinterface für das Datenbankverwaltungssystem der Stabstelle Internationales funktional zu erweitern. Ein besonderer Fokus lag zudem auf der Verbesserung der Benutzerfreundlichkeit der Website.
+
+Zu Beginn hatten wir große Schwierigkeiten bei der Einarbeitung in das Projekt, da keines unserer Teammitglieder umfangreiche Kenntnisse in den Programmiersprachen besaß. Das Projekt erschien groß und einschüchternd. Zusätzlich wurde schnell klar, dass die bisherige Dokumentation des Projekts kaum Antworten auf unsere Fragen bieten konnte. Diese Herausforderung wurde verstärkt, als die Studentische Hilfskraft nach dem ersten Semester uns verlies. Die Anforderung, unsere Arbeit ordnungsgemäß zu dokumentieren, wurde schnell zu einer der wichtigsten Prioritäten des Projekts.
+
+Trotz dieser Herausforderungen gelang es uns schnell, ein besseres Verständnis für das Projekt zu erlangen. Wesentlich hierbei waren Gespräche mit dem Kunden, den Teammitgliedern und unserem Coach. Der Kundenkontakt bestand durchgehend, war jedoch zu Beginn des Projekts nicht sehr zielführend. Mir war zuvor nicht bewusst, wie unterschiedlich die Meinungen zur Benutzerfreundlichkeit einer Website sein können. Viele unserer Ideen wurden verworfen. Wir erkannten frühzeitig, dass regelmäßige Präsentationen der Website-Weiterentwicklungen gegenüber des Kundens, essenziell für den Projektfortschritt seien.
+
+Die Teamarbeit funktionierte hingegen sehr gut. Wir trafen uns regelmäßig und niemand wurde mit offenen Fragen in bestimmten Bereichen allein gelassen. Der kontinuierliche Fortschritt der Website motivierte uns gegenseitig und jeder aus unserem Team erlangte Einblicke in verschiedene Bereiche. 
+
+Abschließend bin ich äußerst dankbar, Teil dieses Projekts gewesen zu sein. Ich freue mich besonders über das erlangte Wissen in den Programmiersprachen HTML, CSS und JavaScript.
 
 <<<
 
