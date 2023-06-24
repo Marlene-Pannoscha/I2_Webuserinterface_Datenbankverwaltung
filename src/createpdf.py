@@ -38,12 +38,22 @@ def make_institute_pdf():
   
   return institute_querry_to_html(institute_report_data, institute_data)
 
+def check_for_folder(path):
+  '''
+  Prüft, ob der Ordner "Berichte" existiert, ansonsten wird dieser angelegt. [bei Löschen der pdf-Dateien in dem Ordner scheint dieser ebenfalls gelöscht wurden zu sein | oder GitHub löscht leere Ordner??]
+  '''
+  return (os.path.isdir(path))
+    
+
 
 def institute_querry_to_html(report, data):
   '''
   Erzeugt eine html-Seite, gefüllt mit den Daten zu Hochschulpartnerschaften, wandelt diese in eine pdf-Datei um, welche dann zurückgegeben wird
   '''
   
+  if not (check_for_folder("reports")):
+    os.makedirs("reports")
+    
   start = f"""
     <html> 
     <head>
@@ -119,17 +129,21 @@ def institute_querry_to_html(report, data):
   result += closingtag
 
   naming = f"reports/InstituteReport_" + get_date_as_str() + ".pdf"
+    
 
   workingdir = os.path.abspath(os.getcwd())
   pdfkit.from_string(result, output_path=naming, configuration=config)
 
   return send_from_directory(workingdir, naming)
-  return result
 
 def erasmus_querry_to_html(report, data):
   '''
   Erzeugt eine html-Seite, gefüllt mit den Daten zu Erasmuspartnerschaften, wandelt diese in eine pdf-Datei um, welche dann zurückgegeben wird
-  '''          
+  '''
+  
+  if not (check_for_folder("reports")):
+    os.makedirs("reports")
+            
   start = f"""
     <html>
       <head>
@@ -205,6 +219,7 @@ def erasmus_querry_to_html(report, data):
   result += closingtag
 
   naming = f"reports/ErasmusReport_" + get_date_as_str() + ".pdf"
+  
 
   workingdir = os.path.abspath(os.getcwd())
   pdfkit.from_string(result, output_path=naming, configuration=config)
@@ -216,6 +231,10 @@ def faculty_querry_to_html(data, faculty_id):
   '''
   Erzeugt eine html-Seite, gefüllt mit den Daten zur Fakutltät mit facutlty_id, wandelt diese in eine pdf-Datei um, welche dann zurückgegeben wird
   '''  
+  
+  if not (check_for_folder("reports")):
+    os.makedirs("reports")
+    
   start = f"""
     <html>
       <head>
