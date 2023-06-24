@@ -116,7 +116,9 @@ Relativ zu Beginn des zweiten Semesters sprach unser Coach Herr Ringel bereits d
 
 Damals hat die ehemalige Studentische Hilfskraft Raphael Rezaii-Djafari, sich mit dieser Thematik befasst. Wir kontaktierten die neue SHK, glücklicherweise ist er ein direkter Kommilitone und konnte uns zeitnah einen Snapshot der Datenbank zur Verfügung stellen.
 
-*Ergebnisse*
+*Retrospektive*
+
+Wir haben uns für diese Iteration zwei scheinbar einfache Use-Cases ausgesucht, um schnelle Ergebnisse zu sehen. Im Endeffekt stellte sich die Filterfunktion komplexer als gedacht heraus und da die Verwaltung zur Ansprechperson komplett entfallen ist, war diese Iteration hinsichtlich der Implementierung nicht zufrieden stellend. Die Erkenntnis, dass der gewünschte Fortschritt doch nicht so schnell eintritt wie gedacht wirkte sich in Form von Entmutigung auf das Team aus und durch die vielen Feiertage schwand die Motivation. Erst nach ungefähr zwei Wochen Pause trafen wir die Entscheidung zusätzliche Planungsinstanzen zu nutzen, um das Projekt voranzutreiben. Uns wurde bewusst, dass es zeitlich knapp werden könnte.
 
 
 
