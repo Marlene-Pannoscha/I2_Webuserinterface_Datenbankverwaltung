@@ -13,6 +13,7 @@ function loadCountry(){
 
     trackCountryChange(); 
     countryButtonFunctionality();
+    insertCountry();
 
 }
 
