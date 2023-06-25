@@ -135,9 +135,43 @@ Damals hat die ehemalige Studentische Hilfskraft Raphael Rezaii-Djafari, sich mi
 Wir haben uns für diese Iteration zwei scheinbar einfache Use-Cases ausgesucht, um schnelle Ergebnisse zu sehen. Im Endeffekt stellte sich die Filterfunktion komplexer als gedacht heraus und da die Verwaltung zur Ansprechperson komplett entfallen ist, war diese Iteration hinsichtlich der Implementierung nicht zufrieden stellend. Die Erkenntnis, dass der gewünschte Fortschritt doch nicht so schnell eintritt wie gedacht wirkte sich in Form von Entmutigung auf das Team aus und durch die vielen Feiertage schwand die Motivation. Erst nach ungefähr zwei Wochen Pause trafen wir die Entscheidung zusätzliche Planungsinstanzen zu nutzen, um das Projekt voranzutreiben. Uns wurde bewusst, dass es zeitlich knapp werden könnte.
 
 
+==== Vorbereitung auf die Entwicklung 
 
-==== Vorbereitung auf die Entwicklung
-//Dilara 
+Wichtigsten Ziele:
+
+
+* Filterung nach Land, Hochschule und Vertragstyp (UC02)
+* Möglichkeit vom Anlegen und Bearbeiten von Fakultäten
+* Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson)
+* Entwicklerdokumentation
+** Softwaredokumentation
+** Designdokumentation
+
+*Filterung nach Land, Hochschule und Vertragstyp (UC02)*
+
+Hierbei handelt es sich um die Übernahme eines Zieles der vorherigen Iteration. Aufgrund von Seiteneffekten im Code, konnte dieses Ziel nicht vollständig in der letzten Iteration gelöst werden. Es forderte eine genauere Einarbeitung in jede einzelne Filterungsfunktion um die Probleme zu finden. Dies erforderte einen erheblichen Zeitaufwand, konnte jedoch im Laufe dieser Iteration erfolgreich bewältigt werden. 
+
+*Verwaltung der Fakultäten*
+
+Nach Absprache mit der Stabstelle Internationales wurde erstmals die Anforderung formuliert, die Fakultäten im Reiter Fakultäten genauer zu verwalten. Dies beinhaltet das Anlegen neuer Fakultäten sowie das Bearbeiten der bestehenden Fakultäten. Darüber hinaus wurde der Wunsch von Merge-Möglichkeiten verschiedener Fakultäten gestellt. Dadurch sollten die Daten ausgewählter Fakultäten zusammengeführt werden, durch Eingabe des Nutzers. 
+
+*Anlegen neuer Partnerhochschulen*
+
+Unter dem Reiter Hochschule sind die wichtigsten Funktionalitäten zu finden, darunter auch das Anlegen der Partnerhochschulen. Da bisherige Inhalte der Ansprechperson, als unnötig empfunden wurden, mussten die Inhalte des Fensters geändert werden. Des Weiteren musste das Layout überarbeitet werden um eine verbesserte Benutzererfahrung zu gewährleisten.
+
+*Entwicklerdokumentation, Softwaredokumentation und Designdokumentation*
+
+Die verschiedenen Dokumentationen wurden im Zuge des Projektfortschrittes überarbeitet. Es ist weiterhin erforderlich, eine kontinuierliche Aktualisierung durchzuführen, um eine effiziente Arbeitsweise in den kommenden Iterationen sicher zu stellen. Die Dokumentation der Entwicklerdokumentation (Software) konnte aufgrund des zeitlichen Aspektes nicht korrekt ausgeführt werden, diese muss in der kommenden Iteration verbessert und ausgebaut werden.
+
+*Retrospektive*
+
+Erfolgreich implementiert wurde die Filterfunktion, der Reiter Berichte, der Button Land hinzufügen und die Möglichkeit zum Bearbeiten und Anlegen von Fakultäten. Nicht notwendige Informationen zur Ansprechperson innerhalb der Fenster wurden entfernt und das Layout angepasst.
+Erfolgreich dokumentiert wurde die Entwicklerdokumentation (Design) allerdings musste die Entwicklerdokumentation (Software) in die nächste Iteration übernommen werden.
+Nach einem weiteren Treffen mit dem Kunden, wurden der bisherige Stand der Website als gut befunden. 
+Es kristallisierten sich jedoch sehr viele neuen Anforderungen heraus. Einer dieser Anforderungen war die Merge-Möglichkeit für Fakultäten. Eine stark abweichende funktionale Anforderung, welche wir in Anbetracht von fehlender Wichtigkeit und folgenden Redundanzen auslagerten. Eine völlig neue Funktionalität, die Erstellung von Berichten, muss in den Fortlaufenden Iterationen noch implementiert werden. Nach Abschluss der Iteration stand das Team vor einer umfangreichen Liste neuer Anforderungen und Überarbeitungen.
+
+
+
 
 ==== Entwicklung vorantreiben
 
