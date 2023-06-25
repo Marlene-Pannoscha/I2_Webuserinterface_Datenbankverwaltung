@@ -110,7 +110,6 @@ Wichtigsten Ziele:
 * Filterfunktion für Partnerhochschulen zu implementieren (UC02)
 * Verwalten von Ansprechpersonen von Hochschulen(UC04)
 * Benutzeroberfläche intuitiver gestalten
-* Aktuelle Version von der Datenbank einbinden
 
 *Filterfunktion für Partnerhochschulen*
 
@@ -123,12 +122,6 @@ Zu jeder Partnerhochschule gibt es eine Ansprechperson, die mit deren Angaben ve
 *Benutzeroberfläche anpassen*
 
 Die bestehende Benutzeroberfläche hat eine Vielzahl von versteckten Funktionalitäten und ist generell, ohne eine Einführung schwer zu bedienen. Dies war der Hauptkritikpunkt der Stabsstelle an dem Vorgängermodell. Wir haben grundlegende und vor allem einheitliche Gestaltungsentscheidungen getroffen und diese mit Hilfe von Wireframes dem Kunden präsentiert. Der Einsatz von Pop-Up Fenstern wurde hierbei als besonders effektiv empfunden, da die Mitarbeiter sich nicht durch aufeinanderfolgende Fenster navigieren wollten. Es soll ein einfach verständliches, intuitives und präzises Design der Webseite entstehen.
-
-*Datenbankstand aktualisieren*
-
-Relativ zu Beginn des zweiten Semesters sprach unser Coach Herr Ringel bereits das Deployment an, denn die Version der Datenbank die aktuell hinterlegt war, ist auf dem Stand von November 2022.  Wenn die Datenbank nicht auf einem aktuelleren Stand ist, bietet dies ein großes Risiko für die Inbetriebnahme, deshalb war es wichtig sich so schnell wie möglich darum zu kümmern.
-
-Damals hat die ehemalige Studentische Hilfskraft Raphael Rezaii-Djafari, sich mit dieser Thematik befasst. Wir kontaktierten die neue SHK, glücklicherweise ist er ein direkter Kommilitone und konnte uns zeitnah einen Snapshot der Datenbank zur Verfügung stellen.
 
 *Retrospektive*
 
@@ -165,7 +158,7 @@ Die verschiedenen Dokumentationen wurden im Zuge des Projektfortschrittes übera
 
 *Retrospektive*
 
-Erfolgreich implementiert wurde die Filterfunktion, der Reiter Berichte, der Button Land hinzufügen und die Möglichkeit zum Bearbeiten und Anlegen von Fakultäten. Nicht notwendige Informationen zur Ansprechperson innerhalb der Fenster wurden entfernt und das Layout angepasst.
+Erfolgreich implementiert wurde die Filterfunktion, der Reiter Berichte und der Button Land hinzufügen. Nicht notwendige Informationen zur Ansprechperson innerhalb der Fenster wurden entfernt und das Layout angepasst.
 Erfolgreich dokumentiert wurde die Entwicklerdokumentation (Design) allerdings musste die Entwicklerdokumentation (Software) in die nächste Iteration übernommen werden.
 Nach einem weiteren Treffen mit dem Kunden, wurden der bisherige Stand der Website als gut befunden. 
 Es kristallisierten sich jedoch sehr viele neuen Anforderungen heraus. Einer dieser Anforderungen war die Merge-Möglichkeit für Fakultäten. Eine stark abweichende funktionale Anforderung, welche wir in Anbetracht von fehlender Wichtigkeit und folgenden Redundanzen auslagerten. Eine völlig neue Funktionalität, die Erstellung von Berichten, muss in den Fortlaufenden Iterationen noch implementiert werden. Nach Abschluss der Iteration stand das Team vor einer umfangreichen Liste neuer Anforderungen und Überarbeitungen.
@@ -174,6 +167,43 @@ Es kristallisierten sich jedoch sehr viele neuen Anforderungen heraus. Einer die
 
 
 ==== Entwicklung vorantreiben
+
+Wichtigsten Ziele:
+
+* Aktualisierung der Datenbestände
+* neue, kurzfristige Designwünsche der Stabstelle implementieren
+* Berichte erzeugen (UC06)
+* Erweiterung der Reiter
+* Beginn des Projektberichtes
+
+*Datenbestände aktualisieren*
+
+Relativ zu Beginn des zweiten Semesters sprach unser Coach Herr Ringel bereits das Deployment an, denn die Version der Datenbank die aktuell hinterlegt war, ist auf dem Stand von November 2022. Wenn die Datenbank nicht auf einem aktuelleren Stand ist, bietet dies ein großes Risiko für die Inbetriebnahme, deshalb war es wichtig sich so schnell wie möglich darum zu kümmern. Zudem sei es ein guter Test gewesen, um das Verhalten des Systems auf neue Datenbestände zu prüfen.
+
+Damals hat die ehemalige Studentische Hilfskraft Raphael Rezaii-Djafari, sich mit dieser Thematik befasst. Wir kontaktierten die neue SHK, glücklicherweise ist er ein direkter Kommilitone und konnte uns zeitnah einen Snapshot der Datenbank zur Verfügung stellen, welchen wir erfolgreich in das System einbinden konnten.
+
+*Designänderungen*
+
+Im Laufe der 4. Iteration äußerte unser Kunde, Frau Terpe, während eines Meetings kurzfristig diverse, kleinere Designwünsche. Daraufhin wurden umgehend Änderungen an den Fenstern vorgenommen, sei es Format, Symbole oder das Layout.
+
+*Berichte erzeugen*
+
+Die ausgeschriebene Aufgabenstellung des Projektes bezog sich auf das Erzeugen von Berichten über Partnerschaften. Im Laufe der 4. Iteration, nachdem mehrere Bedingungen derer Erzeugung nun abgeschlossen waren, begannen wir mit diesem Aufgabenkomplex. Hierbei wurde erstmals der Reiter "Berichte" erstellt und diverse Möglichkeiten und Entwürfe konzipiert, welche im Zuge der kommenden Iterationen erweitert werden sollten.
+
+*Erweiterung der Reiter um neue Funktionen*
+
+Die Funtkionserweiterung des Reiters "Fakultäten" wurde umgesetzt, hierbei wurde die Funktion des Anlegen neuer Fakultäten hinzugefügt, wobei im Nachhinein auf das Mergen verzichtet wurde. Ebenso wurde der Reiter "Länder" um die Funktion des Anlegens neuer Länder erweitert.
+
+*Beginn des Projektbericht*
+
+Da die Zeit mehr und mehr voranschreitete wurde uns zu Beginn der 5. Iteration schnell bewusst, dass wir schnellstens den Projektbericht anfangen mussten, zumindest erst einmal stückweise. Erstmal haben wir die jeweiligen Reflexionen der Teammitglieder geplant, das eigentlich Outline sollte in kommenden Iterationen folgen.
+
+*Retrospektive*
+
+In dieser Phase des Projektes sind uns eine Menge Erfolge gelungen, seien sie groß oder klein. So wurden unter anderem Aufgabenkomplexe, wie das Einfügen neuer Datenbestände gemeistert, aber auch kommende Funktionen, wie das Erstellen von Berichten, vorbereitet, welche in den folgenden Iterationen dringends erweitert und ausgebaut werden mussten. +
+Wir mussten aber auch, durch damals noch nicht wirklich vorhanden Priorisierung von Aufgabenkomplexen, zeitliche Rückschläge einstecken, durch Designänderungen mancher Fenster, was uns wertvolles Ressourcen, besonders Zeit, kostete. Darausfolgend, und in Absprache mit unserem Coach, haben wir beschlossen die ursprünglich gestellen Anforderungen zu priorisieren und neue, kommende Anforderungen als "Nice-to-have" einzustufen, welche gegen Ende, sollte noch Zeit dafür übrig sein, bearbeitet werden sollten. +
+
+Des Weiteren wurden mit der Zeit langsam mehr und mehr Ressourcen in die Dokumentation gesteckt. Die Entwicklerdokumentation (Software) wurde erweitert, während Abnahmeprotokoll, Projektbericht und Anwender- sowie Betriebsdokumentation mehr und mehr im Fokus standen.
 
 ==== System abschließen um Kunden Inkremente präsentieren
 
@@ -190,7 +220,7 @@ Wichtigsten Ziele:
 
 *Berichte erzeugen*
 
-Die ausgeschriebene Aufgabenstellung des Projektes bezog sich auf das Erzeugen von Berichten über Partnerschaften. In Zusammenarbeit mit Frau Terpe identifizierten wir die drei wichtigsten Berichte, Fakultät intern, Erasmus-Partnerschaften und Hochschulpartnerschaften. Zu diesem Zeitpunkt hatten wir die aktuelle Version der Datenbank bereits eingeführt, es forderte besondere Aufmerksamkeit die neuen Bezeichnungen der Tabellen und IDs von nun an zu nutzen.
+Da in der vorherigen Iteration nun der Reiter vorbereitet war, konnten wir uns der eigentlichen Aufgabe, der Berichterzeugung, widmen. In Zusammenarbeit mit Frau Terpe identifizierten wir die drei wichtigsten Berichte, Fakultät intern, Erasmus-Partnerschaften und Hochschulpartnerschaften. Zu diesem Zeitpunkt hatten wir die aktuelle Version der Datenbank bereits eingeführt, es forderte besondere Aufmerksamkeit die neuen Bezeichnungen der Tabellen und IDs von nun an zu nutzen.
 
 *Löschen von Daten mit Passwortabfrage*
 
@@ -217,7 +247,7 @@ Wir habe eine Vielzahl an Test- Cases entwickelt und in diesen die Arbeitsweise 
 
 *Retrospektive*
 
-In der letzten Iteration vor dem Projektende bestandkeine Möglichkeit Frau Terpe unsere Inkremente zu präsentieren, da Sie außer Haus ist. Daher haben wir zuvor jede unserer Anpassungen ausführlich erklärt und Ihr Feedback als Richtlinie genutzt. Die Möglichkeit spontan und ohne Termin Fragen zu stellen hat hinsichtlich der eher schwierigeren Terminfindung uns viel genutzt.
+In der letzten Iteration vor dem Projektende bestand keine Möglichkeit Frau Terpe unsere Inkremente zu präsentieren, da Sie außer Haus ist. Daher haben wir zuvor jede unserer Anpassungen ausführlich erklärt und Ihr Feedback als Richtlinie genutzt. Die Möglichkeit spontan und ohne Termin Fragen zu stellen hat hinsichtlich der eher schwierigeren Terminfindung uns viel genutzt.
 
 ==== Systemoptimierung und Übergabe an den Kunden
 
