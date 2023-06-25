@@ -7,8 +7,72 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 
-== Test Cases
 
-=== Test Case 01
+== Funktionale Tests
 
-=== Test Case 02
+=== Test Case 01: Anlegen von Hochschulpartnerschaften
+
+[cols="1,4"]
+|===
+| Beschreibung | Die Arbeitskraft gibt ihre Anmeldedaten zur Authentifizierung ein, um Zugang zum System zu erlangen.
+| Vorbedingungen und benötigte Daten a| - die Arbeitskraft ist als Nutzer angelegt
+- valide Anmeldedaten (DB-Nutzername + zugehöriges Kennwort) eingegeben
+| Ablauf (automatisiert) a|. Das Skript öffnet ein Browser-Fenster und geht auf führt innerhalb des Netzwerkes der HTW auf die Login-Seite des Prototyps
+. Es erfolgt die automatisierte Eingabe der Zugangsdaten (Nutzername + Passwort)
+. Das Skript betätigt den Login Button
+. Nach erfolgreichem Login wird geprüft, ob sich das Skript auf der gewünschten Seite befindet und der Login-Vorgang somit erfolgreich war
+| Nachbedingung a| - eine aktive Session wird gestartet
+- die Arbeitskraft erhält Zugang zur Verwaltungsanwendung
+|===
+
+=== Test Case 02: Generierung von Berichten
+
+[cols="1,4"]
+
+=== Test Case 03: Bearbeiten von Hochschulpartnerschaften
+
+[cols="1,4"]
+|===
+| Beschreibung | Die Arbeitskraft wählt die Bearbeitungsfunktion an einer bereits vorhandenen Partnerhochschule, um einzelne Attribute zu verändern.
+| Vorbedingungen und benötigte Daten a| - Die Arbeitskraft hat sich erfolgreich angemeldet
+- Die zu bearbeitende Hochschulpartnerschaft stellt einen bereits existenten Datensatz dar
+| Ablauf (automatisiert) a|. Das Skript öffnet ein Browser-Fenster und geht auf führt innerhalb des Netzwerkes der HTW auf die Login-Seite des Prototyps
+. Es erfolgt die automatisierte Eingabe der Zugangsdaten (Nutzername + Passwort)
+. Das Skript betätigt den Login Button
+. Nach erfolgreichem Login wird geprüft, ob sich das Skript auf der gewünschten Seite befindet
+. Es wird der Bearbeiten-Button eines bestehenden, im Skript definierten Datensatzes betätigt
+. Das Skript trägt in jedes Feld der Eingabemaske definierte Werte ein, die nicht dem Default entsprechen
+. Der Speichern Button wird betätigt
+. Der bearbeitete Datensatz erscheint nun in der Übersicht
+| Nachbedingung a| Attribute des Datensatzes der Hochschulpartnerschaft wurden erfolgreich sowie fehlerfrei aktualisiert. 
+|===
+
+=== Test Case 04: Anlegen neuer Länder
+
+[cols="1,4"]
+
+
+=== Test Case 05: Mentoren bearbeiten und speichern
+
+[cols="1,4"]
+|===
+| Beschreibung | Eine Arbeitskraft will Änderungen am Datensatz der Mentoren vornehmen
+| Vorbedingungen und benötigte Daten a| - Die Daten wurden korrekt und vollständig übertragen
+-  Datenänderungen werden unverzüglich in das System übernommen
+- direkter Datenbankzugriff um Änderungen vorzunehmen
+| Ablauf (manuell) a|. Das Skript öffnet ein Browser-Fenster und geht auf führt innerhalb des Netzwerkes der HTW auf die Login-Seite des Prototyps
+. Es erfolgt die automatisierte Eingabe der Zugangsdaten (Nutzername + Passwort)
+. Das Skript betätigt den Login Button
+. Nach erfolgreichem Login wird geprüft, ob sich das Skript auf der gewünschten Seite befindet
+. In der Headline wird unterm Menüpunkt Themen der Punkt Mentoren ausgewählt
+. Es wird der Bearbeitungs-Button des zu bearbeitenden Datensatzes angeklickt
+. Im Anschluss werden die Default-Werte mit neuen Werten ersetzt
+. Der Speichern-Button wird betätigt
+| Nachbedingung a| Bei erfolgreicher Änderung werden die Daten aus dem Datensatz ersetzt und bei Abfrage erfolgreich angezeigt
+|===
+
+=== Test Case 06: Anlegen von Fakultäten
+
+
+
+== Nicht-funktionale Anforderungen 
