@@ -1,0 +1,102 @@
+include::../_includes/default-attributes.inc.adoc[]
+
+== Einführung
+
+Bei diesem Dokument handelt es sich um eine Anleitung zur Handhabung der Software für die Verwaltung der Partnerhochschulen der HTW Dresden. Alle Schritte zur Erfüllung eines Use Cases, und somit die Durchführung einer Aufgabe mithilfe der Software sind nachfolgend erläutert.
+
+== Systemvorraussetzungen
+
+Um mit der Web-Applikation arbeiten zu können, müssen einige Bedingungen für die Reibungslose Funktion erfüllt sein:
+
+* aktive, stabile Internetverbindung
+* Verbindung mit dem Intranet der Hochschule
+* Nutzen der Internetverbindung der Hochschule oder VPN im Homeoffice
+* installierter Webbrowser (Google Chrome, Brave, Mozilla Firefox, es wird empfohlen stets die aktuellste Version des Browsers zu verwenden)
+
+
+== Use Cases
+=== Use Case: einloggen
+
+Voraussetzung: Nutzung eines Rechners im HTW-Netzwerk oder einer VPN-Verbindung in dieses.
+
+Um sich im System einzuloggen und die Software nutzen zu können, muss der Nutzername in das obere Eingabefeld und das zugehörige Passwort in das untere Eingabefeld eingegeben werden. Danach bestätigen Sie die Eingabe mit einem Klick auf den Button "Login".
+
+Wurden die Login-Daten korrekt eingegeben, werden Sie auf die Startseite weitergeleitet. Falls nicht wird die Eingabe gelöscht und der Vorgang muss mit den korrekten Login-Daten wiederholt werden.
+
+Der Zugang ist nur für Mitarbeitende der Stabsstelle Internationales mit entsprechenden Login-Daten gedacht.
+
+:imagesdir: images
+.Login
+image::Login.png[]
+
+=== Use Case: Partnerhochschulen Anlegen
+
+Zum Anlegen einer Partnerhochschule muss der Button "Partnerhochschule hinzufügen" oben rechts auf der Startseite geklickt werden.
+
+:imagesdir: images
+.Partnerhochschule hinzufügen
+image::Partnerhochschule hinzufügen.png[]
+
+Anschließend öffnet sich eine Eingabemaske, in welcher die entsprechenden Daten zur Hochschule eingetragen werden können. Pflichtfelder sind hierbei rot beschriftet und mit einem * markiert. Nachdem alle Daten eingegeben wurden, können diese mit dem blauen Button "Speichern" in der Datenbank gespeichert werden. Achtung: Die Daten werden erst mit einem Klick auf den "Speichern" Button gespeichert. Wird die Maske vorher geschlossen oder "Abbrechen" gedrückt, gehen die Daten verloren.
+
+:imagesdir: images
+.Partnerhochschule anlegen
+image::Partnerhochschule anlegen.png[]
+
+=== Use-Case 02: Filterung nach nach Land, Hochschule und Vertragsytp
+
+Um nach Land Hochschule oder nach Vertragstyp zu filtern, muss bei den Auswahlferldern ein oder mehrere entsprechende Kriterien ausgewählt werden.
+Durch das drücken von "Zurücksetzen" wird der Filter zurückgesetzt.
+
+:imagesdir: images
+.Hochschulfilter
+image::Hochschulfilter.png[]
+
+:imagesdir: images
+.Hochschulfilter dropdown
+image::Hochschulfilter dropdown.png[]
+
+=== Use-Case 04: Anlegen neuer Verträge
+
+Um einen neuen Vertrag nazulegen, muss zuerst "Neuen Vertreag anlegen" betätigt werden. Anschließend sind alle Pflichtfelder (rot und mit * gekenntzeichnet) und andere beliebige Felder auszufüllen. Achtung: Die Daten werden erst mit einem Klick auf den "Vertrag Speichern" oder "Speichern" gesichert. Wird die Maske vorher geschlossen oder "Abbrechen" gedrückt, gehen die Daten verloren.
+
+:imagesdir: images
+.Vertrag anlegen
+image::Vertrag anlegen.png[]
+
+=== Use-Case: Bearbeiten von Verträgen
+
+Um Verträge bearbeiten zu können, muss dieser ausgewählt werden. Anschließen können Änderungen vorgenommen werden, die durch "Speichern" gesichert werden.
+Achtung: Wird die Maske vorher geschlossen oder "Abbrechen" gedrückt, gehen die Daten verloren.
+
+:imagesdir: images
+.Vertrag bearbeiten
+image::Vertrag bearbeiten.png[]
+
+=== Use-Case 06: Erzeugen von Berichten
+
+Um Berichte zu erzeugen, kann entweder eine Fakultät ausgewählt werden und dann "Erzeugen" betätigt werden oder direkt über "Erzeugen" drücken, um einen Bericht über die Erasmuspartnerschaften oder Hochschulpartnerschaften zu generieren.
+
+:imagesdir: images
+.Bericht erzeugen
+image::Bericht erzeugen.png[]
+
+=== Use-Case 08: Löschen von Datensätzen
+
+Um Datensätze löschen zu können, muss der Benutzer als Administrator angemeldet sein. 
+Zum Löschen einer Hochschule muss im Hauptmenü der Button "Del" rechts neben der entsprechenden Hochschule geklickt werden.
+
+:imagesdir: images
+.löschen
+image::löschen.png[]
+
+Nach dem Drücken von "Del" wird ein Warnfester geöffnet. Nach dem bestätigen durch "OK" wird der Datensatz gelöscht, durch "Abbrechen" kann dies noch verhindert werden.
+
+:imagesdir: images
+.löschen bestätigen
+image::löschen bestätigen.png[]
+
+== Anmerkung
+
+Das Anlegen neuer Datensätze, Löschen oder Bearbeiten von Daten ist wie in den oberen Fällen geschildert durchzuführen.
+
