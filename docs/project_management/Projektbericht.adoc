@@ -190,14 +190,34 @@ Wichtigsten Ziele:
 
 *Berichte erzeugen*
 
+Die ausgeschriebene Aufgabenstellung des Projektes bezog sich auf das Erzeugen von Berichten über Partnerschaften. In Zusammenarbeit mit Frau Terpe identifizierten wir die drei wichtigsten Berichte, Fakultät intern, Erasmus-Partnerschaften und Hochschulpartnerschaften. Zu diesem Zeitpunkt hatten wir die aktuelle Version der Datenbank bereits eingeführt, es forderte besondere Aufmerksamkeit die neuen Bezeichnungen der Tabellen und IDs von nun an zu nutzen.
+
 *Löschen von Daten mit Passwortabfrage*
+
+Das Löschen von Daten ist eine Problematik, die der Stabstelle Internationales besonderes wichtig ist.  In der Vergangenheit haben eine Studentische Hilfskraft sowohl als auch andere Mitarbeiter bedeutende Daten gelöscht. Ab diesem Zeitpunkt wurden kaum noch alte Datensätze gelöscht, da immer noch ein gewisser Respekt davor bestand. Daraufhin implementierten wir eine Unterabfrage, die erscheint, wenn der Löschvorgang betätigt wird. Diese Lösung wurde besonders dankend angenommen.
 
 *Lizenz bestimmen und den Projektbericht Planen*
 
+Die Lizenz haben wir von der Vorgruppe übernommen.
+
+Bei der Planung des Projektberichtes orientierten wir uns an den Vorlagen, die von Herrn Professor Anke zur Verfügung gestellt wurden. Nach der Anfertigung der Outline verteilten wir die einzelnen Gliederungspunkte an die Teammitglieder.
+
 *Schulung der Mitarbeiter der Stabstelle Internationales*
+
+Die Mitarbeiter der Stabstelle haben im vorhergehenden Projekt angemerkt, dass es große Probleme bei der Einarbeitung in die Website gab und dies einer der Hauptgründe war, warum die Inbetriebnahme nicht stattgefunden hat.
+
+In einem Meeting mit Herrn Ringel kam erneut diese Problematik auf, deshalb haben wir uns für eine Schulung des Personals der Stabstelle entschieden. Frau Terpe war dieser Idee ebenfalls sehr angetan und wir vereinbarten einem Termin für die Schulung mit weiteren Mitarbeitern.
+
+Innerhalb der Gruppe trafen wir die entsprechenden Vorbereitungen, ein Konzept für den Ablauf zu erstellen und Formate für die Testdaten zu entwickeln, denn wir unterteilten die Schulung in einen theoretischen und praktischen Teil. Leider musste Frau Terpe den Termin krankheitsbedingt absagen. Wir haben eine Alternative festgelegt, indem wir ein Video aufnehmen und dort die wichtigsten Funktionalitäten erklären beispielsweise, wie ein neuer Vertrag angelegt wird.
+
 
 *Tests*
 
+Wir habe eine Vielzahl an Test- Cases entwickelt und in diesen die Arbeitsweise der Mitarbeiter dargestellt. Das Anlegen und Bearbeiten von Hochschulpartnerschaften sowie das Generieren von Berichten sind tägliche Aufgaben, die nicht nur einzeln, sondern auch parallel ausgeführt werden müssen. Durch Funktionale Tests haben wir alles manuell ausprobiert und überprüft, ob die Daten erfolgreich gespeichert wurden. Abschließend kontrollierten wir, dass Funktionalität und ebenfalls die determinierten systemweiten Anforderungen gewährt wurden.
+
+*Retrospektive*
+
+In der letzten Iteration vor dem Projektende bestandkeine Möglichkeit Frau Terpe unsere Inkremente zu präsentieren, da Sie außer Haus ist. Daher haben wir zuvor jede unserer Anpassungen ausführlich erklärt und Ihr Feedback als Richtlinie genutzt. Die Möglichkeit spontan und ohne Termin Fragen zu stellen hat hinsichtlich der eher schwierigeren Terminfindung uns viel genutzt.
 
 ==== Systemoptimierung und Übergabe an den Kunden
 
