@@ -21,7 +21,14 @@ Vorgehen:
 == JavaScript
 
 Für den JavaScript Quellcode wurde die Dokumentation mittels JSDoc automatisch erzeugt. 
-Diese kann unter https://www.informatik.htw-dresden.de/~s82099/jsdocFiles/index.html abgerufen werden. 
+Diese kann im Verzeichnis "JSDocFiles" als aufgerufen werden:
+
+.1 Aufruf als Datei
+include::../../docs/development/JSDocFiles/index.html[lines=1..1;4..-1,leveloffset=+1]
+
+.2 Manuell mit Download
+Innerhalb des Verzeichnis "JSDocFiles" befindet sich eine ZIP-Datei. +
+Diesen downloaden und dort "index.html" öffnen.
 
 == Python
 
