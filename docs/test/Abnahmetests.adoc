@@ -1,3 +1,6 @@
+= Abnahmetests:{project-name}
+include::../_includes/default-attributes.inc.adoc[]
+
 == Funktionalität
 [%header, cols="4,1,3"]
 |===

@@ -176,6 +176,29 @@ Es kristallisierten sich jedoch sehr viele neuen Anforderungen heraus. Einer die
 ==== Entwicklung vorantreiben
 
 ==== System abschließen um Kunden Inkremente präsentieren
+
+Das Projekt neigt sich mit der Transition Phase dem Ende zu.  Der Schwerpunkt der letzten Iteration lag auf der Vollendung der Use Cases und der abschließenden Bearbeitung der Dokumentation.
+
+Wichtigsten Ziele:
+
+* Berichte erzeugen (UC06)
+* Löschen von Daten mit Passwortabfrage (UC08)
+* Lizenz bestimmen
+* Schulung der Mitarbeiter der Stabstelle  Internationales
+* Planung des Projektberichtes
+* Tests
+
+*Berichte erzeugen*
+
+*Löschen von Daten mit Passwortabfrage*
+
+*Lizenz bestimmen und den Projektbericht Planen*
+
+*Schulung der Mitarbeiter der Stabstelle Internationales*
+
+*Tests*
+
+
 ==== Systemoptimierung und Übergabe an den Kunden
 
 Unser Abnahmegespräch erfolgt am 29. Juni 2023 online über BigBlueButton, da unser Auftraggeber momentan auf Dienstreise ist. Das Vorziehen der Abgabe, um den offiziellen Abgabezeitraum einzuhalten, wurde diskutiert. Das Team hat sich allerdings dagegen entschieden, da dies unsere Bearbeitungszeit um ungefähr zwei Wochen verkürzt hätte - wichtige letzte Anpassungen wären somit nicht möglich gewesen. Die Übergabe unserer Software erfolgt am Wochenende (1. Juli 2023) nach dem Abnahmegespräch. Die Übergabe umfasst die eigentliche Übergabe als Dateien (beziehungsweise Zugang zum GitHub-Repository), die Installation, sowie die Anpassung an die aktiv genutze Datenbank. Damit stellen wir einen bestmöglichen Übergang in die produktive Phase der Software sicher. Darüber hinaus übergeben wir auch Erklärvideos, welche den korrekten Umgang mit der Software zeigen. Diese Lösung wurde erarbeitet nachdem unsere geplante Schulung der Mitarbeitern der SI aufgrund von Krankheit ausfiel.
@@ -185,6 +208,9 @@ Bei der Installation werden wir von der studentischen Hilfskraft (SHK) der SI un
 // Beispiel von Use Cases
 === Softwaresystem
 === Fehlerbehebung
+
+Als wir den Code unserer Vorgänger übernommen haben existierten zwei Grundlegende Fehler, die wir beheben sollten. Zum einen funktionierte das Abmelden auf der Webseite nicht. Zum anderen gab es ein Problem mit der Filterung der Hochschulen. Dort war es nicht möglich nach „Fakultäten“ zu filtern. Beide dieser Fehler wurden behoben, sodass dieses Ziel voll erreicht wurde.
+
 //=== Begründung für das Nichterfüllen von Zielen
 === Reflexion der Teammitglieder
 
