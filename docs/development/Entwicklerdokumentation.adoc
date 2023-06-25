@@ -1,0 +1,51 @@
+= Entwicklerdokumentation zu: {project-name}
+{localtime}
+
+
+
+
+<<<
+
+
+//:docs-architecture: ../docs/architecture
+
+//TODO maybe change back tocleve to 3?
+
+== Einführung
+
+Dieses Dokument beinhaltet alle wichtigen Informationen über den Aufbau, die Wirkungsweise und den Inhalt des Quellcodes für das Projekt Webanwendung zur Verwaltung von Hochschulpartnerschaften. Diese Informationen dienen dazu, die Software zu warten, zu modifizieren oder gegebenenfalls weiterzuentwickeln.
+
+== Architektur
+
+:leveloffset: +1
+
+//:imagesdir:../../docs/architecture/images
+
+include::../../docs/architecture/architecture_notebook.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+:leveloffset: -1
+
+
+== Design
+
+//:leveloffset: +1
+:imagesdir: ../../docs/development/images
+
+include::../../docs/development/design.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+:leveloffset: -1
+
+//== Software Dokumentation
+
+:leveloffset: +1
+:imagesdir: ../../docs/development/images
+include::../../docs/development/Softwaredokumentation.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+:leveloffset: -1
+
+// == Software Dokumentation für JavaScript
+
+// Für den JavaScript Quellcode existiert auch eine mittels JSDoc erzeugte Dokumentation.
+// Diese kann unter https://www2.htw-dresden.de/~aaapartnerhs/jsdoc/ abgerufen werden (im HTW Netz).
+
+// Alternativ wird auch der Ordner `js-software-docs` mitgeliefert. Wenn dieser auf einen Webserver bereitgestellt wird, lässt sich die Dokumentation lesen.
