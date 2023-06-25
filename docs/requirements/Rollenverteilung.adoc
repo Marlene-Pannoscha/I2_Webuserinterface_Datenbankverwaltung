@@ -1,4 +1,4 @@
-== Rollenverteilung: {project-name}
+= Rollenverteilung: {project-name}
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 
