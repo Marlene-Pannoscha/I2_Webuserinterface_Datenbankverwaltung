@@ -282,7 +282,8 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
         'institute': 'new_tbl_institute',
         'agreement': 'new_tbl_mobility_agreement',
         'restriction': 'new_tbl_mobility_agreement_x_course',
-        'faculty': 'new_tbl_faculty'        
+        'faculty': 'new_tbl_faculty',  
+        'country': 'new_tbl_country'      
     } 
     # define all possible tables where a new object could be created
     # create dynamic insert query
