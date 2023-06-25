@@ -176,6 +176,49 @@ Es kristallisierten sich jedoch sehr viele neuen Anforderungen heraus. Einer die
 ==== Entwicklung vorantreiben
 
 ==== System abschließen um Kunden Inkremente präsentieren
+
+Das Projekt neigt sich mit der Transition Phase dem Ende zu.  Der Schwerpunkt der letzten Iteration lag auf der Vollendung der Use Cases und der abschließenden Bearbeitung der Dokumentation.
+
+Wichtigsten Ziele:
+
+* Berichte erzeugen (UC06)
+* Löschen von Daten mit Passwortabfrage (UC08)
+* Lizenz bestimmen
+* Schulung der Mitarbeiter der Stabstelle  Internationales
+* Planung des Projektberichtes
+* Tests
+
+*Berichte erzeugen*
+
+Die ausgeschriebene Aufgabenstellung des Projektes bezog sich auf das Erzeugen von Berichten über Partnerschaften. In Zusammenarbeit mit Frau Terpe identifizierten wir die drei wichtigsten Berichte, Fakultät intern, Erasmus-Partnerschaften und Hochschulpartnerschaften. Zu diesem Zeitpunkt hatten wir die aktuelle Version der Datenbank bereits eingeführt, es forderte besondere Aufmerksamkeit die neuen Bezeichnungen der Tabellen und IDs von nun an zu nutzen.
+
+*Löschen von Daten mit Passwortabfrage*
+
+Das Löschen von Daten ist eine Problematik, die der Stabstelle Internationales besonderes wichtig ist.  In der Vergangenheit haben eine Studentische Hilfskraft sowohl als auch andere Mitarbeiter bedeutende Daten gelöscht. Ab diesem Zeitpunkt wurden kaum noch alte Datensätze gelöscht, da immer noch ein gewisser Respekt davor bestand. Daraufhin implementierten wir eine Unterabfrage, die erscheint, wenn der Löschvorgang betätigt wird. Diese Lösung wurde besonders dankend angenommen.
+
+*Lizenz bestimmen und den Projektbericht Planen*
+
+Die Lizenz haben wir von der Vorgruppe übernommen.
+
+Bei der Planung des Projektberichtes orientierten wir uns an den Vorlagen, die von Herrn Professor Anke zur Verfügung gestellt wurden. Nach der Anfertigung der Outline verteilten wir die einzelnen Gliederungspunkte an die Teammitglieder.
+
+*Schulung der Mitarbeiter der Stabstelle Internationales*
+
+Die Mitarbeiter der Stabstelle haben im vorhergehenden Projekt angemerkt, dass es große Probleme bei der Einarbeitung in die Website gab und dies einer der Hauptgründe war, warum die Inbetriebnahme nicht stattgefunden hat.
+
+In einem Meeting mit Herrn Ringel kam erneut diese Problematik auf, deshalb haben wir uns für eine Schulung des Personals der Stabstelle entschieden. Frau Terpe war dieser Idee ebenfalls sehr angetan und wir vereinbarten einem Termin für die Schulung mit weiteren Mitarbeitern.
+
+Innerhalb der Gruppe trafen wir die entsprechenden Vorbereitungen, ein Konzept für den Ablauf zu erstellen und Formate für die Testdaten zu entwickeln, denn wir unterteilten die Schulung in einen theoretischen und praktischen Teil. Leider musste Frau Terpe den Termin krankheitsbedingt absagen. Wir haben eine Alternative festgelegt, indem wir ein Video aufnehmen und dort die wichtigsten Funktionalitäten erklären beispielsweise, wie ein neuer Vertrag angelegt wird.
+
+
+*Tests*
+
+Wir habe eine Vielzahl an Test- Cases entwickelt und in diesen die Arbeitsweise der Mitarbeiter dargestellt. Das Anlegen und Bearbeiten von Hochschulpartnerschaften sowie das Generieren von Berichten sind tägliche Aufgaben, die nicht nur einzeln, sondern auch parallel ausgeführt werden müssen. Durch Funktionale Tests haben wir alles manuell ausprobiert und überprüft, ob die Daten erfolgreich gespeichert wurden. Abschließend kontrollierten wir, dass Funktionalität und ebenfalls die determinierten systemweiten Anforderungen gewährt wurden.
+
+*Retrospektive*
+
+In der letzten Iteration vor dem Projektende bestandkeine Möglichkeit Frau Terpe unsere Inkremente zu präsentieren, da Sie außer Haus ist. Daher haben wir zuvor jede unserer Anpassungen ausführlich erklärt und Ihr Feedback als Richtlinie genutzt. Die Möglichkeit spontan und ohne Termin Fragen zu stellen hat hinsichtlich der eher schwierigeren Terminfindung uns viel genutzt.
+
 ==== Systemoptimierung und Übergabe an den Kunden
 
 Unser Abnahmegespräch erfolgt am 29. Juni 2023 online über BigBlueButton, da unser Auftraggeber momentan auf Dienstreise ist. Das Vorziehen der Abgabe, um den offiziellen Abgabezeitraum einzuhalten, wurde diskutiert. Das Team hat sich allerdings dagegen entschieden, da dies unsere Bearbeitungszeit um ungefähr zwei Wochen verkürzt hätte - wichtige letzte Anpassungen wären somit nicht möglich gewesen. Die Übergabe unserer Software erfolgt am Wochenende (1. Juli 2023) nach dem Abnahmegespräch. Die Übergabe umfasst die eigentliche Übergabe als Dateien (beziehungsweise Zugang zum GitHub-Repository), die Installation, sowie die Anpassung an die aktiv genutze Datenbank. Damit stellen wir einen bestmöglichen Übergang in die produktive Phase der Software sicher. Darüber hinaus übergeben wir auch Erklärvideos, welche den korrekten Umgang mit der Software zeigen. Diese Lösung wurde erarbeitet nachdem unsere geplante Schulung der Mitarbeitern der SI aufgrund von Krankheit ausfiel.
@@ -185,6 +228,9 @@ Bei der Installation werden wir von der studentischen Hilfskraft (SHK) der SI un
 // Beispiel von Use Cases
 === Softwaresystem
 === Fehlerbehebung
+
+Als wir den Code unserer Vorgänger übernommen haben existierten zwei Grundlegende Fehler, die wir beheben sollten. Zum einen funktionierte das Abmelden auf der Webseite nicht. Zum anderen gab es ein Problem mit der Filterung der Hochschulen. Dort war es nicht möglich nach „Fakultäten“ zu filtern. Beide dieser Fehler wurden behoben, sodass dieses Ziel voll erreicht wurde.
+
 //=== Begründung für das Nichterfüllen von Zielen
 === Reflexion der Teammitglieder
 
