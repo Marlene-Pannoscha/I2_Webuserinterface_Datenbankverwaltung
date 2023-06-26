@@ -13,7 +13,7 @@ include::../_includes/default-attributes.inc.adoc[]
 | TC02: Filtern nach Fakultät | Alessandra | Dilara |  25.04.2023 | erfolgreich | keine 
 | TC03: Anlegen von Hochschulpartnerschaften | Alessandra | Dilara | 16.06.2023 | erfolgreich | keine
 | TC04: Generierung von Berichten | Robert |  |  | erfolgreich | 
-| TC05: Bearbeiten von Hochschulpartnerschaften | |  |  |  | 
+| TC05: Bearbeiten von Hochschulpartnerschaften |Marlene | Marlene | 16.05.2023 |  erfolgreich| keine
 | TC06: Anlegen neuer Länder | Karl |  |  |  | 
 | TC07: Mentoren bearbeiten und speichern | Dilara | Marlene | 19.06.2023 | erfolgreich | keine
 | TC08: Anlegen von Fakultäten | Alessandra | Dilara | 22.06.2023 | erfolgreich | keine
