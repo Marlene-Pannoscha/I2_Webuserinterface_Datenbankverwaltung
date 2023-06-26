@@ -258,7 +258,7 @@ Bei der Installation werden wir von der studentischen Hilfskraft (SHK) der SI un
 
 == Projektergebnisse
 // Beispiel von Use Cases
-== Erfüllung der Ziele
+=== Erfüllung der Ziele
 
 *Use-Case: Log-Out (UC01)*
 
@@ -276,17 +276,22 @@ Dieses angestrebte Ziel wurde erfolgreich erreicht, jedoch erforderte es einen b
 
 *Erzeugen von Berichten (UC06)*
 
+Dieses Ziel wurde erreicht. Zur pdf-Erstellung wurde wkhtmltopdf verwendet. Dabei war die Erstellung eines Strings mit HTML-Inhalt/-Formatierung notwendig.
+
 *Exportieren von Berichten (UC07)*
+
+Dieses Ziel wurde erreicht. Die Speicherung erfolgt, danach wird die gerade abgelegte pdf-Datei "zurückgegeben" beziehungsweise in einem neuen Tab geöffnet.
 
 *Löschen von Datensätzen (UC08)*
 
 *Exterene Informationsabfrage (UC09)*
 
 *Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)*
+Dieses Ziel ist teilweise erreicht. Fakultäten können angelegt werden und in die Datenbank gespeichert werden. Es ist jedoch noch nicht möglich die Fakultätsangaben auf der Webseite zu bearbeiten.
 
-=== Zusätzliche Funktionalitäten
+==== Zusätzliche Funktionalitäten
 
-=== Begründung der Nichterfüllung von einzelnen Zielen
+==== Begründung der Nichterfüllung von einzelnen Zielen
 
 === Fehlerbehebung
 
