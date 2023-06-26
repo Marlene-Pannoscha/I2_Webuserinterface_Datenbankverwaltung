@@ -51,16 +51,16 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Mentoren Suchleiste implementieren | hoch|5 | fertig| / | 1 | Dilara Eichler | | / |
 Mentoren nach Fakultät filtern | hoch | 6 | fertig | / | 1 | Dilara Eichler |  | / |
 Anlegen neuer Universitäten(Partnerhochschulen)(UC05) | hoch | 7 | fertig | / | 1 | Alessandra Ruff | | / |
-Snapshot der Datenbank exportieren und einführen | hoch | 4| ferig |/| 1| Kevin Freund||/|
-Layout der Pop- Up Fenster vereinheitlichen | niedrig | 3 |fertig | / | 2 |Dilara Eichler, Alesasandra Ruff, Kevin Freund |  | / |
+Snapshot der Datenbank exportieren und einführen | hoch | 4| ferig | / | 1 | Kevin Freund| 5 | / |
+Layout der Pop- Up Fenster vereinheitlichen | niedrig | 3 |fertig | / | 2 |Dilara Eichler, Alesasandra Ruff, Kevin Freund | 2 | / |
 Berichte erzeugen (UC06) | hoch | 7| fertig | |1 | Robert Pfund | | / |
-Berichte exportieren (UC07) | hoch | 8 | in Bearbeitung | / | 2 | Robert Pfund | | / |
+Berichte exportieren (UC07) | hoch | 8 | laufend | / | 2 | Robert Pfund | | / |
 Anlegen neuer Verträge (UC04) | hoch | 6 | fertig | / | 1 | Alessandra Ruff | | / |
-Abnahmeprotokoll |mittel | 2 | in Bearbeitung | / | 1 |  Marlene Pannoscha | 1 | 0,5 |
+Abnahmeprotokoll |mittel | 2 | laufend | / | 1 |  Marlene Pannoscha | 1 | 0,5 |
 Schulung | mittel | 5 | abgesagt | Frau Terpe hat den Termin wegen Krankheit abgesagt | 1 | Marlene Pannoscha | nur Vorbereitung | 7 |
 Projektbericht Outline | hoch | 4 | fertig | Ausarbeitung in folgender Iteration | 1 | Marlene Pannoscha | 1 | / |
-Betriebsdokumentation | hoch | 7 | laufend | / | 2 | Karl Langer | | / |
-Anwenderdokumentation | hoch | 8 | laufend | / | 2 | Karl Langer | | / |
+Betriebsdokumentation | hoch | 7 | laufend | / | 2 | Karl Langer | 4 | 4 |
+Anwenderdokumentation | hoch | 8 | laufend | / | 2 | Karl Langer | 4 | 4 |
 |===
 
 
@@ -71,10 +71,11 @@ Anwenderdokumentation | hoch | 8 | laufend | / | 2 | Karl Langer | | / |
 |===
 | Problem | Status | Notizen
 
-| Speichen Mentoren | behoben | Dilara Eichler hat den Fehler behoben |
+| Speichern Mentoren | behoben | Dilara Eichler hat den Fehler behoben |
 Speichern neuer Verträge und Partnerhochschulen | behoben | Alessandra Ruff hat den Fehler behoben |
 Verträge: Hochschulvereinbarung falsche Anzahl bzw doppelte Auflistung |behoben |Alessandra Ruff hat den Fehler behoben |
  Abbrechen Button bei Verträge funktioniert nicht | behoben |Alessandra Ruff hat den Fehler behoben
+| Einbindung der Tabellen in manchen Funktionen | behoben | Kevin Freund hat den Fehler behoben
 |===
 
 
@@ -87,7 +88,7 @@ Verträge: Hochschulvereinbarung falsche Anzahl bzw doppelte Auflistung |behoben
 ** UC05
 ** UC06
 ** UC07
-* inndehalb der Dokumentation großen Fortschritt erkennen
+* innerhalb der Dokumentation großen Fortschritt erkennen
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
@@ -101,13 +102,13 @@ Verträge: Hochschulvereinbarung falsche Anzahl bzw doppelte Auflistung |behoben
 | Projektstatus	| Großer Fortschritt im Vergleich zu vorgehensder Iteration.
 |===
 
-* Beurteilung im Vergleich zu den Zielen und Bewertungskriterien
+.Beurteilung im Vergleich zu den Zielen und Bewertungskriterien
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 
 Die Funktionen bezüglich der Berichte wurden in dieser Iteration vollständig implementiert, da noch Aufgaben aus der vorhergehenden Iteration bestanden. Mentoren können nun per Suchleiste gefunden werden oder per Fakultät filtern. Das Anlegen von neuen Verträgen und Partnerhochschulen ist möglich. Bei Mentoren und Hochschulen gab es Speicherprobleme, die viel Zeit in Anspruch genommen haben aber schlussendlich behoben wurden. Bezüglich der Dokumentation gab es große Fortschritte, dass Abnahmeprotokoll sowie erste Teile des Projekberichtes wurden verfasst. Es war eine Schulung für die Mitarbeiter der Stabsstelle Internationales angesetzt, diese wurde vorbereitet aber schließlich einen Tag vorher durch Frau Terpe kranksheitsbedingt abgesagt. Diese Thematik wird in einem Erklärungsvideo als Anleitung für die Mitarbeiter zu Verfügung gestellt.
 
 Die Use-Cases UC04, UC05, UC06 und UC07 wurden alle realisiert.
 
-* Andere Belange und Abweichungen
+.Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
 Implementierung der Funktionen bezüglich dem Reiter Länder auf kommende Iteration verschoben.

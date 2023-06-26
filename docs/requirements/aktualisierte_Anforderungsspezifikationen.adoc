@@ -1,6 +1,6 @@
 = Aktualisierte Anforderungsspezifikationen : {project-name}
 include::../_includes/default-attributes.inc.adoc[]
-Marlene Pannoscha {localdatetime}
+{localdatetime}
 
 :toc-title: Inhaltsverzeichnis
 :toclevels: 3
@@ -8,9 +8,8 @@ Marlene Pannoscha {localdatetime}
 *Im Nachfolgenden werden alle aktualisierten Spezifikationen aus dem SE1-Beleg in einem Dokument zusammengefasst.*
 
 
-== Domänenmodell
 :leveloffset: +1
-:imagesdir:../requirements/images
+:imagesdir: ../requirements/images
 include::domain_model.adoc[]
 :leveloffset: -1
 

@@ -1,5 +1,4 @@
 = Domain Model: {project-name}
-//Marlene Pannoscha <marlene.pannoscha@stud.htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 //Platzhalter für weitere Dokumenten-Attribute
