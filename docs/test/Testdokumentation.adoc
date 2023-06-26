@@ -1,3 +1,50 @@
 //alle Includes fehlen noch 
+include::../_includes/default-attributes.inc.adoc[]
 
 == Testkonzept 
+
+=== Ausgangslage
+Unsere Software hat eine komplexe und mehrschichtige Architektur. Diese unterteilt sich vor allem in Front- und Backend. Unser Projekt setzt dabei auf eine bereits bestehende, von einem Vorgängerjahrgang bearbeiteten, Software auf. Hauptaugenmerk lag dabei auf graphischen Anpassungen und einigen funktionalen Fehlerbehebungen. Darüber hinaus wurde die Software um den Bereich "Berichte" erweitert.
+
+Folgende Hauptgefahrenstellen hat das Team dabei identifiziert:
+
+[cols="1,3,3"]
+|===
+| Nummer | Gefahrenstelle | Testkonzept
+| 1 |Verbindung zwischen Front- und Backend (REST-API) | POSTMAN
+| 2 | Backend | Unit-, Komponenten-Tests
+| 3 | Frontend | Selenium 
+
+|===
+
+Zu diesen Gefahrenstellen wurden Testkonzepte erarbeitet. Aufgrund von Grund von Zeitmangel war es leider nicht möglich alle Konzepte umzusetzen.
+
+=== Einzelne Betrachtung
+==== Verbindung zwischen Front- und Backend (REST-API)
+Für das Testen der REST-API und somit der Verbindung zwischen Front- und Backend, bietet sich die Verwendung der App POSTMAN an. Mit dieser ist es möglich gezielt REST-Request an Adressen abzusetzen und deren Responses auszuwerten.
+
+Generelles Vorgehen:
+
+* (POSTMAN-App installieren, gegebenenfalls registrieren/anmelden)
+* "Login"
+** POST-Request an IP (ohne Erweiterung, beispielsweise http://141.56.65.252:5000/)
+** In POSTMAN in Reiter "Body" navigieren (und folgende Werte eingeben)
+. "form-data" auswählen
+. die (key-value) Paare: usr: ... und pwd: ... einfügen
+. Request absetzen
+* "Prüfen der REST-Schnittstelle"
+** GET-Request an gewünschte Schnittstelle
+
+==== Backend
+Aufgrund der wenigen Änderungen am Backend wurde vor allem auf eine defensive Programmierung gesetzt. So erfolgen zum Beispiel beim Erzeugen der Berichte die Überprüfung ob der Zielspeicherordner der pdf-Berichtdateien vorhanden sind in einer seperaten Klasse. Diese wird bei jeder Berichterzeugung mit ausgeführt und ausgewertet. Sollte diese Auswertung feststellen, dass der Ordner fehlt, wird ein neuer erstellt um die Speicherung der pdf-Dateien sicherzustellen.
+Wir haben uns für diese Art der Fehlerbehandlung entschieden, da unser Kunde - mit nur wenigen Technologiekenntnissen ausgestattet ist und deshalb ansonsten auf eine SHK angewiesen ist, von der es nicht sicher ist, dass die Stelle zu jeder Zeit besetzt ist.  
+
+==== Frontend
+Für das Testen des Frontends empfehlen wir das Framework Selenium, wie es die letzte Gruppe genutzt hat. Aufgrund der häufig wechselnden Designanforderungen war es uns zeitlich nicht möglich dieses Framework umzusetzen. Wir haben vor allem manuelle Tests angewen sondern nur die Ausarbeitung des nötigen Konzepts.
+
+Generelles Konzept:
+
+* Installation der Browsererweiterung Selenium IDE
+* (Vorbereitung der IDE [Anlegen eines Projektes])
+* Aufzeichnen des Workflows  [ = Eingaben/Auswahl auf Website]
+* über IDE-Menü die aufgezeichneten Tests ausführen
