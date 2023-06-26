@@ -11,7 +11,7 @@ include::../_includes/default-attributes.inc.adoc[]
 |===
 | Meilenstein | Datum
 | Beginn der Iteration | 11.04.2023
-| Abnahme durch SI |
+| Abnahme durch SI | 26.04.2023
 | Ende der Iteration | 25.04.2023
 |===
 
