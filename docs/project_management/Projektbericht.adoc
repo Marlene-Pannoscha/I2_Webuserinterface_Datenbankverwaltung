@@ -1,7 +1,7 @@
 = Projektbericht: {project-name}
 include::../_includes/default-attributes.inc.adoc[]
 :doctype: book
-Marlene Pannoscha, Kevin Freund
+Projektgruppe I2
 
 == Webuserinterface für Datenbankverwaltung (I2)
 
