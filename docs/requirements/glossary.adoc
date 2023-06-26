@@ -66,7 +66,8 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 | Hochschule
 | Hochschulname in Englisch und der nationalen Sprache, sowie die Anschrift, Webadresse und ggf. Erasmuscode
 | String
-a| - Anschrift muss Ort, Postleitzahl, Straßenname und Nummer enthalten
+a| 
+- Anschrift muss Ort, Postleitzahl, Straßenname und Nummer enthalten
 - Webadresse muss Punkt und Top Level Domain enthalten
 - Erasmuscode ist nach Schema: XX XXXXXXX11 aufgebaut (Ländercode in 2 Buchstaben gefolgt von 7 Buchstaben und 2 Zahlen zur Hochschulidentifikation)
 | Partnerhochschule, Universität, Partneruniversität, Partner
@@ -74,7 +75,8 @@ a| - Anschrift muss Ort, Postleitzahl, Straßenname und Nummer enthalten
 | Hochschulvereinbarung
 | Vereinbarungstyp auf Englisch und Deutsch, Gültigkeitsdauer, Anzahl Incomings und Outgoings insgesamt und pro Studienfach, sowie deren maximale Aufenthaltszeit
 | String, Integer
-a| - Gültigkeitsdauer muss "von-bis"-Datum sein
+a|
+- Gültigkeitsdauer muss "von-bis"-Datum sein
 - Aufenthaltsdauer muss in Monaten angegeben werden
 | Hochschulpartnerschaft, Mobility Agreement, Vertrag
 

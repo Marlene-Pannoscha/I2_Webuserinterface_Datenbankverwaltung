@@ -45,7 +45,7 @@ Use-Case: Verwalten von Ansprechpersonen und Fakultäten (UC03)| Ja | |
 Use-Case: Anlegen neuer Verträge (UC04)| Ja | |
 Use-Case: Anlegen neuer Universitäten (UC05)| Ja | |
 Use-Case: Erzeugen von Berichten (UC06)| Ja | |
-Use-Case: Exportieen von Berichten (UC07)| Ja | |
+Use-Case: Exportieren von Berichten (UC07)| Ja | |
 Use-Case: Löschen von Datensätzen (UC08)| Ja | |
 Use-Case: exterene Informationsabfrage (UC09)| Nein | |
 Use-Case: Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)| Ja | |
@@ -115,7 +115,7 @@ NFAS-2: Mögliche Erweiterbarkeit des Systems. Zur Überprüfung wird im Verlauf
 
 Nach der Übergabe des Projektes übernehmen wir keine Gewährleistung. Nach dem 03.07.2023 liegt die Verantwortung für die Nutzung und den Betrieb des Projektes bei dem Auftraggeber.
 
-Der Software-Stand wird am 29.06.2023 durch ... auf den Server übertragen.
+Der Software-Stand wird am 30.06.2023 durch ... auf den Server übertragen.
 
 Das Github Repository wird an die jetzige Studentischehilfskraft Benjamin Kunat übergeben.
 

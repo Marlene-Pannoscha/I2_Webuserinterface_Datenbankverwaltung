@@ -85,7 +85,9 @@ Diese Herausforderung erforderte von uns Flexibilität und die Fähigkeit, auf u
 
 === SE I
 
-Zu Beginn des ersten Semesters Software Engineering lag der Schwerpunkt auf der Aufarbeitung und Analyse des bestehenden Systems. Gleichzeitig haben wir Kontakt mit dem Kunden aufgenommen und in Zusammenarbeit deren Anforderungen ausgewertet. Außerordentlich wichtig waren dabei herauszufinden, weshalb die vorhergehenden Projekte unzureichend für die Nutzung waren.
+Zu Beginn des ersten Semesters Software Engineering lag der Schwerpunkt auf der Aufarbeitung und Analyse der Aufgabenstellung sowie des bestehenden Systems. Gleichzeitig haben wir Kontakt mit dem Kunden aufgenommen und in Zusammenarbeit deren Anforderungen ausgewertet. Außerordentlich wichtig waren dabei herauszufinden, weshalb die vorhergehenden Projekte unzureichend für die Nutzung waren. 
+
+Hierbei standen wir nun aber auch vor der Entscheidung, ob wir jenes bestehende System übernehmen, oder wir ein neues System erstellen. Letzteres hätte den Vorteil, dass wir an keinen bisher verwendeten Sprachen gebunden wären, und möglicherweise eigene, ausgeprägtere Kenntnisse mit einbringen können. Das würde aber wesentlich mehr Zeit in Anspruch nehmen und es käme möglicherweise wieder zu Nachfolgegruppen. Daher entschieden wir uns dafür, dass System unserer Vorgänger zu übernehmen, deren Systematik, Aufbau und Sprache zu analysieren und zu verstehen, und eben jenes System zu erweitern.
 
 Innerhalb der Gruppe haben wir Rollen zugeordnet und Kommunikationswege festgelegt. Bei jedem Mitglied wird sichergestellt, dass das Repository eingerichtet wurde und eine einheitliche Entwicklungsumgebung vorhanden ist.
 
@@ -212,7 +214,7 @@ Das Projekt neigt sich mit der Transition Phase dem Ende zu.  Der Schwerpunkt de
 Wichtigsten Ziele:
 
 * Berichte erzeugen (UC06)
-* Löschen von Daten mit Passwortabfrage (UC08)
+* Löschen von Daten als Super User (UC08)
 * Lizenz bestimmen
 * Schulung der Mitarbeiter der Stabstelle  Internationales
 * Planung des Projektberichtes
@@ -224,7 +226,7 @@ Da in der vorherigen Iteration nun der Reiter vorbereitet war, konnten wir uns d
 
 *Löschen von Daten mit Passwortabfrage*
 
-Das Löschen von Daten ist eine Problematik, die der Stabstelle Internationales besonderes wichtig ist.  In der Vergangenheit haben eine Studentische Hilfskraft sowohl als auch andere Mitarbeiter bedeutende Daten gelöscht. Ab diesem Zeitpunkt wurden kaum noch alte Datensätze gelöscht, da immer noch ein gewisser Respekt davor bestand. Daraufhin implementierten wir eine Unterabfrage, die erscheint, wenn der Löschvorgang betätigt wird. Diese Lösung wurde besonders dankend angenommen.
+Das Löschen von Daten ist eine Problematik, die der Stabstelle Internationales besonderes wichtig ist.  In der Vergangenheit haben eine Studentische Hilfskraft sowohl als auch andere Mitarbeiter bedeutende Daten gelöscht. Ab diesem Zeitpunkt wurden kaum noch alte Datensätze gelöscht, da immer noch ein gewisser Respekt davor bestand. Daraufhin implementierten wir zwei verschiedene Log-Ins. Der Super User hat Löschrechte und der normale Log-In nicht, dies wurde ausdrücklich von dem Kunden gewünscht.
 
 *Lizenz bestimmen und den Projektbericht Planen*
 
@@ -324,7 +326,7 @@ Hierbei bin ich wirklich froh darüber, ein so offenes und hilfsbereites Team ge
 
 Im Kontrast dazu war die Kommunikation mit dem Kunden an manchen Stellen eher frustrierend, sei es die öfters aufkommende Unzuverlässigkeit oder der regelmäßige Ansturm an neuen Anforderungen bzw. Ausfall bereits implementierter Anforderungen, was die Arbeitsweise und den Zeitplan gelegentlich aus der Bahn brachte. Hierbei würde ich in Zukunft dem Kunden gegenüber mehr Deadlines setzen, mehr Druck und Konditionen ansetzen, um allen eine angenehmere Arbeitsatmosphäre bieten zu können. Des Weiteren war die Dokumentation an manchen Stellen etwas sehr aufwendig und übertrieben war. Nichtsdestotrotz sollte diese niemals unterschätzt werden, besonders deren Bedeutsamkeit für Anwender und kommende Entwickler, die dieses System warten oder überarbeiten.
 
-Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, die ich hier gesammelt habe, froh bin.
+Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, seien es menschliche Kompetenzen oder Programmierkenntnisse, die ich hier gesammelt habe, froh bin.
 
 <<<
 
@@ -343,18 +345,18 @@ Ein großes Lob muss dabei an meine Gruppe gehen. Durch die beiden Semester hind
 <<<
 
 ==== Karl Langer
-In unserem ersten Teammeating mit unserem Coach in Softwareingeneering 1 wurden wir gefragt, ob wir schon Erfahrung mit Programmieren in einem Team haben, was wir uns von dem Projekt erhoffen und lernen wollen.
+In unserem ersten Teammeating mit unserem Coach in Softwareingeneering 1 wurden wir gefragt, ob wir schon Erfahrung mit Programmieren (in einem Team haben), was wir uns von dem Projekt erhoffen und lernen wollen.
 In dem Moment konnte ich die Fragen nur mit "ein bisschen c und java Kenntnisse, hauptsächlich alleine arbeitend und, dass ich mich darauf freue, in einer Gruppe an einem Programm mit echten Auftragsteller zu arbeiten".
 
-Doch im ersten Semester lief es ganz anders, als ich es mir Vorgestellt hatte. Wir hatten ein riesiges und koplexes Vorgängerprojekt in einer mir noch unbekannter Programmiersprache. Unsere Aufgabe war es, Wissen anzueignen, um das Vorgängerprojekt zu durchdringen und zu erweitern. Die gegebene Vorgänger Dokumentation half mir dabei auch nur mäßig, weshalb mir klar wurde, warum die Schwerpunkte des Projektes die Dokumentation und sorgfälltigen Vorüberlegungen sind. 
+Doch im ersten Semester lief es ganz anders, als ich es mir vorgestellt hatte. Wir hatten ein riesiges und koplexes Vorgängerprojekt in einer mir noch unbekannter Programmiersprache. Dies sorgte für den Anschein, dass das Projekt nichts werden würde. Unsere Aufgabe war es, Wissen anzueignen, um das Vorgängerprojekt zu durchdringen und zu erweitern. Die gegebene Vorgänger Dokumentation half mir dabei auch nur mäßig, weshalb mir klar wurde, warum die Schwerpunkte des Projektes die Dokumentation und sorgfälltigen Vorüberlegungen sind. 
 
-Im Laufe der Interationsschritte fiel mir das Zusammenarbeiten im Team immer leichter und machte sogar Spaß und motivierte unheimlich. Durch regen Austausch in regelmäßigen Meetings im Team, aber auch mit dem Kunden war das Projekt, wie es in der Anfangsaufgabenstellung beschrieben war, als machbar erscheinbar. Was sehr gut lief, was der Informationsaustausch mit dem Auftragsteller sich doeser Dinge anders Vorstellt als wir oder sich Extras wünscht. desshalb waren regelmäßige Treffen mit dem Kunden essentiell und durch das Sofortfeedback konnten wir auch gut auf die Kundenwünsche eingehen.
+Im Laufe der Interationsschritte fiel mir das Zusammenarbeiten im Team immer leichter und machte sogar Spaß, was sehr motivierte. Durch regen Austausch in regelmäßigen Meetings im Team, aber auch mit dem Kunden erschien das Projekt immer mehr als machbar. Was sehr gut lief, war der Informationsaustausch mit dem Auftragsteller, der sich die Dinge anders vorstellt als wir oder sich Extras wünscht. Deshalb waren regelmäßige Treffen mit dem Kunden essentiell und durch das Sofortfeedback konnten wir auch gut auf die Kundenwünsche eingehen.
 
-Am meisten hat mich aber mein Team begeistert. Wir haben immer gut miteinader kommunziert, waren sehr freundlich miteinadner und es gab auch niemanden, der nichts gemacht hat.
+Am meisten hat mich aber mein Team begeistert. Wir haben immer gut miteinader kommunziert, waren sehr freundlich miteinadner und bei Fragen oder Problemen wurde sofort geholfen.
 
-Zum Ende des Projektes kann ich sagen, dass ich meine Kenntnisse im Implenetieren, aber auch in Aufgabenanalysen auszubauen konnte. Aber auch die Interaktionen untereinader waren eine Erfahrung, die ich als sehr schön wahrgenommen habe.
+Zum Ende des Projektes kann ich sagen, dass ich meine Kenntnisse im praktischen Implenetieren, aber auch in der theoretischen Aufgabenanalysen auszubauen konnte. Aber auch die Interaktionen untereinader im Team waren eine Erfahrung, die ich als sehr schön wahrgenommen habe.
 
-Wenn ich noch einmal in SE 1 starten würde, würde ich mir wünschen, auch einmal ein Projekt von Beginn an aufzubauen. Dort komplett selbstständige Entscheidungen von Anfang an in Bezug auf Programmiersprache und Architektur zu treffen. Hier würde ich das Projekt anhand von Test-Driven-Development entwickeln, damit Nachfolgegruppen durch Tests einen besseren Programmeindruck bekommen und um das Prinzip im Generellen einmal auszuprobieren, da das Testen in diesem Projekt ein bisschen kurz gekommen ist. 
+Wenn ich noch einmal in SE 1 starten würde, würde ich mir wünschen, auch einmal ein Projekt von Beginn an aufzubauen. Hier würde ich das Projekt anhand von Test-Driven-Development entwickeln, damit Nachfolgegruppen durch Tests einen besseren Programmeindruck bekommen und um das Prinzip im Generellen einmal auszuprobieren, da das automatisierte Testen in diesem Projekt ein bisschen kurz gekommen ist. 
 
 
 

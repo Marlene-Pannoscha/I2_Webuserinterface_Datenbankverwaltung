@@ -1,5 +1,4 @@
 = Iteration Plan 03: {project-name}
-
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -35,9 +34,9 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Filtern nach Land, Fakultät und Vertragstyp | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | /
-| Verwalten von Ansprechpersonen von Hochschulen | hoch | 7 | laufend | / | 1 | Robert Pfund, Karl Langer | 5 | /
-| Layout der Fenster anpassen | hoch | 6 | laufend | / | 1 | Alessandra Russ, Kevin Freund | 4 | /
+| Filtern nach Land, Fakultät und Vertragstyp | hoch | 8 | laufend | / | 1 | Dilara Eichler, Alessandra Russ  | 3 | 3
+| Verwalten von Ansprechpersonen von Hochschulen | hoch | 7 | laufend | / | 1 | Robert Pfund, Karl Langer | 5 | 1
+| Layout der Fenster anpassen | hoch | 6 | laufend | / | 1 | Alessandra Russ, Kevin Freund | 4 | 1
 | Snapshot von der Datenbank einbinden| hoch | 5 | fertig | / | 1 | Kevin Freund | 3 | /
 | Essence Kernel Navigator | hoch | 4 | laufend | / | 1 | Marlene Pannoscha | 2 | /
 | Risikoliste überarbeiten | hoch | 3 | fertig | / | 1 | Kevin Freund | 4 | /
@@ -76,7 +75,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 | Assessment Datum | 25.04.2023
 | Teilnehmer | Team I2
-| Projektstatus	|
+| Projektstatus	| Ziele wurden weit bearbeitet, Teile der Dokumentation und Entwicklung werden in der nächsten Iteration fortgeführt
 |===
 
 * Beurteilung im Vergleich zu den Zielen
@@ -84,7 +83,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
 
-//** Die Entwicklung und Implementierung der Use Cases Filterung nach Land, Fakultät noch nicht ganz und Vertragstyp und Verwalten von Ansprechpersonen von Hochschulen wurde erfolgreich abgeschlossen.
+** Die Entwicklung und Implementierung der Use Cases Filterung nach Land, Fakultät noch nicht ganz und Vertragstyp und Verwalten von Ansprechpersonen von Hochschulen wurde erfolgreich abgeschlossen.
 ** Des Weiteren wurde das Layout der einzelnen Fenster auf der Website angepasst.
 ** Der Snapshot von der aktuellen Datenbank von der SI wurde erfasst aber noch nicht implemeniert.
 ** Die Risikoliste und die Dokumentation wurde aufbereitet.
