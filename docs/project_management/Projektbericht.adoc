@@ -5,6 +5,10 @@ Marlene Pannoscha, Kevin Freund
 
 == Webuserinterface für Datenbankverwaltung (I2)
 
+Dieses Dokument ist der Projektbericht des Team I2: Webuserinterface für Datenbankverwaltung. +
+Das Projekt ist Bestandteil der Module Software Engineering I & II, und dient als Simulation einer Softwareentwicklung, welche Vorbereitung, Aufbau/Entwicklung und Übergabe beinhaltet. +
+
+
 == Projektplanung
 
 === Ausgangssituation in SE II
@@ -77,7 +81,7 @@ Unsere Arbeitsweise basiert auf dem Ansatz des Open Unified Process. Wir haben e
 
 Diese Schritte ermöglichen es uns, den Projektablauf strukturiert zu gestalten, Feedback vom Kunden einzuholen und dieses flexibel in die Planung der nächsten Iteration zu übernehmen.
 
-== Kritik am Way of Working
+=== Kritik am Way of Working
 Eine Herausforderung, die sich in unserem Way of Working ergab, war die Abhängigkeit von der Verfügbarkeit des Kunden für das Feedback und die Planung der nächsten Iteration. Obwohl wir bestrebt waren, das Kundenfeedback in die nächste Iteration einzubeziehen, gestaltete sich die Terminfindung schwierig. Dadurch konnten wir nicht immer alle Ziele zu Beginn der Iteration festlegen, da das abschließende Kundenmeeting häufig erst zu einem späteren Zeitpunkt stattfand. Dies führte zu einem nicht immer nahtlosen Übergang in die nächste Iteration.
 Diese Herausforderung erforderte von uns Flexibilität und die Fähigkeit, auf unvorhergesehene Verzögerungen zu reagieren. Wir mussten unsere Planung anpassen und uns darauf einstellen, dass einige Ziele möglicherweise erst in späteren Iterationen umgesetzt werden konnten. Dennoch haben wir uns bemüht, das Beste aus der Situation zu machen und das Kundenfeedback so effektiv wie möglich in den Projektablauf einzubinden.
 
@@ -98,7 +102,7 @@ Nach Weihnachten haben wir bereits angefangen das erste Use-Case, den Log-out Bu
 
 === SE II
 
-==== Start in das Neue Semester (Datum ergänzen)
+==== Start in das Neue Semester (20.03.2023)
 
 Am Anfang des zweiten Semesters hat unser Projektleiter Max Listner das Team verlassen, da er dieses Modul nur ein Semester lang belegte.  Auf diese Veränderung waren wir allerdings vorbereitet und die stellvertretende Projektleiterin Marlene Pannoscha übernahm die Führung.
 
@@ -318,6 +322,8 @@ Auf Anfrage des Kunden haben wir eine Funktionalität implementiert, die zu eine
 Als wir den Code unserer Vorgänger übernommen haben existierten zwei Grundlegende Fehler, die wir beheben sollten. Zum einen funktionierte das Abmelden auf der Webseite nicht. Zum anderen gab es ein Problem mit der Filterung der Hochschulen. Dort war es nicht möglich nach „Fakultäten“ zu filtern. Beide dieser Fehler wurden behoben, sodass dieses Ziel voll erreicht wurde.
 
 
+<<<
+
 === Reflexion der Teammitglieder
 
 ==== Marlene Pannoscha
@@ -373,14 +379,14 @@ Die Arbeit an diesem Software-Engineering-Projekt hat mir wertvolle Erkenntnisse
 ==== Kevin Freund
 Bereits im ersten Semester war mir klar, dass dieses Projekt hier wesentlich anspruchsvoller, aufwendiger und komplexer sein würde als kleinere Schulprojekte von damals. Es war für mich das erste Mal ein Projekt solcher Größe zu bewältigen, welches so langwierig und von so vielen Faktoren abhängig ist.
 
-Ursprünglich war ich für die Analyse und den Entwurf zuständig. Es war interessant zu sehen, wie viel Aspekte vor der eigentlichen Erstellung eines Systems beachtet und ausführlich behandelt werden müssen und wie vielseitig Anforderungen sein können, sei es funktional oder nicht funktional. Hier habe ich gelernt, wie wichtig doch die regelmäßige Kommunikation mit dem Kunden ist, wie oft und schnell sich dessen Anforderungen ändern können, dass dieser sich selbst manchmal noch unsicher darüber ist was genau er eigentlich haben möchte und wie anstrengend er doch manchmal sein kann. Die womöglich größte Herausforderung und Lehre des ersten Projektsemesters war es aber, sich in ein bestehendes System, das unserer Vorgängergruppe, hineinzufinden, dessen Aufbau zu begreifen und Inhalt zu verstehen. Um im Verlauf des Projektes effektiv mitarbeiten zu können, habe ich mich über die Programmiersprachen HTML und JavaScript informiert, was mir definitiv noch nützlich sein dürfte. +
-Im Zuge des zweiten Semesters war ich sowohl im Projektmanagement als auch in der Implementierung tätig. Anfangs war beides zugegebenermaßen fordernd und teilweise frustrierend, einerseits die Planung und ausführliche Dokumentation von allem bzw. dem regelmäßigen Überschauen, ob alles stimmt als auch die Instandhaltung der Risikoliste, andererseits die Überarbeitung und Erweiterung des Systems. Letzteres zeigte mir aber deutlich, dass nicht alles sofort funktionieren kann, dass man immer wieder neue Ansätze probieren sollte, dass manches wesentlich komplexer ist und mehr benötigt, dass man vor allem manche Probleme nicht immer alleine bewältigen kann, sondern eher nur im Team. 
+Ursprünglich war ich für die Analyse und den Entwurf zuständig. Es war interessant zu sehen, wie viel Aspekte vor der eigentlichen Erstellung eines Systems beachtet und behandelt werden müssen und wie vielseitig Anforderungen sein können, sei es funktional oder nicht funktional. Hier habe ich gelernt, wie wichtig die regelmäßige Kommunikation mit dem Kunden ist, wie oft/schnell sich dessen Anforderungen ändern können, und sich dieser selbst manchmal noch unsicher darüber ist was genau er eigentlich haben möchte. Die womöglich größte Herausforderung und Lehre des ersten Projektsemesters war es aber, sich in ein bestehendes System, das unserer Vorgängergruppe, hineinzufinden, dessen Aufbau zu begreifen und Inhalt zu verstehen. Um im Verlauf des Projektes effektiv mitarbeiten zu können, habe ich mich über die Programmiersprachen HTML und JavaScript informiert, was mir definitiv noch nützlich sein dürfte. +
+Im Zuge des zweiten Semesters war ich sowohl im Projektmanagement als auch in der Implementierung tätig. Anfangs war beides zugegebenermaßen fordernd und teilweise frustrierend, einerseits die Planung, ständige Überarbeitung von Dokumenten und die Instandhaltung der Risikoliste, andererseits die Überarbeitung und Erweiterung des Systems. Letzteres zeigte mir aber deutlich, dass nicht alles sofort funktionieren kann, dass man immer wieder neue Ansätze probieren sollte, dass manches wesentlich komplexer ist, dass man vor allem manche Probleme nicht immer alleine bewältigen kann, sondern nur im Team. 
 
 Hierbei bin ich wirklich froh darüber, ein so offenes und hilfsbereites Team gehabt zu haben, welches jederzeit für einen da war und niemanden alleine lies. Die Terminplanung war glücklicherweise relativ einfach, wodurch es uns möglich war regelmäßige Teammeetings abhalten zu können. Außerdem gefiel mir, dass, wenn man eine Aufgabe hatte, man sich für diese auch Zeit nahm und man sich um deren Erledigung stets bemühte, was einerseits die Zuverlässigkeit und das Vertrauen untereinander stärkte, andererseits die Arbeit wesentlich angenehmer und kontinuierlicher machte. Es war auch schön mitanzusehen, wie das System Stück für Stück erweitert wurde und mehr Funktionen bot, worauf wir als Team wirklich stolz sein konnten.
 
 Im Kontrast dazu war die Kommunikation mit dem Kunden an manchen Stellen eher frustrierend, sei es die öfters aufkommende Unzuverlässigkeit oder der regelmäßige Ansturm an neuen Anforderungen bzw. Ausfall bereits implementierter Anforderungen, was die Arbeitsweise und den Zeitplan gelegentlich aus der Bahn brachte. Hierbei würde ich in Zukunft dem Kunden gegenüber mehr Deadlines setzen, mehr Druck und Konditionen ansetzen, um allen eine angenehmere Arbeitsatmosphäre bieten zu können. Des Weiteren war die Dokumentation an manchen Stellen etwas sehr aufwendig und übertrieben war. Nichtsdestotrotz sollte diese niemals unterschätzt werden, besonders deren Bedeutsamkeit für Anwender und kommende Entwickler, die dieses System warten oder überarbeiten.
 
-Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, seien es menschliche Kompetenzen oder Programmierkenntnisse, die ich hier gesammelt habe, froh bin.
+Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, seien es menschliche Kompetenzen oder Programmierkenntnisse, die ich hier gesammelt habe, froh bin. Ich bedanke mich herzlich für die Möglichkeit eines solchen Projektes, an unseren Professor, unserem Coach und selbstverständlich meinem Team!
 
 <<<
 

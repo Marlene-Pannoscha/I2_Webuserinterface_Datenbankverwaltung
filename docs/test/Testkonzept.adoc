@@ -48,3 +48,4 @@ Generelles Konzept:
 * (Vorbereitung der IDE [Anlegen eines Projektes])
 * Aufzeichnen des Workflows  [ = Eingaben/Auswahl auf Website]
 * über IDE-Menü die aufgezeichneten Tests ausführen
+

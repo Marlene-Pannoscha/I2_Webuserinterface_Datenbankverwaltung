@@ -1,6 +1,6 @@
 = Entwicklerdokumentation zu: {project-name}
 {localtime}
-
+include::../_includes/default-attributes.inc.adoc[]
 
 
 

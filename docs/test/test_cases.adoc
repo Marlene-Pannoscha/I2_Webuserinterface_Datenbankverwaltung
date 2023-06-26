@@ -1,5 +1,4 @@
 = Test Cases: {project-name}
-//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -7,6 +6,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Allgemeine Informationen
 
+Dieses Dokument stellt die entwickelten Kozepte verschiedener Test Cases dar. Diese beinhalten eine Beschreibung des Test Cases, deren Bedingungen zum Ausführen sowie benötigte Daten, den Caseablauf bzw. das gewünschte Verhalten und letztlich die nun offenen Möglichkeiten.
 
 == Funktionale Tests
 

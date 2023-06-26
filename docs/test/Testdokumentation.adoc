@@ -7,7 +7,7 @@ include::../_includes/default-attributes.inc.adoc[]
 *Im Nachfolgenden werden alle Dokumente bezüglich des Testens zusammnengefasst.*
 
 :leveloffset: +1
-include::test_cases.adoc[]
+include::test_cases.adoc[lines=1;7..194]
 :leveloffset: -1
 
 :leveloffset: +1
