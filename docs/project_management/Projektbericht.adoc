@@ -262,6 +262,8 @@ Bei der Installation werden wir von der studentischen Hilfskraft (SHK) der SI un
 
 *Use-Case: Log-Out (UC01)*
 
+Dieses Ziel wurde erreicht. Es war nur eine Fehlerbehebung notwendig, damit der Log-Out Button wieder funktionierte.
+
 *Filterung nach Land, Hochule und Vertragstyp (UC02)*
 
 *Verwalten von Ansprechpersonen und Fakultäten (UC03)*
