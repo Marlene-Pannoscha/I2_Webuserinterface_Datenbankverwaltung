@@ -26,7 +26,7 @@ include::../_includes/default-attributes.inc.adoc[]
 - bei Betätigung des Logout Buttons, wird der Nutzer erfolgreich abgemeldet und die Daten bleiben gespeichert
 |===
 
-=== Test Case 02: Filtern nach Fakultäten (Fehlerbehebung der Vorgruppe)
+=== Test Case 02: Filtern nach Fakultät (Fehlerbehebung der Vorgruppe)
 
 [cols="1,4"]
 |===
