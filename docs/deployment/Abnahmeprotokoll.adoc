@@ -47,11 +47,21 @@ Use-Case: Anlegen neuer Universitäten (UC05)| Ja | |
 Use-Case: Erzeugen von Berichten (UC06)| Ja | |
 Use-Case: Exportieren von Berichten (UC07)| Ja | |
 Use-Case: Löschen von Datensätzen (UC08)| Ja | |
-Use-Case: exterene Informationsabfrage (UC09)| Nein | |
-Use-Case: Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)| Ja | |
+Use-Case: exterene Informationsabfrage (UC09)| Nein | Micht unsere Aufgabe |
+Use-Case: Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)| Ja | Nur Anlegen möglich |
 |===
 
-// zusätzliche finale Funktionalitäten
+== Zusätzliche Funktionalitäten
+
+[%header, cols="3,1,3"]
+
+|===
+|Funktionalität | Erfüllt | Anmerkung |
+Mentor Anlegen| Ja | |
+Mentor Bearbeiten | Ja | |
+Land hinzufügen | Nein | Speichern funktioniert nicht |
+Land Bearbeiten/Löschen | Nein | Nicht implementiert
+|===
 
 === Systemweite funktionale Anforderungen
 
