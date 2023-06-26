@@ -326,7 +326,7 @@ Hierbei bin ich wirklich froh darüber, ein so offenes und hilfsbereites Team ge
 
 Im Kontrast dazu war die Kommunikation mit dem Kunden an manchen Stellen eher frustrierend, sei es die öfters aufkommende Unzuverlässigkeit oder der regelmäßige Ansturm an neuen Anforderungen bzw. Ausfall bereits implementierter Anforderungen, was die Arbeitsweise und den Zeitplan gelegentlich aus der Bahn brachte. Hierbei würde ich in Zukunft dem Kunden gegenüber mehr Deadlines setzen, mehr Druck und Konditionen ansetzen, um allen eine angenehmere Arbeitsatmosphäre bieten zu können. Des Weiteren war die Dokumentation an manchen Stellen etwas sehr aufwendig und übertrieben war. Nichtsdestotrotz sollte diese niemals unterschätzt werden, besonders deren Bedeutsamkeit für Anwender und kommende Entwickler, die dieses System warten oder überarbeiten.
 
-Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, die ich hier gesammelt habe, froh bin.
+Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, seien es menschliche Kompetenzen oder Programmierkenntnisse, die ich hier gesammelt habe, froh bin.
 
 <<<
 
