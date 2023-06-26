@@ -138,6 +138,8 @@ Beispiel Produkt:
 | Verwalten von Ansprechpersonen von Fakultäten | 5 | Es soll eine Ansprechperson pro Hochschule eingetragen und ausgelesen werden können | Sommersemester 2023
 | Anlegen neuer Verträge | 7 | Zum Einfügen neuer Verträge im Verwaltungsfrontend | Sommersemester 2023
 | Anlegen neuer Universitäten | 7 | Zum Einfügen neuer Universitäten im Verwaltungsfrontend | Sommersemester 2023
+| Anlegen neuer Länder | 6 | Zum Einfügen neuer Länder im Verwaltungsfrontend | Sommersemester 2023
+| Anlegen neuer Fakultäten | 5 | Zum Einfügen neuer Fakultäten im Verwaltungsfrontend | Sommersemester 2023
 | Erzeugen von Berichten | 8 | Zur Ausgabe verschiedener gesammelter Daten | Sommersemester 2023
 | Exportieren von Berichten | 5 | Zur weiteren Nutzung gesammelter Daten | Sommersemester 2023
 | Löschen von Datensätzen | 9 | Nur der Superuser soll das Recht haben, Datensätze löschen zu können | Sommersemester 2023

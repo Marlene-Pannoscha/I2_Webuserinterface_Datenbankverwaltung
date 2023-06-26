@@ -129,7 +129,7 @@ Zur Dokumentation dieses Projektes nutzen wir ein GitHub-Repository. Die entspre
 
 Um unser Projekt erfolgreich durchzuführen, nutzen wir die Dokumentvorlagen des Open Unified Process (OpenUP). Aufgaben werden hierbei in Iterationen bearbeitet, welche jeweils 2 Wochen andauern. Die zu erledigenden Aufgaben werden als Issues festgehalten und dem jeweiligen Gruppenmitglied zugewiesen.
 
-Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente wurden entweder über Discord oder über GitHub geteilt. Wir haben versucht, unsere Meetings immer in präsenz durchzuführen, was uns mit der Stabsstelle Internationales auch gelungen ist.
+Zur Kommunikation wurden Discord und WhatsApp, sowie E-Mails benutzt. Dokumente wurden entweder über Discord oder über GitHub geteilt. Wir haben versucht, unsere Meetings immer in präsenz durchzuführen, was uns mit der Stabsstelle Internationales auch gelungen ist.
 
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
@@ -143,7 +143,8 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 | Target velocity
 
 | I1
-| Analyse des bestehenden Systems
+| 
+* Analyse des bestehenden Systems
 * mit bestehendem System vertraut machen
 * Beginnen mit Vision
 * Beginnen mit Glossar und Risikoliste
@@ -151,7 +152,8 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 | 15
 
 | I2
-| Funktions- und Anforderungsanalyse
+| 
+* Funktions- und Anforderungsanalyse
 * festhalten der Hauptanforderungen an das GUI
 * erstellen der wichtigsten UseCases
 * erstellen von Wireframes
@@ -162,17 +164,39 @@ Zur Kommunikation wurde Discord und WhatsApp, sowie E-Mails benutzt. Dokumente w
 | 15
 
 | I3
-|erste Implementierungschritte
+|
+* erste Implementierungschritte
 * erstellen eines Architektur-Modells
 * erstellen eines Prototypen, Implementierung weiterer Funktionen
 | 11.04.2023 - 25.04.2023
 | 16
 
 | I4
-|weitere Implementierungschritte
+|
+* weitere Implementierungschritte
 * weitere wichtige Funktionen werden im Prototypen implementiert
 * die systemweiten Anforderungen und das Architektur-Modell werden angepasst bzw. vervollständigt
 | 14.05.2023 - 28.05.2023
+| 16
+
+| I5
+|
+* weitere Implementierungschritte
+* Eingliederung der neuen Datenstände
+* Beginn des Projektberichtes
+* Beginn der Dokumentation
+* Abschluss größerer Funktionen
+| 29.05.2023 - 05.06.2023
+| 16
+
+| I6
+|
+* letzten Implementierungschritte
+* letzten Feinschliffe der Funktionen
+* Fertigstellen des Projektberichtes
+* Abnahme mit der SI
+* Vorbereitung der Übergabe/Deployment an die SI
+| 12.06.2023 - 18.06.2023
 | 16
 |===
 

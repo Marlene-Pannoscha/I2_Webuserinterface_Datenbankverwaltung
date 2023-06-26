@@ -45,12 +45,14 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 Löschen von Daten mit Passwortabfrage(UC08) |hoch | 6 |fertig | / |  1 | Alessandra Ruff | | /|
 Lizenzen bestimmen | mittel | 4 | fertig | / | 1 |  Alessandra Ruff | | / |
 Anwenderdokumentation für Mitarbeiter (in Video Form) | hoch |5 | laufend |/ | 1 | Marlene Pannoscha | | / |
-Projektbericht - Projektplanung | hoch | 8 | laufend | / | 2 | Kevin Freund, Alessandra Ruff | | / |
-Projektbericht - Projektdurchführung | hoch | 8 | laufend | / | 2 | ... | | / |
-Projektbericht - Projektergebnisse | hoch | 8 | laufend | / | 2 | ... | | / |
+Projektbericht - Projektplanung | hoch | 8 | fertig | / | 2 | Kevin Freund, Alessandra Ruff | | / |
+Projektbericht - Projektdurchführung | hoch | 8 | fertig | / | 2 | Marlene Pannoscha, Kevin Freund, Dilara Eichler, Robert Pfund | | / |
+Projektbericht - Projektergebnisse | hoch | 8 | laufend | / | 2 | Alessandra Ruff, Karl Langer | | / |
 Projektbericht - Reflexionen | hoch | 8 | laufend | / | 1 | Team | | / |
 Test Berichte| mittel | 6 | laufend | / | 1 | Robert Pfund | | / |
-Land hinzufügen Fuktionalität implementieren | hoch | 6 | laufend | / | 1 | Karl Langer | | / |
+Land hinzufügen Fuktionalität implementieren | hoch | 6 | laufend | / | 1 | Karl Langer | | /
+| Aktualisierung Projektplan | mittel | 5 | fertig | project_plan | 1 | Kevin Freund | 1 |
+| Aktualisierung Vision | mittel | 4 | fertig | vision | 1 | Kevin Freund | 2 |
 |===
 
 
@@ -71,7 +73,8 @@ Land hinzufügen Fuktionalität implementieren | hoch | 6 | laufend | / | 1 | Ka
 * Erfüllung der Use-Cases, geforderte Funktionen und Features sollen korrekt implementiert werden
 ** UC06
 ** UC08
-* Projektbericht- Dokumentation weiter führen
+* Projektbericht
+** Dokumentation weiter führen
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
@@ -85,7 +88,7 @@ Land hinzufügen Fuktionalität implementieren | hoch | 6 | laufend | / | 1 | Ka
 | Projektstatus	| In der letzten Woche vor der Abgabe wird nur noch dokumentiert und die Implentierung ist hiermit abgeschlossen.
 |===
 
-* Beurteilung im Vergleich zu den Zielen und Bewertungskriterien
+.Beurteilung im Vergleich zu den Zielen und Bewertungskriterien
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
 Die Implementierungsphase endet mit dieser Itertion und alle Use-Cases sowie zusätzliche Funktionalitäten konnten implmentiert werden. Ausstehend ist die Vollendung des Projektberichtes.
 
