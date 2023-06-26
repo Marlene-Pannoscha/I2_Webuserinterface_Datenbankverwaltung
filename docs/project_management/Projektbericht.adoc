@@ -258,7 +258,7 @@ Bei der Installation werden wir von der studentischen Hilfskraft (SHK) der SI un
 
 == Projektergebnisse
 // Beispiel von Use Cases
-== Erfüllung der Ziele
+=== Erfüllung der Ziele
 
 *Use-Case: Log-Out (UC01)*
 
@@ -282,9 +282,9 @@ Dieses Ziel wurde erreicht. Es war nur eine Fehlerbehebung notwendig, damit der 
 
 *Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)*
 
-=== Zusätzliche Funktionalitäten
+==== Zusätzliche Funktionalitäten
 
-=== Begründung der Nichterfüllung von einzelnen Zielen
+==== Begründung der Nichterfüllung von einzelnen Zielen
 
 === Fehlerbehebung
 
