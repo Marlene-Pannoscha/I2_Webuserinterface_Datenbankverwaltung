@@ -212,7 +212,7 @@ Das Projekt neigt sich mit der Transition Phase dem Ende zu.  Der Schwerpunkt de
 Wichtigsten Ziele:
 
 * Berichte erzeugen (UC06)
-* Löschen von Daten mit Passwortabfrage (UC08)
+* Löschen von Daten als Super User (UC08)
 * Lizenz bestimmen
 * Schulung der Mitarbeiter der Stabstelle  Internationales
 * Planung des Projektberichtes
@@ -224,7 +224,7 @@ Da in der vorherigen Iteration nun der Reiter vorbereitet war, konnten wir uns d
 
 *Löschen von Daten mit Passwortabfrage*
 
-Das Löschen von Daten ist eine Problematik, die der Stabstelle Internationales besonderes wichtig ist.  In der Vergangenheit haben eine Studentische Hilfskraft sowohl als auch andere Mitarbeiter bedeutende Daten gelöscht. Ab diesem Zeitpunkt wurden kaum noch alte Datensätze gelöscht, da immer noch ein gewisser Respekt davor bestand. Daraufhin implementierten wir eine Unterabfrage, die erscheint, wenn der Löschvorgang betätigt wird. Diese Lösung wurde besonders dankend angenommen.
+Das Löschen von Daten ist eine Problematik, die der Stabstelle Internationales besonderes wichtig ist.  In der Vergangenheit haben eine Studentische Hilfskraft sowohl als auch andere Mitarbeiter bedeutende Daten gelöscht. Ab diesem Zeitpunkt wurden kaum noch alte Datensätze gelöscht, da immer noch ein gewisser Respekt davor bestand. Daraufhin implementierten wir zwei verschiedene Log-Ins. Der Super User hat Löschrechte und der normale Log-In nicht, dies wurde ausdrücklich von dem Kunden gewünscht.
 
 *Lizenz bestimmen und den Projektbericht Planen*
 
