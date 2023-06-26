@@ -175,7 +175,7 @@ def new_object(name):
         return Querries.new_object('mentor', columns, values)
     elif name == 'Institute':
         my_var = request.form.to_dict()
-        # for insert into new_tbl_institute
+        # for insert into tbl_institute
         col_list_institute = []
         val_list_institute = []
         if 'display' not in request.form:

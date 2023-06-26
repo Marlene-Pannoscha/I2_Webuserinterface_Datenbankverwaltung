@@ -55,6 +55,23 @@ include::../_includes/default-attributes.inc.adoc[]
 === Test Case 04: Generierung von Berichten
 
 [cols="1,4"]
+|===
+| Beschreibung | Die Arbeitskraft wählt den Button für den jeweiligen Bericht zu Erzeugen aus.
+| Vorbedingungen und benötigte Daten a| - Die Arbeitskraft ist erfolgreich angemeldet
+- Es existieren
+.. Verträge mit der ausgewählten Fakultät
+.. Erasmuspartnerschaften
+.. Hochschulvereinbarungen
+| Ablauf (manuell) a| . Die Testenden öffnen durch Klick den Reiter "Berichte".
+. Die Testenden wählen
+.. die gewünschte Fakultät im Dropdown-Menü aus, erzeugen durch Klick auf den Button "Erzeugen" den Bericht zur Fakultät
+.. den "Erzeugen"-Button unter dem Abteil "Erasmusbericht"
+.. den "Erzeugen"-Button unter dem Abteil "Hochschulvereinbarungen"
+| Nachbedingung a| - Die jeweilige Datenbankabfrage wurde durchgeführt
+- Das html-Muster wurde mit den Datenbank-Werten gefüllt und generiert
+- Die pdf-Datei wurde aus dem html-Muster erstellt und auf dem Server gespeichert
+- Die pdf-Datei wird zurückgegeben und in einem neuen Browsertab angezeigt
+|===
 
 === Test Case 05: Bearbeiten von Hochschulpartnerschaften
 

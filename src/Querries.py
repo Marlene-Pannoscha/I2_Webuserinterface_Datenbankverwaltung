@@ -4,10 +4,10 @@ import Login
 from flask import jsonify
 
 
-# get all institutes saved in new_tbl_institutes
+# get all institutes saved in tbl_institutes
 def institutes_ret():
     '''
-    Alle Institute, die in new_tbl_institutes gespeichert sind, holen
+    Alle Institute, die in tbl_institutes gespeichert sind, holen
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
@@ -30,7 +30,7 @@ def ag_type_ret():
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    cur.execute('SELECT ID, deu FROM new_tbl_partnership_type ORDER BY deu')
+    cur.execute('SELECT ID, deu FROM tbl_partnership_type ORDER BY deu')
     x = cur.fetchall()
     payload = []
     for i in x:
@@ -49,14 +49,14 @@ def ag_type_ret():
 # Laden der Länderliste in den Filter Länder
 def all_countries():
     '''
-    Alle Länder, die in new_tbl_country gespeichert sind, für die Filterwerte holen
+    Alle Länder, die in tbl_country gespeichert sind, für die Filterwerte holen
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    #cur.execute("SELECT de, id FROM new_tbl_country ORDER BY de")
-    #cur.execute("CREATE VIEW val_coun AS SELECT de, id FROM new_tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
+    #cur.execute("SELECT de, id FROM tbl_country ORDER BY de")
+    #cur.execute("CREATE VIEW val_coun AS SELECT de, id FROM tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
     #cur.execute("SELECT de, id FROM val_coun")
-    cur.execute("SELECT de, id FROM new_tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
+    cur.execute("SELECT de, id FROM tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
     x = cur.fetchall()
     payload = []
     for i in x:
@@ -75,11 +75,11 @@ def all_countries():
 # Laden der Fakultäten in den Filter Fakultäten
 def faculty():
     '''
-    Alle Fakultäten, die in new_tbl_faculty gespeichert sind, holen
+    Alle Fakultäten, die in tbl_faculty gespeichert sind, holen
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    cur.execute("SELECT ID, deu FROM new_tbl_faculty ORDER BY deu")
+    cur.execute("SELECT ID, deu FROM tbl_faculty ORDER BY deu")
     x = cur.fetchall()
     payload = []
     for i in x:
@@ -257,7 +257,7 @@ def new_mentor(columns, values):
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     query_parameter = helper.dynamic_querries(columns)
-    query = "INSERT INTO new_tbl_mentor (" + query_parameter[0] + ") VALUES(" + query_parameter[1] + ")"
+    query = "INSERT INTO tbl_mentor (" + query_parameter[0] + ") VALUES(" + query_parameter[1] + ")"
     try:
         insert = tuple(values)
         print(insert)
@@ -278,12 +278,12 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     state = "failed" # set initial status that is returned when it failed to set changes in db
     query_parameter = helper.dynamic_querries(tuple_columns)
     type_dict = {
-        'mentor': 'new_tbl_mentor',
-        'institute': 'new_tbl_institute',
-        'agreement': 'new_tbl_mobility_agreement',
-        'restriction': 'new_tbl_mobility_agreement_x_course',
-        'faculty': 'new_tbl_faculty',  
-        'country': 'new_tbl_country'      
+        'mentor': 'tbl_mentor',
+        'institute': 'tbl_institute',
+        'agreement': 'tbl_mobility_agreement',
+        'restriction': 'tbl_mobility_agreement_x_course',
+        'faculty': 'tbl_faculty',  
+        'country': 'tbl_country'      
     } 
     # define all possible tables where a new object could be created
     # create dynamic insert query
@@ -291,11 +291,11 @@ def new_object(object_type, tuple_columns, tuple_values, inst_name=None, inst_ps
     # define tuple for parameters that need to be inserted
     parameters = tuple(tuple_values)
     try:
-        # insert into new_tbl_institute
+        # insert into tbl_institute
         print(query, parameters)
         cur.execute(query, parameters,)
         cnxn.commit()
-        # query for insert into new_tbl_partnership
+        # query for insert into tbl_partnership
         if object_type == 'institute':
             all_parameters = (inst_name, inst_ps_type)
             cur.callproc('insert_partnership', all_parameters,)
@@ -316,8 +316,8 @@ def return_countries():
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    #cur.execute('SELECT de, en, erasmus FROM new_tbl_country ORDER BY de')
-    cur.execute("SELECT de, en, erasmus FROM new_tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
+    #cur.execute('SELECT de, en, erasmus FROM tbl_country ORDER BY de')
+    cur.execute("SELECT de, en, erasmus FROM tbl_country WHERE id in (SELECT id FROM auslandsamt.country) ORDER BY de ")
     rows = cur.fetchall()  # zusammenfassen aller Objekte der Datenbankanfrage
     payload = []
     for row in rows:
@@ -339,7 +339,7 @@ def return_courses():
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    cur.execute('SELECT deu, eng, ID FROM new_tbl_course ORDER BY deu')
+    cur.execute('SELECT deu, eng, ID FROM tbl_course ORDER BY deu')
     x = cur.fetchall()
     payload = []
     for row in x:
@@ -362,8 +362,8 @@ def return_mentor():  # get all mentor information and store on client storage
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     query = """SELECT m.ID, m.faculty_ID, m.active, m.gender_ID, m.title, m.firstname, m.lastname, count(mentor_ID) 
-                FROM new_tbl_mobility_agreement ma 
-                RIGHT JOIN new_tbl_mentor m  
+                FROM tbl_mobility_agreement ma 
+                RIGHT JOIN tbl_mentor m  
                 ON ma.mentor_ID = m.ID 
                 GROUP BY m.ID
                 ORDER BY m.lastname"""
@@ -400,8 +400,8 @@ def return_faculties():
     cur = cnxn.cursor()
  
     query = """SELECT f.deu, f.eng, COUNT(m.faculty_ID), f.id
-                FROM new_tbl_mobility_agreement m
-                JOIN new_tbl_faculty f 
+                FROM tbl_mobility_agreement m
+                JOIN tbl_faculty f 
                 ON f.ID = m.faculty_ID
                 GROUP BY m.faculty_ID
                 ORDER BY f.deu"""
@@ -441,7 +441,7 @@ def edit(keys, values, change_id, change_type):  # institute = institute ID
     '''
     Die geänderte Werte in der Datenbank aktualisieren
     '''
-    tbl_names = {'institute': "new_tbl_institute", 'agreement': "new_tbl_mobility_agreement", 'restriction': "new_tbl_mobility_agreement_x_course", 'mentor': 'new_tbl_mentor'}
+    tbl_names = {'institute': "tbl_institute", 'agreement': "tbl_mobility_agreement", 'restriction': "tbl_mobility_agreement_x_course", 'mentor': 'tbl_mentor'}
     parameter = helper.dynamic_querries(keys)
     query_string = helper.create_update_string(keys)
     cnxn = Login.newConnection()
@@ -467,8 +467,8 @@ def checkLength(key, object_id):
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
     dict = {
-        'institute': ['agreements_for_institute', 'new_tbl_institute'],
-        'agreement': ['courses_for_agreement', 'new_tbl_mobility_agreement']
+        'institute': ['agreements_for_institute', 'tbl_institute'],
+        'agreement': ['courses_for_agreement', 'tbl_mobility_agreement']
     }
     if key in dict:
         procedure_name = dict[key][0]
@@ -481,7 +481,7 @@ def checkLength(key, object_id):
             else:
                 return {'state': 'failed'}
     else:
-        delete('new_tbl_mobility_agreement_x_course', strip)
+        delete('tbl_mobility_agreement_x_course', strip)
     return {'state': 'successful'}
 
 
@@ -491,8 +491,8 @@ def delete(tbl, row_id):
     '''
     cnxn = Login.newConnection()
     cur = cnxn.cursor()
-    if tbl == 'new_tbl_institute':
-        query = f"DELETE FROM new_tbl_partnership WHERE institute_ID = {row_id}"
+    if tbl == 'tbl_institute':
+        query = f"DELETE FROM tbl_partnership WHERE institute_ID = {row_id}"
         cur.execute(query)
         cnxn.commit()
     query = f"DELETE FROM {tbl} WHERE ID = {row_id}"
@@ -514,12 +514,12 @@ def facultyReport(faculty_id):
 
     # "\" benötigt um String mit Zeilenumbrüchen zu realisieren, alternativ muss die Abfrage als stored procedure angelegt werden
     cur.execute(f"SELECT c.de, i.eng, pt.deu, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date \
-			FROM new_tbl_mobility_agreement AS ma, \
-				new_tbl_mentor AS m, \
-				new_tbl_partnership_type AS pt, \
-				new_tbl_country AS c, \
-				new_tbl_partnership AS p, \
-                new_tbl_institute AS i \
+			FROM tbl_mobility_agreement AS ma, \
+				tbl_mentor AS m, \
+				tbl_partnership_type AS pt, \
+				tbl_country AS c, \
+				tbl_partnership AS p, \
+                tbl_institute AS i \
             WHERE \
                 (\
 				((ma.mentor_ID = m.ID) \
@@ -559,12 +559,12 @@ def erasmusReport():
     cur = cnxn.cursor()    
 
     cur.execute("""SELECT c.de, i.eng, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date, pt.deu
-                FROM new_tbl_mobility_agreement AS ma
-                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
-                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
-                JOIN new_tbl_institute i ON i.ID = p.institute_ID
-                JOIN new_tbl_country c ON c.ID = i.country_ID
-                JOIN new_tbl_mentor m ON m.ID = ma.mentor_ID
+                FROM tbl_mobility_agreement AS ma
+                JOIN tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN tbl_institute i ON i.ID = p.institute_ID
+                JOIN tbl_country c ON c.ID = i.country_ID
+                JOIN tbl_mentor m ON m.ID = ma.mentor_ID
                 WHERE (c.erasmus = '1' AND pt.ID = '3')
                 ORDER BY c.de, i.eng, ma.until_date, mentordata, pt.deu""")
 
@@ -595,11 +595,11 @@ def erasmusData():
     cur = cnxn.cursor()    
 
     cur.execute("""SELECT c.de, i.eng, COUNT(*), COUNT(DISTINCT c.de), COUNT(DISTINCT i.eng)
-                FROM new_tbl_mobility_agreement AS ma
-                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
-                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
-                JOIN new_tbl_institute i ON i.ID = p.institute_ID
-                JOIN new_tbl_country c ON c.ID = i.country_ID
+                FROM tbl_mobility_agreement AS ma
+                JOIN tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN tbl_institute i ON i.ID = p.institute_ID
+                JOIN tbl_country c ON c.ID = i.country_ID
                 WHERE (c.erasmus = '1' AND pt.ID = '3')
                 ORDER BY c.de, i.eng""")
 
@@ -628,12 +628,12 @@ def instituteReport():
     cur = cnxn.cursor()
     
     cur.execute("""SELECT i.eng, c.de, pt.deu, CONCAT(m.title, ' ',m.firstname, ' ', m.lastname) AS mentordata, ma.until_date
-                FROM new_tbl_mobility_agreement AS ma
-                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
-                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
-                JOIN new_tbl_institute i ON i.ID = p.institute_ID
-                JOIN new_tbl_country c ON c.ID = i.country_ID
-                JOIN new_tbl_mentor m ON m.ID = ma.mentor_ID
+                FROM tbl_mobility_agreement AS ma
+                JOIN tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN tbl_institute i ON i.ID = p.institute_ID
+                JOIN tbl_country c ON c.ID = i.country_ID
+                JOIN tbl_mentor m ON m.ID = ma.mentor_ID
                 ORDER BY i.eng, c.de, pt.deu, mentordata, ma.until_date""")
     
     x = cur.fetchall()
@@ -662,11 +662,11 @@ def instituteReportData():
     cur = cnxn.cursor()    
 
     cur.execute("""SELECT c.de, i.eng, COUNT(*), COUNT(DISTINCT c.de), COUNT(DISTINCT i.eng)
-                FROM new_tbl_mobility_agreement AS ma
-                JOIN new_tbl_partnership p ON p.ID = ma.partnership_ID
-                JOIN new_tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
-                JOIN new_tbl_institute i ON i.ID = p.institute_ID
-                JOIN new_tbl_country c ON c.ID = i.country_ID
+                FROM tbl_mobility_agreement AS ma
+                JOIN tbl_partnership p ON p.ID = ma.partnership_ID
+                JOIN tbl_partnership_type pt ON pt.ID = p.partnership_type_ID
+                JOIN tbl_institute i ON i.ID = p.institute_ID
+                JOIN tbl_country c ON c.ID = i.country_ID
                 ORDER BY c.de, i.eng""")
 
 

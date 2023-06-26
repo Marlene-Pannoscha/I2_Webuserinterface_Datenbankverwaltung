@@ -86,9 +86,9 @@ Erstellen und Exportieren von Berichten für Vertragstypen, Fakultäten und Län
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
 
-Button „Partnerhochschule hinzufügen“ ganz nach unten (weil nur selten)| | |
+Button „Partnerhochschule hinzufügen“ ganz nach unten (weil nur selten)| erledigt | |
 
-Notizen zum Aufklappen: Info über aktuelle Situation (benötigt mehr Platz → Russland Partnerschaft ruht)| /| Notizfeld einfach vergrößern, Kunde ist eigentlich gegen Popup-Felder|
+Notizen zum Aufklappen: Info über aktuelle Situation (benötigt mehr Platz → Russland Partnerschaft ruht)| erledigt | Notizfeld einfach vergrößern, Kunde ist eigentlich gegen Popup-Felder|
 
 Bei Vertrag: Fakultät ändern eher unnötig, neuen Vertrag nicht neu Anlegen (nach unten)| | ??? Frau Terpe möchte Button ganz weghaben ???|
 

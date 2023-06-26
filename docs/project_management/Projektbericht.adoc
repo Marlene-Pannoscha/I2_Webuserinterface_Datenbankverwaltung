@@ -343,18 +343,18 @@ Ein großes Lob muss dabei an meine Gruppe gehen. Durch die beiden Semester hind
 <<<
 
 ==== Karl Langer
-In unserem ersten Teammeating mit unserem Coach in Softwareingeneering 1 wurden wir gefragt, ob wir schon Erfahrung mit Programmieren in einem Team haben, was wir uns von dem Projekt erhoffen und lernen wollen.
+In unserem ersten Teammeating mit unserem Coach in Softwareingeneering 1 wurden wir gefragt, ob wir schon Erfahrung mit Programmieren (in einem Team haben), was wir uns von dem Projekt erhoffen und lernen wollen.
 In dem Moment konnte ich die Fragen nur mit "ein bisschen c und java Kenntnisse, hauptsächlich alleine arbeitend und, dass ich mich darauf freue, in einer Gruppe an einem Programm mit echten Auftragsteller zu arbeiten".
 
-Doch im ersten Semester lief es ganz anders, als ich es mir Vorgestellt hatte. Wir hatten ein riesiges und koplexes Vorgängerprojekt in einer mir noch unbekannter Programmiersprache. Unsere Aufgabe war es, Wissen anzueignen, um das Vorgängerprojekt zu durchdringen und zu erweitern. Die gegebene Vorgänger Dokumentation half mir dabei auch nur mäßig, weshalb mir klar wurde, warum die Schwerpunkte des Projektes die Dokumentation und sorgfälltigen Vorüberlegungen sind. 
+Doch im ersten Semester lief es ganz anders, als ich es mir vorgestellt hatte. Wir hatten ein riesiges und koplexes Vorgängerprojekt in einer mir noch unbekannter Programmiersprache. Dies sorgte für den Anschein, dass das Projekt nichts werden würde. Unsere Aufgabe war es, Wissen anzueignen, um das Vorgängerprojekt zu durchdringen und zu erweitern. Die gegebene Vorgänger Dokumentation half mir dabei auch nur mäßig, weshalb mir klar wurde, warum die Schwerpunkte des Projektes die Dokumentation und sorgfälltigen Vorüberlegungen sind. 
 
-Im Laufe der Interationsschritte fiel mir das Zusammenarbeiten im Team immer leichter und machte sogar Spaß und motivierte unheimlich. Durch regen Austausch in regelmäßigen Meetings im Team, aber auch mit dem Kunden war das Projekt, wie es in der Anfangsaufgabenstellung beschrieben war, als machbar erscheinbar. Was sehr gut lief, was der Informationsaustausch mit dem Auftragsteller sich doeser Dinge anders Vorstellt als wir oder sich Extras wünscht. desshalb waren regelmäßige Treffen mit dem Kunden essentiell und durch das Sofortfeedback konnten wir auch gut auf die Kundenwünsche eingehen.
+Im Laufe der Interationsschritte fiel mir das Zusammenarbeiten im Team immer leichter und machte sogar Spaß, was sehr motivierte. Durch regen Austausch in regelmäßigen Meetings im Team, aber auch mit dem Kunden erschien das Projekt immer mehr als machbar. Was sehr gut lief, war der Informationsaustausch mit dem Auftragsteller, der sich die Dinge anders vorstellt als wir oder sich Extras wünscht. Deshalb waren regelmäßige Treffen mit dem Kunden essentiell und durch das Sofortfeedback konnten wir auch gut auf die Kundenwünsche eingehen.
 
-Am meisten hat mich aber mein Team begeistert. Wir haben immer gut miteinader kommunziert, waren sehr freundlich miteinadner und es gab auch niemanden, der nichts gemacht hat.
+Am meisten hat mich aber mein Team begeistert. Wir haben immer gut miteinader kommunziert, waren sehr freundlich miteinadner und bei Fragen oder Problemen wurde sofort geholfen.
 
-Zum Ende des Projektes kann ich sagen, dass ich meine Kenntnisse im Implenetieren, aber auch in Aufgabenanalysen auszubauen konnte. Aber auch die Interaktionen untereinader waren eine Erfahrung, die ich als sehr schön wahrgenommen habe.
+Zum Ende des Projektes kann ich sagen, dass ich meine Kenntnisse im praktischen Implenetieren, aber auch in der theoretischen Aufgabenanalysen auszubauen konnte. Aber auch die Interaktionen untereinader im Team waren eine Erfahrung, die ich als sehr schön wahrgenommen habe.
 
-Wenn ich noch einmal in SE 1 starten würde, würde ich mir wünschen, auch einmal ein Projekt von Beginn an aufzubauen. Dort komplett selbstständige Entscheidungen von Anfang an in Bezug auf Programmiersprache und Architektur zu treffen. Hier würde ich das Projekt anhand von Test-Driven-Development entwickeln, damit Nachfolgegruppen durch Tests einen besseren Programmeindruck bekommen und um das Prinzip im Generellen einmal auszuprobieren, da das Testen in diesem Projekt ein bisschen kurz gekommen ist. 
+Wenn ich noch einmal in SE 1 starten würde, würde ich mir wünschen, auch einmal ein Projekt von Beginn an aufzubauen. Hier würde ich das Projekt anhand von Test-Driven-Development entwickeln, damit Nachfolgegruppen durch Tests einen besseren Programmeindruck bekommen und um das Prinzip im Generellen einmal auszuprobieren, da das automatisierte Testen in diesem Projekt ein bisschen kurz gekommen ist. 
 
 
 
