@@ -285,6 +285,7 @@ Dieses Ziel wurde erreicht. Die Speicherung erfolgt, danach wird die gerade abge
 *Exterene Informationsabfrage (UC09)*
 
 *Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)*
+
 Dieses Ziel ist teilweise erreicht. Fakultäten können angelegt werden und in die Datenbank gespeichert werden. Es ist jedoch noch nicht möglich die Fakultätsangaben auf der Webseite zu bearbeiten.
 
 ==== Zusätzliche Funktionalitäten
