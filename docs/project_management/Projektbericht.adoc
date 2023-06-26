@@ -270,6 +270,8 @@ Dieses angestrebte Ziel wurde erfolgreich erreicht, jedoch erforderte es einen b
 
 *Verwalten von Ansprechpersonen und Fakultäten (UC03)*
 
+Dieses Ziel wurde erfolgreich umgesetzt, aber schlussendlich durch den Kundne als nicht erforderlich angesehen uns somit entfallen.
+
 *Anlegen neuer Verträge (UC04)*
 
 *Anlegen neuer Universitäten (UC05)*
@@ -293,6 +295,9 @@ Dieses Ziel ist teilweise erreicht. Fakultäten können angelegt werden und in d
 ==== Zusätzliche Funktionalitäten
 
 ==== Begründung der Nichterfüllung von einzelnen Zielen
+
+Auf Anfrage des Kunden haben wir eine Funktionalität implementiert, die zu einer bestehenden Liste von allen Ländern, Neue hinzufügt. Hierbei funktioniert das Speichern in die Datenbank nicht.
+
 
 === Fehlerbehebung
 
