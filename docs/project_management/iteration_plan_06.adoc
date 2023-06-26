@@ -46,7 +46,7 @@ Löschen von Daten mit Passwortabfrage(UC08) |hoch | 6 | fertig | / |  1 | Aless
 Lizenzen bestimmen | mittel | 4 | fertig | / | 1 |  Alessandra Ruff | | / |
 Anwenderdokumentation für Mitarbeiter (in Video Form) | hoch |5 | laufend |/ | 1 | Marlene Pannoscha | | / |
 Projektbericht - Projektplanung | hoch | 8 | fertig | / | 2 | Kevin Freund, Alessandra Ruff | | / |
-Projektbericht - Projektdurchführung | hoch | 8 | fertig | / | 2 | Marlene Pannoscha, Kevin Freund, Dilara Eichler, Robert Pfund | | / |
+Projektbericht - Projektdurchführung | hoch | 8 | fertig | / | 2 | Marlene Pannoscha, Kevin Freund, Dilara Eichler, Robert Pfund | 5 | / |
 Projektbericht - Projektergebnisse | hoch | 8 | laufend | / | 2 | Alessandra Ruff, Karl Langer | | / |
 Projektbericht - Reflexionen | hoch | 8 | laufend | / | 1 | Team | | / |
 Test Berichte| mittel | 6 | laufend | / | 1 | Robert Pfund | | / |
