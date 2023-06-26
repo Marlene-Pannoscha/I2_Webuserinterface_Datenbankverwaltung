@@ -1,3 +1,4 @@
+= Betriebsdokumentation: {project-name}
 include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
