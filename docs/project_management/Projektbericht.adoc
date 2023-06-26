@@ -305,7 +305,7 @@ Dieses Ziel ist teilweise erreicht. Fakultäten können angelegt werden und in d
 
 ==== Zusätzliche Funktionalitäten
 
-Nach eingehender Rücksprache mit dem Kunden wurde beschlossen, die Suchleiste der Mentoren zu modifizieren und zu vergrößern. Darüber hinaus wurde die Art und Weise, wie die Daten der Mentoren gespeichert werden, überarbeitet, da nicht alle Eingaben aus dem Bearbeitungsfenster korrekt übertragen wurden.
+Nach eingehender Rücksprache mit dem Kunden wurde beschlossen, die Suchleiste der Mentoren zu modifizieren und zu vergrößern. Darüber hinaus wurde die Art und Weise, wie die Daten der Mentoren gespeichert werden von uns überarbeitet, da nicht alle Eingaben aus dem Bearbeitungsfenster korrekt übertragen wurden.
 
 
 ==== Begründung der Nichterfüllung von einzelnen Zielen
