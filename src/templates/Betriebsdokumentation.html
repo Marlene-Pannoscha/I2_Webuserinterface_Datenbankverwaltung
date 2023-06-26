@@ -825,50 +825,50 @@ Ein System-Unit-Skript ist im geclonten Reposetory unter deploy_scripts/se_webse
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__mentor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_mentor</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Betreuer der Hochschulverträge der HTW</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anlegen, Bearbeiten, Deaktivieren</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__gender</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_gender</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Geschlechterauswahl für Ansprechpersonen und Mentoren</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__institute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_institute</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Partnerhochschule, International office</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Auf Informationsfrontend: Anlegen, Bearbeiten, Deaktivieren</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__partnership</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Zuweisung eines Partnerschaftstypes (1:n) zu <em>tbl__institute</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_partnership</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zuweisung eines Partnerschaftstypes (1:n) zu <em>tbl_institute</em></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">implizites Anlegen mit Vertrag</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__partnership_type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_partnership_type</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Definition unterschiedlicher Abkommenstypen</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__mobility_agreement</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Vertragsinformationen - verweist auf den Mentor und den Vertragstyp / Hochschule in <em>tbl__partnership</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_mobility_agreement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vertragsinformationen - verweist auf den Mentor und den Vertragstyp / Hochschule in <em>tbl_partnership</em></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anlegen, Bearbeiten, Deaktivieren</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__mobility_agreement_x_course</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_mobility_agreement_x_course</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">"Optionale" Beschränkung der Anzahl von Incoming / Outgoing je Vertrag und Studiengang</p>
 <p class="tableblock">Bsp.: Vertrag der Fakultät Informatik für 8 Studenten Incoming/Outgoing &#8594; davon dürfen nur 4 Wirtschaftsinformatik und 4 Informatik sein</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anlegen, Bearbeiten, Deaktivieren</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__faculty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_faculty</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fakultäten der HTW</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">tbl__course</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tbl_course</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kurse der HTW, genutzt von
-<em>tbl__mobility_agreement_x_course</em> und der Statistik</p></td>
+<em>tbl_mobility_agreement_x_course</em> und der Statistik</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anlegen, Bearbeiten, Deaktivieren</p></td>
 </tr>
 <tr>

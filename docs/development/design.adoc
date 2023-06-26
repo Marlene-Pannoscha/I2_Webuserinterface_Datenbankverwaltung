@@ -40,28 +40,28 @@ Unten stehend werden alle enthaltenen Tabellen aufgelistet, erläutert sowie der
 |===
 |Tabelle |Inhalt |Modifikation durch Verwaltungsfrontend
 
-|tbl__faculty |Fakultäten der HTW |(Anlegen, Ändern, Deaktivieren)
+|tbl_faculty |Fakultäten der HTW |(Anlegen, Ändern, Deaktivieren)
 
-|tbl__mentor |Betreuer der Hochschulverträge (der HTW) |Anlegen, Ändern, Deaktivieren
+|tbl_mentor |Betreuer der Hochschulverträge (der HTW) |Anlegen, Ändern, Deaktivieren
 
-|tbl__gender |Geschlechterauswahl für Mentoren sowie Ansprechpersonen |-
+|tbl_gender |Geschlechterauswahl für Mentoren sowie Ansprechpersonen |-
 
-// |tbl__country |so gut wie alle Länder der Welt |-
+// |tbl_country |so gut wie alle Länder der Welt |-
 
-|tbl__institute |Partnerhochschule, International office |auf Informationsfrontend: Anlegen, Ändern, Verstecken (auf Informationsfrontend)
+|tbl_institute |Partnerhochschule, International office |auf Informationsfrontend: Anlegen, Ändern, Verstecken (auf Informationsfrontend)
 
-|tbl__partnership |Zuweisung eines Partnerschaftstypes (1:n) zu tbl__institute |Anlegen (implizit mit Vertrag)
+|tbl_partnership |Zuweisung eines Partnerschaftstypes (1:n) zu tbl_institute |Anlegen (implizit mit Vertrag)
 
-|tbl__partnership_type |Definition unterschiedliche Abkommenstypen |-
+|tbl_partnership_type |Definition unterschiedliche Abkommenstypen |-
 
-|tbl__mobility_agreement |Vertragsinformationen, verweist auf den Mentor und den Vertragstyp / Hochschule in _tbl_partnership_ |Anlegen, Ändern, Deaktivieren
+|tbl_mobility_agreement |Vertragsinformationen, verweist auf den Mentor und den Vertragstyp / Hochschule in _tbl_partnership_ |Anlegen, Ändern, Deaktivieren
 
-|tbl__mobility_agreement_x_course |optionale Beschränkungen der Anzahl der Incoming / Outgoing pro Vertrag und Studiengang
+|tbl_mobility_agreement_x_course |optionale Beschränkungen der Anzahl der Incoming / Outgoing pro Vertrag und Studiengang
 
 Bsp.: Vertrag der Fakultät Informatik/Mathematik für 7 Studenten;
 Incoming/Outgoing -> davon dürfen nur 3 Wirtschaftsinformatiker, 2 Medieninformatiker und 2 Verwaltungsinformatiker sein. |Anlegen, Ändern, Deaktivieren
 
-|tbl__course |Kurse der HTW, genutzt von _tbl_mobility_agreement_x_course_ und der Statistik |-
+|tbl_course |Kurse der HTW, genutzt von _tbl_mobility_agreement_x_course_ und der Statistik |-
 
 |tbl_exchange_type |Definition der Art des Austausches z.B. Erasmus, Promos, Freemover (Verwendung für die Statistik genutzt) |-
 
