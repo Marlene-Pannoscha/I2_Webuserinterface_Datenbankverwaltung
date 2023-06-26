@@ -85,7 +85,9 @@ Diese Herausforderung erforderte von uns Flexibilität und die Fähigkeit, auf u
 
 === SE I
 
-Zu Beginn des ersten Semesters Software Engineering lag der Schwerpunkt auf der Aufarbeitung und Analyse des bestehenden Systems. Gleichzeitig haben wir Kontakt mit dem Kunden aufgenommen und in Zusammenarbeit deren Anforderungen ausgewertet. Außerordentlich wichtig waren dabei herauszufinden, weshalb die vorhergehenden Projekte unzureichend für die Nutzung waren.
+Zu Beginn des ersten Semesters Software Engineering lag der Schwerpunkt auf der Aufarbeitung und Analyse der Aufgabenstellung sowie des bestehenden Systems. Gleichzeitig haben wir Kontakt mit dem Kunden aufgenommen und in Zusammenarbeit deren Anforderungen ausgewertet. Außerordentlich wichtig waren dabei herauszufinden, weshalb die vorhergehenden Projekte unzureichend für die Nutzung waren. 
+
+Hierbei standen wir nun aber auch vor der Entscheidung, ob wir jenes bestehende System übernehmen, oder wir ein neues System erstellen. Letzteres hätte den Vorteil, dass wir an keinen bisher verwendeten Sprachen gebunden wären, und möglicherweise eigene, ausgeprägtere Kenntnisse mit einbringen können. Das würde aber wesentlich mehr Zeit in Anspruch nehmen und es käme möglicherweise wieder zu Nachfolgegruppen. Daher entschieden wir uns dafür, dass System unserer Vorgänger zu übernehmen, deren Systematik, Aufbau und Sprache zu analysieren und zu verstehen, und eben jenes System zu erweitern.
 
 Innerhalb der Gruppe haben wir Rollen zugeordnet und Kommunikationswege festgelegt. Bei jedem Mitglied wird sichergestellt, dass das Repository eingerichtet wurde und eine einheitliche Entwicklungsumgebung vorhanden ist.
 

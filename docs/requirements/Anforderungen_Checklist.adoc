@@ -4,7 +4,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Website allgemein
-//Reiter Hochschule
+=== Reiter Hochschule
 [%header, cols="3,1,1"]
 |===
 |Anforderungsspezifikationen |Status | Kommentar |
@@ -14,7 +14,7 @@ Filterung nach Land, Hochschule und Vertragstyp| erledigt |Problem behoben: Unte
 |===
 
 
-=== Rechtes Fenster
+==== Rechtes Fenster
 
 [%header, cols="3,1,1"]
 |===
@@ -27,7 +27,7 @@ Layout des Fensters anpassen| erledigt | |
 |===
 
 
-=== Mittlers Fenster
+==== Mittlers Fenster
 
 [%header, cols="3,1,1"]
 |===
@@ -38,7 +38,7 @@ Name von Partnerhochschule in Englisch und in Originalsprache darstellen + ERASM
 |===
 
 
-=== Linkes Fenster
+==== Linkes Fenster
 
 [%header, cols="3,1,1"]
 |===
