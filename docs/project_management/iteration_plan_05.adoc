@@ -48,11 +48,11 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Mentoren Suchleiste implementieren | hoch|5 | fertig| / | 1 | Dilara Eichler | | / |
-Mentoren nach Fakultät filtern | hoch | 6 | fertig | / | 1 | Dilara Eichler |  | / |
+| Mentoren Suchleiste implementieren | hoch|5 | fertig| / | 1 | Dilara Eichler | 2 | / |
+Mentoren nach Fakultät filtern | hoch | 6 | fertig | / | 1 | Dilara Eichler | 2 | / |
 Anlegen neuer Universitäten(Partnerhochschulen)(UC05) | hoch | 7 | fertig | / | 1 | Alessandra Ruff | | / |
 Snapshot der Datenbank exportieren und einführen | hoch | 4| ferig | / | 1 | Kevin Freund| 5 | / |
-Layout der Pop- Up Fenster vereinheitlichen | niedrig | 3 |fertig | / | 2 |Dilara Eichler, Alesasandra Ruff, Kevin Freund | 2 | / |
+Layout der Pop- Up Fenster vereinheitlichen | niedrig | 3 |fertig | / | 3 |Dilara Eichler, Alessandra Ruff, Kevin Freund | 3 | / |
 Berichte erzeugen (UC06) | hoch | 7| fertig | |1 | Robert Pfund | | / |
 Berichte exportieren (UC07) | hoch | 8 | laufend | / | 2 | Robert Pfund | | / |
 Anlegen neuer Verträge (UC04) | hoch | 6 | fertig | / | 1 | Alessandra Ruff | | / |
