@@ -274,7 +274,11 @@ Dieses Ziel wurde erreicht. Es war nur eine Fehlerbehebung notwendig, damit der 
 
 *Erzeugen von Berichten (UC06)*
 
+Dieses Ziel wurde erreicht. Zur pdf-Erstellung wurde wkhtmltopdf verwendet. Dabei war die Erstellung eines Strings mit HTML-Inhalt/-Formatierung notwendig.
+
 *Exportieren von Berichten (UC07)*
+
+Dieses Ziel wurde erreicht. Die Speicherung erfolgt, danach wird die gerade abgelegte pdf-Datei "zurückgegeben" beziehungsweise in einem neuen Tab geöffnet.
 
 *Löschen von Datensätzen (UC08)*
 
