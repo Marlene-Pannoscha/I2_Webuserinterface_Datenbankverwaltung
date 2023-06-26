@@ -266,6 +266,8 @@ Dieses Ziel wurde erreicht. Es war nur eine Fehlerbehebung notwendig, damit der 
 
 *Filterung nach Land, Hochule und Vertragstyp (UC02)*
 
+Dieses angestrebte Ziel wurde erfolgreich erreicht, jedoch erforderte es einen bedeutend längeren Zeitaufwand als ursprünglich geplant. Die Filterung der Vorgruppe erwies sich als weniger effektiv als erwartet, was dazu führte, dass wir uns intensiv mit den einzelnen Filterfunktionen auseinandersetzen mussten.  Eine gründliche Untersuchung jedes Filters war erforderlich, um sicherzustellen, dass das gewünschte Ergebnis erzielt wird und keine unerwünschten Seiteneffekte auftreten. Dies erforderte eine sorgfältige Analyse der zugrunde liegenden Mechanismen und eine detaillierte Einarbeitung in den vorhandenen Code. 
+
 *Verwalten von Ansprechpersonen und Fakultäten (UC03)*
 
 *Anlegen neuer Verträge (UC04)*
