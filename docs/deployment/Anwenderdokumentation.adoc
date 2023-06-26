@@ -5,6 +5,8 @@ include::../_includes/default-attributes.inc.adoc[]
 
 Bei diesem Dokument handelt es sich um eine Anleitung zur Handhabung der Software für die Verwaltung der Partnerhochschulen der HTW Dresden. Alle Schritte zur Erfüllung eines Use Cases, und somit die Durchführung einiger Aufgabe mithilfe der Software sind nachfolgend erläutert.
 
+Hierbei muss angemerkt werden, dass wir, nachdem wir uns mit dem System und der Anwenderdokumentation unserer Vorgängergruppe beschäftigt haben, die Anwenderdokumentation eben jener Vorgänger übernommen (bis zum Punkt Anlegen einer Partnerhochschulen), aber auch um Weiten erweitert haben.
+
 == Systemvorraussetzungen
 
 Um mit der Web-Applikation arbeiten zu können, müssen einige Bedingungen für die Reibungslose Funktion erfüllt sein:
