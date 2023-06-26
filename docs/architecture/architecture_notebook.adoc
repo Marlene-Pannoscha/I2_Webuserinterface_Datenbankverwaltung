@@ -1,5 +1,4 @@
 = Architecture Notebook: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -176,10 +175,17 @@ Die Datenbank läuft auf einem MariaDB-Server des Rechenzentrums.
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
 
-.Architekturrelevante Use Cases
 [%header]
 |===
 |Use Case ID| Use Case Name
-|UC01| Filterung nach Ländern
-|UC02| Logout 
+|UC01| Logout
+|UC02| Filterung nach Ländern
+|UC03| Verwalten von Ansprechpersonen von Fakultäten
+|UC04| Anlegen neuer Verträge
+|UC05| Anlegen neuer Universitäten
+|UC06| Berichte erzeugen
+|UC07| Berichte exportieren
+|UC08| Löschen von Daten mit Passwortabfrage
+|UC09| exterene Informationsabfrage
+|UC10| Möglichkeit zum Bearbeiten und Anlegen von Fakultäten
 |===

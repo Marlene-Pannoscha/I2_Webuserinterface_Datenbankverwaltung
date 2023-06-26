@@ -1,3 +1,4 @@
+= Betriebsdokumentation: {project-name}
 include::../_includes/default-attributes.inc.adoc[]
 
 == Einführung
@@ -7,6 +8,8 @@ In diesem Dokument werden wichtige Hinweise und Anleitungen zur Installation und
 Detaillierte Beschreibungen zur Bedienung der Software befinden sich in der Anwenderdokumentation.
 
 Die folgenden Absätze beziehen sich nur noch auf das Deployment innerhalb des HTW-Netzes, da nur dies gefordert war.
+
+Hierbei muss angemerkt werden, dass wir, nachdem wir uns mit dem System und der Betriebsdokumentation unserer Vorgängergruppe beschäftigt haben, die Betriebsdokumentation eben jener Vorgänger übernommen, aber auch erweitert haben.
 
 == Systemvoraussetzungen
 
@@ -68,7 +71,7 @@ Man befindet sich nun im Home-Verzeichnis der VM und kann die Installation der S
 
 Im Folgenden wird vorausgesetzt, dass die Installation in einer Linux Umgebung stattfindet. Eine Adaption auf Windows ist ohne weiters möglich, allerdings gilt dies nur für die Installation. Weitere Kapitel beziehen sich nur auf Linux Systeme.
 
-* Clonen des GitHub Repositorys
+* Clonen des GitHub Repositories
 
 -> git clone https://github.com/mpeeps02/I2_Webuserinterface_Datenbankverwaltung
 

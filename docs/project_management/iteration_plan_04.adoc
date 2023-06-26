@@ -40,8 +40,8 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 | Reiter Berichte implementieren | hoch | 2 | fertig | / | 1 | Alessandra Russ | 1 | /
 | Entwicklerdokumentation (Design) | mittel | 5 | fertig | / | 1 | Kevin Freund | 3 | /
 | Entwicklerdokumentation (Software) | hoch | 7 | laufend | / | 2 | Kevin Freund, Alessandra Russ | 5 | 5
-| Standards in Dokumentation festhalten (Belegdokumentation) | niedrig | 5 | laufend | / | 1 | Marlene Pannoscha  | | /
-| Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson Fenster) | hoch | 6 | fertig | / | 1 | Dilara Eichler |  | /
+| Standards in Dokumentation festhalten (Belegdokumentation) | niedrig | 5 | laufend | / | 1 | Marlene Pannoscha  | 0,5| /
+| Anlegen neuer Partnerhochschulen (Bearbeitung Ansprechperson Fenster) | hoch | 6 | fertig | / | 1 | Dilara Eichler | 2 | /
 | Button Land hinzufügen implementieren| mittel | 3 | fertig | / | 1 | Karl Langer | 1 | /
 | Deployment Engineer bestimmen | mittel | 1 | fertig | / | 2 | in Zusammenarbeit mit SHK | 1 | /
 | Verwalten von Ansprechpersonen von Fakultäten (UC03)| hoch | 7 | fertig | / | 1| Karl Langer und Robert Pfund | 3 | /

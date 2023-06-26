@@ -85,7 +85,9 @@ Diese Herausforderung erforderte von uns Flexibilität und die Fähigkeit, auf u
 
 === SE I
 
-Zu Beginn des ersten Semesters Software Engineering lag der Schwerpunkt auf der Aufarbeitung und Analyse des bestehenden Systems. Gleichzeitig haben wir Kontakt mit dem Kunden aufgenommen und in Zusammenarbeit deren Anforderungen ausgewertet. Außerordentlich wichtig waren dabei herauszufinden, weshalb die vorhergehenden Projekte unzureichend für die Nutzung waren.
+Zu Beginn des ersten Semesters Software Engineering lag der Schwerpunkt auf der Aufarbeitung und Analyse der Aufgabenstellung sowie des bestehenden Systems. Gleichzeitig haben wir Kontakt mit dem Kunden aufgenommen und in Zusammenarbeit deren Anforderungen ausgewertet. Außerordentlich wichtig waren dabei herauszufinden, weshalb die vorhergehenden Projekte unzureichend für die Nutzung waren. 
+
+Hierbei standen wir nun aber auch vor der Entscheidung, ob wir jenes bestehende System übernehmen, oder wir ein neues System erstellen. Letzteres hätte den Vorteil, dass wir an keinen bisher verwendeten Sprachen gebunden wären, und möglicherweise eigene, ausgeprägtere Kenntnisse mit einbringen können. Das würde aber wesentlich mehr Zeit in Anspruch nehmen und es käme möglicherweise wieder zu Nachfolgegruppen. Daher entschieden wir uns dafür, dass System unserer Vorgänger zu übernehmen, deren Systematik, Aufbau und Sprache zu analysieren und zu verstehen, und eben jenes System zu erweitern.
 
 Innerhalb der Gruppe haben wir Rollen zugeordnet und Kommunikationswege festgelegt. Bei jedem Mitglied wird sichergestellt, dass das Repository eingerichtet wurde und eine einheitliche Entwicklungsumgebung vorhanden ist.
 
@@ -209,10 +211,12 @@ Des Weiteren wurden mit der Zeit langsam mehr und mehr Ressourcen in die Dokumen
 
 Das Projekt neigt sich mit der Transition Phase dem Ende zu.  Der Schwerpunkt der letzten Iteration lag auf der Vollendung der Use Cases und der abschließenden Bearbeitung der Dokumentation.
 
+Eine zeitlich nicht mehr zu implementieren mögliche Systemoptimierung wäre eine konsequente Eingabeprüfung. Sie war nicht vom Kunden gefordert und aufgrund fehlender interner Uniformatiät seitens des Kunden auch nicht gewollt beziehungsweise ausgearbeitet. Jedoch hätte sie zu größerer Einheitlichkeit geführt, was spätere Datenverarbeitung erleichtern könnte.
+
 Wichtigsten Ziele:
 
 * Berichte erzeugen (UC06)
-* Löschen von Daten mit Passwortabfrage (UC08)
+* Löschen von Daten als Super User (UC08)
 * Lizenz bestimmen
 * Schulung der Mitarbeiter der Stabstelle  Internationales
 * Planung des Projektberichtes
@@ -224,7 +228,7 @@ Da in der vorherigen Iteration nun der Reiter vorbereitet war, konnten wir uns d
 
 *Löschen von Daten mit Passwortabfrage*
 
-Das Löschen von Daten ist eine Problematik, die der Stabstelle Internationales besonderes wichtig ist.  In der Vergangenheit haben eine Studentische Hilfskraft sowohl als auch andere Mitarbeiter bedeutende Daten gelöscht. Ab diesem Zeitpunkt wurden kaum noch alte Datensätze gelöscht, da immer noch ein gewisser Respekt davor bestand. Daraufhin implementierten wir eine Unterabfrage, die erscheint, wenn der Löschvorgang betätigt wird. Diese Lösung wurde besonders dankend angenommen.
+Das Löschen von Daten ist eine Problematik, die der Stabstelle Internationales besonderes wichtig ist.  In der Vergangenheit haben eine Studentische Hilfskraft sowohl als auch andere Mitarbeiter bedeutende Daten gelöscht. Ab diesem Zeitpunkt wurden kaum noch alte Datensätze gelöscht, da immer noch ein gewisser Respekt davor bestand. Daraufhin implementierten wir zwei verschiedene Log-Ins. Der Super User hat Löschrechte und der normale Log-In nicht, dies wurde ausdrücklich von dem Kunden gewünscht.
 
 *Lizenz bestimmen und den Projektbericht Planen*
 
@@ -249,19 +253,71 @@ Wir habe eine Vielzahl an Test- Cases entwickelt und in diesen die Arbeitsweise 
 
 In der letzten Iteration vor dem Projektende bestand keine Möglichkeit Frau Terpe unsere Inkremente zu präsentieren, da Sie außer Haus ist. Daher haben wir zuvor jede unserer Anpassungen ausführlich erklärt und Ihr Feedback als Richtlinie genutzt. Die Möglichkeit spontan und ohne Termin Fragen zu stellen hat hinsichtlich der eher schwierigeren Terminfindung uns viel genutzt.
 
-==== Systemoptimierung und Übergabe an den Kunden
+==== Übergabe an den Kunden
 
 Unser Abnahmegespräch erfolgt am 29. Juni 2023 online über BigBlueButton, da unser Auftraggeber momentan auf Dienstreise ist. Das Vorziehen der Abgabe, um den offiziellen Abgabezeitraum einzuhalten, wurde diskutiert. Das Team hat sich allerdings dagegen entschieden, da dies unsere Bearbeitungszeit um ungefähr zwei Wochen verkürzt hätte - wichtige letzte Anpassungen wären somit nicht möglich gewesen. Die Übergabe unserer Software erfolgt am Wochenende (1. Juli 2023) nach dem Abnahmegespräch. Die Übergabe umfasst die eigentliche Übergabe als Dateien (beziehungsweise Zugang zum GitHub-Repository), die Installation, sowie die Anpassung an die aktiv genutze Datenbank. Damit stellen wir einen bestmöglichen Übergang in die produktive Phase der Software sicher. Darüber hinaus übergeben wir auch Erklärvideos, welche den korrekten Umgang mit der Software zeigen. Diese Lösung wurde erarbeitet nachdem unsere geplante Schulung der Mitarbeitern der SI aufgrund von Krankheit ausfiel.
 Bei der Installation werden wir von der studentischen Hilfskraft (SHK) der SI unterstützt. Dieser kommt eine große Bedeutung zu, da sie die Wartung und Weiterentwicklung übernehmen wird. Um ihr dies zu erleichtern, vereinbaren wir einen Übergangszeitraum, in welchem wir der SHK für Fragen zur Verfügung stehen.
 
+
 == Projektergebnisse
 // Beispiel von Use Cases
-=== Softwaresystem
+=== Erfüllung der Ziele
+
+*Use-Case: Log-Out (UC01)*
+
+Dieses Ziel wurde erreicht. Es war nur eine Fehlerbehebung notwendig, damit der Log-Out Button wieder funktionierte.
+
+*Filterung nach Land, Hochule und Vertragstyp (UC02)*
+
+Dieses angestrebte Ziel wurde erfolgreich erreicht, jedoch erforderte es einen bedeutend längeren Zeitaufwand als ursprünglich geplant. Die Filterung der Vorgruppe erwies sich als weniger effektiv als erwartet, was dazu führte, dass wir uns intensiv mit den einzelnen Filterfunktionen auseinandersetzen mussten.  Eine gründliche Untersuchung jedes Filters war erforderlich, um sicherzustellen, dass das gewünschte Ergebnis erzielt wird und keine unerwünschten Seiteneffekte auftreten. Dies erforderte eine sorgfältige Analyse der zugrunde liegenden Mechanismen und eine detaillierte Einarbeitung in den vorhandenen Code.
+
+*Verwalten von Ansprechpersonen und Fakultäten (UC03)*
+
+Dieses Ziel wurde erfolgreich umgesetzt, aber schlussendlich durch den Kundne als nicht erforderlich angesehen uns somit entfallen.
+
+*Anlegen neuer Verträge (UC04)*
+
+Dieses Ziel wurde umgesetzt, beim Anlegen neuer Verträge werden diese jetzt erfolgreich gespeichert. Zusätzlich haben wird das Design und das zugehörige Pop-Up Fenster für den Nutzer intuitiv gestaltet.
+
+*Anlegen neuer Universitäten (UC05)*
+
+Das Ziel war die Weiterentwicklung dieses Features. Zuvor wurde dies über ein Popup Fenster geregelt. Das Fenster wurde dem Wunsch des Kunden entprechend angepasst
+
+*Erzeugen von Berichten (UC06)*
+
+Dieses Ziel wurde erreicht. Zur pdf-Erstellung wurde wkhtmltopdf verwendet. Dabei war die Erstellung eines Strings mit HTML-Inhalt/-Formatierung notwendig.
+
+*Exportieren von Berichten (UC07)*
+
+Dieses Ziel wurde erreicht. Die Speicherung erfolgt, danach wird die gerade abgelegte pdf-Datei "zurückgegeben" beziehungsweise in einem neuen Tab geöffnet.
+
+*Löschen von Datensätzen (UC08)*
+
+Das Ziel wurde erreicht, indem ein Admin Login erstellt wurde. Nur dieser kann den "Löschen" Button sehen und betätigen. Der normale User kann dies nicht.
+
+*Exterene Informationsabfrage (UC09)*
+
+Ziel ist es, dass Informationen zu Hochschulverträgen über eine Typo 3 Anbindung ausgelesen und auf der HTW Webseite angezeigt werden können. Da diese Verbindung über die Datenbank läuft und wir keine direkten Änderungen dieser vorgenommen haben, sollte diese Funktion weiterhin wie erwartet funktionieren.
+
+*Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)*
+
+Dieses Ziel ist teilweise erreicht. Fakultäten können angelegt werden und in die Datenbank gespeichert werden. Es ist jedoch noch nicht möglich die Fakultätsangaben auf der Webseite zu bearbeiten.
+
+==== Zusätzliche Funktionalitäten
+
+Nach eingehender Rücksprache mit dem Kunden wurde beschlossen, die Suchleiste der Mentoren zu modifizieren und zu vergrößern. Darüber hinaus wurde die Art und Weise, wie die Daten der Mentoren gespeichert werden von uns überarbeitet, da nicht alle Eingaben aus dem Bearbeitungsfenster korrekt übertragen wurden.
+
+
+==== Begründung der Nichterfüllung von einzelnen Zielen
+
+Auf Anfrage des Kunden haben wir eine Funktionalität implementiert, die zu einer bestehenden Liste von allen Ländern, Neue hinzufügt. Hierbei funktioniert das Speichern in die Datenbank nicht, dass Bearbeiten und das Löschen von bereits existierenden Ländern.
+
+
 === Fehlerbehebung
 
 Als wir den Code unserer Vorgänger übernommen haben existierten zwei Grundlegende Fehler, die wir beheben sollten. Zum einen funktionierte das Abmelden auf der Webseite nicht. Zum anderen gab es ein Problem mit der Filterung der Hochschulen. Dort war es nicht möglich nach „Fakultäten“ zu filtern. Beide dieser Fehler wurden behoben, sodass dieses Ziel voll erreicht wurde.
 
-//=== Begründung für das Nichterfüllen von Zielen
+
 === Reflexion der Teammitglieder
 
 ==== Marlene Pannoscha
@@ -324,7 +380,7 @@ Hierbei bin ich wirklich froh darüber, ein so offenes und hilfsbereites Team ge
 
 Im Kontrast dazu war die Kommunikation mit dem Kunden an manchen Stellen eher frustrierend, sei es die öfters aufkommende Unzuverlässigkeit oder der regelmäßige Ansturm an neuen Anforderungen bzw. Ausfall bereits implementierter Anforderungen, was die Arbeitsweise und den Zeitplan gelegentlich aus der Bahn brachte. Hierbei würde ich in Zukunft dem Kunden gegenüber mehr Deadlines setzen, mehr Druck und Konditionen ansetzen, um allen eine angenehmere Arbeitsatmosphäre bieten zu können. Des Weiteren war die Dokumentation an manchen Stellen etwas sehr aufwendig und übertrieben war. Nichtsdestotrotz sollte diese niemals unterschätzt werden, besonders deren Bedeutsamkeit für Anwender und kommende Entwickler, die dieses System warten oder überarbeiten.
 
-Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, die ich hier gesammelt habe, froh bin.
+Letztlich kann ich sagen, dass das Projekt definitiv eine Lektion für mein Leben war, dass ich vom hier Gelernten in Zukunft definitiv Gebrauch machen werde und ich über jegliche Erfahrung, seien es menschliche Kompetenzen oder Programmierkenntnisse, die ich hier gesammelt habe, froh bin.
 
 <<<
 

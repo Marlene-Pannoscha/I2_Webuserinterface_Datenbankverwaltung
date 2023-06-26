@@ -1,5 +1,5 @@
 = Test Cases: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+//Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -117,6 +117,19 @@ include::../_includes/default-attributes.inc.adoc[]
 
 === Test Case 08: Anlegen von Fakultäten
 
+=== Test Case 12: Prüfen der REST-API mittels POSTMAN
+[cols="1,4"]
+|===
+| Beschreibung | Die REST-Schnittstellen werden getestet.
+| Vorbedingungen a| - POSTMAN wurde installiert und ist betriebsbereit
+- Es wurde erfolgreich eine POST-Request zum Login mittels POSTMAN abgeschickt
+(beschrieben in Testdokumentation)
+| Ablauf (manuell) a| . Auswahl der "POST"-Request in POSTMAN
+. Eingabe der REST-Schnittstelle im Adressfeld
+. "Send"-Button wird betätigt
+| Nachbedingung a| - Die POST-Request wird abgesetzt
+- im Responsebody wird unter dem Reiter "Preview" der Inhalt der Abfrage als JSON dargestellt
+|===
 
 
 == Nicht-funktionale Anforderungen 
