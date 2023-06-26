@@ -10,7 +10,34 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Funktionale Tests
 
-=== Test Case 01: Anlegen von Hochschulpartnerschaften
+=== Test Case 01: Login und Logout (Fehlerbehebung der Vorgruppe)
+
+[cols="1,4"]
+|===
+| Beschreibung | Die Arbeitskraft kann sich sowohl von der Website Anmelden als auch Abmelden, mithilfe der Anmeldedaten. 
+| Vorbedingungen und benötigte Daten a| - die Arbeitskraft ist als Nutzer angelegt
+- valide Anmeldedaten (DB-Nutzername + zugehöriges Kennwort) eingegeben
+| Ablauf (automatisiert) a|. Das Skript öffnet ein Browser-Fenster und geht auf führt innerhalb des Netzwerkes der HTW auf die Login-Seite des Prototyps
+. Es erfolgt die automatisierte Eingabe der Zugangsdaten (Nutzername + Passwort)
+. Das Skript betätigt den Login Button
+. Nach erfolgreichem Login wird geprüft, ob sich das Skript auf der gewünschten Seite befindet und der Login-Vorgang somit erfolgreich war
+| Nachbedingung a| - eine aktive Session wird gestartet
+- die Arbeitskraft erhält Zugang zur Verwaltungsanwendung
+- bei Betätigung des Logout Buttons, wird der Nutzer erfolgreich abgemeldet und die Daten bleiben gespeichert
+|===
+
+=== Test Case 02: Filtern nach Fakultäten (Fehlerbehebung der Vorgruppe)
+
+[cols="1,4"]
+|===
+| Beschreibung | Die Arbeitskraft kann im Reiter Hochschule mithilfe des Dropdown Menüs "Fakultät" eine gewünschte Selektion treffen.
+| Vorbedingungen und benötigte Daten a| - der Login war erfolgreich 
+- es besteht eine intakte Datenbankverbindung 
+
+| Nachbedingung a| - die Arbeitskraft kann alle Hochschulen einsehen, welche mit den Verträgen der ausgewählten Fakultät in Verbindung stehen
+|===
+
+=== Test Case 03: Anlegen von Hochschulpartnerschaften
 
 [cols="1,4"]
 |===
@@ -25,11 +52,11 @@ include::../_includes/default-attributes.inc.adoc[]
 - die Arbeitskraft erhält Zugang zur Verwaltungsanwendung
 |===
 
-=== Test Case 02: Generierung von Berichten
+=== Test Case 04: Generierung von Berichten
 
 [cols="1,4"]
 
-=== Test Case 03: Bearbeiten von Hochschulpartnerschaften
+=== Test Case 05: Bearbeiten von Hochschulpartnerschaften
 
 [cols="1,4"]
 |===
@@ -47,12 +74,12 @@ include::../_includes/default-attributes.inc.adoc[]
 | Nachbedingung a| Attribute des Datensatzes der Hochschulpartnerschaft wurden erfolgreich sowie fehlerfrei aktualisiert. 
 |===
 
-=== Test Case 04: Anlegen neuer Länder
+=== Test Case 06: Anlegen neuer Länder
 
 [cols="1,4"]
 
 
-=== Test Case 05: Mentoren bearbeiten und speichern
+=== Test Case 07: Mentoren bearbeiten und speichern
 
 [cols="1,4"]
 |===
@@ -71,8 +98,67 @@ include::../_includes/default-attributes.inc.adoc[]
 | Nachbedingung a| Bei erfolgreicher Änderung werden die Daten aus dem Datensatz ersetzt und bei Abfrage erfolgreich angezeigt
 |===
 
-=== Test Case 06: Anlegen von Fakultäten
+=== Test Case 08: Anlegen von Fakultäten
 
 
 
 == Nicht-funktionale Anforderungen 
+
+Die nicht-funktionalen Anforderungen wurden von der Vorgruppe übernommen, da keine neuen nicht-funktionalen Anforderungen dazu gekommen sind.
+
+
+=== Test Case 09: Gleichzeitiges Bearbeiten von Datensätzen durch mehrere Personen
+
+[cols="1,4"]
+|===
+| Beschreibung | Mindestens zwei Arbeitskräfte wollen gleichzeitig Datensätze im System bearbeiten
+| Vorbedingungen und benötigte Daten a| - alle Arbeitskräfte sind erfolgreich angemeldet
+- Die Daten wurden korrekt und vollständig übertragen
+- Datenänderungen werden unverzüglich in das System übernommen
+- direkter Datenbankzugriff um Änderungen vorzunehmen
+| Ablauf (manuell) a|. Die Testenden öffnen jeweils ein Browser-Fenster und gehen innerhalb des Netzwerkes der HTW auf die Login-Seite der Webanwendung
+. Es erfolgt die Eingabe der Zugangsdaten (Nutzername + Passwort) und die Bestätigung mit dem Login-Button
+. Nach erfolgreichem Login wählen die Testenden Datensätze, die sie bearbeiten möchten und betätigen den Bearbeiten-Button
+. Die Testenden tragen in die Felder der Eingabemaske ihre gewünschten Werte ein
+. Der Speichern Button wird betätigt
+. Die bearbeiteten Datensätze erscheinen nun in der Übersicht
+| Nachbedingung a| - Bei erfolgreicher Änderung werden die Daten aus den Datensätzen ersetzt und bei Abfrage erfolgreich angezeigt
+- Bie Bearbeitung des selben Datensatzes wird die letzte Änderung gespeichert und angezeigt
+|===
+
+=== Test Case 10: Wechseln der Hauptreiter in max. 3s
+
+[cols="1,4"]
+|===
+| Beschreibung | Eine Arbeitskraft will den Hauptreiter im Hauptmenü wechseln
+| Vorbedingungen und benötigte Daten a| - die Arbeitskraft ist erfolgreich angemeldet
+- die Arbeitskraft befindet sich im Hauptmenü
+| Ablauf (manuell) a|.  Die testende Person öffnet ein Browser-Fenster und geht innerhalb des Netzwerkes der HTW auf die Login-Seite der Webanwendung
+. Es erfolgt die Eingabe der Zugangsdaten (Nutzername + Passwort) und die Bestätigung mit dem Login-Button
+. Nach erfolgreichem Login wählt die testende Person im Hauptmenü den Reiter, in dem sie arbeiten möchte
+. Während des Ladevorgangs beim Wechseln der Hauptreiter misst die testende Person mit einer Stoppuhr die Dauer vom Betätigen des Buttons für den Reiter bis zur Anzeige des neuen Reiters
+| Nachbedingung | Bei erfolgreichem Wechsel des Hauptreiters wird der neue Reiter in unter 3s angezeigt
+|===
+
+=== Test Case 11: Ausführen der wichtigsten Aktionen in max. 2s
+
+[cols="1,4"]
+|===
+| Beschreibung | Eine Arbeitskraft will sich einloggen oder einen Datensatz erstellen, bearbeiten oder entfernen
+| Vorbedingungen und benötigte Daten a| - die Arbeitskraft ist erfolgreich angemeldet mit den vorgesehenen Admin Zugangsdaten eingeloggt
+- Reguläre Arbeitskräfte haben keinen Zugriff auf das Löschen der Datensätze
+- Ruhende Partnerschaften dürfen nicht gelöscht werden
+- Die Daten wurden korrekt und vollständig übertragen
+- Datenänderungen werden unverzüglich in das System übernommen
+- direkter Datenbankzugriff um Änderungen vorzunehmen
+| Ablauf (manuell) a|.  Die testende Person öffnet ein Browser-Fenster und geht innerhalb des Netzwerkes der HTW auf die Login-Seite der Webanwendung
+. Es erfolgt die Eingabe der Zugangsdaten (Nutzername + Passwort) und die Bestätigung mit dem Login-Button
+. Währenddessen misst die testende Person mit einer Stoppuhr die Dauer vom Betätigen des Login-Buttons bis zur Anzeige des Hauptmenüs
+. Nach erfolgreichem Login betätigt sie den Button zum Anlegen einer neuen Partnerhochschule und füllt die Felder in der Eingabenmaske aus
+. Anschließend betätigt die testende Person den Speichern-Button und misst die Dauer vom Betätigen des Buttons bis zur Anzeige der neuen Partnerhochschule in der Übersicht
+. Daraufhin wählt sie die erstellte Partnerhochschule aus und drückt den Bearbeiten-Button
+. Dann verändert die testende Person die Bezeichnung der Partnerhochschule und betätigt den Speichern-Button
+. Erneut misst sie die Dauer vom Betätigen des Buttons bis zur Anzeige der veränderten Bezeichnung in der Übersicht
+. Nun betätigt die testende Person den Löschen-Button bei der erstellten Partnerhochschule und misst die Dauer vom Betätigen des Buttons bis zum Verschwinden der Partnerhochschule aus der Übersicht
+| Nachbedingung | Alle gemessenen Zeiten liegen beim erfolgreichen Durchführen der jeweiligen Aktionen unter 2s
+|===

@@ -9,13 +9,28 @@ include::../_includes/default-attributes.inc.adoc[]
 [cols="3,2,2,1,2,2"]
 |===
 | Test Case | Verantwortlich | Durchführung | Datum | Ergebnis | Auswirkung
-| TC01: Anlegen von Hochschulpartnerschaften | Alessandra | Dilara | 16.06.2023 | erfolgreich | keine
-| TC02: Generierung von Berichten | Robert |  |  | erfolgreich | 
-| TC03: Bearbeiten von Hochschulpartnerschaften | |  |  |  | 
-| TC04: Anlegen neuer Länder | Karl |  |  |  | 
-| TC05: Mentoren bearbeiten und speichern | Dilara | Marlene | 19.06.2023 | erfolgreich | keine
-| TC06: Anlegen von Fakultäten | Alessandra | Dilara | 22.06.2023 | erfolgreich | keine
+| TC01: Login und Logout | Alessandra | Dilara | 12.01.2023 | erfolgreich | keine
+| TC02: Filtern nach Fakultät | Alessandra | Dilara |  25.04.2023 | erfolgreich | keine 
+| TC03: Anlegen von Hochschulpartnerschaften | Alessandra | Dilara | 16.06.2023 | erfolgreich | keine
+| TC04: Generierung von Berichten | Robert |  |  | erfolgreich | 
+| TC05: Bearbeiten von Hochschulpartnerschaften | |  |  |  | 
+| TC06: Anlegen neuer Länder | Karl |  |  |  | 
+| TC07: Mentoren bearbeiten und speichern | Dilara | Marlene | 19.06.2023 | erfolgreich | keine
+| TC08: Anlegen von Fakultäten | Alessandra | Dilara | 22.06.2023 | erfolgreich | keine
 |===
 
 
 -- Nicht-Funktionale Tests
+
+
+[cols="3,2,2,1,2,2"]
+|===
+| Test Case | Verantwortlich | Durchführung | Datum | Ergebnis | Auswirkung
+
+| TC09: Gleichzeitiges Bearbeiten von Datensätzen durch mehrere Personen | Kevin | Kevin/Karl |  | erfolgreich +
+("Lost Update" kann bei der Arbeit um selben Datensatz enstehen) | Warnung für die gleichzeitige Arbeit am selben Datensatz
+| TC10: Wechseln der Hauptreiter in max. 3s | Robert | Robert |  | erfolgreich +
+(1,5 - 2s) | keine
+| TC11: Ausführen der wichtigsten Aktionen in max. 2s | Dilara | Dilara |  | erfolgreich +
+(ca. 1s) | keine
+|===
