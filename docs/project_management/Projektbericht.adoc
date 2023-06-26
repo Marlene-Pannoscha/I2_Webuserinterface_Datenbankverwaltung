@@ -274,6 +274,8 @@ Dieses angestrebte Ziel wurde erfolgreich erreicht, jedoch erforderte es einen b
 
 *Anlegen neuer Universitäten (UC05)*
 
+Das Ziel war die Weiterentwicklung dieses Features. Zuvor wurde dies über ein Popup Fenster geregelt. Das Fenster wurde dem Wunsch des Kunden entprechend angepasst
+
 *Erzeugen von Berichten (UC06)*
 
 Dieses Ziel wurde erreicht. Zur pdf-Erstellung wurde wkhtmltopdf verwendet. Dabei war die Erstellung eines Strings mit HTML-Inhalt/-Formatierung notwendig.
@@ -283,6 +285,8 @@ Dieses Ziel wurde erreicht. Zur pdf-Erstellung wurde wkhtmltopdf verwendet. Dabe
 Dieses Ziel wurde erreicht. Die Speicherung erfolgt, danach wird die gerade abgelegte pdf-Datei "zurückgegeben" beziehungsweise in einem neuen Tab geöffnet.
 
 *Löschen von Datensätzen (UC08)*
+
+Das Ziel wurde erreicht, indem ein Admin Login erstellt wurde. Nur dieser kann den "Löschen" Button sehen und betätigen. Der normale User kann dies nicht.
 
 *Exterene Informationsabfrage (UC09)*
 
