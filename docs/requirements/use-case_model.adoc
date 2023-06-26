@@ -14,12 +14,14 @@ Im folgenden werden identifizierte Use-Cases genannt, sowie die priorisierten Us
 
 * <<_uc1_filtern_nach_fakultät_und_partnerschaft>>
 * <<_uc2_logout>>
-* <<_uc3_bearbeiten_anlegen_löschen von Fakultäten>> (geplant)
-* <<_uc4_verwalten_von_ansprechpersonen>> (geplant)
-* <<_uc5_anlegen_neuer_vertrtäge>> (geplant)
-* <<_uc6_anlegen_neuer_universitäten>> (geplant)
-* <<_uc7_erzeugen_von_berichten>> (geplant)
-* <<_uc8_löschen_von_datensätzen>> (geplant)
+* <<_uc3_verwalten_von_Ansprechpersonen_von_Fakultäten>>
+* <<_uc4_anlegen_neuer_Verträge>>
+* <<_uc5_anlegen_neuer_Universitäten>>
+* <<_uc6_berichte erzeugen>>
+* <<_uc7_berichte_exportieren>>
+* <<_uc8_löschen_von_daten_mit_passwortabfrage_>>
+* <<_uc9_externe_informationsabfrage>>
+* <<_uc10_möglichkeit_zum_bearbeiten_und_anlegen_von_fakultäten>>
 
 :imagesdir: images
 == Use Case Diagramm

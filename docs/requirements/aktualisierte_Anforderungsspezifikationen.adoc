@@ -10,7 +10,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 :leveloffset: +1
 :imagesdir: ../requirements/images
-include::domain_model.adoc[]
+include::domain_model.adoc[lines=1;5..14]
 :leveloffset: -1
 
 :leveloffset: +1
