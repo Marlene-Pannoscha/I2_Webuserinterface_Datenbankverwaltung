@@ -266,11 +266,19 @@ Dieses Ziel wurde erreicht. Es war nur eine Fehlerbehebung notwendig, damit der 
 
 *Filterung nach Land, Hochule und Vertragstyp (UC02)*
 
+Dieses angestrebte Ziel wurde erfolgreich erreicht, jedoch erforderte es einen bedeutend längeren Zeitaufwand als ursprünglich geplant. Die Filterung der Vorgruppe erwies sich als weniger effektiv als erwartet, was dazu führte, dass wir uns intensiv mit den einzelnen Filterfunktionen auseinandersetzen mussten.  Eine gründliche Untersuchung jedes Filters war erforderlich, um sicherzustellen, dass das gewünschte Ergebnis erzielt wird und keine unerwünschten Seiteneffekte auftreten. Dies erforderte eine sorgfältige Analyse der zugrunde liegenden Mechanismen und eine detaillierte Einarbeitung in den vorhandenen Code.
+
 *Verwalten von Ansprechpersonen und Fakultäten (UC03)*
+
+Dieses Ziel wurde erfolgreich umgesetzt, aber schlussendlich durch den Kundne als nicht erforderlich angesehen uns somit entfallen.
 
 *Anlegen neuer Verträge (UC04)*
 
+Dieses Ziel wurde umgesetzt, beim Anlegen neuer Verträge werden diese jetzt erfolgreich gespeichert. Zusätzlich haben wird das Design und das zugehörige Pop-Up Fenster für den Nutzer intuitiv gestaltet.
+
 *Anlegen neuer Universitäten (UC05)*
+
+Das Ziel war die Weiterentwicklung dieses Features. Zuvor wurde dies über ein Popup Fenster geregelt. Das Fenster wurde dem Wunsch des Kunden entprechend angepasst
 
 *Erzeugen von Berichten (UC06)*
 
@@ -282,19 +290,28 @@ Dieses Ziel wurde erreicht. Die Speicherung erfolgt, danach wird die gerade abge
 
 *Löschen von Datensätzen (UC08)*
 
+Das Ziel wurde erreicht, indem ein Admin Login erstellt wurde. Nur dieser kann den "Löschen" Button sehen und betätigen. Der normale User kann dies nicht.
+
 *Exterene Informationsabfrage (UC09)*
 
 *Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)*
 
+Dieses Ziel ist teilweise erreicht. Fakultäten können angelegt werden und in die Datenbank gespeichert werden. Es ist jedoch noch nicht möglich die Fakultätsangaben auf der Webseite zu bearbeiten.
+
 ==== Zusätzliche Funktionalitäten
 
+
+
 ==== Begründung der Nichterfüllung von einzelnen Zielen
+
+Auf Anfrage des Kunden haben wir eine Funktionalität implementiert, die zu einer bestehenden Liste von allen Ländern, Neue hinzufügt. Hierbei funktioniert das Speichern in die Datenbank nicht.
+
 
 === Fehlerbehebung
 
 Als wir den Code unserer Vorgänger übernommen haben existierten zwei Grundlegende Fehler, die wir beheben sollten. Zum einen funktionierte das Abmelden auf der Webseite nicht. Zum anderen gab es ein Problem mit der Filterung der Hochschulen. Dort war es nicht möglich nach „Fakultäten“ zu filtern. Beide dieser Fehler wurden behoben, sodass dieses Ziel voll erreicht wurde.
 
-//=== Begründung für das Nichterfüllen von Zielen
+
 === Reflexion der Teammitglieder
 
 ==== Marlene Pannoscha
