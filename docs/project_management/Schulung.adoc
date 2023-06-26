@@ -1,6 +1,6 @@
 = Schulung zur effektiven Nutzung der Website für die Stabsstelle Internationales
 
-//13.06.2023 9-10Uhr durchgeführt
+//13.06.2023 9-10Uhr geplant
 
 include::../_includes/default-attributes.inc.adoc[]
 
@@ -54,4 +54,4 @@ include::../_includes/default-attributes.inc.adoc[]
 * Betonung der Schlüsselkonzepte für eine effektive Nutzung der Website
 
 
-
+== 
