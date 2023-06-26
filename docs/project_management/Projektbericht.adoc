@@ -298,7 +298,7 @@ Dieses Ziel ist teilweise erreicht. Fakultäten können angelegt werden und in d
 
 Als wir den Code unserer Vorgänger übernommen haben existierten zwei Grundlegende Fehler, die wir beheben sollten. Zum einen funktionierte das Abmelden auf der Webseite nicht. Zum anderen gab es ein Problem mit der Filterung der Hochschulen. Dort war es nicht möglich nach „Fakultäten“ zu filtern. Beide dieser Fehler wurden behoben, sodass dieses Ziel voll erreicht wurde.
 
-//=== Begründung für das Nichterfüllen von Zielen
+
 === Reflexion der Teammitglieder
 
 ==== Marlene Pannoscha
