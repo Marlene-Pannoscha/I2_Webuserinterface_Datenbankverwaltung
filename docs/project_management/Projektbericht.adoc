@@ -306,7 +306,7 @@ Dieses Ziel ist teilweise erreicht. Fakultäten können angelegt werden und in d
 
 ==== Begründung der Nichterfüllung von einzelnen Zielen
 
-Auf Anfrage des Kunden haben wir eine Funktionalität implementiert, die zu einer bestehenden Liste von allen Ländern, Neue hinzufügt. Hierbei funktioniert das Speichern in die Datenbank nicht.
+Auf Anfrage des Kunden haben wir eine Funktionalität implementiert, die zu einer bestehenden Liste von allen Ländern, Neue hinzufügt. Hierbei funktioniert das Speichern in die Datenbank nicht, dass Bearbeiten und das Löschen von bereits existierenden Ländern.
 
 
 === Fehlerbehebung
