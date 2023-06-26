@@ -1,5 +1,4 @@
-= Testdokumentation: {project-name}
-
+= Testdokumentation:{project-name}
 include::../_includes/default-attributes.inc.adoc[]
 
 :toc-title: Inhaltsverzeichnis
