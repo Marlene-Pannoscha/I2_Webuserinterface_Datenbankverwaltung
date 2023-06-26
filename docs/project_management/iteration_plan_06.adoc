@@ -41,7 +41,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 |===
 | Aufgabe bzw. Beschreibung | Priorität | Schätzung der Größe (Punkte) |Status | Referenzen | geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Berichte erzeugen (verschiedene Typen) (UC06) | hoch | 7 | laufend | / | 1 | Robert Pfund || / |
+| Berichte erzeugen (verschiedene Typen) (UC06) | hoch | 7 | laufend | / | 1 | Robert Pfund |3 | / |
 Adminuser zum Löschen von Datensätzen(UC08) |hoch | 6 | fertig | / |  1 | Alessandra Ruff | 3| / |
 Lizenzen bestimmen | mittel | 4 | fertig | / | 1 |  Alessandra Ruff |1 | / |
 Anwenderdokumentation für Mitarbeiter (in Video Form) | hoch |5 | laufend |/ | 1 | Marlene Pannoscha | | / |
@@ -49,7 +49,7 @@ Projektbericht - Projektplanung | hoch | 8 | fertig | / | 2 | Kevin Freund, Ales
 Projektbericht - Projektdurchführung | hoch | 8 | fertig | / | 2 | Marlene Pannoscha, Kevin Freund, Dilara Eichler, Robert Pfund | 5 | / |
 Projektbericht - Projektergebnisse | hoch | 8 | laufend | / | 2 | Alessandra Ruff, Karl Langer | 3| / |
 Projektbericht - Reflexionen | hoch | 8 | laufend | / | 1 | Team | | / |
-Test Berichte| mittel | 6 | laufend | / | 1 | Robert Pfund | | / |
+Test Berichte| mittel | 6 | laufend | / | 1 | Robert Pfund | 3 | / |
 Land hinzufügen Fuktionalität implementieren | hoch | 6 | laufend | / | 1 | Karl Langer | | /
 | Aktualisierung Projektplan | mittel | 5 | fertig | project_plan | 1 | Kevin Freund | 1 |
 | Aktualisierung Vision | mittel | 4 | fertig | vision | 1 | Kevin Freund | 2 |

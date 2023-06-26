@@ -53,8 +53,8 @@ Mentoren nach Fakultät filtern | hoch | 6 | fertig | / | 1 | Dilara Eichler | 2
 Anlegen neuer Universitäten(Partnerhochschulen)(UC05) | hoch | 7 | fertig | / | 1 | Alessandra Ruff |4 | / |
 Snapshot der Datenbank exportieren und einführen | hoch | 4| ferig | / | 1 | Kevin Freund| 5 | / |
 Layout der Pop- Up Fenster vereinheitlichen | niedrig | 3 |fertig | / | 3 |Dilara Eichler, Alessandra Ruff, Kevin Freund | 3 | / |
-Berichte erzeugen (UC06) | hoch | 7| fertig | |1 | Robert Pfund | | / |
-Berichte exportieren (UC07) | hoch | 8 | laufend | / | 2 | Robert Pfund | | / |
+Berichte erzeugen (UC06) | hoch | 7| fertig | |1 | Robert Pfund | 5 | / |
+Berichte exportieren (UC07) | hoch | 8 | laufend | / | 2 | Robert Pfund | 3 | / |
 Anlegen neuer Verträge (UC04) | hoch | 6 | fertig | / | 1 | Alessandra Ruff | 2| / |
 Abnahmeprotokoll |mittel | 2 | laufend | / | 1 |  Marlene Pannoscha | 1 | 0,5 |
 Schulung | mittel | 5 | abgesagt | Frau Terpe hat den Termin wegen Krankheit abgesagt | 1 | Marlene Pannoscha | nur Vorbereitung | 7 |
