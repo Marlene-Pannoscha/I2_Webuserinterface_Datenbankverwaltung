@@ -115,7 +115,7 @@ NFAS-2: Mögliche Erweiterbarkeit des Systems. Zur Überprüfung wird im Verlauf
 
 Nach der Übergabe des Projektes übernehmen wir keine Gewährleistung. Nach dem 03.07.2023 liegt die Verantwortung für die Nutzung und den Betrieb des Projektes bei dem Auftraggeber.
 
-Der Software-Stand wird am 29.06.2023 durch ... auf den Server übertragen.
+Der Software-Stand wird am 30.06.2023 durch ... auf den Server übertragen.
 
 Das Github Repository wird an die jetzige Studentischehilfskraft Benjamin Kunat übergeben.
 
