@@ -258,7 +258,32 @@ Bei der Installation werden wir von der studentischen Hilfskraft (SHK) der SI un
 
 == Projektergebnisse
 // Beispiel von Use Cases
-=== Softwaresystem
+== Erfüllung der Ziele
+
+*Use-Case: Log-Out (UC01)*
+
+*Filterung nach Land, Hochule und Vertragstyp (UC02)*
+
+*Verwalten von Ansprechpersonen und Fakultäten (UC03)*
+
+*Anlegen neuer Verträge (UC04)*
+
+*Anlegen neuer Universitäten (UC05)*
+
+*Erzeugen von Berichten (UC06)*
+
+*Exportieren von Berichten (UC07)*
+
+*Löschen von Datensätzen (UC08)*
+
+*Exterene Informationsabfrage (UC09)*
+
+*Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)*
+
+=== Zusätzliche Funktionalitäten
+
+=== Begründung der Nichterfüllung von einzelnen Zielen
+
 === Fehlerbehebung
 
 Als wir den Code unserer Vorgänger übernommen haben existierten zwei Grundlegende Fehler, die wir beheben sollten. Zum einen funktionierte das Abmelden auf der Webseite nicht. Zum anderen gab es ein Problem mit der Filterung der Hochschulen. Dort war es nicht möglich nach „Fakultäten“ zu filtern. Beide dieser Fehler wurden behoben, sodass dieses Ziel voll erreicht wurde.
