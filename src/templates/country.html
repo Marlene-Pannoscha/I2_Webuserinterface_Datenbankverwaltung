@@ -30,18 +30,20 @@
             <li class="nav-item"><a class="nav-link" href="/homepage/courses">Studiengänge</a></li>
             <li class="nav-item"><a class="nav-link" href="/homepage/reports">Berichte</a></li>
         </ul>
-        <ul class="navbar-nav me-2">
-        <li class="nav-item m-1">
-            <div class="in-navbar" id="handbuch">
-                <div class="dropdown">
-                    <button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">Handbücher</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/Anwenderdokumentation.html">Anwenderdokumentation</a></li>
-                        <li><a class="dropdown-item" href="/Betriebsdokumentation.html">Betriebsdokumentation</a></li>
-                    </ul>
+        <div id="hidden">
+            <ul class="navbar-nav me-2">
+            <li class="nav-item m-1">
+                <div class="in-navbar" id="handbuch">
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">Handbücher</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Anwenderdokumentation.html">Anwenderdokumentation</a></li>
+                            <li><a class="dropdown-item" href="/Betriebsdokumentation.html">Betriebsdokumentation</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </li>
             </div>
-        </li>
         
         <li class="nav-item m-1">
             <div class="in-navbar" id="Logout">
@@ -53,7 +55,7 @@
     </nav>
     <div class="my-content">
         <h1 class="text-center m-4">Länder</h1>
-        <div>
+        <div id="hidden">>
             <button type="button" class="btn btn-outline-primary me-3" id="add_country_btn">Land hinzufügen</button>
         </div>
         <div id="tbl"> <!-- container mt-4-->
@@ -74,6 +76,7 @@
 </div>
 
 <!-- MODAL: Land ANLEGEN -->
+
 <div id="modal_add_country" class="modal">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
@@ -95,7 +98,7 @@
                     <label for="edit_country_erasmus" class="form-label">Erasmus?</label>
                     <select id="edit_country_erasmus" class="form-select">
                         <option value="1">Ja</option>
-                        <option value="2">Nein</option>
+                        <option value="0">Nein</option>
                     </select><br>
                 </form>
                     <button class="btn btn-secondary cancel close-modal close_modal_add_country">Abbrechen</button>
@@ -105,5 +108,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

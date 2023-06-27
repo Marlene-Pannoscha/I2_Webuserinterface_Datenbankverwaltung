@@ -11331,3 +11331,7 @@ textarea {
   overflow: hidden;
   max-height: 500px;
 }
+#hidden{
+  display : none;
+  visibility: hidden; 
+}
