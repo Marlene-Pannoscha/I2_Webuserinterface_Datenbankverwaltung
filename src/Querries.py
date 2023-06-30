@@ -157,10 +157,8 @@ def for_mentor_modal(mentor_id):
                 'firstname': row[1],
                 'lastname': row[2],
                 'gender': row[3],
-                'website': row[4],
-                'mail': row[5],
-                'faculty': row[6],
-                'active': row[7],
+                'faculty': row[4],
+                'active': row[5],
                 'id': mentor_id
             }
             payload.append(content)
@@ -382,8 +380,6 @@ def return_mentor():  # get all mentor information and store on client storage
             'title': mentor[4],
             'firstname': mentor[5],
             'lastname': mentor[6],
-             #'homepage': mentor[7],
-             #'email': mentor[8],
             'agreements': mentor[7]
         }
         payload.append(content)
