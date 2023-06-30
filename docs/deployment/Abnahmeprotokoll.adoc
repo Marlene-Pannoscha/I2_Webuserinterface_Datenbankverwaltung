@@ -54,8 +54,8 @@ Use-Case: Möglichkeit zum Bearbeiten und Anlegen von Fakultäten (UC10)|Teilwei
 |Funktionalität | Erfüllt | Anmerkung |
 Mentor Anlegen| Ja | |
 Mentor Bearbeiten | Ja | |
-Land Hinzufügen |  | Diese Funktionalität ist im Code vorhanden, wurde aber wegen Speicherprobleme nicht implementiert.|
-Land Bearbeiten/Löschen |  | Nicht implementiert
+Land Hinzufügen |Nein  | Diese Funktionalität ist im Code vorhanden, wurde aber wegen Speicherprobleme nicht implementiert.|
+Land Bearbeiten/Löschen | Nein | Nicht implementiert
 |===
 
 === Systemweite funktionale Anforderungen
