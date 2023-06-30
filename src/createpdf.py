@@ -4,7 +4,7 @@ import os
 import datetime
 from flask import Flask, send_from_directory
 
-path_to_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+path_to_wkhtmltopdf = r'/usr/bin/wkhtmltopdf'
 config = pdfkit.configuration(wkhtmltopdf = path_to_wkhtmltopdf)
 
 def make_faculty_pdf(id):
